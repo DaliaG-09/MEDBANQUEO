@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Plataforma de entrenamiento y evaluación clínica — Medicina Interna I">
+<meta name="theme-color" content="#0F5F6B">
+<title>MEDBANQUEO — Entrenamiento clínico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<nav class="nav"><div class="navin">
+  <span class="brand">MEDBANQUEO <em>· Medicina Interna I</em></span>
+  <button data-v="inicio">Inicio</button>
+  <button data-v="banquear">Banquear</button>
+  <button data-v="casos">Casos</button>
+  <button data-v="imagenes">Imágenes</button>
+  <button data-v="flashcards">Flashcards</button>
+  <button data-v="sustentacion">Sustentación</button>
+  <button data-v="errores">Errores</button>
+  <button data-v="examenes">Exámenes</button>
+  <button data-v="progreso">Progreso</button>
+</div></nav>
+
+<main class="sheet"><div class="col" id="app"></div></main>
+
+<!-- Orden obligatorio: configuración, datos, motor, vistas, arranque.
+     Cada archivo depende de los anteriores. -->
+<script src="js/config.js"></script>
+<script src="datos/conocimiento.js"></script>
+<script src="js/radiologia-datos.js"></script>
+<script src="js/srs.js"></script>
+<script src="js/motor.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/vista-inicio.js"></script>
+<script src="js/vista-banquear.js"></script>
+<script src="js/vista-casos.js"></script>
+<script src="js/vista-flashcards.js"></script>
+<script src="js/vista-sustentacion.js"></script>
+<script src="js/vista-errores.js"></script>
+<script src="js/vista-examenes.js"></script>
+<script src="js/vista-progreso.js"></script>
+<script src="js/radiologia.js"></script>
+<script src="js/arranque.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "medbanqueo",
+  "version": "0.1.1",
+  "private": true,
+  "description": "Plataforma de entrenamiento y evaluación clínica — Medicina Interna I",
+  "type": "module"
+}

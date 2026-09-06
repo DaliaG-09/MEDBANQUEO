@@ -2,12 +2,13 @@
 function vErrores(){
   const filtro=ctx.filtro||"todos";
   const tipos=[...new Set(S.errores.map(e=>e.tipo))];
-  const lista=filtro==="todos"?S.errores:S.errores.filter(e=>e.tipo===filtro);
+  const base=erroresActivos();
+  const lista=filtro==="todos"?base:base.filter(e=>e.tipo===filtro);
   app.innerHTML=`<div class="label">Mis errores</div>
-    <h1>Lo que ya fallaste una vez.</h1>
-    <p class="lede">Se llena solo. Cada entrada guarda qué te faltó exactamente, no solo que estuvo mal, y programa el concepto para que vuelva con otra cara.</p>
-    ${S.errores.length?`<div class="filters" id="f">
-      <button data-t="todos" aria-pressed="${filtro==="todos"}">Todos (${S.errores.length})</button>
+    <h1>Lo que todavía necesitas dominar.</h1>
+    <p class="lede">Se actualiza con cada intento. Los errores pasan de <strong>activos</strong> a <strong>en recuperación</strong> y desaparecen de esta vista solo cuando demuestras que ya los dominas.</p>
+    ${base.length?`<div class="filters" id="f">
+      <button data-t="todos" aria-pressed="${filtro==="todos"}">Todos (${base.length})</button>
       ${tipos.map(t=>`<button data-t="${t}" aria-pressed="${filtro===t}">${esc(TIPOS_ERROR[t]||t)}</button>`).join("")}
     </div>`:""}
     ${lista.length?`<ul class="errlist">${lista.map(e=>`<li>

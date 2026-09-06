@@ -164,3 +164,8 @@ input[type=text]{font-family:var(--serif);font-size:1rem;padding:.45rem 0;border
 .examchrome{font-family:var(--sans);font-size:.82rem;color:var(--graphite);display:flex;gap:1.4rem;
   border-bottom:1px solid var(--rule);padding-bottom:.6rem;margin-bottom:1.6rem}
 .examchrome b{font-family:var(--mono);font-weight:400;color:var(--ink)}
+/* feedback adaptativo */
+.feedback-good ul,.feedback-miss ul{margin:.2rem 0 0;padding-left:1.1rem}
+.feedback-good li,.feedback-miss li{margin:.15rem 0}
+.model-answer{border-left:2px solid var(--petrol);padding-left:.85rem}
+.next-step{border-top:1px solid var(--rule);padding-top:.6rem}

@@ -28,23 +28,61 @@ function elegirConcepto(temaSel){
   return p[Math.floor(Math.random()*p.length)].id;
 }
 function siguienteEje(cid){
-  const d=S.dominio[cid]; if(!d) return "recordar";
-  const faltan=EJES.filter(e=>!d.ejes[e]);
-  return faltan.length?faltan[0]:EJES[Math.floor(Math.random()*EJES.length)];
+  return ejeDebil(cid);
 }
 async function siguienteBanco(){
   const s=ctx.sesion;
   if(s.i>=s.total) return cierreBanco();
-  cargando("Preparando la pregunta");
-  const cid=elegirConcepto(s.tema), eje=siguienteEje(cid);
+
+  cargando("Preparando una pregunta nueva");
+
+  const cid=elegirConcepto(s.tema);
+  const eje=siguienteEje(cid);
   const d=S.dominio[cid];
   const dif=Math.min(5,Math.max(1,(d?d.nivel+1:2)));
   const tipos=["opcion_multiple","abierta","calculo","respuesta_multiple","verdadero_falso","respuesta_corta"];
-  const tipo=eje==="calcular"?"calculo":(eje==="sustentar"||eje==="integrar")?"abierta":tipos[Math.floor(Math.random()*tipos.length)];
-  let q;
-  try{ q=await claude(pedirPregunta(cid,eje,dif,tipo)); q.concepto=cid; q.eje=eje; }
-  catch(e){ q=Object.assign({},SEMILLA_BANCO[Math.floor(Math.random()*SEMILLA_BANCO.length)]); q.offline=true; }
-  marcar(hash({concepto:q.concepto,eje:q.eje,tarea:q.tarea||q.tipo,arquetipo:"",contexto:"banco"}));
+  const tipo=eje==="calcular"
+    ?"calculo"
+    :(eje==="sustentar"||eje==="integrar")
+      ?"abierta"
+      :tipos[Math.floor(Math.random()*tipos.length)];
+
+  let q, firma;
+  try{
+    // Primer intento.
+    q=await claude(pedirPregunta(cid,eje,dif,tipo));
+    q.concepto=cid;
+    q.eje=eje;
+    firma=hash({
+      concepto:q.concepto,eje:q.eje,
+      tarea:q.tarea||q.tipo,arquetipo:"",
+      contexto:"banco"
+    });
+
+    // Si la tarea cognitiva ya apareció, pedimos otra variante.
+    // El concepto puede repetirse; la forma de razonarlo no.
+    if(yaVisto(firma)){
+      q=await claude(pedirPregunta(cid,eje,Math.min(5,dif+1),tipo)+
+        "\nIMPORTANTE: la tarea cognitiva generada ya fue usada. Cambia el ángulo de razonamiento, el contexto clínico y la tarea concreta. NO reformules la misma pregunta.");
+      q.concepto=cid;
+      q.eje=eje;
+      firma=hash({
+        concepto:q.concepto,eje:q.eje,
+        tarea:q.tarea||q.tipo,arquetipo:"",
+        contexto:"banco"
+      });
+    }
+  }catch(e){
+    q=Object.assign({},SEMILLA_BANCO[Math.floor(Math.random()*SEMILLA_BANCO.length)]);
+    q.offline=true;
+    firma=hash({
+      concepto:q.concepto,eje:q.eje||"recordar",
+      tarea:q.tarea||q.tipo,arquetipo:"",
+      contexto:"banco"
+    });
+  }
+
+  marcar(firma);
   pintarPregunta(q);
 }
 function pintarPregunta(q, opts={}){

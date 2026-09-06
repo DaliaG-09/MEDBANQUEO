@@ -61,7 +61,10 @@ function pintarCard(){
     :`<div class="actions"><button class="go" id="eval">Evaluar mi respuesta</button></div>`}`;
   if(!ctx.volteada) document.getElementById("eval").onclick=()=>evaluarFlashcard();
   else app.querySelectorAll("[data-q]").forEach(b=>b.onclick=()=>{
-    programar(c.concepto,+b.dataset.q,"recordar");
-    guardar(); nuevaCard();
+    // La respuesta ya fue registrada y programada por evaluarFlashcard().
+    // Estos botones solo expresan cómo se sintió el recuerdo y no deben
+    // duplicar la evidencia ni adelantar/atrasar dos veces la tarjeta.
+    registrarRefuerzoError(c.concepto,+b.dataset.q>=4);
+    nuevaCard();
   });
 }

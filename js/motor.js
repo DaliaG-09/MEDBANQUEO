@@ -13,8 +13,10 @@ async function claude(prompt, max){
 
 const CONTEXTO_CURSO = `Contexto obligatorio. Eres el docente de Medicina Interna I de una facultad peruana de medicina humana, módulo de Neumología. Conoces el estilo real de evaluación del curso:
 - Los casos siempre traen: edad, sexo, ocupación o procedencia, antecedentes, tiempo de enfermedad explícito, síntomas en orden cronológico, funciones vitales completas con saturación y si es aire ambiente, y semiología torácica por los cuatro pasos.
-- Los antecedentes nunca son decorativos: son la pista que orienta el diagnóstico.
+- Los antecedentes nunca son decorativos: algunos deben funcionar como pistas, pero otros pueden ser distractores plausibles.
 - La semiología se da como síndrome completo, no como hallazgo suelto.
+- Cada caso debe contener al menos un dato discriminante que permita separar el diagnóstico principal de 1 a 2 alternativas plausibles.
+- No conviertas el caso en una adivinanza: la estudiante debe poder justificar la hipótesis con los datos disponibles.
 - Los verbos de mando del curso son: sustente, justifique, describa, calcule, interprete, mencione, desarrolle.
 - Escribe en español de Perú, tono clínico, sin emojis, sin adornos.
 - Nunca inventes datos clínicos falsos ni cifras imposibles. Los valores de laboratorio y gasometría deben ser internamente coherentes.`;
@@ -55,6 +57,13 @@ Genera la CABECERA de un caso clínico progresivo nuevo.
 Tema principal: ${tema.nombre}
 Dificultad: ${dificultad} de 5
 Casos ya usados (no repitas el arquetipo de paciente): ${previos}
+
+El caso debe entrenar razonamiento, no memoria textual:
+- Incluye 1 a 2 diagnósticos diferenciales plausibles.
+- Incluye datos que permitan defender por qué el diagnóstico principal es más probable.
+- Incluye al menos una pista clínica útil y una posible trampa de interpretación.
+- No repitas literalmente un caso del material del curso: usa su estructura y estilo, pero crea una situación clínica nueva.
+- La dificultad debe aumentar por razonamiento y decisión, no por datos innecesariamente raros.
 ${placa?`
 OBLIGATORIO: en la etapa 4 se le mostrará a la estudiante una radiografía de tórax real que corresponde a ${placa.meta.dx}${placa.item.nota?" ("+placa.item.nota+")":""}. El caso debe construirse de modo que ese sea el diagnóstico al que llega, y la clínica y la semiología deben ser coherentes con ese hallazgo radiológico. No menciones la radiografía en la presentación inicial.`:""}
 
@@ -74,7 +83,11 @@ Hipótesis que ella comprometió en la etapa 1: "${hipotesis}"
 Respuestas previas: ${previas||"ninguna"}
 
 Genera la ETAPA ${n} de ${ETAPAS.length}: ${e.t}. Lo que debe pedir: ${e.pide}.
-Revela solo los datos que corresponden a esta etapa, redactados en el estilo del curso. Si la etapa no aplica al caso (por ejemplo una escala inexistente para este cuadro), sustitúyela por el cálculo o la escala que sí corresponda y dilo en los datos.
+Revela solo los datos que corresponden a esta etapa, redactados en el estilo del curso.
+- No reveles de forma directa el diagnóstico final antes de la etapa 7.
+- La pregunta debe depender de los datos acumulados, no ser una pregunta aislada de teoría.
+- Si la estudiante cometió un error previo, formula la etapa actual de manera que pueda corregirlo mediante razonamiento, sin regalarle la respuesta.
+- Incluye en "perla" una enseñanza transferible a otros casos y en "pista" solo una ayuda posterior a la respuesta. Si la etapa no aplica al caso (por ejemplo una escala inexistente para este cuadro), sustitúyela por el cálculo o la escala que sí corresponda y dilo en los datos.
 
 Devuelve SOLO este JSON, sin backticks:
 {"datos":"texto de los datos nuevos de esta etapa","aga":null,"pregunta":"","verbo":"","eje":"interpretar","rubrica":[{"t":"","p":40,"o":true}],"pista":"","perla":""}

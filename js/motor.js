@@ -131,7 +131,13 @@ Diagnóstico final: ${caso.diagnostico_final}
 Intercambio hasta ahora:
 ${historial}
 
-Formula UNA repregunta que ataque el punto más débil de lo que ella acaba de decir. Si ya defendió bien, sube la exigencia: pídele qué hallazgo cambiaría su conducta, qué argumenta en contra, o qué haría si un dato fuera distinto.
+Formula UNA repregunta que ataque el punto más débil de lo que ella acaba de decir.
+- Debe depender de su respuesta anterior y no ser una pregunta genérica.
+- Identifica si ignoró un dato, saltó a una conclusión, confundió diagnóstico con síndrome, no justificó tratamiento o no consideró un diferencial.
+- Si respondió bien, aumenta la exigencia mediante una modificación plausible del caso.
+- Alterna entre diagnóstico, dato discriminante, diferencial, examen, tratamiento, seguridad y cambio de conducta.
+- No repitas una repregunta ya realizada ni pidas una definición aislada.
+- Si respondió mal, permite corregir el razonamiento sin regalar la respuesta.
 
 Devuelve SOLO este JSON, sin backticks:
 {"pregunta":"","rubrica":[{"t":"","p":50,"o":true},{"t":"","p":50,"o":false}],"cerrar":false}

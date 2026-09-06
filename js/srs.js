@@ -119,8 +119,12 @@ function registrarIntento(o){
       fallos:1,
       estado:"activo"
     });
-    // Los errores no se eliminan por llegar a cierto número.
-    // Se conservan para construir el historial de debilidades.
+    // El error queda como evidencia histórica y como debilidad activa.
+  }else{
+    // Si aciertas un concepto que ya te había dado problemas,
+    // reduces su deuda de recuperación en lugar de borrarlo del historial.
+    const previo=S.errores.find(e=>e.concepto===o.concepto && e.estado!=="resuelto");
+    if(previo) actualizarEstadoError(previo,"correcto");
   }
 
   programar(

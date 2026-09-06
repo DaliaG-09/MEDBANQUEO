@@ -3,6 +3,9 @@ function vProgreso(){
   const n=S.intentos.length;
   const ok=S.intentos.filter(i=>i.veredicto==="correcto").length;
   const conEstado=Object.keys(S.dominio).length;
+  const activos=erroresActivos();
+  const resueltos=S.errores.filter(e=>e.estado==='resuelto').length;
+  const integrados=S.intentos.filter(i=>i.eje==='integrar').length;
   const listo=readiness();
   app.innerHTML=`<div class="label">Progreso</div>
     <h1>Qué tipo de tarea te cuesta.</h1>
@@ -10,7 +13,7 @@ function vProgreso(){
       <div class="stat"><b>${n}</b><span>respuestas</span></div>
       <div class="stat"><b>${n?Math.round(ok/n*100):0}%</b><span>correctas completas</span></div>
       <div class="stat"><b>${conEstado}/${CONCEPTOS.length}</b><span>conceptos tocados</span></div>
-      <div class="stat"><b>${S.errores.length}</b><span>errores vivos</span></div>
+      <div class="stat"><b>${activos.length}</b><span>debilidades activas</span></div><div class="stat"><b>${resueltos}</b><span>debilidades recuperadas</span></div>
     </div>
     <div class="readiness" style="--rc:${listo.color}"><b>${listo.etiqueta}</b> — ${listo.texto}</div>
 
@@ -28,7 +31,9 @@ function vProgreso(){
       const prom=Math.round(niv.reduce((a,b)=>a+b,0)/cs.length);
       return `<span data-n="${prom}" title="${esc(NIVELES[prom])}">${esc(t.nombre)}</span>`;
     }).join("")}</div>
-    <p class="hint" style="max-width:34rem">Un tema solo sube de nivel cuando sus conceptos acumulan evidencia en varios ejes. Una opción múltiple acertada mueve un eje, no el concepto entero.</p>`;
+    <p class="hint" style="max-width:34rem">Un tema solo sube de nivel cuando sus conceptos acumulan evidencia en varios ejes. Una opción múltiple acertada mueve un eje, no el concepto entero.</p>
+    <h2>Tu siguiente entrenamiento</h2>
+    <div class="block">${activos.length?`<p><strong>Prioridad:</strong> ${esc(nom(activos[0].concepto))}. Es tu debilidad activa más urgente.</p><p class="hint">La próxima sesión debería cambiar el formato de esa debilidad: flashcard → aplicación → caso → sustentación.</p>`:`<p>No tienes debilidades activas registradas. El sistema puede aumentar dificultad y priorizar integración.</p>`}<p class="hint">Casos integrados realizados: ${integrados}. Este dato mide cuánto estás entrenando transferencia entre competencias.</p></div>`;
 }
 function readiness(){
   const n=S.intentos.length;

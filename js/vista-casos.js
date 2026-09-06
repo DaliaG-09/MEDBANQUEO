@@ -125,12 +125,15 @@ async function siguienteEtapa(){
 }
 function cierreCaso(){
   const prom=Math.round(ctx.puntajes.reduce((a,b)=>a+b,0)/Math.max(1,ctx.puntajes.length));
-  const acerto=(ctx.hipotesis||"").toLowerCase();
+  const etapasConPuntaje=ctx.puntajes.map((p,i)=>({p,i:i+1})).sort((a,b)=>a.p-b.p);
+  const etapaDebil=etapasConPuntaje[0];
+  const etapaTexto=etapaDebil?ETAPAS[etapaDebil.i-1].t:"";
   app.innerHTML=`<div class="label">Cierre del caso</div>
     <h1>${prom} de 100 en el caso completo.</h1>
     <div class="frozen"><b>Lo que dijiste al principio, sin ver nada</b>${esc(ctx.hipotesis)}</div>
     <div class="block"><h4>Diagnóstico del caso</h4><p>${esc(ctx.caso.diagnostico_final||"—")}</p></div>
     <p class="lede">Compara las dos cosas de arriba. Ahí está la información más útil del ejercicio: no cuánto sacaste, sino si tu primera lectura del paciente iba en la dirección correcta y qué dato te habría corregido antes.</p>
+    ${etapaDebil?`<div class="block"><h4>Tu punto más débil en este caso</h4><p><strong>Etapa ${etapaDebil.i}: ${esc(etapaTexto)}</strong> · ${etapaDebil.p}/100. El próximo entrenamiento priorizará esta competencia si vuelve a aparecer como debilidad.</p></div>`:""}
     <div class="actions"><button class="go" id="otro">Otro caso</button>
       <button class="ghost" id="sus">Sustentar este caso</button></div>`;
   document.getElementById("otro").onclick=()=>{ ctx={}; ir("casos"); };

@@ -147,6 +147,27 @@ function marcar(h){
 }
 
 /* Qué debe volver: debilidad antes que simple aleatoriedad. */
+function actualizarEstadoError(error, veredicto){
+  if(!error) return;
+  if(veredicto==="correcto"){
+    error.fallos=Math.max(0,(error.fallos||1)-1);
+    error.estado=error.fallos===0?"resuelto":"recuperacion";
+    error.ultimo_refuerzo=Date.now();
+  }else{
+    error.fallos=(error.fallos||0)+1;
+    error.estado=error.fallos>=3?"activo":"recuperacion";
+  }
+}
+function erroresActivos(){
+  return S.errores.filter(e=>e.estado!=="resuelto")
+    .sort((a,b)=>(b.fallos||0)-(a.fallos||0) || (b.f||0)-(a.f||0));
+}
+function registrarRefuerzoError(concepto, correcto){
+  const e=S.errores.find(x=>x.concepto===concepto && x.estado!=="resuelto");
+  if(e) actualizarEstadoError(e, correcto?"correcto":"incorrecto");
+  guardar();
+}
+
 function candidatosDebiles(){
   return CONCEPTOS
     .map(c=>({c,p:S.dominio[c.id]?S.dominio[c.id].nivel:0}))

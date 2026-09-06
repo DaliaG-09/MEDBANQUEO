@@ -28,7 +28,7 @@ async function iniciarExamen(){
 function pintarExamen(){
   const E=ctx.examen, q=E.items[E.i];
   const progreso=Math.round((E.i/E.total)*100);
-  app.innerHTML=`<div class="examchrome"><span>Examen</span><span>Pregunta <b>${E.i+1}</b> de <b>${E.total}</b></span></div><div class="bar" aria-label="Progreso del examen"><i style="width:${progreso}%"></i></div><div class="bar" aria-label="Progreso del examen"><i style="width:${progreso}%"></i></div>
+  app.innerHTML=`<div class="examchrome"><span>Examen</span><span>Pregunta <b>${E.i+1}</b> de <b>${E.total}</b></span></div><div class="bar" aria-label="Progreso del examen"><i style="width:${progreso}%"></i></div>
     <div class="qhead"><span class="qnum">${E.i+1}</span><p class="qtext">${esc(q.enunciado)}</p></div>
     <div id="campo"></div>
     <div class="actions"><button class="go" id="ok">${E.i===E.total-1?"Terminar":"Siguiente"}</button></div>`;

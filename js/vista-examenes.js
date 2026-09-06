@@ -3,7 +3,7 @@ async function vExamenes(){
   if(ctx.examen) return;
   app.innerHTML=`<div class="label">Simular examen</div>
     <h1>Sin feedback hasta el final.</h1>
-    <p class="lede">Ocho preguntas con la distribución del curso: interpretación, cálculo, aplicación clínica y sustentación. No vas a ver ningún resultado, ninguna perla ni ninguna pista hasta terminar.</p>
+    <p class="lede">Ocho preguntas nuevas con interpretación, cálculo, aplicación clínica, integración y sustentación. El examen prioriza tus debilidades, pero cambia el formato y el contexto para evitar memorizar preguntas. No verás feedback hasta terminar.</p>
     <div class="actions"><button class="go" id="ir">Empezar el examen</button></div>`;
   document.getElementById("ir").onclick=iniciarExamen;
 }
@@ -13,8 +13,10 @@ async function iniciarExamen(){
   const plan=[["interpretar","opcion_multiple"],["calcular","calculo"],["interpretar","abierta"],
               ["aplicar","opcion_multiple"],["calcular","calculo"],["aplicar","abierta"],
               ["integrar","abierta"],["sustentar","abierta"]];
+  // Prioridad adaptativa: el simulacro debe entrenar debilidades sin abandonar la novedad.
+  const debiles=erroresActivos().slice(0,4).map(e=>e.concepto);
   for(const [eje,tipo] of plan){
-    const cid=elegirConcepto("auto");
+    const cid=debiles.length&&Math.random()<0.65?debiles[Math.floor(Math.random()*debiles.length)]:elegirConcepto("auto");
     let q;
     try{ q=await claude(pedirPregunta(cid,eje,3,tipo)); q.concepto=cid; q.eje=eje; }
     catch(e){ q=Object.assign({},SEMILLA_BANCO[ctx.examen.items.length%SEMILLA_BANCO.length]); q.offline=true; }
@@ -25,7 +27,7 @@ async function iniciarExamen(){
 }
 function pintarExamen(){
   const E=ctx.examen, q=E.items[E.i];
-  app.innerHTML=`<div class="examchrome"><span>Examen</span><span>Pregunta <b>${E.i+1}</b> de <b>${E.total}</b></span></div>
+  app.innerHTML=`<div class="examchrome"><span>Examen</span><span>Pregunta <b>${E.i+1}</b> de <b>${E.total}</b></span></div><div class="bar" aria-label="Progreso del examen"><i style="width:${progreso}%"></i></div>
     <div class="qhead"><span class="qnum">${E.i+1}</span><p class="qtext">${esc(q.enunciado)}</p></div>
     <div id="campo"></div>
     <div class="actions"><button class="go" id="ok">${E.i===E.total-1?"Terminar":"Siguiente"}</button></div>`;

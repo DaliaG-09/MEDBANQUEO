@@ -19,14 +19,19 @@ function verdictoHTML(j,rubrica){
   const map={correcto:["v-ok","Correcto"],parcial:["v-partial","Parcialmente correcto"],
              incorrecto:["v-bad","Incorrecto"],inseguro:["v-unsafe","Respuesta insegura"]};
   const [cls,lbl]=map[j.veredicto]||map.incorrecto;
+  const lista=x=>Array.isArray(x)?x.filter(Boolean):[];
   return `<div class="verdict ${cls}">
     <div class="tag">${lbl}${j.puntaje!=null?` <em>${j.puntaje}/100</em>`:""}</div>
     ${j.riesgo?`<div class="unsafebox"><p>${esc(j.riesgo)}</p></div>`:""}
     ${rubrica?`<ul class="rubric">${rubrica.map((e,i)=>`<li class="${j.cumplidos&&j.cumplidos[i]?"hit":"miss"}" style="animation-delay:${i*70}ms"><span class="mk">${j.cumplidos&&j.cumplidos[i]?"✓":"—"}</span><span>${esc(e.t)}</span></li>`).join("")}</ul>`:""}
+    ${lista(j.fortalezas).length?`<div class="block feedback-good"><h4>Lo que hiciste bien</h4><ul>${lista(j.fortalezas).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:""}
+    ${lista(j.faltantes).length?`<div class="block feedback-miss"><h4>Lo que te faltó</h4><ul>${lista(j.faltantes).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:""}
     ${j.porque?`<div class="block"><h4>Por qué</h4><p>${esc(j.porque)}</p></div>`:""}
+    ${j.respuesta_modelo?`<div class="block model-answer"><h4>Respuesta esperada</h4><p>${esc(j.respuesta_modelo)}</p></div>`:""}
     ${j.pista?`<div class="block"><h4>El dato que debía guiarte</h4><p>${esc(j.pista)}</p></div>`:""}
-    ${j.perla?`<div class="block pearl"><h4>Perla</h4><p>${esc(j.perla)}</p></div>`:""}
+    ${j.perla?`<div class="block pearl"><h4>Perla clínica</h4><p>${esc(j.perla)}</p></div>`:""}
     ${j.trampa?`<div class="block"><h4>Trampa de examen</h4><p>${esc(j.trampa)}</p></div>`:""}
+    ${j.siguiente_paso?`<div class="block next-step"><h4>Qué entrenar después</h4><p>${esc(j.siguiente_paso)}</p></div>`:""}
   </div>`;
 }
 function stripHTML(aga){ if(!aga) return "";

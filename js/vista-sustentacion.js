@@ -11,9 +11,10 @@ async function vSustentacion(){
     const tid=altos[Math.floor(Math.random()*altos.length)].id;
     let caso;
     try{ caso=await modeloIA(pedirCaso(tid,4)); }
-    catch(e){ caso={concepto:"pleura::criterios de Light",tema:"Enfermedades pleurales",
-      presentacion:"Paciente de 60 años con antecedente de neumonía hace una semana, consulta por disnea progresiva, tos seca y dolor torácico pleurítico izquierdo de cinco días. Al examen: expansión torácica disminuida, vibraciones vocales disminuidas, matidez y abolición del murmullo vesicular en base izquierda.",
-      diagnostico_final:"Derrame pleural paraneumónico",offline:true}; }
+    catch(e){
+      errorGenerador("La sustentación necesita un caso nuevo y no voy a sustituirlo por uno fijo.", ()=>vSustentacion());
+      return;
+    }
     ctx={caso,historial:[],ronda:0};
     rondaSustentacion();
   };
@@ -22,7 +23,6 @@ async function rondaSustentacion(){
   const c=ctx.caso;
   if(ctx.ronda===0){
     app.innerHTML=`<div class="label">Sustentación · ${esc(c.tema||"")}</div>
-      ${c.offline?`<div class="err">Sin conexión. Caso de la semilla local.</div>`:""}
       <p class="narrative">${esc(c.presentacion)}</p>
       <div class="qhead"><span class="qnum">1</span><p class="qtext">Sustenta tu diagnóstico. Di qué es y con qué lo apoyas.</p></div>
       <textarea id="txt" placeholder="Defiende tu posición."></textarea>

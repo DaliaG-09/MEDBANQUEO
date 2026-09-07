@@ -20,6 +20,55 @@ async function modeloIA(input, max){
   }
 }
 
+/* ── Base de conocimiento del curso ──────────────────────────
+   Se carga una vez y se inyecta en cada prompt. Sin esto el motor
+   genera desde conocimiento médico general, que no es lo que te
+   van a preguntar. Ver datos/conocimiento-neumo.json */
+let CURSO = null;
+async function cargarCurso(){
+  if(CURSO) return CURSO;
+  try{ CURSO = await (await fetch("datos/conocimiento-neumo.json")).json(); }
+  catch(e){ CURSO = {}; console.warn("Sin base de conocimiento del curso:", e); }
+  return CURSO;
+}
+/* Devuelve el material real del curso para un concepto, listo para el prompt. */
+function materialDelCurso(conceptoId){
+  if(!CURSO) return "";
+  const temaId = String(conceptoId).split("::")[0];
+  const t = CURSO[temaId];
+  if(!t) return "";
+  const nombre = String(conceptoId).split("::")[1] || "";
+  const c = (t.conceptos||[]).find(x =>
+    x.id === conceptoId ||
+    x.nombre.toLowerCase().includes(nombre.toLowerCase().slice(0,14)) ||
+    nombre.toLowerCase().includes(x.nombre.toLowerCase().slice(0,14)));
+  const partes = [];
+  partes.push(`MATERIAL REAL DEL CURSO (fuente: ${t.fuente.archivo}, semana ${t.fuente.semana}).`);
+  partes.push("Esta es la fuente de verdad. La pregunta debe evaluar ESTO, con estas cifras y estos énfasis, no conocimiento general.");
+  if(c){
+    partes.push(`\nConcepto: ${c.nombre}\n${c.contenido}`);
+    if(c.cifras)   partes.push("Cifras del curso: "+JSON.stringify(c.cifras));
+    if(c.pasos)    partes.push("Pasos: "+c.pasos.join(" | "));
+    if(c.niveles)  partes.push("Niveles: "+c.niveles.join(" | "));
+    if(c.causas)   partes.push("Causas: "+JSON.stringify(c.causas));
+    if(c.detalle)  partes.push("Detalle: "+JSON.stringify(c.detalle));
+    if(c.tabla_diferencial) partes.push("Tabla diferencial: "+JSON.stringify(c.tabla_diferencial));
+    if(c.mnemotecnia) partes.push("Mnemotecnia del curso: "+JSON.stringify(c.mnemotecnia));
+    if(c.enfasis_docente) partes.push("Lo que la profesora enfatiza: "+c.enfasis_docente);
+    if(c.trampa)   partes.push("Trampa que el curso usa: "+c.trampa);
+  } else {
+    partes.push("\nNo hay ficha de este concepto todavía. Usa los conceptos del tema como referencia de nivel y estilo: "
+      + (t.conceptos||[]).map(x=>x.nombre).join("; "));
+  }
+  const casos = t.casos_del_ppt||[];
+  if(casos.length) partes.push("\nESTRUCTURA de los casos que usa esta clase (imítala, no la copies): "
+    + casos.map(x=>x.estructura_a_replicar).join(" || "));
+  const disc = (t.discrepancias_detectadas||[]).filter(d=>d.estado==="sin confirmar");
+  if(disc.length) partes.push("\nNO preguntes sobre estos puntos, están sin confirmar con la docente: "
+    + disc.map(d=>d.punto).join("; "));
+  return partes.join("\n");
+}
+
 const CONTEXTO_CURSO = `Contexto obligatorio. Eres el docente de Medicina Interna I de una facultad peruana de medicina humana, módulo de Neumología. Conoces el estilo real de evaluación del curso:
 - Los casos siempre traen: edad, sexo, ocupación o procedencia, antecedentes, tiempo de enfermedad explícito, síntomas en orden cronológico, funciones vitales completas con saturación y si es aire ambiente, y semiología torácica por los cuatro pasos.
 - Los antecedentes nunca son decorativos: algunos deben funcionar como pistas, pero otros pueden ser distractores plausibles.
@@ -34,7 +83,10 @@ function pedirPregunta(cpt, eje, dificultad, tipoPreferido){
   const c=CONCEPTOS.find(x=>x.id===cpt)||CONCEPTOS[0];
   const tema=TEMAS.find(t=>t.id===c.tema);
   const previos=S.expuestos.filter(h=>h.startsWith(cpt)).slice(-6).join(" / ")||"ninguna";
+  const material = materialDelCurso(cpt);
   return `${CONTEXTO_CURSO}
+
+${material}
 
 Genera UNA pregunta nueva de banco.
 Tema: ${tema.nombre}

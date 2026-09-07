@@ -1,0 +1,202 @@
+{
+  "_meta": {
+    "descripcion": "Contenido extraído de los PPTs y lecturas reales del curso. Fuente de verdad número uno para la generación de preguntas: el motor debe preguntar sobre ESTO, no sobre conocimiento médico general.",
+    "regla": "Si el material del curso difiere de la guía internacional, se conservan ambas versiones marcadas. Nunca se fusionan en silencio.",
+    "curso": "Medicina Interna I · MH-701 · UCSUR · 2026-2",
+    "modulo": "Neumología",
+    "ingesta": "2026-09-07",
+    "temas_ingeridos": ["aga"],
+    "temas_pendientes": ["anatomia","ayudadx","semiologia","nac","nih","asma","bronquiec","epoc","pleura","tb","epid","irasdra","ocupacional","sahos"]
+  },
+
+  "aga": {
+    "nombre": "Análisis de gases arteriales",
+    "fuente": {
+      "archivo": "SEMANA 02-PDF-Análisis de Gases Arteriales.pdf",
+      "titulo_original": "Análisis de gases arteriales: bases fisiopatológicas e interpretación clínica",
+      "semana": 2, "sesion": 4, "tipo": "ppt"
+    },
+    "resultado_aprendizaje": "Justificar un plan de trabajo diagnóstico aplicando conocimientos de ciencias básicas para el abordaje integral de las enfermedades del aparato respiratorio, mediante el análisis de gases arteriales.",
+    "contenidos_declarados": [
+      "Definición de un trastorno ácido base",
+      "Bases fisiológicas del intercambio gaseoso pulmonar",
+      "Evaluación de gases arteriales",
+      "Guía clínica para interpretar los gases arteriales"
+    ],
+
+    "conceptos": [
+      {
+        "id": "aga::valores-de-referencia",
+        "nombre": "Valores de referencia y valores críticos",
+        "alto_rendimiento": true,
+        "contenido": "El curso da rangos normales junto con el valor crítico de cada parámetro. El valor crítico es lo que convierte un número en una decisión.",
+        "cifras": {
+          "pH": {"normal": "7.35 a 7.45", "critico": "menor de 7.25 o mayor de 7.60"},
+          "SaO2": {"normal": "80 a 100 %", "critico": "menor de 80 %"},
+          "PaO2": {"normal": "80 a 100 mmHg", "critico": "menor de 50 mmHg"},
+          "PaCO2": {"normal": "35 a 45 mmHg", "critico": "mayor de 45 mmHg indica acidosis; menor de 35 mmHg, alcalosis"},
+          "HCO3": {"normal": "22 a 26 mEq/L", "critico": "mayor de 26 indica alcalosis; menor de 22, acidosis"},
+          "exceso_de_base": {"normal": "-2 a +2 mEq/L", "critico": "menor de -2 o mayor de +2"}
+        },
+        "enfasis_docente": "El pH compatible con la vida va de 6.80 a 7.70. La escala es logarítmica: un cambio de 0.3 duplica o reduce a la mitad la concentración de hidrogeniones, y un cambio de 1 refleja un cambio de diez veces."
+      },
+      {
+        "id": "aga::guia-de-interpretacion",
+        "nombre": "Guía de interpretación en cinco pasos",
+        "alto_rendimiento": true,
+        "contenido": "El orden que enseña el curso empieza por la oxigenación, no por el pH. Conviene respetarlo al responder porque es el orden con el que se evalúa.",
+        "pasos": [
+          "Evaluar la PO2. ¿Hay hipoxia? Considerar la FiO2 y calcular el gradiente A-a. No es necesario retirar el oxígeno para evaluar la hipoxia.",
+          "Examinar el pH. Un pH normal puede corresponder a una alteración completamente compensada.",
+          "Revisar la PCO2 en contexto con el pH: determina si la anomalía primaria es respiratoria. pH bajo con PCO2 elevada es acidosis respiratoria.",
+          "Evaluar el componente metabólico con bicarbonato y exceso de base. Un exceso de base menor de -2 mmol/L indica acidosis metabólica.",
+          "Valorar la compensación: si existe, y si es parcial o completa."
+        ],
+        "enfasis_docente": "La compensación nunca es excesiva. Si parece haberlo sido, probablemente sea iatrogénica.",
+        "trampa": "Un pH normal no descarta un trastorno ácido-base: puede estar completamente compensado. Detenerse en el pH normal es el error frecuente."
+      },
+      {
+        "id": "aga::cuatro-trastornos",
+        "nombre": "Los cuatro trastornos ácido-base y su compensación",
+        "alto_rendimiento": true,
+        "contenido": "Cada trastorno se define por el mecanismo que lo produce y por el órgano que compensa.",
+        "detalle": {
+          "acidosis_respiratoria": "Aumento de la PCO2 por hipoventilación o por relación ventilación-perfusión inadecuada. Compensación: retención renal de bicarbonato.",
+          "alcalosis_respiratoria": "Disminución de la PCO2 por hiperventilación. Compensación: aumento de la excreción renal de bicarbonato.",
+          "acidosis_metabolica": "Disminución del bicarbonato por acumulación de ácidos, como cetonas o ácido láctico. Compensación: aumento de la ventilación para reducir la PCO2.",
+          "alcalosis_metabolica": "Aumento del bicarbonato, por ejemplo por pérdida excesiva de ácido. La compensación respiratoria suele ser pequeña o ausente."
+        },
+        "enfasis_docente": "La alcalosis metabólica es la que peor compensa. Esperar una compensación respiratoria marcada en ella es un error."
+      },
+      {
+        "id": "aga::niveles-de-evaluacion",
+        "nombre": "Los cinco niveles de evaluación del intercambio gaseoso",
+        "alto_rendimiento": false,
+        "contenido": "Esquema progresivo del curso para evaluar el intercambio gaseoso más allá de los valores absolutos.",
+        "niveles": [
+          "Nivel 1, valores absolutos: PO2, PCO2 y pH comparados con lo normal, considerando altitud y edad. En pacientes críticos, calcular la relación PaO2/FiO2.",
+          "Nivel 2, diferencia alveoloarterial: se calcula con la ecuación del gas alveolar. Normalmente 5 a 10 mmHg en jóvenes sanos, y aumenta con la edad hasta 20 mmHg.",
+          "Nivel 3, shunt fisiológico: calcular Qs/QT. Normalmente no excede el 5 % del gasto cardíaco.",
+          "Nivel 4, intervención con oxígeno al 100 %: separa el shunt de los otros factores que contribuyen a la hipoxemia.",
+          "Nivel 5, factores modificadores: consumo de oxígeno, gasto cardíaco, hemoglobina, temperatura y otros factores extrapulmonares."
+        ],
+        "nota_altitud": "El curso indica explícitamente considerar la altitud al comparar valores, cosa relevante en Perú."
+      },
+      {
+        "id": "aga::causas-de-hipoxemia",
+        "nombre": "Las seis causas de hipoxemia arterial y cómo distinguirlas",
+        "alto_rendimiento": true,
+        "contenido": "El curso presenta las causas junto con una tabla diferencial de tres variables. Esa tabla es el instrumento para distinguirlas, no la lista.",
+        "causas": {
+          "PO2 inspirada reducida": "Ocurre en altitud o viajes en avión. No causa hipercapnia: la estimulación ventilatoria por hipoxia reduce la PCO2 arterial.",
+          "Hipoventilación": "Causa hipoxemia e hipercapnia. Por sobredosis de narcóticos, debilidad muscular o lesiones traumáticas.",
+          "Desigualdad ventilación-perfusión": "Presente en casi todas las enfermedades pulmonares. Causa hipoxemia y, al inicio, hipercapnia, aunque la PCO2 puede normalizarse con hiperventilación compensatoria.",
+          "Limitación de difusión": "Poco común, salvo en enfermedades pulmonares intersticiales. Más frecuente durante el ejercicio y en altitud.",
+          "Shunt": "Flujo sanguíneo de derecha a izquierda sin contacto con gas alveolar. Causa hipoxemia profunda y puede causar hipercapnia cuando es masivo.",
+          "PO2 arterial pulmonar reducida": "Cuando el gasto cardíaco es bajo en relación con el consumo de oxígeno. Causa hipoxemia en pulmones con desigualdad V/Q."
+        },
+        "tabla_diferencial": {
+          "columnas": ["PCO2 arterial", "diferencia PA-aO2", "PO2 con oxígeno al 100 %"],
+          "filas": {
+            "PO2 inspirada baja": ["disminuida", "normal", "normal"],
+            "Hipoventilación": ["aumentada", "normal", "normal"],
+            "Desigualdad V/Q": ["variable", "aumentada", "normal"],
+            "Limitación de difusión": ["normal", "aumentada", "normal"],
+            "Shunt": ["variable", "aumentada", "anormal"]
+          }
+        },
+        "enfasis_docente": "El shunt es el único que no corrige con oxígeno al 100 %. Esa es la variable que lo separa de todo lo demás. El curso advierte además que varias causas pueden coexistir en un mismo paciente."
+      },
+      {
+        "id": "aga::ecuacion-gas-alveolar",
+        "nombre": "Ecuación del gas alveolar y gradiente alveoloarterial",
+        "alto_rendimiento": true,
+        "contenido": "Relaciona la presión alveolar de oxígeno con la de dióxido de carbono. Forma simplificada del curso: PAO2 = PIO2 − PACO2 / R, donde R es el cociente respiratorio. Permite calcular la diferencia alveoloarterial y distinguir causas de hipoxemia.",
+        "cifras": {"gradiente_normal": "5 a 10 mmHg en jóvenes sanos, hasta 20 mmHg con la edad"},
+        "relacionado": ["aga::causas-de-hipoxemia", "aga::niveles-de-evaluacion"]
+      },
+      {
+        "id": "aga::compensacion-fisiologica",
+        "nombre": "Los tres procesos compensatorios ante la desigualdad V/Q",
+        "alto_rendimiento": false,
+        "contenido": "Cuando la desigualdad ventilación-perfusión reduce la captación pulmonar de oxígeno, el organismo dispone de tres mecanismos innatos: aumento de la ventilación, que eleva la relación V/Q en todo el pulmón; incremento del gasto cardíaco, que permite menor extracción de oxígeno en los tejidos; y mayor extracción tisular de oxígeno.",
+        "enfasis_docente": "Estos mecanismos se activan antes de que el paciente llegue al médico, y tienen un costo: hipoxemia e hipercapnia más severas. El curso lo compara con la elevación de la urea en la insuficiencia renal crónica."
+      },
+      {
+        "id": "aga::transporte-de-oxigeno",
+        "nombre": "Transporte de oxígeno en la sangre",
+        "alto_rendimiento": false,
+        "contenido": "El 98.5 % del oxígeno viaja unido a la hemoglobina, con cuatro moléculas por cada molécula de hemoglobina. Solo el 1.5 % va disuelto en plasma.",
+        "cifras": {
+          "saturacion_arterial": "aproximadamente 97 %",
+          "saturacion_venosa_mixta": "aproximadamente 75 %"
+        }
+      },
+      {
+        "id": "aga::buffers",
+        "nombre": "Sistemas amortiguadores",
+        "alto_rendimiento": false,
+        "contenido": "Un buffer resiste los cambios de pH ante pequeñas cantidades de ácido o álcali. Los tres principales en humanos son las proteínas, la hemoglobina y el bicarbonato.",
+        "enfasis_docente": "La hemoglobina tiene seis veces más capacidad amortiguadora que las proteínas plasmáticas. El bicarbonato es el más significativo en sangre, por su cantidad disponible y por ser un sistema abierto que permite alterar CO2 y bicarbonato de forma independiente."
+      },
+      {
+        "id": "aga::anion-gap",
+        "nombre": "Anión gap elevado y sus causas",
+        "alto_rendimiento": true,
+        "contenido": "Ante una acidosis metabólica, el anión gap separa las causas con anión gap elevado de las hiperclorémicas. El curso usa la mnemotecnia MUDPILES.",
+        "mnemotecnia": {
+          "M": "Metanol", "U": "Uremia", "D": "Diabetes, cetoacidosis",
+          "P": "Propilenglicol", "I": "Infección o isquemia, acidosis láctica",
+          "L": "Acidosis láctica", "E": "Etanol o etilenglicol", "S": "Salicilatos"
+        },
+        "trampa": "La acidosis tubular renal tipo 1 y la pérdida gastrointestinal de bicarbonato cursan SIN anión gap elevado. El curso las usa como distractores."
+      }
+    ],
+
+    "casos_del_ppt": [
+      {
+        "id": "aga::caso-nac-alcalosis",
+        "uso": "aparece dos veces en la clase, al inicio como reflexión y al final como aplicación",
+        "enunciado": "Mujer de 83 años que acude a emergencia por trastorno del sensorio. Dos días de fiebre, tos con expectoración verdosa, hiporexia y disnea a mínimos esfuerzos. Al examen se auscultan crépitos en base izquierda y la frecuencia respiratoria es de 32 por minuto. La radiografía muestra un consolidado basal izquierdo con broncograma aéreo. Gasometría sin oxigenoterapia: pH 7.55, pO2 52 mmHg, pCO2 26 mmHg, HCO3 22 mEq/L.",
+        "preguntas": [
+          "¿Qué alteración ácido-base se evidencia en esta gasometría?",
+          "¿Corresponde a un trastorno primario de origen respiratorio, metabólico o mixto?",
+          "Con base en los hallazgos clínicos, radiológicos y gasométricos, ¿cuál sería el diagnóstico respiratorio principal?"
+        ],
+        "respuestas_del_ppt": ["Alcalosis respiratoria", "Trastorno primario de origen respiratorio", "Neumonía adquirida en la comunidad"],
+        "estructura_a_replicar": "clínica y semiología → radiografía → gasometría → tres preguntas encadenadas: trastorno, origen, diagnóstico"
+      },
+      {
+        "id": "aga::caso-cetoacidosis",
+        "uso": "único ítem de opción múltiple del PPT, con explicación de por qué cada distractor es falso",
+        "enunciado": "Varón de 65 años, diabético tipo 2, con letargo, respiración rápida y profunda y dolor abdominal difuso. Se automedica antiinflamatorios y no controla su glucosa hace semanas. No ha comido bien y ha estado vomitando. PA 90/60 mmHg, FC 110 lpm, FR 28 rpm, SatO2 96 %. Laboratorio: pH 7.10, HCO3 9 mEq/L, pCO2 22 mmHg, anión gap 24, glucosa 360 mg/dL, creatinina 2.2 mg/dL, cetonas urinarias positivas.",
+        "respuesta": "Cetoacidosis diabética",
+        "razonamiento_del_ppt": "pH bajo indica acidosis; bicarbonato muy disminuido la hace metabólica; pCO2 baja indica compensación respiratoria; anión gap de 24 orienta a acidosis con anión gap elevado y descarta las hiperclorémicas. Glucosa alta, cetonuria, vómitos, letargia y respiración de Kussmaul completan el cuadro.",
+        "distractores_y_por_que_no": {
+          "Acidosis láctica": "posible, pero no hay evidencia de hipoperfusión grave ni shock",
+          "Acidosis tubular renal tipo 1": "cursa sin anión gap elevado",
+          "Pérdida gastrointestinal de bicarbonato": "también cursa sin anión gap elevado",
+          "Insuficiencia renal crónica compensada": "no genera un cuadro agudo tan severo ni cetonuria"
+        },
+        "estructura_a_replicar": "el distractor correcto compite de verdad; los demás se descartan por una regla fisiopatológica única y nombrable"
+      }
+    ],
+
+    "pregunta_de_integracion": "¿Qué consecuencias fisiológicas inmediatas puede provocar una disminución aguda de la PCO2 en el sistema nervioso central, y cómo se relaciona esto con los síntomas clínicos?",
+
+    "discrepancias_detectadas": [
+      {
+        "punto": "Rango normal de SaO2",
+        "material_del_curso": "80 a 100 %",
+        "observacion": "Un rango que empieza en 80 % es inusualmente amplio: la práctica habitual considera anormal una saturación por debajo de 95 % en aire ambiente al nivel del mar. Vale confirmarlo con la profesora antes de fijar una respuesta.",
+        "estado": "sin confirmar"
+      },
+      {
+        "punto": "Orden de la guía de interpretación",
+        "material_del_curso": "empieza evaluando la PO2 y recién después el pH",
+        "observacion": "Muchos textos empiezan por el pH. No es un error, es una elección de orden, pero conviene responder en el orden del curso porque es con el que evalúan.",
+        "estado": "elección del curso, se respeta"
+      }
+    ]
+  }
+}

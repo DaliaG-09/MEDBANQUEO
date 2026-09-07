@@ -10,7 +10,7 @@ async function vSustentacion(){
     const altos=TEMAS.filter(t=>t.alto);
     const tid=altos[Math.floor(Math.random()*altos.length)].id;
     let caso;
-    try{ caso=await claude(pedirCaso(tid,4)); }
+    try{ caso=await modeloIA(pedirCaso(tid,4)); }
     catch(e){ caso={concepto:"pleura::criterios de Light",tema:"Enfermedades pleurales",
       presentacion:"Paciente de 60 años con antecedente de neumonía hace una semana, consulta por disnea progresiva, tos seca y dolor torácico pleurítico izquierdo de cinco días. Al examen: expansión torácica disminuida, vibraciones vocales disminuidas, matidez y abolición del murmullo vesicular en base izquierda.",
       diagnostico_final:"Derrame pleural paraneumónico",offline:true}; }
@@ -53,7 +53,7 @@ async function enviarSus(pregunta, rubrica){
   if(ctx.ronda>=5) return cierreSus();
   hilo.insertAdjacentHTML("beforeend",`<p class="loading" id="ld">La profesora repregunta</p>`);
   let r;
-  try{ r=await claude(pedirRepregunta(ctx.caso,ctx.historial.join("\n\n")),600); }
+  try{ r=await modeloIA(pedirRepregunta(ctx.caso,ctx.historial.join("\n\n")),600); }
   catch(e){ r={pregunta:"¿Qué hallazgo te haría cambiar de conducta en este paciente?",
     rubrica:[{t:"Nombra un hallazgo concreto y verificable",p:50,o:true},
              {t:"Explica cómo cambiaría la conducta",p:50,o:true}],cerrar:false}; }

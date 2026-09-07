@@ -1,14 +1,23 @@
 /* ═══════════════════════════════════════════════════════════
    3 · MOTOR DE GENERACIÓN Y EVALUACIÓN
 ═══════════════════════════════════════════════════════════ */
-async function claude(prompt, max){
-  const r=await fetch(CONFIG.endpoint,{method:"POST",
+async function modeloIA(input, max){
+  const r=await fetch(CONFIG.endpoint,{
+    method:"POST",
     headers:{"Content-Type":"application/json"},
-    body:JSON.stringify({model:CONFIG.modelo,max_tokens:max||1000,messages:[{role:"user",content:prompt}]})});
-  if(!r.ok) throw new Error("HTTP "+r.status);
-  const d=await r.json();
-  const txt=d.content.filter(b=>b.type==="text").map(b=>b.text).join("");
-  return JSON.parse(txt.replace(/```json|```/g,"").trim());
+    body:JSON.stringify({model:CONFIG.modelo,max_tokens:max||1200,input})
+  });
+  const d=await r.json().catch(()=>({}));
+  if(!r.ok) throw new Error(d.error||("HTTP "+r.status));
+  const txt=String(d.text||"").trim();
+  if(!txt) throw new Error("El generador no devolvió contenido");
+  const limpio=txt.replace(/^\`\`\`json\s*/,"").replace(/\s*\`\`\`$/,"").trim();
+  try{return JSON.parse(limpio);}
+  catch(e){
+    const ini=limpio.indexOf("{"), fin=limpio.lastIndexOf("}");
+    if(ini>=0&&fin>ini) return JSON.parse(limpio.slice(ini,fin+1));
+    throw new Error("El generador devolvió un formato no válido");
+  }
 }
 
 const CONTEXTO_CURSO = `Contexto obligatorio. Eres el docente de Medicina Interna I de una facultad peruana de medicina humana, módulo de Neumología. Conoces el estilo real de evaluación del curso:

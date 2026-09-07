@@ -18,7 +18,7 @@ async function iniciarExamen(){
   for(const [eje,tipo] of plan){
     const cid=debiles.length&&Math.random()<0.65?debiles[Math.floor(Math.random()*debiles.length)]:elegirConcepto("auto");
     let q;
-    try{ q=await claude(pedirPregunta(cid,eje,3,tipo)); q.concepto=cid; q.eje=eje; }
+    try{ q=await modeloIA(pedirPregunta(cid,eje,3,tipo)); q.concepto=cid; q.eje=eje; }
     catch(e){ q=Object.assign({},SEMILLA_BANCO[ctx.examen.items.length%SEMILLA_BANCO.length]); q.offline=true; }
     ctx.examen.items.push(q);
     cargando(`Armando el examen · ${ctx.examen.items.length} de 8`);

@@ -13,6 +13,13 @@ function ir(v){ vista=v; ctx={};
     sustentacion:vSustentacion,errores:vErrores,examenes:vExamenes,progreso:vProgreso})[v]();
 }
 function cargando(msg){ app.innerHTML=`<p class="loading">${esc(msg)}</p>`; }
+function errorGenerador(msg, reintentar){
+  app.innerHTML=`<div class="label">Generador no disponible</div>
+    <h1>No voy a darte una pregunta reciclada.</h1>
+    <p class="lede">${esc(msg||"No se pudo generar contenido nuevo en este momento.")}</p>
+    <div class="actions"><button class="go" id="retry">Reintentar</button></div>`;
+  document.getElementById("retry").onclick=reintentar;
+}
 
 /* ── veredicto compartido ───────────────────────────── */
 function verdictoHTML(j,rubrica){

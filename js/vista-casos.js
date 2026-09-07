@@ -24,10 +24,8 @@ async function abrirCaso(temaSel){
   let caso;
   try{ caso=await modeloIA(pedirCaso(tid,3,placa)); }
   catch(e){
-    caso={concepto:"nac::CURB-65", arquetipo:"varón adulto con neumonía", tema:"Neumonía adquirida en la comunidad",
-      presentacion:"Varón de 58 años, taxista, con hipertensión arterial y antecedente de tabaquismo de 20 paquetes-año, sin vacunación antineumocócica ni antigripal. Refiere cuatro días de malestar general, escalofríos y fiebre no cuantificada. A las 48 horas se agregó tos productiva con esputo amarillento, dolor torácico que aumenta con la inspiración profunda y disnea de pequeños esfuerzos. Se automedicó paracetamol sin mejoría.",
-      diagnostico_final:"Neumonía adquirida en la comunidad con criterios de hospitalización",
-      conceptos_involucrados:["CURB-65","tratamiento antibiótico empírico"], offline:true};
+    errorGenerador("El caso no pudo generarse. MEDBANQUEO no usará un caso fijo como sustituto.", ()=>abrirCaso(temaSel));
+    return;
   }
   marcar(hash({concepto:caso.concepto,eje:"aplicar",arquetipo:caso.arquetipo,contexto:"caso|"+tid,tarea:"progresivo"}));
   ctx={caso, placa, etapa:1, hipotesis:null, historial:[], puntajes:[]};
@@ -35,8 +33,7 @@ async function abrirCaso(temaSel){
 }
 function marcoCaso(){
   const c=ctx.caso;
-  return `${c.offline?`<div class="err">Sin conexión con el generador. Estás resolviendo un caso de la semilla local.</div>`:""}
-    <div class="label">Caso clínico · ${esc(c.tema||"")}</div>
+  return `<div class="label">Caso clínico · ${esc(c.tema||"")}</div>
     <div class="stagebar">${ETAPAS.map(e=>`<i class="${e.n<=ctx.etapa?"on":""}"></i>`).join("")}</div>
     <p class="hint" style="margin:.5rem 0 1.4rem">Etapa ${ctx.etapa} de 8 · ${esc(ETAPAS[ctx.etapa-1].t)}</p>
     ${ctx.hipotesis?`<div class="frozen"><b>Tu hipótesis inicial</b>${esc(ctx.hipotesis)}</div>`:""}

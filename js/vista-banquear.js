@@ -50,7 +50,7 @@ async function siguienteBanco(){
   let q, firma;
   try{
     // Primer intento.
-    q=await claude(pedirPregunta(cid,eje,dif,tipo));
+    q=await modeloIA(pedirPregunta(cid,eje,dif,tipo));
     q.concepto=cid;
     q.eje=eje;
     firma=hash({
@@ -62,7 +62,7 @@ async function siguienteBanco(){
     // Si la tarea cognitiva ya apareció, pedimos otra variante.
     // El concepto puede repetirse; la forma de razonarlo no.
     if(yaVisto(firma)){
-      q=await claude(pedirPregunta(cid,eje,Math.min(5,dif+1),tipo)+
+      q=await modeloIA(pedirPregunta(cid,eje,Math.min(5,dif+1),tipo)+
         "\nIMPORTANTE: la tarea cognitiva generada ya fue usada. Cambia el ángulo de razonamiento, el contexto clínico y la tarea concreta. NO reformules la misma pregunta.");
       q.concepto=cid;
       q.eje=eje;

@@ -1,20 +1,9 @@
-/* Configuración de la plataforma.
-
-   endpoint: a dónde se mandan las llamadas al modelo.
-     "/api/claude" es la función serverless de api/claude.js, que guarda la
-     llave de la API como variable de entorno del servidor. La llave NUNCA
-     va en este repositorio: es público y quedaría expuesta a cualquiera.
-     Si la página se sirve desde el mismo sitio que la función (Vercel),
-     esta ruta relativa funciona tal cual y no hace falta configurar CORS.
-
-   modelo: identificador del modelo en la API de Anthropic.
-     claude-sonnet-5 es el equilibrio razonable entre calidad y costo para
-     generar preguntas y calificar respuestas. claude-haiku-4-5 sale más
-     barato pero califica peor las respuestas abiertas, que es justo lo que
-     esta plataforma necesita hacer bien. */
-
+/* Configuración del proveedor de IA de MEDBANQUEO.
+   La llave nunca vive aquí. Vercel la guarda como GEMINI_API_KEY.
+   El endpoint es relativo porque la página y la función viven en Vercel.
+*/
 const CONFIG = {
-  endpoint: "/api/claude",
-  modelo: "claude-sonnet-5",
-  version: "0.1.1"
+  endpoint: "/api/gemini",
+  modelo: "gemini-3.7-flash",
+  version: "0.2.0"
 };

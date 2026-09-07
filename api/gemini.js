@@ -29,7 +29,8 @@ export default async function handler(req,res){
   if(!llave) return res.status(500).json({error:"Falta GEMINI_API_KEY en Vercel"});
 
   try{
-    const {input,max_tokens,model}=req.body||{};
+    const body = typeof req.body === "string" ? JSON.parse(req.body) : (req.body || {});
+    const {input,max_tokens,model}=body;
     if(!input) return res.status(400).json({error:"Falta input"});
 
     const nombre=model||MODELO_DEFECTO;
@@ -65,6 +66,7 @@ export default async function handler(req,res){
     if(!texto) return res.status(502).json({error:"Gemini no devolvió contenido"});
     return res.status(200).json({text:texto});
   }catch(e){
-    return res.status(502).json({error:"No se pudo contactar a Gemini"});
+    console.error("Gemini endpoint error:", e);
+    return res.status(502).json({error:e?.message||"No se pudo contactar a Gemini"});
   }
 }

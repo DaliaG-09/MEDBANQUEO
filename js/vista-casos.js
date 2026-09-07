@@ -22,7 +22,7 @@ async function abrirCaso(temaSel){
   const tid = temaSel==="auto" ? altos[Math.floor(Math.random()*altos.length)].id : temaSel;
   const placa = await elegirPlaca(tid);
   let caso;
-  try{ caso=await claude(pedirCaso(tid,3,placa)); }
+  try{ caso=await modeloIA(pedirCaso(tid,3,placa)); }
   catch(e){
     caso={concepto:"nac::CURB-65", arquetipo:"varón adulto con neumonía", tema:"Neumonía adquirida en la comunidad",
       presentacion:"Varón de 58 años, taxista, con hipertensión arterial y antecedente de tabaquismo de 20 paquetes-año, sin vacunación antineumocócica ni antigripal. Refiere cuatro días de malestar general, escalofríos y fiebre no cuantificada. A las 48 horas se agregó tos productiva con esputo amarillento, dolor torácico que aumenta con la inspiración profunda y disnea de pequeños esfuerzos. Se automedicó paracetamol sin mejoría.",
@@ -69,7 +69,7 @@ async function siguienteEtapa(){
         rubrica:RUB_DESC,
         pista:"", perla:""};
   } else {
-    try{ et=await claude(pedirEtapa(ctx.caso,ctx.etapa,ctx.hipotesis,ctx.historial.slice(-3).join(" | "))); }
+    try{ et=await modeloIA(pedirEtapa(ctx.caso,ctx.etapa,ctx.hipotesis,ctx.historial.slice(-3).join(" | "))); }
     catch(e){
       et={datos:"Sin conexión: no se pudo revelar esta etapa. Puedes cerrar el caso y retomarlo con conexión.",
           pregunta:"Con lo que tienes, ¿qué harías a continuación y por qué?",eje:"aplicar",

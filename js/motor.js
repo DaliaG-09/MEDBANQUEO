@@ -60,6 +60,18 @@ function materialDelCurso(conceptoId){
     partes.push("\nNo hay ficha de este concepto todavía. Usa los conceptos del tema como referencia de nivel y estilo: "
       + (t.conceptos||[]).map(x=>x.nombre).join("; "));
   }
+  const P = CURSO._patrones_de_evaluacion;
+  if(P){
+    partes.push("\nCÓMO EVALÚA ESTE CURSO (de sus exámenes de taller reales). Imita la FORMA, nunca el contenido:");
+    partes.push("- Modalidad real: "+P.formato_general.modalidad+". "+P.formato_general.opcion_multiple);
+    partes.push("- Verbos de mando: "+P.formato_general.verbos_de_mando.join(", ")+".");
+    partes.push("- Un caso se arma así: "+P.gramatica_del_caso.join(" → ")+".");
+    partes.push("- Antecedentes con valor discriminante que usa el curso: "+JSON.stringify(P.antecedentes_discriminantes));
+    if(/semiolog|pleura|neumon|derrame|neumot|atelect/i.test(temaId+" "+nombre))
+      partes.push("- La semiología va SIEMPRE como síndrome completo de cuatro pasos: "+JSON.stringify(P.matriz_semiologica));
+    if(/aga|irasdra|epoc/i.test(temaId))
+      partes.push("- Fórmulas exigibles: "+JSON.stringify(P.formulas_exigibles));
+  }
   const casos = t.casos_del_ppt||[];
   if(casos.length) partes.push("\nESTRUCTURA de los casos que usa esta clase (imítala, no la copies): "
     + casos.map(x=>x.estructura_a_replicar).join(" || "));

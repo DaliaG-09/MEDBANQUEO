@@ -10,14 +10,14 @@
       "pleura",
       "epoc",
       "tb",
-      "nac"
+      "nac",
+      "asma"
     ],
     "temas_pendientes": [
       "anatomia",
       "ayudadx",
       "semiologia",
       "nih",
-      "asma",
       "bronquiec",
       "epid",
       "irasdra",
@@ -1071,5 +1071,334 @@
       }
     ],
     "discrepancias_detectadas": []
+  },
+  "asma": {
+    "nombre": "Asma bronquial",
+    "fuente": {
+      "archivo": "SEMANA 01-PDF-Asma Bronquial.pdf",
+      "semana": 1,
+      "sesion": 2,
+      "tipo": "ppt"
+    },
+    "guia_de_referencia": "GINA 2024.",
+    "contenidos_declarados": [
+      "Generalidades",
+      "Factores desencadenantes",
+      "Diagnóstico",
+      "Evaluación del paciente con asma",
+      "Tratamiento"
+    ],
+    "conceptos": [
+      {
+        "id": "asma::diagnostico",
+        "nombre": "Los dos criterios diagnósticos",
+        "alto_rendimiento": true,
+        "contenido": "El asma se define por dos elementos que deben estar ambos: síntomas respiratorios variables (sibilancias, falta de aire, opresión torácica y tos que varían en el tiempo y en intensidad) y limitación variable del flujo aéreo espiratorio documentada objetivamente.",
+        "variabilidad": "Los síntomas son nocturnos o al despertar, se desencadenan por ejercicio, risa, alérgenos o aire frío, y empeoran con infecciones virales.",
+        "objetivacion": "Reversibilidad con broncodilatador, variabilidad del flujo espiratorio pico, o respuesta al tratamiento antiinflamatorio.",
+        "enfasis_docente": "Confirmar el diagnóstico con evidencia objetiva y documentarlo, preferiblemente ANTES de iniciar corticoide inhalado. La exploración física suele ser normal; el hallazgo más frecuente son sibilancias en la espiración forzada.",
+        "trampa": "Un examen físico normal no descarta asma."
+      },
+      {
+        "id": "asma::gravedad-gina",
+        "nombre": "Gravedad del asma según GINA",
+        "alto_rendimiento": true,
+        "contenido": "La gravedad se evalúa RETROSPECTIVAMENTE, según el nivel de tratamiento que hace falta para controlar síntomas y exacerbaciones.",
+        "detalle": {
+          "asma leve": "se controla con ICS-formoterol según necesidad o con dosis bajas de corticoide inhalado. Incluso el asma leve necesita corticoide inhalado.",
+          "asma grave": "no se controla pese a optimizar dosis altas de ICS-LABA, o requiere esas dosis altas para no descontrolarse"
+        },
+        "enfasis_docente": "El curso pide EVITAR el término asma leve, por la suposición errónea de que equivale a riesgo bajo. Pacientes con síntomas infrecuentes pueden tener exacerbaciones graves.",
+        "trampa": "Clasificar gravedad al momento del diagnóstico. Es retrospectiva, se mide por el tratamiento que hizo falta."
+      },
+      {
+        "id": "asma::desencadenantes",
+        "nombre": "Factores desencadenantes",
+        "alto_rendimiento": true,
+        "contenido": "Infecciones virales respiratorias; alérgenos domésticos como ácaros, polen y cucarachas; alérgenos laborales; humo de tabaco; ejercicio y aire frío; estrés emocional; y medicamentos como betabloqueadores, aspirina y antiinflamatorios no esteroideos.",
+        "enfasis_docente": "Las respuestas a desencadenantes son más probables cuando el asma no está controlada."
+      },
+      {
+        "id": "asma::no-saba-solo",
+        "nombre": "GINA ya no recomienda SABA solo",
+        "alto_rendimiento": true,
+        "contenido": "Por seguridad, GINA ya no recomienda tratar el asma en adultos ni adolescentes con agonistas beta2 de acción corta solos.",
+        "razones": [
+          "mayor riesgo de exacerbaciones y muerte",
+          "aumenta las respuestas alérgicas y la inflamación",
+          "reduce la respuesta broncodilatadora",
+          "el uso excesivo, 3 o más inhaladores al año, aumenta el riesgo de crisis graves"
+        ],
+        "cifras": {
+          "uso_excesivo": "3 o más inhaladores de SABA al año"
+        },
+        "enfasis_docente": "Todos los pacientes con asma deben recibir corticoide inhalado, incluso los de síntomas poco frecuentes. Es la regla que más se presta a distractor.",
+        "trampa": "Prescribir salbutamol de rescate sin corticoide inhalado."
+      },
+      {
+        "id": "asma::vias-y-pasos",
+        "nombre": "Las dos vías y los cinco pasos de GINA",
+        "alto_rendimiento": true,
+        "contenido": "GINA propone dos vías según cuál sea el medicamento de rescate.",
+        "vias": {
+          "Vía 1, preferida": "rescate con ICS-formoterol a dosis bajas según necesidad. Reduce exacerbaciones graves con control similar y mayor simplicidad, porque usa la misma medicación para mantenimiento y rescate.",
+          "Vía 2, alternativa": "rescate con SABA según necesidad o ICS-SABA. Se usa cuando la vía 1 no es posible o no es preferida en un paciente estable sin exacerbaciones."
+        },
+        "pasos": {
+          "Paso 1": "ICS-formoterol a dosis bajas según necesidad, o ICS a dosis bajas cada vez que se toma SABA",
+          "Paso 2": "ICS-formoterol a dosis bajas según necesidad, o ICS diario a dosis bajas más SABA según necesidad",
+          "Paso 3": "ICS-formoterol a dosis bajas como mantenimiento y rescate (MART), o ICS-LABA a dosis bajas más SABA",
+          "Paso 4": "ICS-formoterol a dosis intermedias como MART, o ICS-LABA a dosis intermedias o altas más SABA",
+          "Paso 5": "referir para investigación fenotípica y considerar tratamiento biológico"
+        },
+        "biologicos": "anti-IgE, anti-IL5 o anti-IL5R, anti-IL4R y anti-TSLP según fenotipo",
+        "cifras": {
+          "reduccion_exacerbaciones_paso2": "ICS-formoterol según necesidad reduce las exacerbaciones graves en dos tercios frente a SABA solo",
+          "MART_vs_alternativa": "la alternativa del paso 3 reduce exacerbaciones alrededor de 20 %"
+        },
+        "enfasis_docente": "Los corticoides orales de mantenimiento son el último recurso, por sus efectos secundarios graves."
+      },
+      {
+        "id": "asma::antes-de-subir-escalon",
+        "nombre": "Qué verificar antes de aumentar el tratamiento",
+        "alto_rendimiento": true,
+        "contenido": "Antes de subir de escalón se verifica: técnica incorrecta de inhalación, poca adherencia, exposiciones ambientales persistentes, diagnóstico incorrecto, comorbilidades no tratadas y otros factores contribuyentes.",
+        "cifras": {
+          "mala_tecnica": "hasta el 80 % de los pacientes no usa correctamente su inhalador"
+        },
+        "enfasis_docente": "Subir el escalón sin revisar técnica y adherencia es el error de manejo que el curso marca. La técnica se revisa en cada oportunidad y se corrige con demostración física.",
+        "trampa": "Escalar tratamiento en un asma no controlada sin descartar mala técnica."
+      },
+      {
+        "id": "asma::dosis-ics",
+        "nombre": "Dosis bajas de corticoide inhalado en adultos",
+        "alto_rendimiento": true,
+        "contenido": "Las dosis bajas dan la mayor parte del beneficio clínico para la mayoría de pacientes.",
+        "cifras": {
+          "beclometasona HFA": "200 a 500 mcg/día",
+          "budesonida DPI": "200 a 400 mcg/día",
+          "fluticasona propionato": "100 a 250 mcg/día"
+        },
+        "enfasis_docente": "Muy pocos pacientes necesitan dosis altas, que aumentan el riesgo de efectos secundarios. Las dosis pediátricas son menores."
+      },
+      {
+        "id": "asma::seguimiento-y-reduccion",
+        "nombre": "Frecuencia de revisión y cómo reducir",
+        "alto_rendimiento": true,
+        "contenido": "Reglas temporales concretas del curso.",
+        "revision": {
+          "tras iniciar tratamiento": "1 a 3 meses",
+          "después": "cada 3 a 12 meses",
+          "durante el embarazo": "cada 4 a 6 semanas",
+          "tras una exacerbación": "una semana"
+        },
+        "reduccion": {
+          "cuándo": "tras 2 a 3 meses de buen control",
+          "cuánto": "reducir la dosis de ICS entre 25 y 50 %",
+          "cada cuánto": "a intervalos de 2 a 3 meses",
+          "momento": "elegir un momento sin infecciones respiratorias, viajes ni embarazo"
+        },
+        "enfasis_docente": "NO se suspende completamente el corticoide inhalado en adultos ni adolescentes con diagnóstico de asma. La función pulmonar se mide al inicio, a los 3 a 6 meses y luego periódicamente.",
+        "trampa": "Suspender del todo el corticoide inhalado tras lograr el control."
+      },
+      {
+        "id": "asma::contextos-especiales",
+        "nombre": "Diagnóstico en contextos especiales",
+        "alto_rendimiento": true,
+        "contenido": "Cuatro situaciones donde el diagnóstico cambia de forma.",
+        "detalle": {
+          "embarazadas": "importancia del corticoide inhalado para la salud de madre y bebé. No suspender la medicación ni hacer pruebas de provocación hasta después del parto.",
+          "asma ocupacional": "preguntar por exposiciones laborales o domésticas; confirmar el diagnóstico objetivamente y eliminar la exposición lo antes posible",
+          "adultos mayores": "puede estar sub o sobrediagnosticada; considerar EPOC o superposición asma-EPOC en fumadores y exfumadores",
+          "tos como único síntoma": "considerar variante de asma con tos, goteo posnasal, sinusitis crónica, reflujo gastroesofágico, tos por inhibidores de la ECA o disfunción de cuerdas vocales"
+        },
+        "enfasis_docente": "En la gestante, el riesgo de suspender el tratamiento es mayor que el del propio tratamiento. Es un punto que el curso pone en su caso de apertura."
+      },
+      {
+        "id": "asma::evaluacion-y-comorbilidades",
+        "nombre": "Evaluación del paciente y comorbilidades",
+        "alto_rendimiento": false,
+        "contenido": "El control de síntomas se evalúa sobre las últimas 4 semanas, junto con factores de riesgo de evolución desfavorable, comorbilidades, función pulmonar, medicación, técnica de inhalación, adherencia, efectos secundarios y plan de acción escrito.",
+        "comorbilidades": "rinitis, rinosinusitis, reflujo gastroesofágico, obesidad, apnea del sueño, depresión y ansiedad",
+        "enfasis_docente": "Todos los pacientes deben tener un plan de acción por escrito, que puede ser manuscrito, impreso, digital o pictórico."
+      },
+      {
+        "id": "asma::inmunopatogenia",
+        "nombre": "Inmunopatogenia tipo 2",
+        "alto_rendimiento": false,
+        "contenido": "El epitelio alterado por pérdida de proteínas de unión estrecha libera alarminas (IL-33, TSLP e IL-25) que activan células dendríticas y células linfoides innatas tipo 2, iniciando la inflamación alérgica.",
+        "citocinas": {
+          "IL-4": "cambio de clase a IgE en células B, hiperreactividad bronquial y expresión de moléculas de adhesión",
+          "IL-5": "reclutamiento, activación y supervivencia de eosinófilos",
+          "IL-13": "metaplasia de células caliciformes, producción de moco, hiperreactividad bronquial y remodelación"
+        },
+        "IgE": "El entrecruzamiento de IgE en mastocitos y basófilos libera histamina, leucotrienos y prostaglandinas, causando broncoconstricción inmediata. La IgE además reduce la señalización de interferón tipo I en células dendríticas plasmacitoides, aumentando la susceptibilidad a infecciones virales."
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "asma::caso-gestante",
+        "uso": "aparece DOS veces, al abrir y al cerrar la clase; el PPT no da la respuesta",
+        "enunciado": "Mujer de 25 años, gestante de 28 semanas, con diagnóstico de asma bronquial. Evaluada en emergencia por sibilancias, tos, episodios de disnea frecuentes, síntomas intercrisis frecuentes, síntomas nocturnos más de 2 veces por semana y sibilancias con esfuerzos mínimos.",
+        "pregunta": "¿Qué clasificación de gravedad del asma corresponde?",
+        "alternativas": [
+          "Intermitente",
+          "Episódica frecuente",
+          "Persistente moderado",
+          "Persistente grave",
+          "Intermitente moderado"
+        ],
+        "respuesta": "NO LA DA EL PPT. Ver discrepancia registrada en este tema.",
+        "estructura_a_replicar": "gestante como modificador que cambia la conducta sin cambiar el diagnóstico; los datos de frecuencia de síntomas están dados uno por uno para que se cuenten"
+      }
+    ],
+    "discrepancias_detectadas": [
+      {
+        "punto": "Clasificación de gravedad usada en el caso de la gestante",
+        "material_del_curso": "Las alternativas del caso usan la clasificación clásica: intermitente, episódica frecuente, persistente moderado, persistente grave.",
+        "observacion": "Las diapositivas enseñan la gravedad de GINA 2024, que es retrospectiva y solo tiene leve, moderada y grave según el tratamiento necesario. El caso pregunta por una clasificación distinta de la que la clase explica, y el PPT no da la respuesta. Por los datos (síntomas frecuentes, nocturnos más de 2 veces por semana y sibilancias con esfuerzos mínimos) las lecturas razonables son persistente moderado o persistente grave, inclinándose a grave por la limitación con esfuerzos mínimos. Conviene preguntárselo a la profesora antes de fijar respuesta.",
+        "estado": "sin confirmar"
+      }
+    ]
+  },
+  "_patrones_de_evaluacion": {
+    "_nota": "Extraídos de los exámenes de taller REALES y de los talleres resueltos de la carpeta TALLERES-CASOS. Definen CÓMO evalúa este curso. El motor los usa como molde de forma y nunca copia sus contenidos.",
+    "formato_general": {
+      "modalidad": "respuesta abierta escrita a mano, una hoja, sin material de consulta",
+      "instruccion_tipica": "guardar todo y quedarse con 1 hoja, lápiz, lapicero y borrador",
+      "opcion_multiple": "NO aparece en ninguna evaluación real de taller. Solo en los PPT como actividad de clase.",
+      "verbos_de_mando": [
+        "sustente",
+        "justifique",
+        "describa",
+        "calcule",
+        "interprete",
+        "mencione N",
+        "desarrolle",
+        "qué criterios usarías",
+        "cuál sería",
+        "qué factores explican"
+      ]
+    },
+    "generos": {
+      "aga": {
+        "nombre": "Examen de taller de AGA",
+        "n_preguntas": 4,
+        "secuencia": [
+          "alteración primaria con justificación",
+          "agudo o crónico con justificación",
+          "cálculo del PaFiO2",
+          "cálculo del valor esperado de compensación"
+        ],
+        "pasos_extra_en_el_taller_resuelto": [
+          "gradiente alveoloarterial",
+          "conclusión fisiopatológica en una frase que une el trastorno con la causa clínica"
+        ]
+      },
+      "imagen": {
+        "nombre": "Examen de taller de imágenes",
+        "n_preguntas": 2,
+        "secuencia": [
+          "describa la radiografía de tórax",
+          "sustente su diagnóstico"
+        ],
+        "paso_intermedio_del_taller": "antes de mostrar la imagen se pide comprometer un diagnóstico presuntivo con la clínica y la semiología; luego la imagen confirma o corrige"
+      },
+      "lectura": {
+        "nombre": "Control de lectura",
+        "n_preguntas": 3,
+        "secuencia": [
+          "mencione N diferencias entre dos conceptos de la lectura",
+          "viñeta clínica que exige un detalle fino y específico de la lectura",
+          "desarrolle un concepto principal tratado en la lectura"
+        ],
+        "ejemplos_de_detalle_fino": [
+          "piridoxina junto con isoniacida en gestante",
+          "monitoreo oftalmológico por etambutol"
+        ]
+      },
+      "caso_integrador": {
+        "nombre": "Taller aplicativo de casos clínicos",
+        "n_preguntas": "4 a 5",
+        "secuencia": [
+          "sustenta el probable diagnóstico",
+          "cómo interpretas los resultados en relación con la clínica",
+          "qué criterios usarías para decidir hospitalización",
+          "cuál sería el tratamiento inicial",
+          "qué complicaciones aparecerían si no se trata adecuadamente"
+        ]
+      }
+    },
+    "gramatica_del_caso": [
+      "edad y sexo",
+      "ocupación o procedencia",
+      "antecedentes: algunos son pistas y otros distractores plausibles",
+      "tiempo de enfermedad explícito",
+      "síntomas en orden cronológico",
+      "funciones vitales completas con saturación e indicación de si es aire ambiente",
+      "semiología torácica por los cuatro pasos",
+      "laboratorio",
+      "gasometría cuando aplica",
+      "imagen cuando aplica",
+      "preguntas"
+    ],
+    "antecedentes_discriminantes": {
+      "taxista exfumador no vacunado": "NAC con factores de riesgo y decisión de hospitalización",
+      "alcoholismo crónico con mala higiene oral": "aspiración, absceso pulmonar, esputo fétido",
+      "procedencia de zona urbano-marginal con baja de peso": "tuberculosis",
+      "EPOC severo con oxígeno domiciliario": "acidosis respiratoria crónica reagudizada",
+      "postoperado de cirugía abdominal": "atelectasia",
+      "varón joven previamente sano tras esfuerzo": "neumotórax espontáneo",
+      "neumonía hace una semana": "derrame paraneumónico",
+      "asma con múltiples hospitalizaciones y salbutamol más de 10 veces al día": "asma grave mal controlada",
+      "peritonitis operada con hipoxemia refractaria en UCI": "SDRA",
+      "gestante": "modificador de conducta terapéutica sin cambiar el diagnóstico"
+    },
+    "matriz_semiologica": {
+      "_nota": "Los cuatro pasos vienen siempre completos y la combinación ES la respuesta. Generador de preguntas con dificultad graduable.",
+      "consolidación": {
+        "expansión": "disminuida",
+        "vibraciones vocales": "aumentadas",
+        "percusión": "matidez",
+        "auscultación": "crepitantes y soplo tubario"
+      },
+      "derrame pleural": {
+        "expansión": "disminuida",
+        "vibraciones vocales": "disminuidas",
+        "percusión": "matidez",
+        "auscultación": "murmullo vesicular abolido"
+      },
+      "neumotórax": {
+        "expansión": "disminuida",
+        "vibraciones vocales": "disminuidas",
+        "percusión": "hipersonoridad",
+        "auscultación": "murmullo vesicular abolido"
+      },
+      "cavitación o absceso": {
+        "expansión": "disminuida",
+        "vibraciones vocales": "aumentadas",
+        "percusión": "matidez localizada",
+        "auscultación": "soplo cavernoso"
+      },
+      "atelectasia": {
+        "expansión": "disminuida",
+        "vibraciones vocales": "variables",
+        "percusión": "matidez",
+        "auscultación": "murmullo vesicular disminuido"
+      }
+    },
+    "formulas_exigibles": {
+      "HCO3 esperado en acidosis respiratoria": "24 + [(PaCO2 − 40)/10] × 1",
+      "HCO3 esperado en alcalosis respiratoria": "24 − [(40 − PaCO2)/10] × 2",
+      "PaCO2 esperado en acidosis metabólica": "(1.5 × HCO3) + 8 ± 2",
+      "PaCO2 esperado en alcalosis metabólica": "0.7 × (HCO3 − 24) + 40 ± 5",
+      "PaFiO2": "PaO2 dividido entre la FiO2 en decimal",
+      "gas alveolar": "PAO2 = PIO2 − PACO2/R"
+    },
+    "vacios": [
+      "no hay exámenes parciales ni finales previos en la carpeta, solo exámenes de taller",
+      "no hay rúbricas oficiales de calificación",
+      "los exámenes reales no traen respuestas; los talleres resueltos sí"
+    ]
   }
 }

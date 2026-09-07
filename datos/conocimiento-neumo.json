@@ -8,21 +8,24 @@
     "temas_ingeridos": [
       "aga",
       "pleura",
-      "epoc"
+      "epoc",
+      "tb",
+      "nac"
     ],
     "temas_pendientes": [
       "anatomia",
       "ayudadx",
       "semiologia",
-      "nac",
       "nih",
       "asma",
       "bronquiec",
-      "tb",
       "epid",
       "irasdra",
       "ocupacional",
       "sahos"
+    ],
+    "semanas_completas": [
+      2
     ]
   },
   "aga": {
@@ -612,6 +615,459 @@
           "Bronquitis crónica sin obstrucción": "la espirometría confirma obstrucción"
         },
         "estructura_a_replicar": "tabaquismo cuantificado en paquetes-año → clínica crónica → examen físico con tórax en barril y espiración prolongada → espirometría con dos números → CAT y número de exacerbaciones → clasificar en los DOS ejes y elegir tratamiento"
+      }
+    ],
+    "discrepancias_detectadas": []
+  },
+  "tb": {
+    "nombre": "Tuberculosis pulmonar",
+    "fuente": {
+      "archivo": "SEMANA 02-PDF-Tuberculosis Pulmonar.pdf",
+      "semana": 2,
+      "sesion": 6,
+      "tipo": "ppt"
+    },
+    "guia_de_referencia": "Norma Técnica de Salud NTS N° 200-MINSA/DGIESP-2023. El curso evalúa la norma peruana, no guías internacionales.",
+    "contenidos_declarados": [
+      "Definición",
+      "Epidemiología",
+      "Fisiopatología",
+      "Tuberculosis latente",
+      "Clínica",
+      "Diagnóstico",
+      "Tratamiento según guías MINSA 2023"
+    ],
+    "conceptos": [
+      {
+        "id": "tb::epidemiologia",
+        "nombre": "Epidemiología y generalidades",
+        "alto_rendimiento": false,
+        "contenido": "Enfermedad infecciosa causada por Mycobacterium tuberculosis o bacilo de Koch. El ser humano es reservorio y transmisor. Se transmite por inhalación de partículas en aerosol de 0.65 a 7 micras expulsadas al toser.",
+        "cifras": {
+          "poblacion_infectada": "aproximadamente un cuarto de la población mundial",
+          "casos_nuevos": "más de 10 millones al año",
+          "muertes": "1.6 millones al año",
+          "progresion_a_activa": "5 a 10 % de los infectados a lo largo de la vida, la mayoría en los primeros 5 años"
+        },
+        "enfasis_docente": "Es la enfermedad infecciosa con mayor mortalidad causada por un único agente. Afecta sobre todo a la población económicamente activa."
+      },
+      {
+        "id": "tb::clinica-y-localizacion",
+        "nombre": "Manifestaciones clínicas y localización preferente",
+        "alto_rendimiento": true,
+        "contenido": "La primoinfección suele ser asintomática o paucisintomática: disminución del rendimiento intelectual, astenia, febrícula y, raramente, eritema nodoso. La tuberculosis posprimaria da fiebre vespertina, sudores nocturnos, pérdida de peso, tos, expectoración hemoptoica y disnea en formas avanzadas.",
+        "localizacion": "segmentos apicales y dorsales de lóbulos superiores, y segmentos apicales de lóbulos inferiores",
+        "enfasis_docente": "La localización apical se explica por oxigenación óptima y menor circulación linfática. Solo los humanos desarrollan tuberculosis posprimaria, que es la que permite transmitir."
+      },
+      {
+        "id": "tb::infeccion-latente",
+        "nombre": "Infección tuberculosa latente",
+        "alto_rendimiento": true,
+        "contenido": "Presencia persistente de bacilos sin signos clínicos ni anomalías radiológicas. Se detecta únicamente mediante pruebas inmunológicas: reacción a la tuberculina (PPD) o pruebas de liberación de interferón (IGRA).",
+        "enfasis_docente": "El PPD y el IGRA no distinguen infección activa de latente: no sirven para confirmar enfermedad activa. Ese es el punto que el curso convierte en distractor.",
+        "trampa": "Usar PPD como prueba confirmatoria en un sintomático respiratorio."
+      },
+      {
+        "id": "tb::diagnostico-bacteriologico",
+        "nombre": "Diagnóstico bacteriológico",
+        "alto_rendimiento": true,
+        "contenido": "La baciloscopía seriada de esputo es el método inicial recomendado en Perú para confirmar tuberculosis pulmonar en sintomáticos respiratorios: accesible, de bajo costo y rápida.",
+        "muestras": "Se solicitan 2 muestras de esputo seriadas: la primera al identificar al caso probable, la segunda al día siguiente en el domicilio al despertar.",
+        "metodos": {
+          "baciloscopia": "tinción de Ziehl-Neelsen o auramina-O",
+          "PMMA": "prueba molecular rápida automatizada por PCR en tiempo real, inicial, complementaria o en reemplazo",
+          "cultivo": "medios sólidos Löwenstein-Jensen u Ogawa, o medio líquido MGIT",
+          "otros": "Xpert MTB/RIF, técnicas de amplificación génica, histología con granulomas epitelioides"
+        },
+        "enfasis_docente": "Se debe solicitar radiografía de tórax en todo caso probable, pero NINGÚN patrón radiográfico se considera específico para TB. La tomografía se reserva para casos específicos."
+      },
+      {
+        "id": "tb::radiologia",
+        "nombre": "Manifestaciones radiológicas",
+        "alto_rendimiento": true,
+        "contenido": "Infiltrados, condensaciones, micronódulos bronquiolares con patrón de árbol en brote, formación de cavernas, tuberculomas, y adenopatías hiliares y mediastínicas.",
+        "trampa": "Ningún patrón es específico. Afirmar que una imagen confirma TB es error."
+      },
+      {
+        "id": "tb::definiciones-operativas",
+        "nombre": "Definiciones operativas de caso",
+        "alto_rendimiento": true,
+        "contenido": "Todo caso debe registrarse en el SIGTB, inicie o no tratamiento.",
+        "detalle": {
+          "caso de TB": "persona a quien se le diagnostica TB pulmonar o extrapulmonar",
+          "con confirmación bacteriológica": "resultado positivo por baciloscopía, cultivo o prueba molecular rápida",
+          "sin confirmación bacteriológica": "diagnosticada por criterio clínico con apoyo de imágenes o histología sugestiva",
+          "TB pulmonar": "compromiso del parénquima pulmonar, con o sin confirmación bacteriológica"
+        },
+        "enfasis_docente": "Los casos de TB miliar se definen como TB pulmonar. Ese detalle se presta a pregunta."
+      },
+      {
+        "id": "tb::resistencia",
+        "nombre": "Tipos de tuberculosis resistente",
+        "alto_rendimiento": true,
+        "contenido": "Definiciones exactas de la norma peruana. Se distinguen por qué fármacos tienen resistencia detectada.",
+        "detalle": {
+          "TB rH, resistente a isoniacida": "resistencia a isoniacida y NO a rifampicina",
+          "TB RR, resistente a rifampicina": "resistencia a rifampicina",
+          "TB MDR, multidrogorresistente": "resistencia simultánea a isoniacida Y rifampicina",
+          "TB pre XDR": "cumple definición de MDR o RR más resistencia a cualquier fluoroquinolona",
+          "TB XDR": "cumple RR o MDR, más resistencia a cualquier fluoroquinolona y a al menos un medicamento adicional del Grupo A (bedaquilina o linezolid)"
+        },
+        "enfasis_docente": "Toda persona afectada debe ser evaluada por pruebas moleculares rápidas para detectar resistencia a isoniacida y rifampicina ANTES de iniciar tratamiento.",
+        "pruebas": "Ensayo con sondas en línea y PMMA como moleculares; MODS y MGIT como fenotípicas."
+      },
+      {
+        "id": "tb::tratamiento-sensible",
+        "nombre": "Esquemas de tratamiento de TB sensible",
+        "alto_rendimiento": true,
+        "contenido": "Tres esquemas según situación. HREZ es isoniacida, rifampicina, etambutol y pirazinamida.",
+        "esquemas": {
+          "TB sin VIH": "Primera fase 2 meses de HREZ diario, 50 dosis. Segunda fase 4 meses de H3R3, tres veces por semana, 54 dosis.",
+          "TB miliar o extrapulmonar con compromiso de SNC u osteoarticular": "Primera fase 2 meses de HREZ diario, 50 dosis. Segunda fase 10 meses de HR diario, 250 dosis.",
+          "TB con VIH": "Primera fase 2 meses de HREZ diario, 50 dosis. Segunda fase 4 meses de HR diario, 100 dosis."
+        },
+        "enfasis_docente": "Lo que cambia entre esquemas es la SEGUNDA fase: intermitente en el caso estándar, diaria en VIH, y prolongada a 10 meses en SNC u osteoarticular. La administración es responsabilidad del profesional de enfermería y el monitoreo es mensual."
+      },
+      {
+        "id": "tb::piridoxina",
+        "nombre": "Piridoxina con isoniacida",
+        "alto_rendimiento": true,
+        "contenido": "Todo esquema que incluya isoniacida debe recibir además piridoxina 50 mg al día mientras dure el tratamiento. En coinfección TB-VIH se indican 50 mg de piridoxina para prevenir neuropatía.",
+        "enfasis_docente": "Es una regla absoluta del curso y aparece también en el control de lectura. Omitirla es un error de omisión clásico."
+      },
+      {
+        "id": "tb::terapia-preventiva",
+        "nombre": "Terapia preventiva de TB y sus esquemas",
+        "alto_rendimiento": true,
+        "contenido": "Quiénes deben recibirla y con qué esquema.",
+        "indicaciones": [
+          "menores de 5 años contactos de caso índice con TB pulmonar, sin importar el resultado bacteriológico del índice ni el PPD o IGRA del menor",
+          "personas con infección por VIH, sin importar el PPD o IGRA",
+          "personas con infección latente detectada sistemáticamente: privados de libertad y personal penitenciario, personal de salud, inmigrantes de países de alta carga, personas sin hogar",
+          "personas con infección latente en grupos de riesgo: corticoides o inmunosupresores prolongados, insuficiencia renal crónica, neoplasias, diabetes mellitus"
+        ],
+        "esquemas": {
+          "isoniacida sola": "6 meses diario. Adultos 5 mg/kg/día, niños 10 mg/kg/día. Máximo 300 mg",
+          "isoniacida más rifampicina": "3 meses diario. Máximo H 300 mg y R 600 mg",
+          "rifampicina sola": "4 meses diario. Adultos 10 mg/kg/día, niños 15 mg/kg/día. Máximo 600 mg",
+          "rifapentina más isoniacida": "semanal durante 3 meses, 12 dosis, en mayores de 2 años. Máximo 900 mg de cada uno"
+        },
+        "enfasis_docente": "En menores de 5 años y en personas con VIH la indicación es independiente del PPD o IGRA. No hay que esperar la prueba."
+      },
+      {
+        "id": "tb::estudio-de-contactos",
+        "nombre": "Estudio de contactos",
+        "alto_rendimiento": true,
+        "contenido": "Se realiza en todos los contactos de casos índice con TB pulmonar o extrapulmonar, sensible o resistente, o que fallecieron antes de iniciar tratamiento.",
+        "etapas": {
+          "censo": "identificación de contactos por entrevista de enfermería y visita domiciliaria",
+          "examen integral": "evaluación clínica, radiológica, inmunológica con PPD o IGRA, y bacteriológica si fuera necesario",
+          "control": "mínimo 3 controles en contactos de TB sensible; mínimo 6 controles en contactos de TB resistente"
+        },
+        "cifras": {
+          "controles_sensible": "3",
+          "controles_resistente": "6"
+        }
+      },
+      {
+        "id": "tb::bcg",
+        "nombre": "Vacuna BCG",
+        "alto_rendimiento": true,
+        "contenido": "Se aplica a todos los recién nacidos.",
+        "cifras": {
+          "peso_minimo": "1500 gramos",
+          "ventana_prioritaria": "dentro de las 24 horas de nacido",
+          "recuperacion": "si no la recibe en 24 horas, administrar lo antes posible durante el primer año de vida, hasta los 11 meses y 29 días"
+        }
+      },
+      {
+        "id": "tb::comorbilidades",
+        "nombre": "TB con VIH y con diabetes",
+        "alto_rendimiento": true,
+        "contenido": "El curso da reglas de tamizaje cruzado en ambos sentidos.",
+        "VIH": "En toda persona afectada por TB se descarta VIH con prueba de tamizaje previa consejería. A toda persona con VIH se le descarta TB activa antes de iniciar tratamiento antirretroviral; si no la tiene, recibe terapia preventiva.",
+        "diabetes": "En toda persona de 40 años a más afectada de TB se hace tamizaje de diabetes con glicemia en ayunas. En toda persona con diagnóstico reciente de diabetes se estudia infección latente. La comorbilidad TB-DM se evalúa mensualmente y con hemoglobina glicosilada cada 3 meses.",
+        "cifras": {
+          "diagnostico_DM": [
+            "2 glucosas en ayunas de 126 mg/dL o más",
+            "glucosa al azar de 200 mg/dL o más con síntomas clásicos",
+            "tolerancia oral a las 2 horas de 200 mg/dL o más"
+          ],
+          "umbral_edad_tamizaje_DM": "40 años"
+        }
+      },
+      {
+        "id": "tb::control-de-infecciones",
+        "nombre": "Control de infecciones respiratorias",
+        "alto_rendimiento": false,
+        "contenido": "Tres medidas en orden jerárquico: administrativas primero, ambientales segundo y protección respiratoria tercero.",
+        "enfasis_docente": "La protección respiratoria NO reemplaza a las anteriores. El orden es lo que se evalúa. La TB es enfermedad ocupacional ligada al trabajo en salud, con control clínico y radiológico anual."
+      },
+      {
+        "id": "tb::secuelas-y-cirugia",
+        "nombre": "Secuelas y manejo quirúrgico",
+        "alto_rendimiento": false,
+        "contenido": "Secuelas estructurales: bronquiectasias, pulmón destruido, cavidades, pulmón atrapado, fístula broncopleural. Secuelas funcionales: insuficiencia respiratoria e hiperreactividad bronquial.",
+        "cirugia": "En TB sensible o con secuelas, si hay suficiente reserva respiratoria y complicaciones como hemoptisis masiva o recurrente, fístula broncopleural, empiema pleural, pulmón destruido, bronquiectasias o micetoma. En TB resistente, en tratamiento fallido o lesiones cavitarias o bronquiectasias de gran magnitud."
+      },
+      {
+        "id": "tb::reacciones-adversas",
+        "nombre": "Manejo de reacciones adversas",
+        "alto_rendimiento": false,
+        "contenido": "Ante una reacción adversa se suspende el tratamiento según evaluación médica. Para reiniciarlo se identifica el medicamento sospechoso mediante el reto, que se inicia con el fármaco menos probable de haberla causado durante 3 días, añadiendo progresivamente los otros. El manejo es hospitalario con monitoreo estricto.",
+        "factores_de_riesgo": "desnutrición, coinfección con VIH, diabetes mellitus, hepatopatías y nefropatías"
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "tb::caso-derrame-ada",
+        "uso": "caso de apertura, enlaza con la clase previa de enfermedades pleurales",
+        "enunciado": "Paciente de 34 años con derrame pleural unilateral. Toracocentesis: aspecto amarillo citrino, pH 7.3, cociente de proteínas pleura sobre suero 0.8, cociente de LDH pleura sobre suero 0.9, Gram negativo, lípidos totales, colesterol y triglicéridos normales, células mesoteliales menos de 3 %, linfocitosis sin atipias, ADA 64 U/L.",
+        "preguntas": [
+          "¿Qué tipo de derrame pleural es según los criterios de Light?",
+          "¿Cuál sería la sospecha diagnóstica?",
+          "¿Qué otro estudio solicitaría para confirmarla?"
+        ],
+        "claves": "Es exudado por ambos cocientes. La linfocitosis, las células mesoteliales por debajo de 3 % y el ADA elevado orientan a tuberculosis pleural.",
+        "estructura_a_replicar": "panel completo de líquido pleural donde cada renglón descarta algo: los lípidos normales descartan quilotórax, el Gram negativo aleja lo piógeno, y ADA con linfocitosis apunta a TB"
+      },
+      {
+        "id": "tb::caso-baciloscopia",
+        "uso": "ítem de opción múltiple de aplicación",
+        "enunciado": "Varón de 32 años con tos persistente y expectoración hemoptoica ocasional, pérdida de 5 kg en 2 meses, sudoración nocturna y febrícula vespertina. Sin comorbilidades. Natural de Lima, vive en zona de alta densidad poblacional. Sin tratamiento antituberculoso previo. Crépitos en vértice pulmonar derecho. Radiografía con cavitación en lóbulo superior derecho.",
+        "respuesta": "Baciloscopía seriada de esputo, al menos 2 muestras",
+        "razonamiento_del_ppt": "Es el método inicial recomendado por la norma peruana para confirmar TB pulmonar bacilífera en sintomáticos respiratorios: accesible, de bajo costo y con resultados rápidos.",
+        "distractores_y_por_que_no": {
+          "Tomografía de tórax": "complementa el estudio pero no es el examen confirmatorio de primera línea",
+          "PPD": "evalúa exposición, no distingue infección activa de latente y no confirma en este contexto",
+          "Biopsia pulmonar": "se reserva para casos atípicos o cuando no se obtiene diagnóstico con métodos convencionales"
+        },
+        "estructura_a_replicar": "síntomas constitucionales con tiempo y peso cuantificados → procedencia como factor epidemiológico → semiología apical → radiografía con cavitación → preguntar el SIGUIENTE PASO, no el diagnóstico"
+      }
+    ],
+    "pregunta_de_integracion": "¿Por qué algunos pacientes con tuberculosis pulmonar activa no presentan síntomas respiratorios evidentes, y qué implicancias tiene esto en el diagnóstico y control de la enfermedad?",
+    "discrepancias_detectadas": []
+  },
+  "nac": {
+    "nombre": "Neumonía adquirida en la comunidad",
+    "fuente": {
+      "archivo": "SEMANA 01-PDF-Neumonía Adquirida en la Comunidad.pdf",
+      "semana": 1,
+      "sesion": 2,
+      "tipo": "ppt"
+    },
+    "guia_de_referencia": "Guías ATS/IDSA. El curso las nombra explícitamente en los contenidos.",
+    "contenidos_declarados": [
+      "Epidemiología",
+      "Factores de riesgo",
+      "Etiología",
+      "Presentación clínica",
+      "Diagnóstico y evaluación",
+      "Tratamiento según guías ATS e IDSA"
+    ],
+    "conceptos": [
+      {
+        "id": "nac::definicion-y-diagnostico",
+        "nombre": "Definición y criterios diagnósticos",
+        "alto_rendimiento": true,
+        "contenido": "Enfermedad aguda por infección del parénquima pulmonar adquirida fuera del entorno hospitalario. El diagnóstico requiere evidencia de un NUEVO infiltrado pulmonar en radiografía, tomografía o ecografía pulmonar, más síntomas compatibles, signos de enfermedad del espacio aéreo como estertores, roncus o egofonía, y anomalías de laboratorio por la respuesta inflamatoria.",
+        "enfasis_docente": "Sin imagen con infiltrado nuevo no hay diagnóstico de NAC. La clínica sola no basta.",
+        "trampa": "Diagnosticar NAC solo por clínica compatible."
+      },
+      {
+        "id": "nac::predictores-clinicos",
+        "nombre": "Predictores significativos y presentación",
+        "alto_rendimiento": true,
+        "contenido": "Síntomas comunes: tos, fiebre, producción de esputo, disnea y dolor torácico.",
+        "predictores_significativos": [
+          "temperatura de 37.8 °C o más",
+          "crepitantes en la auscultación",
+          "saturación de oxígeno menor de 95 %",
+          "pulso de 100 latidos por minuto o más",
+          "nuevos signos focales en el tórax"
+        ],
+        "poblaciones_especiales": {
+          "ancianos": "letargo y cambios en el estado mental",
+          "inmunocomprometidos": "signos o síntomas atípicos",
+          "Legionella": "hiponatremia y tos seca",
+          "Mycoplasma": "manifestaciones extrapulmonares"
+        },
+        "enfasis_docente": "En el anciano la neumonía puede presentarse como confusión sin fiebre. Ese es el sesgo que el curso quiere corregir."
+      },
+      {
+        "id": "nac::factores-de-riesgo",
+        "nombre": "Factores de riesgo del huésped",
+        "alto_rendimiento": true,
+        "contenido": "El curso los da con odds ratio, ordenados por magnitud.",
+        "condiciones_medicas": {
+          "neumonía previa": "OR hasta 6.25",
+          "enfermedad cardiovascular crónica": "OR hasta 3.20",
+          "enfermedad cerebrovascular, ictus y demencia": "OR hasta 2.68",
+          "enfermedad respiratoria crónica incluida EPOC": "OR hasta 2.17",
+          "disfagia": "OR ajustado 2.10 a 11.90"
+        },
+        "estilo_de_vida": {
+          "abuso de alcohol": "OR hasta 2.91",
+          "bajo peso": "OR hasta 2.20",
+          "tabaquismo actual": "OR ajustado hasta 2.00",
+          "contacto regular con niños": "OR hasta 1.48"
+        },
+        "enfasis_docente": "La disfagia tiene el odds ratio más alto del listado. En un caso con alcoholismo o enfermedad neurológica, la aspiración debe estar en el diferencial."
+      },
+      {
+        "id": "nac::etiologia",
+        "nombre": "Etiología y factores de riesgo por patógeno",
+        "alto_rendimiento": true,
+        "contenido": "A pesar de pruebas extensas, la causa solo se identifica en aproximadamente un tercio de los pacientes.",
+        "agentes": {
+          "bacterias comunes": "Streptococcus pneumoniae, Haemophilus influenzae, Moraxella catarrhalis, Staphylococcus aureus",
+          "atípicos": "Legionella, Mycoplasma pneumoniae, Chlamydophila pneumoniae",
+          "virus": "influenza, rinovirus, parainfluenza, adenovirus, virus sincitial respiratorio",
+          "resistentes": "neumococo resistente, SARM, Pseudomonas aeruginosa, enterobacterias"
+        },
+        "riesgo_por_patogeno": {
+          "Neumococo resistente": "asma, enfermedad hepática, bronquiectasias",
+          "Legionella pneumophila": "edad avanzada, alcoholismo, tabaquismo, enfermedades crónicas, inmunosupresión, trasplante de órganos",
+          "Mycoplasma y Chlamydophila": "edad más joven, sexo femenino, pocas o ninguna comorbilidad",
+          "Enterobacterias": "sexo masculino, NAC grave, bajo peso, infección previa por BLEE",
+          "Pseudomonas aeruginosa": "infección o colonización previa, traqueostomía previa, bronquiectasias, EPOC muy grave",
+          "SARM": "infección o colonización previa, infecciones cutáneas recurrentes, neumonía grave"
+        },
+        "enfasis_docente": "Esta tabla es el molde de los antecedentes que aparecen en los casos: cada comorbilidad del enunciado apunta a un patógeno concreto."
+      },
+      {
+        "id": "nac::curb65-y-lugar-de-atencion",
+        "nombre": "CURB-65, PSI y lugar de atención",
+        "alto_rendimiento": true,
+        "contenido": "Herramientas de gravedad que menciona el curso: PSI, CURB-65, SMART-COP y REA-ICU.",
+        "decision": {
+          "ambulatorio": "CURB-65 de 0 a 1 o PSI bajo, clínicamente estable y sin factores de riesgo significativos",
+          "hospitalización": "CURB-65 de 2 a 5 o PSI elevado, hipoxemia o soporte domiciliario inadecuado",
+          "UCI": "necesidad de ventilación mecánica, presencia de shock, o criterios ATS-IDSA de NAC grave"
+        },
+        "enfasis_docente": "La guía recomienda el PSI con recomendación FUERTE y sugiere el CURB-65 como alternativa con recomendación condicional, por menor evidencia. Ambas se usan junto con el juicio clínico, nunca solas. Se recomienda admisión directa a UCI si hay hipotensión que requiere vasopresores o insuficiencia respiratoria que requiere ventilación mecánica.",
+        "trampa": "Decidir el lugar de atención solo con el puntaje, sin juicio clínico ni evaluar hipoxemia y soporte domiciliario."
+      },
+      {
+        "id": "nac::tratamiento-ambulatorio",
+        "nombre": "Tratamiento empírico ambulatorio",
+        "alto_rendimiento": true,
+        "contenido": "Depende de si el adulto tiene comorbilidades.",
+        "sin_comorbilidades": [
+          "amoxicilina 1 g tres veces al día",
+          "doxiciclina 100 mg dos veces al día",
+          "macrólido solo en áreas con resistencia neumocócica a macrólidos menor de 25 %"
+        ],
+        "con_comorbilidades": [
+          "terapia combinada: amoxicilina con clavulanato o cefalosporina, más macrólido o doxiciclina",
+          "monoterapia con fluoroquinolona respiratoria: levofloxacino, moxifloxacino o gemifloxacino"
+        ],
+        "definicion_comorbilidad": "enfermedad cardíaca, pulmonar, hepática o renal crónica, diabetes mellitus, alcoholismo, malignidad o asplenia",
+        "enfasis_docente": "La condición del macrólido en monoterapia es la resistencia local menor de 25 %. Ese umbral se presta a pregunta."
+      },
+      {
+        "id": "nac::tratamiento-hospitalizado",
+        "nombre": "Tratamiento empírico en hospitalizados",
+        "alto_rendimiento": true,
+        "contenido": "Se separa por gravedad y por presencia de factores de riesgo para SARM o Pseudomonas.",
+        "no_grave": [
+          "betalactámico más macrólido",
+          "monoterapia con fluoroquinolona respiratoria",
+          "alternativa: betalactámico más doxiciclina"
+        ],
+        "grave": [
+          "betalactámico más macrólido, recomendación fuerte",
+          "betalactámico más fluoroquinolona respiratoria, recomendación fuerte"
+        ],
+        "SARM_y_pseudomonas": "Cubrir empíricamente solo si existen factores de riesgo validados localmente. Los más consistentes son el aislamiento previo del organismo y la hospitalización reciente con exposición a antibióticos parenterales en los últimos 90 días.",
+        "enfasis_docente": "Se recomienda ABANDONAR la categoría de neumonía asociada a la atención médica (HCAP) para guiar la cobertura extendida. Es un cambio de guía que se presta a distractor."
+      },
+      {
+        "id": "nac::duracion-y-corticoides",
+        "nombre": "Duración del tratamiento y corticoides",
+        "alto_rendimiento": true,
+        "contenido": "Reglas de duración y postura sobre corticoides.",
+        "cifras": {
+          "duracion_minima": "5 días",
+          "duracion_SARM_o_pseudomonas": "7 días"
+        },
+        "estabilidad": "La duración se guía por una medida validada de estabilidad clínica: resolución de anomalías de signos vitales, capacidad para comer y estado mental normal.",
+        "corticoides": "No usar rutinariamente en NAC no grave, ni en NAC grave, ni en neumonía grave por influenza. Se respaldan las recomendaciones de la Campaña Sobreviviendo a la Sepsis en NAC con shock séptico refractario.",
+        "aspiracion": "En neumonía por aspiración no se sugiere agregar cobertura anaeróbica de rutina, salvo sospecha de absceso pulmonar o empiema.",
+        "enfasis_docente": "Los ensayos no mostraron diferencias en mortalidad, estancia ni falla orgánica con corticoides en NAC."
+      },
+      {
+        "id": "nac::procalcitonina",
+        "nombre": "Procalcitonina y biomarcadores",
+        "alto_rendimiento": true,
+        "contenido": "La terapia antibiótica empírica se inicia en adultos con sospecha clínica y confirmación radiográfica de NAC, con independencia del nivel inicial de procalcitonina.",
+        "cifras": {
+          "sensibilidad_procalcitonina": "varía del 38 % al 91 %"
+        },
+        "enfasis_docente": "La procalcitonina NO debe usarse para decidir si iniciar o no antibiótico. No existe umbral que discrimine con suficiente precisión entre patógeno viral y bacteriano.",
+        "trampa": "Retener antibióticos por procalcitonina baja. Es el error que el curso marca de forma explícita."
+      },
+      {
+        "id": "nac::pruebas-microbiologicas",
+        "nombre": "Cuándo pedir pruebas microbiológicas",
+        "alto_rendimiento": true,
+        "contenido": "La mayoría de pacientes ambulatorios con NAC leve pueden tratarse empíricamente sin pruebas para bacterias, aunque se considera prueba para SARS-CoV-2 e influenza.",
+        "detalle": {
+          "Gram y cultivo de esputo": "no de rutina en ambulatorios; sí en hospitalizados con NAC grave o factores de riesgo para SARM o Pseudomonas",
+          "hemocultivos": "no de rutina en ambulatorios ni hospitalizados; sí en NAC grave o con factores de riesgo para patógenos resistentes",
+          "antígeno urinario neumococo y Legionella": "en NAC grave o con factores epidemiológicos de riesgo de Legionella",
+          "influenza": "pruebas moleculares rápidas cuando el virus circula en la comunidad, preferibles a las de antígeno"
+        },
+        "indicaciones_generales": [
+          "NAC grave con sepsis o shock séptico",
+          "condiciones especiales como inmunosupresión",
+          "riesgo de patógenos resistentes",
+          "falta de respuesta al tratamiento empírico inicial"
+        ]
+      },
+      {
+        "id": "nac::influenza-y-seguimiento",
+        "nombre": "Influenza, seguimiento y prevención",
+        "alto_rendimiento": false,
+        "contenido": "En NAC con prueba positiva para influenza se prescribe tratamiento antibacteriano estándar además del antiviral, porque la coinfección bacteriana es común y grave y no puede excluirse. El oseltamivir se prescribe en el entorno hospitalario sin importar la duración de la enfermedad antes del diagnóstico.",
+        "seguimiento": "En adultos cuyos síntomas se resolvieron en 5 a 7 días no se sugiere obtener imágenes de control de rutina; el rendimiento positivo va de 0.2 % a 5 %.",
+        "vacunas": "Influenza, que disminuye el riesgo de influenza y de neumonía bacteriana, y vacunas neumocócicas polisacárida y conjugada. La eficacia agrupada de la polisacárida contra neumonía neumocócica va del 48 % al 64 %.",
+        "trampa": "Suspender el antibiótico porque la prueba de influenza salió positiva."
+      },
+      {
+        "id": "nac::complicaciones",
+        "nombre": "Complicaciones y pronóstico",
+        "alto_rendimiento": false,
+        "contenido": "Hasta el 30 % de los pacientes hospitalizados con NAC desarrollan complicaciones cardiovasculares.",
+        "cifras": {
+          "readmision_30_dias": "15 a 20 %",
+          "incidencia_anual_ajustada": "649 por 100 000 hospitalizados en Estados Unidos"
+        }
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "nac::caso-alcoholismo",
+        "uso": "caso de apertura, abierto y sin alternativas",
+        "enunciado": "Varón de 60 años con alcoholismo desde los 30 años, hasta la embriaguez. Traído por familiares con 15 días de enfermedad: tos seca en accesos y fiebre. Cinco días antes del ingreso se agregó disnea progresiva hasta mínimos esfuerzos, alteración del estado de conciencia y cefalea generalizada. Recibió trimetoprim-sulfametoxazol, ambroxol y salbutamol sin mejoría. Tres días antes presentó dolor precordial irradiado a pared posterior del tórax, náuseas, vómitos y diaforesis, y luego expectoración verdosa. En las 24 horas previas, cianosis. Examen: PA 140/90 mmHg, FC 110, FR 30, T 38.9 °C. Consciente, inquieto, desorientado en las tres esferas; cianosis ungueal y peribucal con uso de músculos accesorios; disminución de los movimientos de amplexión y amplexación; estertores sibilantes y subcrepitantes generalizados; ruidos cardíacos normales.",
+        "pregunta": "¿Cuál sería tu planteamiento diagnóstico y tu plan de trabajo?",
+        "claves": "Alcoholismo crónico como factor de riesgo para Legionella y para aspiración. Tratamiento previo fallido. Desorientación más frecuencia respiratoria de 30 son dos puntos de CURB-65 por sí solos.",
+        "estructura_a_replicar": "tiempo de enfermedad largo con agregados fechados día a día, tratamiento previo fallido explícito, y pregunta completamente abierta sobre diagnóstico Y plan"
+      },
+      {
+        "id": "nac::caso-curb65",
+        "uso": "actividad práctica con rúbrica de seis pasos; es el formato del taller",
+        "enunciado": "Varón de 72 años con hipertensión y diabetes mellitus tipo 2. Fiebre, tos con esputo amarillento, disnea de esfuerzo y dolor torácico pleurítico desde hace 3 días. PA 95/60 mmHg, FR 30 rpm, FC 112 lpm, SatO2 89 % al aire ambiente, Glasgow 15.",
+        "pasos_exigidos": [
+          "formular hipótesis diagnóstica inicial",
+          "identificar factores de riesgo, signos de alarma y comorbilidades",
+          "calcular CURB-65 o PSI",
+          "determinar manejo ambulatorio u hospitalario justificando la decisión",
+          "proponer plan de tratamiento empírico inicial con cobertura adecuada",
+          "exponer el razonamiento clínico"
+        ],
+        "claves": "Edad 72 suma un punto, frecuencia respiratoria de 30 suma otro, y la presión sistólica de 95 suma un tercero. Glasgow 15 no suma confusión. Sin urea no se puede completar el puntaje, lo que obliga a pedirla.",
+        "estructura_a_replicar": "escalera de seis pasos que termina en sustentación oral; los datos permiten calcular casi todo el CURB-65 pero falta uno a propósito"
       }
     ],
     "discrepancias_detectadas": []

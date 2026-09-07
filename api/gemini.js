@@ -60,8 +60,13 @@ export default async function handler(req,res){
       });
     }
 
+    // Gemini 3.x puede devolver partes de razonamiento (thought) junto
+    // con la respuesta final. No debemos mezclar el razonamiento con el JSON.
     const texto=(datos?.candidates?.[0]?.content?.parts||[])
-      .map(p=>p.text||"").join("").trim();
+      .filter(p=>p?.thought!==true && typeof p?.text==="string")
+      .map(p=>p.text)
+      .join("")
+      .trim();
 
     if(!texto) return res.status(502).json({error:"Gemini no devolvió contenido"});
     return res.status(200).json({text:texto});

@@ -1,6 +1,4 @@
-/* Arranque. Va último: todos los módulos ya están cargados. */
-cargar().then(()=>{
-  ir("inicio");
-  if(!CONFIG.endpoint.includes("/api/")) console.info(
-    "Llamando a la API directamente. En producción, apunta CONFIG.endpoint a tu función serverless.");
-});
+/* Arranque. Va último: todos los módulos ya están cargados.
+   La base de conocimiento se carga antes de pintar nada, porque el
+   motor la necesita para que las preguntas salgan del material del curso. */
+cargarCurso().then(cargar).then(()=>ir("inicio"));

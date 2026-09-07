@@ -40,8 +40,23 @@ function parsearJSON(texto){
   return null;
 }
 
+/* Solo estos orígenes pueden usar el endpoint. Con "*" cualquiera que
+   descubra la URL puede consumir la cuota de Gemini sin que nos enteremos.
+   Las peticiones del mismo dominio (medbanqueo.vercel.app) no mandan
+   cabecera Origin, así que pasan sin problema. */
+const ORIGENES = [
+  "https://medbanqueo.vercel.app",
+  "https://daliag-09.github.io"
+];
+
 export default async function handler(req,res){
-  res.setHeader("Access-Control-Allow-Origin","*");
+  const origen = req.headers.origin;
+  if(origen){
+    const permitido = ORIGENES.includes(origen) || /^https:\/\/medbanqueo-.*\.vercel\.app$/.test(origen);
+    if(!permitido) return res.status(403).json({error:"Origen no permitido"});
+    res.setHeader("Access-Control-Allow-Origin", origen);
+    res.setHeader("Vary","Origin");
+  }
   res.setHeader("Access-Control-Allow-Methods","POST, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers","Content-Type");
 

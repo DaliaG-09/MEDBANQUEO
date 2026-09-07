@@ -73,13 +73,8 @@ async function siguienteBanco(){
       });
     }
   }catch(e){
-    q=Object.assign({},SEMILLA_BANCO[Math.floor(Math.random()*SEMILLA_BANCO.length)]);
-    q.offline=true;
-    firma=hash({
-      concepto:q.concepto,eje:q.eje||"recordar",
-      tarea:q.tarea||q.tipo,arquetipo:"",
-      contexto:"banco"
-    });
+    errorGenerador("La pregunta dinámica no pudo generarse. Comprueba la conexión del generador e inténtalo otra vez.", ()=>siguienteBanco());
+    return;
   }
 
   marcar(firma);

@@ -39,7 +39,7 @@ function stripHTML(aga){ if(!aga) return "";
     Object.entries(aga).map(([k,v])=>`<div class="row"><span>${esc(k)}</span>${esc(v)}</div>`).join("")}</div>`; }
 
 async function calificarAbierta(pregunta,rubrica,texto,contexto){
-  try{ return await claude(pedirCalificacion(pregunta,rubrica,texto,contexto)); }
+  try{ return await modeloIA(pedirCalificacion(pregunta,rubrica,texto,contexto)); }
   catch(e){
     const t=texto.toLowerCase();
     const cumplidos=rubrica.map(el=>{ const k=(el.t.toLowerCase().match(/[a-záéíóúñ0-9]{5,}/g)||[]);

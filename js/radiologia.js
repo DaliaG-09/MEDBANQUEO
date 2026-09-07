@@ -36,7 +36,7 @@ Devuelve SOLO este JSON, sin backticks:
       bloques=[{type:"image",source:{type:"base64",media_type:im.tipo,data:im.data}},
         {type:"text",text:base+"\n\nMira la imagen adjunta y verifica contra ella: si menciona lado, lóbulo o un signo que la placa no muestra, ese elemento no se cumple y dilo."}];
     }catch(e){ bloques=[{type:"text",text:base}]; }
-    return await claude(bloques,1000);
+    return await modeloIA(bloques,1000);
   }catch(e){
     return {cumplidos:RUB_DESC.map(()=>false),puntaje:0,veredicto:"parcial",tipo_error:"interpretacion",
       porque:"No se pudo calificar la descripción. Compárala tú misma con los elementos de arriba.",pista:"",perla:""};
@@ -71,7 +71,7 @@ Devuelve SOLO este JSON, sin backticks:
     }catch(e){
       bloques=[{type:"text",text:base+"\n\nNo tienes la imagen a la vista: describe el patrón de forma canónica y NO inventes lateralidad, lóbulo ni cifras. Usa fórmulas como \"en el campo afectado\"."}];
     }
-    r=await claude(bloques,900);
+    r=await modeloIA(bloques,900);
   }catch(e){
     cont.innerHTML=`<div class="modelo"><h4>Lo que se tenía que ver</h4>
       <ul>${m.esperado.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>

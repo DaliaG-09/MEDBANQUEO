@@ -73,7 +73,9 @@ async function siguienteBanco(){
       });
     }
   }catch(e){
-    errorGenerador("La pregunta dinámica no pudo generarse. Comprueba la conexión del generador e inténtalo otra vez.", ()=>siguienteBanco());
+    console.error("Error generando pregunta:", e);
+    const detalle=e?.message ? `Error del generador: ${e.message}` : "La pregunta dinámica no pudo generarse. Comprueba la conexión del generador e inténtalo otra vez.";
+    errorGenerador(detalle, ()=>siguienteBanco());
     return;
   }
 

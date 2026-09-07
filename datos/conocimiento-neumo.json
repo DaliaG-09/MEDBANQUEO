@@ -5,16 +5,34 @@
     "curso": "Medicina Interna I · MH-701 · UCSUR · 2026-2",
     "modulo": "Neumología",
     "ingesta": "2026-09-07",
-    "temas_ingeridos": ["aga"],
-    "temas_pendientes": ["anatomia","ayudadx","semiologia","nac","nih","asma","bronquiec","epoc","pleura","tb","epid","irasdra","ocupacional","sahos"]
+    "temas_ingeridos": [
+      "aga",
+      "pleura",
+      "epoc"
+    ],
+    "temas_pendientes": [
+      "anatomia",
+      "ayudadx",
+      "semiologia",
+      "nac",
+      "nih",
+      "asma",
+      "bronquiec",
+      "tb",
+      "epid",
+      "irasdra",
+      "ocupacional",
+      "sahos"
+    ]
   },
-
   "aga": {
     "nombre": "Análisis de gases arteriales",
     "fuente": {
       "archivo": "SEMANA 02-PDF-Análisis de Gases Arteriales.pdf",
       "titulo_original": "Análisis de gases arteriales: bases fisiopatológicas e interpretación clínica",
-      "semana": 2, "sesion": 4, "tipo": "ppt"
+      "semana": 2,
+      "sesion": 4,
+      "tipo": "ppt"
     },
     "resultado_aprendizaje": "Justificar un plan de trabajo diagnóstico aplicando conocimientos de ciencias básicas para el abordaje integral de las enfermedades del aparato respiratorio, mediante el análisis de gases arteriales.",
     "contenidos_declarados": [
@@ -23,7 +41,6 @@
       "Evaluación de gases arteriales",
       "Guía clínica para interpretar los gases arteriales"
     ],
-
     "conceptos": [
       {
         "id": "aga::valores-de-referencia",
@@ -31,12 +48,31 @@
         "alto_rendimiento": true,
         "contenido": "El curso da rangos normales junto con el valor crítico de cada parámetro. El valor crítico es lo que convierte un número en una decisión.",
         "cifras": {
-          "pH": {"normal": "7.35 a 7.45", "critico": "menor de 7.25 o mayor de 7.60"},
-          "SaO2": {"normal": "80 a 100 %", "critico": "menor de 80 %"},
-          "PaO2": {"normal": "80 a 100 mmHg", "critico": "menor de 50 mmHg"},
-          "PaCO2": {"normal": "35 a 45 mmHg", "critico": "mayor de 45 mmHg indica acidosis; menor de 35 mmHg, alcalosis"},
-          "HCO3": {"normal": "22 a 26 mEq/L", "critico": "mayor de 26 indica alcalosis; menor de 22, acidosis"},
-          "exceso_de_base": {"normal": "-2 a +2 mEq/L", "critico": "menor de -2 o mayor de +2"}
+          "pH": {
+            "normal": "7.35 a 7.45",
+            "critico": "menor de 7.25 o mayor de 7.60"
+          },
+          "SaO2": {
+            "normal": "95 a 100 %",
+            "critico": "menor de 90 % obliga a actuar",
+            "nota": "El PPT dice 80 a 100 %; es un error del material. Se usa 95 a 100 %."
+          },
+          "PaO2": {
+            "normal": "80 a 100 mmHg",
+            "critico": "menor de 50 mmHg"
+          },
+          "PaCO2": {
+            "normal": "35 a 45 mmHg",
+            "critico": "mayor de 45 mmHg indica acidosis; menor de 35 mmHg, alcalosis"
+          },
+          "HCO3": {
+            "normal": "22 a 26 mEq/L",
+            "critico": "mayor de 26 indica alcalosis; menor de 22, acidosis"
+          },
+          "exceso_de_base": {
+            "normal": "-2 a +2 mEq/L",
+            "critico": "menor de -2 o mayor de +2"
+          }
         },
         "enfasis_docente": "El pH compatible con la vida va de 6.80 a 7.70. La escala es logarítmica: un cambio de 0.3 duplica o reduce a la mitad la concentración de hidrogeniones, y un cambio de 1 refleja un cambio de diez veces."
       },
@@ -96,13 +132,37 @@
           "PO2 arterial pulmonar reducida": "Cuando el gasto cardíaco es bajo en relación con el consumo de oxígeno. Causa hipoxemia en pulmones con desigualdad V/Q."
         },
         "tabla_diferencial": {
-          "columnas": ["PCO2 arterial", "diferencia PA-aO2", "PO2 con oxígeno al 100 %"],
+          "columnas": [
+            "PCO2 arterial",
+            "diferencia PA-aO2",
+            "PO2 con oxígeno al 100 %"
+          ],
           "filas": {
-            "PO2 inspirada baja": ["disminuida", "normal", "normal"],
-            "Hipoventilación": ["aumentada", "normal", "normal"],
-            "Desigualdad V/Q": ["variable", "aumentada", "normal"],
-            "Limitación de difusión": ["normal", "aumentada", "normal"],
-            "Shunt": ["variable", "aumentada", "anormal"]
+            "PO2 inspirada baja": [
+              "disminuida",
+              "normal",
+              "normal"
+            ],
+            "Hipoventilación": [
+              "aumentada",
+              "normal",
+              "normal"
+            ],
+            "Desigualdad V/Q": [
+              "variable",
+              "aumentada",
+              "normal"
+            ],
+            "Limitación de difusión": [
+              "normal",
+              "aumentada",
+              "normal"
+            ],
+            "Shunt": [
+              "variable",
+              "aumentada",
+              "anormal"
+            ]
           }
         },
         "enfasis_docente": "El shunt es el único que no corrige con oxígeno al 100 %. Esa es la variable que lo separa de todo lo demás. El curso advierte además que varias causas pueden coexistir en un mismo paciente."
@@ -112,8 +172,13 @@
         "nombre": "Ecuación del gas alveolar y gradiente alveoloarterial",
         "alto_rendimiento": true,
         "contenido": "Relaciona la presión alveolar de oxígeno con la de dióxido de carbono. Forma simplificada del curso: PAO2 = PIO2 − PACO2 / R, donde R es el cociente respiratorio. Permite calcular la diferencia alveoloarterial y distinguir causas de hipoxemia.",
-        "cifras": {"gradiente_normal": "5 a 10 mmHg en jóvenes sanos, hasta 20 mmHg con la edad"},
-        "relacionado": ["aga::causas-de-hipoxemia", "aga::niveles-de-evaluacion"]
+        "cifras": {
+          "gradiente_normal": "5 a 10 mmHg en jóvenes sanos, hasta 20 mmHg con la edad"
+        },
+        "relacionado": [
+          "aga::causas-de-hipoxemia",
+          "aga::niveles-de-evaluacion"
+        ]
       },
       {
         "id": "aga::compensacion-fisiologica",
@@ -145,14 +210,18 @@
         "alto_rendimiento": true,
         "contenido": "Ante una acidosis metabólica, el anión gap separa las causas con anión gap elevado de las hiperclorémicas. El curso usa la mnemotecnia MUDPILES.",
         "mnemotecnia": {
-          "M": "Metanol", "U": "Uremia", "D": "Diabetes, cetoacidosis",
-          "P": "Propilenglicol", "I": "Infección o isquemia, acidosis láctica",
-          "L": "Acidosis láctica", "E": "Etanol o etilenglicol", "S": "Salicilatos"
+          "M": "Metanol",
+          "U": "Uremia",
+          "D": "Diabetes, cetoacidosis",
+          "P": "Propilenglicol",
+          "I": "Infección o isquemia, acidosis láctica",
+          "L": "Acidosis láctica",
+          "E": "Etanol o etilenglicol",
+          "S": "Salicilatos"
         },
         "trampa": "La acidosis tubular renal tipo 1 y la pérdida gastrointestinal de bicarbonato cursan SIN anión gap elevado. El curso las usa como distractores."
       }
     ],
-
     "casos_del_ppt": [
       {
         "id": "aga::caso-nac-alcalosis",
@@ -163,7 +232,11 @@
           "¿Corresponde a un trastorno primario de origen respiratorio, metabólico o mixto?",
           "Con base en los hallazgos clínicos, radiológicos y gasométricos, ¿cuál sería el diagnóstico respiratorio principal?"
         ],
-        "respuestas_del_ppt": ["Alcalosis respiratoria", "Trastorno primario de origen respiratorio", "Neumonía adquirida en la comunidad"],
+        "respuestas_del_ppt": [
+          "Alcalosis respiratoria",
+          "Trastorno primario de origen respiratorio",
+          "Neumonía adquirida en la comunidad"
+        ],
         "estructura_a_replicar": "clínica y semiología → radiografía → gasometría → tres preguntas encadenadas: trastorno, origen, diagnóstico"
       },
       {
@@ -181,15 +254,14 @@
         "estructura_a_replicar": "el distractor correcto compite de verdad; los demás se descartan por una regla fisiopatológica única y nombrable"
       }
     ],
-
     "pregunta_de_integracion": "¿Qué consecuencias fisiológicas inmediatas puede provocar una disminución aguda de la PCO2 en el sistema nervioso central, y cómo se relaciona esto con los síntomas clínicos?",
-
     "discrepancias_detectadas": [
       {
         "punto": "Rango normal de SaO2",
         "material_del_curso": "80 a 100 %",
-        "observacion": "Un rango que empieza en 80 % es inusualmente amplio: la práctica habitual considera anormal una saturación por debajo de 95 % en aire ambiente al nivel del mar. Vale confirmarlo con la profesora antes de fijar una respuesta.",
-        "estado": "sin confirmar"
+        "observacion": "Confirmado con la estudiante: el rango normal correcto es 95 a 100 %. El PPT tiene un error en ese renglón.",
+        "estado": "error del PPT, corregido",
+        "valor_correcto": "95 a 100 %"
       },
       {
         "punto": "Orden de la guía de interpretación",
@@ -198,5 +270,350 @@
         "estado": "elección del curso, se respeta"
       }
     ]
+  },
+  "pleura": {
+    "nombre": "Enfermedades pleurales",
+    "fuente": {
+      "archivo": "SEMANA 02-PDF-Enfermedades Pleurales.pdf",
+      "titulo_original": "Enfermedades pleurales: neumotórax, hemotórax, derrame pleural y empiema",
+      "semana": 2,
+      "sesion": 5,
+      "tipo": "ppt"
+    },
+    "resultado_aprendizaje": "Justificar un plan de trabajo diagnóstico para el abordaje integral de las enfermedades pleurales.",
+    "contenidos_declarados": [
+      "Neumotórax",
+      "Hemotórax",
+      "Derrame pleural",
+      "Empiema"
+    ],
+    "conceptos": [
+      {
+        "id": "pleura::criterios-de-light",
+        "nombre": "Criterios de Light y clasificación del líquido",
+        "alto_rendimiento": true,
+        "contenido": "Distinguen exudado de trasudado. El exudado es un derrame inflamatorio con permeabilidad capilar alterada; el trasudado es no inflamatorio, con permeabilidad normal para proteínas, y el curso lo llama derrame pleural mecánico.",
+        "cifras": {
+          "exudado": {
+            "aspecto": "serofibrinoso",
+            "proteinas_LP/suero": "mayor de 0.5",
+            "LDH_LP/suero": "mayor de 0.6",
+            "celulas": "más de 1000",
+            "glucosa": "menor de 60 mg/dL"
+          },
+          "trasudado": {
+            "aspecto": "transparente",
+            "proteinas_LP/suero": "menor de 0.5",
+            "LDH_LP/suero": "menor de 0.6",
+            "celulas": "menos de 500",
+            "glucosa": "60 mg/dL o más"
+          }
+        },
+        "enfasis_docente": "Un exudado cumple AL MENOS UNO de los tres criterios; el trasudado no cumple ninguno.",
+        "trampa": "Buscar que se cumplan los tres criterios. Se leen en disyunción, no en conjunción."
+      },
+      {
+        "id": "pleura::sindrome-pleural",
+        "nombre": "Tríada pleurítica del examen físico",
+        "alto_rendimiento": true,
+        "contenido": "El síndrome pleural en la exploración se define por tres hallazgos: disminución o abolición del murmullo vesicular, disminución o abolición de las vibraciones vocales, y matidez franca a la percusión.",
+        "enfasis_docente": "El curso llama a esa percusión matidez de madera. La combinación completa es la respuesta, no cada hallazgo suelto.",
+        "sintomas": "astenia y adelgazamiento, disnea de esfuerzo, tos, dolor torácico variable, y fiebre cuando el origen es infeccioso"
+      },
+      {
+        "id": "pleura::radiologia-del-derrame",
+        "nombre": "Hallazgos radiológicos y umbrales de detección",
+        "alto_rendimiento": true,
+        "contenido": "La radiografía es indispensable ante sospecha de derrame. El límite superior del derrame forma la curva de Ellis-Damoiseau.",
+        "cifras": {
+          "deteccion_frontal": "desde 150 cm³",
+          "deteccion_lateral": "desde 75 cm³",
+          "ecografia": "detecta desde 3 a 5 mL"
+        },
+        "enfasis_docente": "La ecografía torácica define características del líquido, detecta tabicaciones, estima volumen y guía procedimientos. Es superior a la tomografía para identificar loculaciones y para separar lo parenquimatoso de lo pleural."
+      },
+      {
+        "id": "pleura::etiologia-del-derrame",
+        "nombre": "Etiología del derrame pleural",
+        "alto_rendimiento": true,
+        "contenido": "El 90 % de los casos son de origen cardíaco, infeccioso (tuberculoso y paraneumónico) o canceroso.",
+        "detalle": {
+          "trasudados": "insuficiencia cardíaca, cirrosis, síndrome nefrótico, embolia pulmonar, atelectasia",
+          "exudados_infecciosos": "paraneumónicos, tuberculosis, fúngicos, virales, parasitarios",
+          "exudados_neoplasicos": "carcinoma metastásico, linfoma, mesotelioma maligno, cáncer de pulmón, cáncer de mama",
+          "otros_exudados": "enfermedades sistémicas, pancreatitis, fármacos, asbestosis, radioterapia"
+        },
+        "trampa": "La embolia pulmonar aparece en la lista de trasudados del curso, aunque clásicamente puede dar exudado. Usar la clasificación del curso."
+      },
+      {
+        "id": "pleura::derrame-paraneumonico",
+        "nombre": "Etapas del derrame paraneumónico y empiema",
+        "alto_rendimiento": true,
+        "contenido": "El empiema es la acumulación de pus en el espacio pleural, del griego empyein, meter pus. Su causa más frecuente es la reacción a una neumonía adyacente.",
+        "etapas": [
+          "Etapa previa: pleuritis e inflamación inicial sin acumulación significativa de líquido.",
+          "Etapa exudativa, derrame paraneumónico simple: líquido transparente, de flujo libre, con recuento bajo de leucocitos.",
+          "Etapa fibrinopurulenta, derrame paraneumónico complicado: depósito de fibrina y material purulento, tabiques y bandas de fibrina, ambiente procoagulante.",
+          "Fase organizativa: corteza que comprime el pulmón y causa enfermedad restrictiva crónica."
+        ],
+        "enfasis_docente": "A medida que avanzan las etapas, la glucosa baja, el pH baja y la LDH sube. Esa tríada de laboratorio es lo que separa un derrame simple de uno complicado.",
+        "umbrales": {
+          "pH": "menor de 7.2 indica complicación",
+          "glucosa": "menor de 60 mg/dL indica complicación",
+          "derrame_pequeno": "menor de 1 cm puede tratarse sin drenaje"
+        }
+      },
+      {
+        "id": "pleura::neumotorax",
+        "nombre": "Neumotórax: clasificación, clínica y etiología",
+        "alto_rendimiento": true,
+        "contenido": "Acumulación de aire extrapulmonar dentro del tórax, generalmente por fuga desde el pulmón. Se clasifica en espontáneo primario (sin trauma ni enfermedad pulmonar subyacente), espontáneo secundario (con enfermedad subyacente) y traumático, que puede ser iatrogénico.",
+        "clinica": "Inicio abrupto, disnea, dolor torácico, cianosis, dificultad respiratoria con retracciones, disminución marcada de ruidos respiratorios, nota timpánica a la percusión y desplazamiento de laringe, tráquea y corazón.",
+        "detalle": {
+          "primario": "ruptura espontánea de bullas subpleurales; adolescentes altos y delgados, más frecuente en varones; tabaco, marihuana, cocaína, vapeo; maniobra de Valsalva",
+          "secundario": "síndromes genéticos como Birt-Hogg-Dubé, Marfan y Ehlers-Danlos; fibrosis quística y asma; neumonía estafilocócica y tuberculosis; neumotórax catamenial relacionado con la menstruación",
+          "iatrogenico": "toracotomía o toracoscopía, traqueostomía, ventilación mecánica, terapia de alto flujo, colocación de línea subclavia"
+        },
+        "cifras": {
+          "incidencia": "4 por 100 000 hombres y 1.1 por 100 000 mujeres"
+        },
+        "enfasis_docente": "En el neumotórax a tensión la fuga continua genera presión positiva creciente que comprime el pulmón y desplaza el mediastino. La tomografía no se recomienda de rutina por baja sensibilidad; las vistas espiratorias acentúan el contraste."
+      },
+      {
+        "id": "pleura::tratamiento-neumotorax",
+        "nombre": "Tratamiento del neumotórax por tamaño",
+        "alto_rendimiento": true,
+        "contenido": "El curso escalona la conducta según el porcentaje de colapso y la persistencia de la fuga.",
+        "escalones": [
+          "Pequeño, 10 % o menos: mascarilla facial con oxígeno al 100 %, monitorización y observación. Alta en 6 a 12 horas si permanece estable.",
+          "Grande, más de 15 %: catéter pigtail pequeño para evacuación. Si la fuga se resuelve, alta.",
+          "Fuga persistente más de 4 días: exploración toracoscópica, identificación y extirpación de bullas.",
+          "Recurrencia: toracoscopía como primera opción, con extirpación de bullas y pleurodesis."
+        ],
+        "enfasis_docente": "La aspiración con aguja es tan efectiva como la toracostomía con tubo en el manejo de emergencia del neumotórax espontáneo primario. La abrasión pleural toracoscópica es más segura que la pleurectomía apical, pero esta última tiene menor riesgo de recurrencia."
+      },
+      {
+        "id": "pleura::hemotorax",
+        "nombre": "Hemotórax e indicaciones de toracotomía urgente",
+        "alto_rendimiento": true,
+        "contenido": "Presencia de sangre en la cavidad pleural. El tratamiento inicial es la toracostomía con tubo; según el volumen de salida se decide toracotomía urgente u observación.",
+        "cifras": {
+          "indicaciones_toracotomia": [
+            "inestabilidad hemodinámica",
+            "salida inicial de 1500 mL por tubo torácico",
+            "más de 1500 mL en 24 horas",
+            "más de 200 mL por hora durante 3 horas consecutivas"
+          ],
+          "evacuacion_incompleta": "hasta en 20 % de los casos",
+          "progresion_a_empiema": "26 % si el hemotórax retenido no se trata"
+        },
+        "enfasis_docente": "La cirugía videoasistida temprana, antes de 5 días, disminuye la estancia y la conversión a toracotomía abierta."
+      },
+      {
+        "id": "pleura::toracocentesis",
+        "nombre": "Toracocentesis, biopsia y toracoscopía",
+        "alto_rendimiento": false,
+        "contenido": "La punción pleural es el primer procedimiento diagnóstico y permite análisis macroscópico, bioquímico, citológico y microbiológico.",
+        "cifras": {
+          "guia_ecografica": "eleva la tasa de éxito al 97 %",
+          "biopsia_percutanea": "70 % de rentabilidad en derrames tuberculosos, 50 % en cancerosos",
+          "toracoscopia": "95 % de rendimiento en tuberculosis y cánceres metastásicos pleurales",
+          "pleurodesis_talco": "3 a 4 g de talco estéril"
+        },
+        "complicaciones": "dolor en el sitio de punción, hemorragia local o intrapleural, neumotórax, infección pleural y edema pulmonar de reexpansión"
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "pleura::caso-empiema",
+        "uso": "ítem de opción múltiple de aplicación, con explicación de cada distractor",
+        "enunciado": "Varón de 62 años con disnea progresiva, dolor torácico punzante en hemitórax derecho y fiebre de 38.5 °C desde hace 3 días. Antecedentes de diabetes mellitus tipo 2 y neumonía hace una semana, tratada parcialmente con antibióticos orales. FR 24 rpm, matidez a la percusión en base derecha, disminución del murmullo vesicular en hemitórax derecho, egofonía presente. Radiografía: velamiento del ángulo costofrénico derecho compatible con derrame moderado. Toracocentesis: líquido turbio. Proteínas 4.5 g/dL, LDH pleural 370 U/L, LDH sérica 180 U/L, glucosa 45 mg/dL, pH 7.1, 13 000 leucocitos con 90 % de neutrófilos.",
+        "respuesta": "Derrame pleural paraneumónico complicado o empiema: antibióticos intravenosos de amplio espectro y drenaje pleural",
+        "razonamiento_del_ppt": "Es exudado por criterios de Light, con cociente de LDH de 370 sobre 180 igual a 2.05. El aspecto turbio, el pH menor de 7.2, la glucosa menor de 60 y el predominio de neutrófilos indican complicación, lo que obliga a drenar además de antibióticos.",
+        "distractores_y_por_que_no": {
+          "Trasudado por insuficiencia cardíaca": "no hay datos de insuficiencia cardíaca y el líquido es exudado",
+          "Neoplasia pleural": "el contexto infeccioso es claro",
+          "Tuberculosis pleural": "la TB pleural es más linfocitaria y con pH más alto",
+          "Derrame paraneumónico simple": "el pH menor de 7.2 y la glucosa baja indican complicación, así que requiere drenaje y no solo antibiótico oral"
+        },
+        "estructura_a_replicar": "neumonía reciente tratada de forma incompleta → síndrome pleural completo → radiografía → toracocentesis con panel bioquímico → decidir simple contra complicado y actuar en consecuencia"
+      }
+    ],
+    "pregunta_de_integracion": "¿Cómo contribuye la evaluación clínica, radiológica y del líquido pleural al diagnóstico diferencial entre neumotórax, hemotórax, derrame pleural y empiema, y de qué manera condiciona las decisiones terapéuticas en cada caso?",
+    "discrepancias_detectadas": []
+  },
+  "epoc": {
+    "nombre": "Enfermedad pulmonar obstructiva crónica",
+    "fuente": {
+      "archivo": "SEMANA 02-PDF-Enfermedad Pulmonar Obstructiva Crónica.pdf",
+      "semana": 2,
+      "sesion": 5,
+      "tipo": "ppt"
+    },
+    "resultado_aprendizaje": "Justificar un plan de trabajo diagnóstico para el abordaje integral de la EPOC.",
+    "contenidos_declarados": [
+      "Epidemiología",
+      "Patogenia",
+      "Clasificación",
+      "Manifestaciones clínicas",
+      "Diagnóstico",
+      "Tratamiento"
+    ],
+    "guia_de_referencia": "GOLD 2024. El curso usa la clasificación ABE, no la antigua ABCD.",
+    "conceptos": [
+      {
+        "id": "epoc::definicion-y-diagnostico",
+        "nombre": "Definición y criterio diagnóstico",
+        "alto_rendimiento": true,
+        "contenido": "Condición pulmonar heterogénea con síntomas respiratorios crónicos (disnea, tos, producción de esputo o exacerbaciones) por anomalías de las vías aéreas o los alvéolos, que provocan limitación persistente y a menudo progresiva del flujo aéreo.",
+        "cifras": {
+          "criterio_diagnostico": "FEV1/FVC post broncodilatador menor de 0.7"
+        },
+        "enfasis_docente": "La espirometría forzada con FEV1/FVC post broncodilatador menor de 0.7 es OBLIGATORIA para establecer el diagnóstico. Sin espirometría no hay diagnóstico de EPOC.",
+        "trampa": "Bronquitis crónica sin obstrucción espirométrica no es EPOC. El curso lo usa como distractor."
+      },
+      {
+        "id": "epoc::clasificacion-gold",
+        "nombre": "Gravedad espirométrica GOLD 1 a 4",
+        "alto_rendimiento": true,
+        "contenido": "Se aplica sobre el FEV1 como porcentaje del valor de referencia, una vez confirmada la obstrucción.",
+        "cifras": {
+          "GOLD 1 leve": "FEV1 mayor o igual a 80 %",
+          "GOLD 2 moderada": "FEV1 de 50 a menos de 80 %",
+          "GOLD 3 grave": "FEV1 de 30 a menos de 50 %",
+          "GOLD 4 muy grave": "FEV1 menor de 30 %"
+        },
+        "trampa": "La gravedad espirométrica y el grupo ABE son dos ejes distintos. Un paciente puede ser GOLD 2 y grupo B a la vez. Confundirlos es el error frecuente."
+      },
+      {
+        "id": "epoc::grupos-abe",
+        "nombre": "Evaluación combinada ABE",
+        "alto_rendimiento": true,
+        "contenido": "Clasifica por síntomas y riesgo de exacerbaciones, con independencia del FEV1.",
+        "detalle": {
+          "Grupo A": "bajo riesgo (0 a 1 exacerbación sin hospitalización) y pocos síntomas",
+          "Grupo B": "bajo riesgo (0 a 1 exacerbación sin hospitalización) y más síntomas",
+          "Grupo E": "alto riesgo: 2 o más exacerbaciones, o 1 o más con hospitalización, sin importar el nivel de síntomas"
+        },
+        "enfasis_docente": "El grupo E reemplazó a los antiguos C y D. Reconoce que las exacerbaciones importan por sí solas, al margen de los síntomas."
+      },
+      {
+        "id": "epoc::escalas-de-sintomas",
+        "nombre": "mMRC y CAT",
+        "alto_rendimiento": true,
+        "contenido": "Cuestionarios validados para medir el impacto sintomático y ubicar al paciente en grupo A o B.",
+        "mMRC": {
+          "0": "ausencia de disnea salvo con ejercicio intenso",
+          "1": "disnea al andar deprisa o subir una pendiente poco pronunciada",
+          "2": "incapacidad de mantener el paso de otras personas de la misma edad en llano, o parar a descansar al andar en llano al propio paso",
+          "3": "necesidad de parar a descansar al andar unos 100 metros o a los pocos minutos de andar en llano",
+          "4": "la disnea impide salir de casa o aparece al vestirse o desvestirse"
+        },
+        "cifras": {
+          "CAT": "8 ítems, puntuación de 0 a 40",
+          "umbral_CAT": "10 o más indica síntomas significativos y justifica tratamiento regular",
+          "equivalencia": "CAT 10 equivale a SGRQ 25"
+        },
+        "enfasis_docente": "La mMRC predice el riesgo de mortalidad futura. Se recomienda evaluación multidimensional porque un paciente con mMRC menor de 1 puede tener otros síntomas."
+      },
+      {
+        "id": "epoc::eosinofilos",
+        "nombre": "Eosinófilos en sangre para guiar corticoide inhalado",
+        "alto_rendimiento": true,
+        "contenido": "El recuento de eosinófilos predice la magnitud del efecto del corticoide inhalado añadido al broncodilatador para prevenir exacerbaciones. La relación es continua.",
+        "cifras": {
+          "menos de 100 células/µL": "poco o ningún efecto del corticoide inhalado",
+          "100 a 300 células/µL": "efecto moderado",
+          "más de 300 células/µL": "mayor probabilidad de beneficio"
+        },
+        "enfasis_docente": "El recuento se combina con la evaluación clínica del riesgo, nunca se usa solo."
+      },
+      {
+        "id": "epoc::tratamiento-inicial",
+        "nombre": "Tratamiento farmacológico inicial por grupo",
+        "alto_rendimiento": true,
+        "contenido": "La estrategia se basa en síntomas y riesgo de exacerbaciones, siguiendo el esquema ABE.",
+        "detalle": {
+          "Grupo A": "un broncodilatador, de acción corta o prolongada, según su efecto sobre la disnea",
+          "Grupo B": "LABA más LAMA como opción preferida; alternativa, un broncodilatador de acción prolongada en monoterapia",
+          "Grupo E": "LABA más LAMA como opción preferida; considerar añadir corticoide inhalado si los eosinófilos son 300 o más células/µL"
+        },
+        "seguimiento": {
+          "disnea persistente": "escalar de monoterapia a LABA más LAMA; si no mejora, cambiar dispositivo o principios activos",
+          "exacerbaciones persistentes": "escalar a LABA más LAMA; si persisten, considerar triple terapia sobre todo con eosinófilos de 100 o más células/µL; si persisten pese a triple terapia, considerar roflumilast o un macrólido"
+        },
+        "enfasis_docente": "En cada visita se comprueba técnica de inhalación, cumplimiento, tabaquismo y exposición. La técnica se evalúa ANTES de concluir que el tratamiento es insuficiente. La espirometría se repite al menos una vez al año."
+      },
+      {
+        "id": "epoc::oxigenoterapia",
+        "nombre": "Oxigenoterapia crónica y ventilación no invasiva",
+        "alto_rendimiento": true,
+        "contenido": "Indicaciones con cifras exactas, muy preguntables.",
+        "cifras": {
+          "oxigenoterapia_a_largo_plazo": [
+            "PaO2 de 55 mmHg o menos, o SaO2 de 88 % o menos, con o sin hipercapnia",
+            "PaO2 entre 55 y 60 mmHg con hipertensión pulmonar, edema periférico o policitemia"
+          ],
+          "ventilacion_no_invasiva": [
+            "hipercapnia crónica grave con PaCO2 de 53 mmHg o más",
+            "antecedente de hospitalización por insuficiencia respiratoria aguda"
+          ]
+        },
+        "enfasis_docente": "La oxigenoterapia mejora la supervivencia en hipoxemia crónica grave en reposo. La ventilación no invasiva reduce mortalidad y previene reingresos."
+      },
+      {
+        "id": "epoc::exacerbacion",
+        "nombre": "Exacerbación: definición y gravedad",
+        "alto_rendimiento": true,
+        "contenido": "Evento de disnea, tos o expectoración que empeoran durante menos de 14 días.",
+        "detalle": {
+          "leve": "tratada solo con broncodilatadores de acción corta",
+          "moderada": "broncodilatador de acción corta más corticoide oral, con o sin antibiótico",
+          "grave": "requiere hospitalización o emergencia; puede asociarse a insuficiencia respiratoria aguda"
+        },
+        "enfasis_docente": "El límite temporal de 14 días es parte de la definición. Las comorbilidades pueden simular o agravar una exacerbación."
+      },
+      {
+        "id": "epoc::intervenciones-que-reducen-mortalidad",
+        "nombre": "Las cinco intervenciones que reducen mortalidad",
+        "alto_rendimiento": true,
+        "contenido": "Lista cerrada del curso: triple terapia inhalada en sintomáticos con exacerbaciones frecuentes o graves; abandono del tabaquismo; rehabilitación pulmonar iniciada durante la hospitalización o poco después del alta; oxigenoterapia en hipoxemia crónica grave; y ventilación no invasiva en hipercapnia marcada.",
+        "enfasis_docente": "Es una lista que se presta a preguntar cuál NO reduce mortalidad."
+      },
+      {
+        "id": "epoc::vacunas-y-comorbilidades",
+        "nombre": "Vacunación y multimorbilidad",
+        "alto_rendimiento": false,
+        "contenido": "Vacunas recomendadas: antigripal anual, antineumocócica, COVID-19, y además Tdap, herpes zóster y virus sincitial respiratorio según recomendaciones nacionales.",
+        "comorbilidades": "cardiovasculares (cardiopatía isquémica, insuficiencia cardíaca, arritmias, hipertensión), cáncer de pulmón sobre todo con enfisema, síndrome metabólico, osteoporosis, depresión y ansiedad, y disfunción muscular con sarcopenia",
+        "enfasis_docente": "Las comorbilidades influyen en mortalidad y hospitalizaciones con independencia de la gravedad de la obstrucción."
+      },
+      {
+        "id": "epoc::rehabilitacion",
+        "nombre": "Rehabilitación pulmonar",
+        "alto_rendimiento": false,
+        "contenido": "Entrenamiento físico combinado con educación de la enfermedad, apoyo nutricional y psicosocial. Mejora capacidad de ejercicio, síntomas y calidad de vida en todos los estratos de gravedad.",
+        "cifras": {
+          "duracion": "programas de 6 a 8 semanas con sesiones supervisadas, seguidos de mantenimiento a largo plazo"
+        }
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "epoc::caso-gold2-grupoB",
+        "uso": "ítem de opción múltiple de aplicación con explicación de cada distractor",
+        "enunciado": "Varón de 68 años con disnea progresiva desde hace 2 años, peor en los últimos 6 meses. Tos con expectoración mucosa, sobre todo matutina. Tabaquismo de 40 paquetes-año, suspendido hace 3 años. Sin antecedentes de asma ni alergias. Examen: tórax en barril, ruidos respiratorios disminuidos, espiración prolongada, sibilancias. Espirometría: FEV1/FVC 60 % post broncodilatador, FEV1 55 % del predicho. CAT 12. Una exacerbación leve en el último año, sin hospitalización.",
+        "respuesta": "EPOC moderado, grupo B: iniciar un broncodilatador de acción prolongada, LAMA o LABA",
+        "razonamiento_del_ppt": "Cumple criterio diagnóstico por FEV1/FVC menor de 70 % post broncodilatador. FEV1 de 55 % lo hace GOLD 2, moderado. CAT de 12, por encima de 10, indica síntomas significativos. Una sola exacerbación leve sin hospitalización lo ubica en grupo B.",
+        "distractores_y_por_que_no": {
+          "Asma persistente moderada": "no hay antecedentes ni criterios de asma",
+          "Grupo A, solo seguimiento": "tiene síntomas significativos con CAT mayor de 10",
+          "Grupo E, triple terapia": "no tiene 2 o más exacerbaciones ni hospitalizaciones",
+          "Bronquitis crónica sin obstrucción": "la espirometría confirma obstrucción"
+        },
+        "estructura_a_replicar": "tabaquismo cuantificado en paquetes-año → clínica crónica → examen físico con tórax en barril y espiración prolongada → espirometría con dos números → CAT y número de exacerbaciones → clasificar en los DOS ejes y elegir tratamiento"
+      }
+    ],
+    "discrepancias_detectadas": []
   }
 }

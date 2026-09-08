@@ -11,13 +11,13 @@
       "epoc",
       "tb",
       "nac",
-      "asma"
+      "asma",
+      "nih"
     ],
     "temas_pendientes": [
       "anatomia",
       "ayudadx",
       "semiologia",
-      "nih",
       "bronquiec",
       "epid",
       "irasdra",
@@ -1399,6 +1399,211 @@
       "no hay exámenes parciales ni finales previos en la carpeta, solo exámenes de taller",
       "no hay rúbricas oficiales de calificación",
       "los exámenes reales no traen respuestas; los talleres resueltos sí"
+    ]
+  },
+  "nih": {
+    "nombre": "Neumonía intrahospitalaria y atípicas",
+    "fuente": {
+      "archivo": "SEMANA 01-PDF-Neumonía Intrahospitalaria y Atípicas.pdf",
+      "semana": 1,
+      "sesion": 3,
+      "tipo": "ppt"
+    },
+    "guia_de_referencia": "Guías internacionales ERS/ESICM/ESCMID/ALAT 2017 para NAH y NAV. Para atípicas, la propuesta de la Sociedad Respiratoria Japonesa.",
+    "contenidos_declarados": [
+      "Neumonía intrahospitalaria: definición y mortalidad",
+      "Cultivos y tratamiento",
+      "Neumonía atípica: características clínicas, diagnóstico y tratamiento"
+    ],
+    "conceptos": [
+      {
+        "id": "nih::definicion",
+        "nombre": "Definición de neumonía intrahospitalaria",
+        "alto_rendimiento": true,
+        "contenido": "Infección del parénquima pulmonar causada por patógenos presentes en entornos hospitalarios, desarrollada más de 48 horas después del ingreso, y en algunos casos hasta 30 días después del alta médica, especialmente si hay factores de riesgo o complicaciones.",
+        "cifras": {
+          "ventana_de_inicio": "más de 48 horas tras el ingreso",
+          "ventana_post_alta": "hasta 30 días"
+        },
+        "enfasis_docente": "Las 48 horas son el corte que separa intrahospitalaria de adquirida en la comunidad. La ventana de 30 días post-alta es el detalle que se presta a pregunta y a distractor."
+      },
+      {
+        "id": "nih::naas",
+        "nombre": "Neumonía asociada a la atención sanitaria",
+        "alto_rendimiento": true,
+        "contenido": "Se desarrolla en pacientes NO hospitalizados que tienen múltiples riesgos de estar colonizados por patógenos nosocomiales multirresistentes.",
+        "factores_de_riesgo": [
+          "hospitalización de 2 días o más en los 90 días previos",
+          "residencia en hogar de ancianos o centro de atención prolongada",
+          "terapia de infusión domiciliaria",
+          "diálisis crónica",
+          "cuidado de heridas en el hogar",
+          "contacto con sujetos colonizados por patógenos multirresistentes"
+        ],
+        "diferencias_regionales": "Estudios de Estados Unidos reportan que suele deberse a microorganismos multirresistentes en pacientes críticos; datos europeos sugieren que su etiología es similar a la de la neumonía adquirida en la comunidad."
+      },
+      {
+        "id": "nih::mortalidad",
+        "nombre": "Mortalidad bruta y atribuible",
+        "alto_rendimiento": true,
+        "contenido": "Distinción conceptual que el curso remarca: la mortalidad atribuible es el porcentaje de muertes que NO habrían ocurrido en ausencia de la infección.",
+        "cifras": {
+          "mortalidad_bruta": "hasta 70 %",
+          "mortalidad_atribuible_a_NAV": "10 % en estudios recientes",
+          "muertes_por_NAV_directamente": "entre un tercio y la mitad de las muertes relacionadas con NAV son resultado directo de la infección"
+        },
+        "peor_pronostico": "Pseudomonas aeruginosa y especies de Acinetobacter. Los pacientes quirúrgicos y los de gravedad de rango medio tienen el mayor riesgo asociado.",
+        "trampa": "Confundir mortalidad bruta con atribuible. Son 70 % y 10 %, y la diferencia es el punto de la diapositiva."
+      },
+      {
+        "id": "nih::cultivos",
+        "nombre": "Cultivos y muestras respiratorias",
+        "alto_rendimiento": true,
+        "contenido": "Recomendaciones ALAT sobre qué muestra obtener en sospecha de neumonía asociada a ventilación mecánica.",
+        "recomendaciones": {
+          "muestras cuantitativas distales": "sugeridas, ANTES de cualquier tratamiento antibiótico, en pacientes estables, para reducir exposición a antibióticos y mejorar la precisión. Recomendación débil, evidencia de baja calidad.",
+          "muestra del tracto respiratorio inferior": "recomendada, sea cultivo cuantitativo distal o proximal o cualitativo, para enfocar y reducir la terapia empírica inicial. Recomendación FUERTE, evidencia de baja calidad."
+        },
+        "contras_de_lo_invasivo": "requiere clínicos cualificados, puede comprometer el intercambio de gases durante el procedimiento y tiene costos directos más altos.",
+        "enfasis_docente": "La muestra se toma antes del antibiótico. Ese orden es lo evaluable."
+      },
+      {
+        "id": "nih::terapia-empirica",
+        "nombre": "Espectro reducido contra amplio en la terapia empírica",
+        "alto_rendimiento": true,
+        "contenido": "La decisión se basa en el riesgo de patógenos multirresistentes y en la gravedad.",
+        "recomendaciones": {
+          "espectro reducido": "sugerido en pacientes con sospecha de bajo riesgo de resistencia y neumonía de inicio temprano. Recomendación débil.",
+          "amplio espectro": "recomendado en inicio temprano CON shock séptico, en hospitales con alta tasa de patógenos resistentes, o con otros factores de riesgo de multirresistencia. Recomendación fuerte."
+        },
+        "cifras": {
+          "bajo riesgo de mortalidad": "probabilidad de morir de 15 % o menos, umbral asociado a mejor resultado con monoterapia que con terapia combinada",
+          "tasa de fondo alta de resistencia": "prevalencia local de patógenos resistentes mayor de 25 %",
+          "reevaluacion": "adaptar la terapia a los datos de susceptibilidad al día 3, cuando estén disponibles la respuesta microbiológica y clínica"
+        },
+        "definicion_bajo_riesgo": "paciente sin shock séptico, sin otros factores de riesgo para multirresistentes y que no está en un hospital con alta tasa de resistencia.",
+        "enfasis_docente": "El riesgo de infección por Clostridium difficile aumenta con cefalosporinas de tercera generación frente a penicilinas o quinolonas.",
+        "trampa": "Dar amplio espectro a todo paciente hospitalizado sin evaluar riesgo real."
+      },
+      {
+        "id": "nih::duracion-individualizada",
+        "nombre": "Cuándo individualizar la duración del tratamiento",
+        "alto_rendimiento": true,
+        "contenido": "Cuatro situaciones en las que no aplica el curso estándar corto.",
+        "situaciones": [
+          "terapia antibiótica inicial inapropiada, que no cubría los patógenos identificados después",
+          "pacientes severamente inmunocomprometidos, como neutropenia o trasplante de células madre",
+          "patógenos altamente resistentes: Pseudomonas aeruginosa, Acinetobacter resistente a carbapenémicos, enterobacterias resistentes a carbapenémicos",
+          "pacientes que requieren antibióticos de segunda línea como colistina o tigeciclina"
+        ],
+        "enfasis_docente": "El obstáculo mayor para acortar cursos es la mayor tasa de recurrencia con 7 a 8 días frente a 15 días, en particular con Pseudomonas y otros no fermentadores."
+      },
+      {
+        "id": "nih::biomarcadores",
+        "nombre": "Biomarcadores pronósticos en NAH y NAV",
+        "alto_rendimiento": false,
+        "contenido": "Se usan como marcadores de pronóstico y de evolución, no para decidir si iniciar antibiótico.",
+        "detalle": {
+          "proteína C reactiva": "significativamente más alta a partir del día 4 en pacientes con mal resultado; desciende entre los días 1 y 7 en todos, pero se mantiene más alta en los desfavorables",
+          "procalcitonina": "elevada al inicio en no sobrevivientes; más alta en los días 1, 3 y 7 en pacientes con resultado desfavorable",
+          "copeptina y MR-proANP": "la copeptina está elevada al inicio en no sobrevivientes; el MR-proANP tuvo la mayor razón de verosimilitud positiva, 2.71, como predictor de resultado"
+        }
+      },
+      {
+        "id": "nih::atipicas-generalidades",
+        "nombre": "Neumonía atípica: qué la define",
+        "alto_rendimiento": true,
+        "contenido": "Causada por patógenos que NO son detectables con tinción de Gram y NO pueden cultivarse con métodos estándar. Los más comunes son Mycoplasma pneumoniae, Chlamydia pneumoniae y especies de Legionella.",
+        "cifras": {
+          "proporcion_de_NAC": "más del 15 % de todas las neumonías adquiridas en la comunidad"
+        },
+        "enfasis_docente": "La característica diferenciadora principal es la presencia de hallazgos EXTRAPULMONARES. Los patógenos atípicos no tienen pared celular bacteriana, por eso no responden a betalactámicos.",
+        "trampa": "Tratar una atípica con betalactámico solo. Es el error que la fisiopatología explica."
+      },
+      {
+        "id": "nih::atipicas-clinica",
+        "nombre": "Presentación clínica de las atípicas",
+        "alto_rendimiento": true,
+        "contenido": "El curso separa Legionella del resto por gravedad.",
+        "detalle": {
+          "Legionella pneumophila": "a menudo se presenta como neumonía grave de progresión rápida, con mortalidad de aproximadamente 10 %, que puede subir hasta 27 % en pacientes que no reciben antibióticos adecuados",
+          "Mycoplasma y Chlamydia": "suele ser enfermedad benigna y autolimitada, aunque algunos casos evolucionan a neumonía refractaria o grave que amenaza la vida"
+        },
+        "tos_persistente": "Bordetella pertussis, Mycoplasma pneumoniae y Chlamydia pneumoniae son causas bien conocidas de tos persistente en niños y adultos.",
+        "cifras": {
+          "mortalidad_Legionella": "10 %, hasta 27 % sin antibiótico adecuado"
+        }
+      },
+      {
+        "id": "nih::criterios-jrs",
+        "nombre": "Los seis parámetros de la Sociedad Respiratoria Japonesa",
+        "alto_rendimiento": true,
+        "contenido": "Diagnóstico clínico presuntivo para diferenciar neumonía bacteriana de atípica, principalmente por Mycoplasma, y así elegir el antibiótico apropiado.",
+        "parametros": [
+          "edad menor de 60 años",
+          "sin comorbilidades o menores",
+          "presencia de tos persistente",
+          "ausencia de ruidos adventicios en el tórax",
+          "sin esputo o sin agente etiológico identificado",
+          "recuento de leucocitos menor de 10 000 por microlitro"
+        ],
+        "enfasis_docente": "Es una lista cerrada de seis parámetros, muy preguntable por conteo. La ausencia de ruidos adventicios pese a la neumonía es el hallazgo que más contrasta con la neumonía típica."
+      },
+      {
+        "id": "nih::atipicas-tratamiento",
+        "nombre": "Tratamiento de la neumonía atípica",
+        "alto_rendimiento": true,
+        "contenido": "Son efectivos los antimicrobianos que interfieren con la síntesis de proteínas intracelulares: macrólidos y tetraciclinas.",
+        "resistencia": "Desde el año 2000 aumentó rápidamente la prevalencia de Mycoplasma pneumoniae resistente a macrólidos, con mutaciones en el gen del ARNr 23S.",
+        "corticoides": "La patogénesis de las infecciones graves por Mycoplasma se relaciona con una respuesta inmune excesiva. La terapia con corticosteroides reduce la respuesta inmune mediada por células y muestra un efecto beneficioso profundo.",
+        "cifras": {
+          "umbral_LDH_para_esteroides": "302 a 364 UI/L parece criterio apropiado para iniciar esteroides en neumonía por Mycoplasma refractaria o grave"
+        },
+        "poblaciones_especiales": "En personas mayores y con enfermedades crónicas el diagnóstico diferencial puede ser difícil o puede haber infección mixta latente; en ellos se considera desde el inicio un betalactámico más un macrólido o tetraciclina, o una fluoroquinolona sola.",
+        "enfasis_docente": "El umbral de LDH entre 302 y 364 es una cifra concreta y por eso muy preguntable."
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "nih::caso-alta-reciente",
+        "uso": "caso de apertura, opción múltiple, sin respuesta explícita en el PPT",
+        "enunciado": "Mujer de 72 años dada de alta hace 5 días del hospital por infección urinaria. Inicia tos con expectoración verdosa, fiebre, malestar general y leve disnea. Auscultación: crépitos en hemitórax izquierdo.",
+        "alternativas": [
+          "Neumonía adquirida en la comunidad",
+          "Bronquitis aguda",
+          "Neumonía intrahospitalaria",
+          "Tromboembolismo pulmonar"
+        ],
+        "claves": "El alta hace 5 días la coloca dentro de la ventana de hasta 30 días post-alta que el PPT incluye en la definición de intrahospitalaria, y también cumple el criterio de hospitalización reciente de la neumonía asociada a la atención sanitaria.",
+        "estructura_a_replicar": "un solo dato temporal, el alta reciente, decide entre dos alternativas que clínicamente son idénticas; el resto del caso es deliberadamente inespecífico"
+      },
+      {
+        "id": "nih::caso-nav",
+        "uso": "actividad práctica en dos fases, formato de taller",
+        "enunciado": "Mujer de 58 años con accidente cerebrovascular hemorrágico, ingresada en UCI hace 6 días, intubada. Al cuarto día presenta fiebre de 38.9 °C, secreciones traqueales abundantes, FR 32 rpm, SatO2 88 % con FiO2 50 %. Radiografía: consolidación nueva en base derecha. Hemoglobina 11.2 g/dL, leucocitos 20 000/mm3, PCR 98 mg/L.",
+        "fases_exigidas": {
+          "fase 1": [
+            "determinar factores de riesgo de gérmenes multirresistentes: uso previo de antibióticos, estancia hospitalaria prolongada, comorbilidades",
+            "formular diagnóstico sindrómico y etiológico probable"
+          ],
+          "fase 2": [
+            "seleccionar estudios complementarios: cultivos, imágenes, gases",
+            "indicar tratamiento empírico inicial justificando la cobertura",
+            "estimar cuándo reevaluar o desescalar"
+          ]
+        },
+        "claves": "Los datos permiten calcular el PaFiO2 con la FiO2 de 50 %, y la consolidación nueva más la fiebre y la leucocitosis en paciente intubado configuran neumonía asociada a ventilación mecánica.",
+        "estructura_a_replicar": "paciente crítico con fecha de ingreso y día de aparición explícitos, para que se calcule si es temprana o tardía; se pide además el momento del desescalamiento, no solo el antibiótico"
+      }
+    ],
+    "pregunta_de_integracion": "¿Cómo influyen la identificación temprana del agente etiológico y la evaluación del riesgo de resistencia antimicrobiana en la elección del tratamiento empírico en la neumonía intrahospitalaria, y qué consecuencias puede tener una decisión inadecuada en el pronóstico del paciente?",
+    "discrepancias_detectadas": [
+      {
+        "punto": "Vigencia de la categoría de neumonía asociada a la atención sanitaria",
+        "material_del_curso": "Este PPT enseña la NAAS como categoría con sus propios factores de riesgo. El PPT de NAC de la misma semana dice que se recomienda ABANDONAR la categorización de neumonía asociada a la atención médica para guiar la cobertura antibiótica extendida.",
+        "observacion": "Los dos PPTs del curso se contradicen entre sí. La postura ATS/IDSA vigente es abandonar la categoría; el PPT de intrahospitalaria la mantiene, mencionando además que en Europa la etiología se parece a la de la NAC. Conviene preguntar a la profesora cuál postura evalúa antes de responder en un examen.",
+        "estado": "sin confirmar"
+      }
     ]
   }
 }

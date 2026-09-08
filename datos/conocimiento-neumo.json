@@ -13,11 +13,11 @@
       "nac",
       "asma",
       "nih",
-      "bronquiec"
+      "bronquiec",
+      "ayudadx"
     ],
     "temas_pendientes": [
       "anatomia",
-      "ayudadx",
       "semiologia",
       "epid",
       "irasdra",
@@ -1430,8 +1430,8 @@
       },
       {
         "id": "nih::naas",
-        "nombre": "Neumonía asociada a la atención sanitaria",
-        "alto_rendimiento": true,
+        "nombre": "Neumonía asociada a la atención sanitaria (*)",
+        "alto_rendimiento": false,
         "contenido": "Se desarrolla en pacientes NO hospitalizados que tienen múltiples riesgos de estar colonizados por patógenos nosocomiales multirresistentes.",
         "factores_de_riesgo": [
           "hospitalización de 2 días o más en los 90 días previos",
@@ -1441,7 +1441,10 @@
           "cuidado de heridas en el hogar",
           "contacto con sujetos colonizados por patógenos multirresistentes"
         ],
-        "diferencias_regionales": "Estudios de Estados Unidos reportan que suele deberse a microorganismos multirresistentes en pacientes críticos; datos europeos sugieren que su etiología es similar a la de la neumonía adquirida en la comunidad."
+        "diferencias_regionales": "Estudios de Estados Unidos reportan que suele deberse a microorganismos multirresistentes en pacientes críticos; datos europeos sugieren que su etiología es similar a la de la neumonía adquirida en la comunidad.",
+        "marca": "(*) PUNTO POR ACLARAR CON LA DOCENTE",
+        "nota_del_asterisco": "Este PPT enseña la NAAS como categoría propia. El PPT de NAC de la misma semana dice que se recomienda abandonar esa categorización para guiar la cobertura antibiótica. No está claro cuál postura evalúa el curso. Se conserva el contenido tal como lo da esta clase, pero marcado: no preguntar sobre él hasta confirmarlo.",
+        "preguntable": false
       },
       {
         "id": "nih::mortalidad",
@@ -1599,7 +1602,15 @@
     ],
     "pregunta_de_integracion": "¿Cómo influyen la identificación temprana del agente etiológico y la evaluación del riesgo de resistencia antimicrobiana en la elección del tratamiento empírico en la neumonía intrahospitalaria, y qué consecuencias puede tener una decisión inadecuada en el pronóstico del paciente?",
     "discrepancias_detectadas": [],
-    "_nota_de_alcance": "Tema independiente de nac. Neumonía adquirida en la comunidad y neumonía intrahospitalaria se tratan como dos temas separados, con sus propias definiciones, etiologías y tratamientos. No se contrastan entre sí salvo que la pregunta lo pida explícitamente."
+    "_nota_de_alcance": "Tema independiente de nac. Neumonía adquirida en la comunidad y neumonía intrahospitalaria se tratan como dos temas separados, con sus propias definiciones, etiologías y tratamientos. No se contrastan entre sí salvo que la pregunta lo pida explícitamente.",
+    "puntos_por_aclarar": [
+      {
+        "marca": "(*)",
+        "punto": "Vigencia de la categoría NAAS",
+        "que_preguntar": "¿La NAAS se evalúa como categoría vigente o se sigue la postura de abandonarla?",
+        "estado": "sin confirmar"
+      }
+    ]
   },
   "bronquiec": {
     "nombre": "Bronquitis aguda, bronquitis crónica y bronquiectasias",
@@ -1801,6 +1812,268 @@
       }
     ],
     "pregunta_de_integracion": "¿Qué características clínicas, fisiopatológicas y radiológicas permiten diferenciar de manera precisa entre bronquitis aguda, bronquitis crónica y bronquiectasias, y por qué es importante establecer un diagnóstico diferencial oportuno en el manejo ambulatorio y hospitalario del paciente con tos crónica?",
+    "discrepancias_detectadas": []
+  },
+  "ayudadx": {
+    "nombre": "Exámenes de ayuda diagnóstica en Neumología",
+    "fuente": {
+      "archivo": "SEMANA 01-PDF-Exámenes de ayuda diagnóstica en Neumología.pdf",
+      "semana": 1,
+      "sesion": 1,
+      "tipo": "ppt"
+    },
+    "guia_de_referencia": "Estandarización de espirometría ATS/ERS.",
+    "contenidos_declarados": [
+      "Radiografía de tórax",
+      "Tomografía de tórax",
+      "Espirometría",
+      "Toracocentesis",
+      "Broncofibroscopía"
+    ],
+    "conceptos": [
+      {
+        "id": "ayudadx::proyecciones",
+        "nombre": "Proyecciones básicas y complementarias",
+        "alto_rendimiento": true,
+        "contenido": "Cada proyección complementaria existe para una sospecha concreta. Esa correspondencia es lo evaluable.",
+        "basicas": {
+          "posteroanterior": "en bipedestación e inspiración máxima",
+          "lateral": "complementa la visión de estructuras",
+          "anteroposterior": "cuando el paciente no puede estar de pie"
+        },
+        "complementarias": {
+          "PA en inspiración y espiración forzadas": "para neumotórax",
+          "oblicuas": "para visualizar fracturas costales",
+          "decúbito lateral con rayo horizontal": "para derrames pleurales"
+        },
+        "enfasis_docente": "La espiración forzada acentúa el neumotórax; el decúbito lateral moviliza el derrame. Pedir la proyección correcta según la sospecha es el tipo de pregunta que el curso hace."
+      },
+      {
+        "id": "ayudadx::calidad-tecnica",
+        "nombre": "Calidad técnica y lectura sistemática",
+        "alto_rendimiento": true,
+        "contenido": "Antes de interpretar hay que validar la placa.",
+        "calidad": {
+          "centrada": "clavículas equidistantes",
+          "exposición adecuada": "se visualizan los vasos pulmonares",
+          "inspiración correcta": "diafragma a nivel del quinto o sexto arco costal"
+        },
+        "densidades": {
+          "aire": "parénquima pulmonar",
+          "agua": "silueta cardíaca",
+          "grasa": "tejidos blandos",
+          "calcio": "estructuras óseas"
+        },
+        "lectura_sistematica": [
+          "partes blandas",
+          "estructuras óseas",
+          "parénquima pulmonar",
+          "pleura",
+          "mediastino",
+          "hilios y vasos pulmonares",
+          "corazón y aorta"
+        ],
+        "cifras": {
+          "inspiracion_adecuada": "diafragma en el 5º a 6º arco costal",
+          "densidades_radiologicas": "cuatro: aire, agua, grasa y calcio"
+        },
+        "enfasis_docente": "La lectura sistemática tiene SIETE pasos en este orden. Es una lista cerrada, muy preguntable por conteo y por orden."
+      },
+      {
+        "id": "ayudadx::patrones-radiologicos",
+        "nombre": "Patrones radiológicos por patología",
+        "alto_rendimiento": true,
+        "contenido": "Signos radiológicos agrupados por entidad, tal como el curso los presenta.",
+        "detalle": {
+          "neumonía": [
+            "aumento de densidad pulmonar",
+            "distribución segmentaria o lobular",
+            "broncograma aéreo",
+            "signo de la silueta"
+          ],
+          "atelectasia": [
+            "aumento de densidad radiológica",
+            "desplazamiento de cisuras",
+            "desplazamiento mediastínico",
+            "elevación del hemidiafragma"
+          ],
+          "edema pulmonar": [
+            "opacidades perihiliares",
+            "patrón en alas de mariposa",
+            "líneas B y A de Kerley",
+            "cardiomegalia asociada"
+          ],
+          "derrame pleural": [
+            "opacidad homogénea con contorno superior cóncavo",
+            "obliteración del seno costofrénico que se extiende por las paredes lateral y posterior"
+          ],
+          "neumotórax": [
+            "línea fina correspondiente a la pleura visceral, separada de la parietal por un espacio aéreo sin vasos pulmonares"
+          ],
+          "neumomediastino": [
+            "imágenes lineales o aéreas localizadas centralmente a lo largo de la silueta cardíaca y grandes vasos"
+          ],
+          "aneurisma de aorta": [
+            "calibre aórtico superior a 4 cm; puede afectar aorta ascendente, cayado o aorta descendente"
+          ]
+        },
+        "cifras": {
+          "aneurisma_aortico": "calibre mayor de 4 cm"
+        },
+        "enfasis_docente": "El signo de la silueta borra el contorno cardíaco y localiza la lesión. En la atelectasia el mediastino se desplaza HACIA el lado enfermo, al revés que en el derrame masivo.",
+        "trampa": "Confundir el desplazamiento mediastínico de la atelectasia con el del derrame o el neumotórax a tensión: van en direcciones opuestas."
+      },
+      {
+        "id": "ayudadx::indicaciones-radiografia",
+        "nombre": "Indicaciones urgentes de radiografía de tórax",
+        "alto_rendimiento": false,
+        "contenido": "Politraumatismo o trauma torácico, sospecha de enfermedad parenquimatosa pulmonar, EPOC o asma bronquial agudizadas, insuficiencia cardíaca aguda, disnea aguda o hemoptisis, y dolor torácico en punta de costado.",
+        "enfasis_docente": "La radiografía se valora SIEMPRE en relación con la historia clínica: sin ella no se interpretan bien los hallazgos."
+      },
+      {
+        "id": "ayudadx::problemas-de-la-placa",
+        "nombre": "Problemas comunes que arruinan una radiografía",
+        "alto_rendimiento": false,
+        "contenido": "Superposición de escápula y pulmón por postura no estandarizada; artefactos por sustancias metálicas, frecuentes por componentes metálicos de la ropa interior; pérdida de campo pulmonar cuando parte del pulmón queda muy cerca del borde de la imagen; e inclinación de clavícula por falta de postura erguida con hombros planos.",
+        "enfasis_docente": "Una radiografía frontal debe contener todo el pulmón y la pleura circundante."
+      },
+      {
+        "id": "ayudadx::patrones-tomograficos",
+        "nombre": "Patrones tomográficos",
+        "alto_rendimiento": false,
+        "contenido": "El curso organiza la tomografía en cuatro patrones: lineal, micronodular, de opacidad y quístico.",
+        "enfasis_docente": "Los patrones son la puerta de entrada a la enfermedad intersticial difusa, que se ve en semana 3."
+      },
+      {
+        "id": "ayudadx::espirometria-principios",
+        "nombre": "Espirometría: qué mide y sus tres variables",
+        "alto_rendimiento": true,
+        "contenido": "Mide el volumen de aire exhalado en momentos específicos durante una exhalación completa y enérgica tras una inhalación máxima.",
+        "variables": {
+          "FVC": "capacidad vital forzada, volumen exhalado total",
+          "FEV1": "volumen espiratorio forzado en un segundo",
+          "FEV1/FVC": "cociente, también llamado índice de Tiffeneau"
+        },
+        "cifras": {
+          "duracion": "10 a 15 minutos",
+          "riesgo": "mínimo, síncope en raras ocasiones"
+        },
+        "enfasis_docente": "Es la prueba diagnóstica clave para asma y EPOC."
+      },
+      {
+        "id": "ayudadx::volumenes-pulmonares",
+        "nombre": "Volúmenes y capacidades pulmonares",
+        "alto_rendimiento": true,
+        "contenido": "Por convención, capacidad es un compartimento compuesto por dos o más volúmenes.",
+        "definiciones": {
+          "capacidad vital": "volumen máximo exhalado después de una inspiración máxima",
+          "capacidad residual funcional": "volumen de aire que queda en el tórax al final de una respiración normal",
+          "volumen residual": "volumen de aire que queda después de una exhalación máxima",
+          "capacidad pulmonar total": "volumen de aire en los pulmones al final de la inspiración máxima"
+        },
+        "relaciones": "La capacidad pulmonar total es la capacidad residual funcional más la capacidad inspiratoria, o bien la suma del volumen residual, el volumen de reserva espiratorio, el volumen corriente y el volumen de reserva inspiratorio.",
+        "enfasis_docente": "La distinción entre volumen y capacidad es de definición y se presta a pregunta directa."
+      },
+      {
+        "id": "ayudadx::prueba-broncodilatador",
+        "nombre": "Prueba posbroncodilatador",
+        "alto_rendimiento": true,
+        "contenido": "Se administra salbutamol con inhalador de dosis medida y cámara espaciadora si la espirometría basal muestra obstrucción o si se sospecha asma o EPOC. Se repite la espirometría entre 10 y 15 minutos después.",
+        "cifras": {
+          "tiempo_de_repeticion": "10 a 15 minutos",
+          "respuesta_significativa": "aumento de 10 % o más del FEV1 o de la FVC respecto a sus valores previstos, según ERS/ATS"
+        },
+        "enfasis_docente": "El umbral que da este curso es 10 % respecto al valor PREVISTO, según ERS/ATS. Es una cifra concreta y por eso muy preguntable.",
+        "trampa": "La ausencia de reversibilidad significativa es lo que descarta asma y orienta a EPOC. Es el eje del caso del PPT."
+      },
+      {
+        "id": "ayudadx::bucles-flujo-volumen",
+        "nombre": "Bucles de flujo-volumen y localización de la obstrucción",
+        "alto_rendimiento": true,
+        "contenido": "Incluyen maniobras de inspiración y espiración forzadas. La forma del bucle localiza el sitio del estrechamiento, dividiendo las vías en intratorácicas y extratorácicas según la entrada torácica.",
+        "cuando_usarlos": [
+          "se ausculta estridor en el cuello",
+          "se evalúa disnea de causa desconocida",
+          "se sospecha obstrucción de vías respiratorias superiores"
+        ],
+        "patrones": {
+          "normal": "ascenso rápido hasta el flujo máximo y caída casi lineal; la curva inspiratoria es simétrica, en forma de silla de montar",
+          "obstrucción extratorácica dinámica o variable": "limitación del flujo y aplanamiento en la rama INSPIRATORIA",
+          "obstrucción intratorácica dinámica o variable": "limitación del flujo y aplanamiento en la rama ESPIRATORIA",
+          "obstrucción fija de vías superiores": "aplanamiento en AMBAS ramas, inspiratoria y espiratoria",
+          "obstrucción de vías periféricas o inferiores": "rama espiratoria cóncava hacia arriba, patrón ahuecado"
+        },
+        "enfasis_docente": "Extratorácica aplana la inspiración, intratorácica aplana la espiración, y la fija aplana las dos. Esa regla de tres es exactamente el tipo de distinción que el curso evalúa."
+      },
+      {
+        "id": "ayudadx::toracocentesis",
+        "nombre": "Toracocentesis: técnica, indicaciones y complicaciones",
+        "alto_rendimiento": true,
+        "contenido": "Procedimiento para extraer líquido o aire del espacio pleural, con fines diagnósticos y terapéuticos.",
+        "tecnica": "Se realiza entre el sexto y octavo espacio intercostal. La guía ecográfica mejora la precisión y minimiza complicaciones, identificando la zona anecoica donde insertar la aguja.",
+        "indicaciones": {
+          "diagnósticas": [
+            "derrame pleural inexplicable",
+            "sospecha de infección o malignidad",
+            "diferenciación entre causas cardíacas y no cardíacas"
+          ],
+          "terapéuticas": [
+            "alivio de disnea",
+            "preparación para pleurodesis",
+            "drenaje de empiema o hemotórax",
+            "colocación de drenaje"
+          ]
+        },
+        "complicaciones": [
+          "neumotórax, en 12 a 30 % de los procedimientos",
+          "sangrado en el punto de entrada",
+          "edema pulmonar por reexpansión",
+          "respuesta vasovagal",
+          "infección del espacio pleural"
+        ],
+        "contraindicaciones": {
+          "absolutas": [
+            "trastornos hemorrágicos no corregidos",
+            "infección cutánea en el sitio de punción"
+          ],
+          "relativas": [
+            "ventilación mecánica",
+            "inestabilidad hemodinámica grave"
+          ]
+        },
+        "cifras": {
+          "espacio_intercostal": "sexto a octavo",
+          "neumotorax_como_complicacion": "12 a 30 %",
+          "derrame_paraneumonico": "presente en aproximadamente 40 % de los pacientes hospitalizados con neumonía bacteriana"
+        },
+        "enfasis_docente": "La distinción entre contraindicación absoluta y relativa es lista cerrada: dos y dos. Muy preguntable."
+      },
+      {
+        "id": "ayudadx::fibrobroncoscopia",
+        "nombre": "Fibrobroncoscopía: alcance e indicaciones",
+        "alto_rendimiento": true,
+        "contenido": "Procedimiento endoscópico bajo anestesia local y sedación que permite la visualización directa del árbol endobronquial hasta el nivel subsegmentario.",
+        "indicaciones": [
+          "visualización y biopsia de lesiones endobronquiales sospechosas de malignidad",
+          "pulmón o lóbulo colapsado, para determinar la naturaleza de la obstrucción: cuerpo extraño, tapón mucoso o tumor",
+          "muestreo microbiológico en infecciones no resueltas o sospecha de tuberculosis",
+          "evaluación citológica de lavado broncoalveolar para malignidad y enfermedades parenquimatosas"
+        ],
+        "enfasis_docente": "También sirve para procesos inflamatorios difusos mediante lavado broncoalveolar y biopsia transbronquial. El límite anatómico, hasta subsegmentario, es un dato concreto."
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "ayudadx::caso-espirometria",
+        "uso": "ítem de opción múltiple con desarrollo paso a paso de la respuesta",
+        "enunciado": "Varón de 65 años, fumador desde los 20 años, con hipertensión arterial controlada. Disnea progresiva desde hace 6 meses con tos seca ocasional. La disnea empeora con el ejercicio y mejora con el reposo. Sin fiebre ni pérdida de peso. Examen: roncus bilaterales y espiración prolongada. Espirometría: FEV1 60 % del predicho, FVC 82 % del predicho, FEV1/FVC 60 %, sin reversibilidad significativa tras broncodilatador.",
+        "respuesta": "Enfermedad pulmonar obstructiva crónica",
+        "razonamiento_del_ppt": "El FEV1 está disminuido en 60 %, la FVC está casi normal en 82 %, y el índice FEV1/FVC está por debajo de 70 %, lo que indica trastorno obstructivo. La ausencia de reversibilidad descarta asma. Un trastorno obstructivo no reversible con antecedente de tabaquismo y síntomas crónicos es altamente sugestivo de EPOC.",
+        "concepto_clave_del_ppt": "El diagnóstico de EPOC se basa en la clínica más espirometría post broncodilatador que muestre FEV1/FVC menor de 70 % sin reversibilidad significativa.",
+        "estructura_a_replicar": "tres números de espirometría dados juntos para que se lean en orden (FEV1, luego FVC, luego el cociente) y una cuarta línea, la reversibilidad, que es la que decide entre las dos alternativas que quedan vivas"
+      }
+    ],
+    "pregunta_de_integracion": "¿Qué indicaciones clínicas conoces para cada examen auxiliar en la práctica neumológica, y qué ventajas, desventajas, contraindicaciones y complicaciones deben valorarse antes de indicarlo?",
     "discrepancias_detectadas": []
   }
 }

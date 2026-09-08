@@ -31,10 +31,10 @@
     ],
     "pendiente": "Las tres lecturas asignadas: NAC, asma y tuberculosis.",
     "lecturas_ingeridas": [
-      "tuberculosis"
+      "tuberculosis",
+      "nac"
     ],
     "lecturas_pendientes": [
-      "nac",
       "asma"
     ]
   },
@@ -3209,6 +3209,196 @@
           "en_la_lectura": "Fase intensiva de 8 semanas con cuatro fármacos y continuación de 18 semanas o más, según el estándar estadounidense.",
           "en_el_ppt_del_curso": "Norma peruana MINSA 2023: primera fase de 2 meses de HREZ diario con 50 dosis, y segunda fase de 4 meses de H3R3 tres veces por semana con 54 dosis.",
           "observacion": "No es contradicción sino dos normativas distintas. En un examen del curso manda la norma peruana; en un control de lectura, lo que dice el artículo. Conviene saber cuál te están preguntando por el contexto de la pregunta.",
+          "estado": "aclarado, se conservan ambas"
+        }
+      ]
+    },
+    "nac": {
+      "titulo": "Community-Acquired Pneumonia in Adults: Rapid Evidence Review",
+      "autores": "Womack y Kropa",
+      "publicacion": "American Family Physician, 2022; 105(6):625-630",
+      "fuente": {
+        "archivo": "SEMANA 01-PDF-LECTURA NEUMONÍA ADQUIRIDA EN LA COMUNIDAD.pdf",
+        "semana": 1,
+        "tipo": "lectura"
+      },
+      "_nota_de_uso": "Material del control de lectura. Contenido parafraseado, no reproducido.",
+      "conceptos": [
+        {
+          "id": "lectura-nac::crb65",
+          "nombre": "CRB-65: la escala que esta lectura destaca",
+          "alto_rendimiento": true,
+          "contenido": "Herramienta de estratificación de riesgo bien validada en atención primaria, que NO requiere pruebas de laboratorio. Esa es su ventaja sobre el CURB-65, que necesita la urea.",
+          "componentes": {
+            "C": "confusión de inicio nuevo con esta enfermedad, 1 punto",
+            "R": "frecuencia respiratoria de 30 por minuto o más, 1 punto",
+            "B": "presión sistólica menor de 90 mmHg o diastólica de 60 mmHg o menos, 1 punto",
+            "65": "edad de 65 años o más, 1 punto"
+          },
+          "interpretacion": {
+            "0 puntos, riesgo bajo": "mortalidad 0.5 %; tratamiento ambulatorio salvo contraindicación",
+            "1 o 2 puntos, riesgo moderado": "mortalidad 5.1 %; hospitalizar en la mayoría de los casos",
+            "3 o 4 puntos, riesgo alto": "mortalidad 18.9 %; hospitalizar y considerar unidad de cuidados intensivos"
+          },
+          "enfasis": "La diferencia entre CURB-65 y CRB-65 es exactamente la U de urea. El CRB-65 se puede aplicar en consultorio sin laboratorio, y es el que esta lectura recomienda para primer nivel.",
+          "relacionado": [
+            "nac::curb65-y-lugar-de-atencion"
+          ],
+          "trampa": "Confundir los rangos: 1 o 2 puntos ya indica hospitalizar en la mayoría de casos, no solo observar."
+        },
+        {
+          "id": "lectura-nac::criterios-de-nac-grave",
+          "nombre": "Criterios de NAC grave: uno mayor o tres menores",
+          "alto_rendimiento": true,
+          "contenido": "La NAC grave se define por la presencia de UN criterio mayor o TRES o más criterios menores.",
+          "mayores": [
+            "ventilación mecánica invasiva",
+            "shock séptico con necesidad de vasopresores"
+          ],
+          "menores": [
+            "frecuencia respiratoria de 30 por minuto o más",
+            "cociente PaO2/FiO2 de 250 o menos",
+            "infiltrados multilobares",
+            "confusión o desorientación",
+            "uremia con nitrógeno ureico de 20 mg/dL o más",
+            "leucopenia con menos de 4000 células/mm3 por infección",
+            "trombocitopenia con menos de 100 000 plaquetas/mm3",
+            "hipotermia con temperatura central menor de 36 °C",
+            "hipotensión que requiere reanimación agresiva con fluidos"
+          ],
+          "detalle": "La necesidad de ventilación no invasiva puede sustituir al criterio de frecuencia respiratoria mayor de 30 o al de PaO2/FiO2 menor de 250.",
+          "otros_a_considerar": "hipoglucemia en no diabéticos, alcoholismo agudo o abstinencia, hiponatremia, acidosis metabólica inexplicada o lactato elevado, cirrosis y asplenia",
+          "enfasis": "La regla de uno mayor o tres menores es la fórmula exacta. Contar mal los menores es el error típico.",
+          "trampa": "Declarar NAC grave con dos criterios menores."
+        },
+        {
+          "id": "lectura-nac::signos-diagnosticos",
+          "nombre": "Qué signos apoyan y qué signos descartan",
+          "alto_rendimiento": true,
+          "contenido": "Un metaanálisis identificó los signos con mayor razón de momios diagnóstica para neumonía, y una revisión sistemática identificó qué combinación la vuelve improbable.",
+          "a_favor": {
+            "impresión clínica global del médico": "razón de momios 11.5",
+            "egofonía": "6.5",
+            "cualquier signo vital anormal": "6.0",
+            "fiebre medida": "3.3",
+            "taquipnea": "3.1",
+            "cualquier hallazgo pulmonar anormal": "3.2"
+          },
+          "en_contra": "En adultos con infección respiratoria aguda, signos vitales normales Y examen pulmonar normal hacen improbable la NAC, con razón de verosimilitud negativa de 0.1.",
+          "advertencia": "La fiebre no siempre está presente, incluso en pacientes con bacteriemia.",
+          "enfasis": "La impresión clínica global del médico tiene la razón de momios más alta de todo el listado, por encima de cualquier signo aislado. Ese dato suele sorprender y por eso se pregunta.",
+          "trampa": "Descartar neumonía solo porque no hay fiebre."
+        },
+        {
+          "id": "lectura-nac::imagenes",
+          "nombre": "Rendimiento de la radiografía y alternativas",
+          "alto_rendimiento": true,
+          "contenido": "La radiografía tiene valor pero su exactitud es limitada.",
+          "cifras": {
+            "valor_predictivo_positivo": "26.9 % para detectar opacidades, usando tomografía como estándar",
+            "valor_predictivo_negativo": "96.5 %"
+          },
+          "alternativas": "La tomografía reduce falsos positivos y negativos, pero el costo y la disponibilidad la hacen poco útil en ambulatorio. La ecografía pulmonar, con entrenamiento y equipo adecuados, resultó MÁS EXACTA que la radiografía para diagnosticar NAC en un metaanálisis con tomografía como estándar.",
+          "enfasis": "Que el valor predictivo negativo sea 96.5 % y el positivo solo 26.9 % significa que la placa sirve mucho más para descartar que para confirmar. Y que la ecografía supere a la radiografía es el dato contraintuitivo de esta lectura."
+        },
+        {
+          "id": "lectura-nac::procalcitonina",
+          "nombre": "Procalcitonina y cultivos: cuándo NO pedirlos",
+          "alto_rendimiento": true,
+          "contenido": "La medición de procalcitonina NO está recomendada por la IDSA y no ha demostrado reducir el uso de antibióticos en pacientes admitidos en emergencia.",
+          "cultivos": "Los cultivos diagnósticos y las pruebas de antígeno deben obtenerse SOLO en pacientes con NAC grave. La prueba para Legionella se reserva para NAC grave o zonas con brote conocido.",
+          "cuando_si": "En pacientes con aislamiento respiratorio previo de SARM o Pseudomonas, u hospitalización reciente con antibióticos parenterales y factores de riesgo validados localmente, se hacen pruebas microbiológicas antes de escalar, para permitir desescalar después si el germen no se detecta.",
+          "enfasis": "Se puede iniciar antibiótico en ambulatorio ante sospecha clínica sin estudios de imagen, salvo que el diagnóstico esté en duda.",
+          "relacionado": [
+            "nac::procalcitonina",
+            "nac::pruebas-microbiologicas"
+          ],
+          "trampa": "Pedir cultivos y antígenos a todo paciente con neumonía."
+        },
+        {
+          "id": "lectura-nac::microbiologia",
+          "nombre": "Qué se aísla realmente",
+          "alto_rendimiento": true,
+          "contenido": "En un estudio de vigilancia activa con 2488 adultos hospitalizados, no se identificó ningún organismo en el 62 % de los casos; hubo virus en el 23 % y bacterias en el 11 %.",
+          "otro_estudio": "Con pruebas moleculares sobre esputo y aspirados, se detectó patógeno en el 87 %: 56 % solo bacterias, 25 % bacterias más virus y 6 % solo virus. Entre las bacterias, las más frecuentes fueron Haemophilus influenzae con 40 % y Streptococcus pneumoniae con 36 %. Entre los virus, rinovirus con 13 % e influenza con 7 %.",
+          "cifras": {
+            "sin_organismo_identificado": "62 %",
+            "Legionella": "presente en 3 % de los hospitalizados por NAC"
+          },
+          "enfasis": "La cifra que más sorprende es que en la mayoría de casos no se identifica germen. Eso justifica el tratamiento empírico.",
+          "trampa": "Los porcentajes cambian mucho según el método: con cultivo se identifica poco, con pruebas moleculares se identifica en el 87 %."
+        },
+        {
+          "id": "lectura-nac::epidemiologia",
+          "nombre": "Incidencia y mortalidad",
+          "alto_rendimiento": false,
+          "contenido": "Cifras clave de la lectura.",
+          "cifras": {
+            "incidencia_anual": "248 casos por 100 000 adultos",
+            "de_65_a_79_años": "634 por 100 000",
+            "80_años_o_más": "16 430 por 100 000",
+            "mortalidad_hospitalizados": "6 % a 30 días",
+            "mortalidad_si_no_mejora_inicialmente": "34 % a 30 días",
+            "hospitalizacion_con_EPOC": "nueve veces mayor"
+          },
+          "enfasis": "El salto de incidencia con la edad es enorme: de 248 en la población general a 16 430 por encima de 80 años. Y la mortalidad se multiplica de 6 % a 34 % si el paciente no mejora inicialmente."
+        },
+        {
+          "id": "lectura-nac::corticoides",
+          "nombre": "Corticoides: la postura de la lectura",
+          "alto_rendimiento": true,
+          "contenido": "La IDSA NO recomienda corticoides para tratar NAC, ni en hospitalizados ni en ambulatorios, sin importar la gravedad.",
+          "matices": "Un metaanálisis sugirió que el uso a corto plazo podría reducir el riesgo de SDRA en NAC grave, pero todos los estudios incluidos tenían limitaciones significativas y la mortalidad global no mejoró. Sí pueden usarse si hacen falta para tratar una comorbilidad como asma, EPOC o enfermedad autoinmune, o para shock séptico relacionado con NAC refractario a fluidos y vasopresores.",
+          "enfasis": "La distinción es entre usar corticoide PARA la neumonía, que no se recomienda, y usarlo por otra indicación coexistente, que sí es válido.",
+          "relacionado": [
+            "nac::duracion-y-corticoides"
+          ]
+        },
+        {
+          "id": "lectura-nac::vacunas",
+          "nombre": "Esquema de vacunación antineumocócica actualizado",
+          "alto_rendimiento": true,
+          "contenido": "Recomendaciones de enero de 2022 para adultos de 65 años o más, o de 19 a 64 años con condiciones subyacentes.",
+          "esquema": "PCV20 sola, o bien PCV15 seguida de PPSV23 un año después.",
+          "cambios": {
+            "PCV13": "ya NO se recomienda de rutina en adultos inmunocompetentes de 65 años o más",
+            "ya vacunados con PCV13 y PPSV23": "no requieren PCV20 ni PCV15 por ahora",
+            "vacunados solo con PPSV23": "deben recibir una dosis de PCV15 o PCV20 un año después"
+          },
+          "cifras": {
+            "reduccion_de_riesgo_con_PPSV23": "13 % en general, y 28 % en mayores de 65 años o en adultos jóvenes con comorbilidades o inmunocompromiso"
+          },
+          "enfasis": "El detalle preguntable es que la PCV13 salió de la recomendación rutinaria, y el intervalo de un año entre PCV15 y PPSV23."
+        },
+        {
+          "id": "lectura-nac::tratamiento-ambulatorio",
+          "nombre": "Antibiótico ambulatorio con dosis",
+          "alto_rendimiento": true,
+          "contenido": "La lectura da las dosis concretas, que el PPT no detalla.",
+          "sin_comorbilidades": {
+            "amoxicilina": "1 g tres veces al día",
+            "doxiciclina": "100 mg dos veces al día",
+            "azitromicina": "500 mg el día 1 y 250 mg los días 2 a 5, solo si la resistencia local del neumococo a macrólidos es menor de 25 %",
+            "claritromicina": "500 mg dos veces al día, con la misma condición"
+          },
+          "con_comorbilidades": {
+            "combinación": "amoxicilina con clavulanato 875/125 mg o 2000/125 mg dos veces al día, o cefalosporina de tercera generación, MÁS macrólido o doxiciclina",
+            "monoterapia": "levofloxacino 750 mg al día, moxifloxacino 400 mg al día o gemifloxacino 320 mg al día"
+          },
+          "comorbilidades": "enfermedad cardíaca, pulmonar, hepática o renal, diabetes mellitus, alcoholismo, malignidad o asplenia",
+          "duracion": "mínimo cinco días, y se suspende cuando el paciente mejora y permanece clínicamente estable",
+          "enfasis": "Las dosis exactas son el detalle fino que un control de lectura puede pedir y que el PPT no trae.",
+          "relacionado": [
+            "nac::tratamiento-ambulatorio"
+          ]
+        }
+      ],
+      "discrepancias_con_los_ppt": [
+        {
+          "punto": "Qué escala priorizar para decidir el lugar de atención",
+          "en_la_lectura": "Destaca el CRB-65 por estar bien validado en atención primaria y no requerir laboratorio.",
+          "en_el_ppt_del_curso": "Menciona que la guía recomienda el PSI con recomendación fuerte y sugiere el CURB-65 como alternativa condicional.",
+          "observacion": "No se contradicen: son tres escalas del mismo grupo con distinto nivel de exigencia de datos. Conviene saber las tres y cuál conviene según el escenario, ambulatorio u hospitalario.",
           "estado": "aclarado, se conservan ambas"
         }
       ]

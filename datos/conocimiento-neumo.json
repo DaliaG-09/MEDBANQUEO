@@ -29,7 +29,14 @@
       2,
       3
     ],
-    "pendiente": "Las tres lecturas asignadas: NAC, asma y tuberculosis."
+    "pendiente": "Las tres lecturas asignadas: NAC, asma y tuberculosis.",
+    "lecturas_ingeridas": [
+      "tuberculosis"
+    ],
+    "lecturas_pendientes": [
+      "nac",
+      "asma"
+    ]
   },
   "aga": {
     "nombre": "Análisis de gases arteriales",
@@ -3038,5 +3045,173 @@
       }
     ],
     "discrepancias_detectadas": []
+  },
+  "_lecturas": {
+    "tuberculosis": {
+      "titulo": "Tuberculosis: Common Questions and Answers",
+      "autores": "Hartman-Adams, Gerbo y George",
+      "publicacion": "American Family Physician, 2022; 106(3):308-315",
+      "fuente": {
+        "archivo": "SEMANA 03-PDF-LECTURA TUBERCULOSIS.pdf",
+        "semana": 3,
+        "tipo": "lectura"
+      },
+      "_nota_de_uso": "Material del control de lectura. El género de evaluación pide: comparar dos conceptos de la lectura, aplicar un detalle fino a una viñeta clínica, y desarrollar un concepto principal. Contenido parafraseado, no reproducido: para citar textualmente hay que ir al PDF original.",
+      "conceptos": [
+        {
+          "id": "lectura-tb::ppd-vs-igra",
+          "nombre": "PPD frente a IGRA: la comparación que pide el control de lectura",
+          "alto_rendimiento": true,
+          "contenido": "Ambas pruebas son opciones recomendadas para tamizar personas en riesgo, y ninguna de las dos distingue infección latente de enfermedad activa ni predice el riesgo de progresión.",
+          "comparacion": {
+            "PPD": {
+              "método": "inyección intradérmica de 0.1 mL de derivado proteico purificado, con lectura entre 48 y 72 horas",
+              "mide": "tamaño de la induración, no del eritema",
+              "sensibilidad": "68.9 %",
+              "especificidad": "59 %",
+              "afectada_por_BCG": "sí",
+              "ventajas": "menor costo y no requiere laboratorio",
+              "desventajas": "exige al menos dos visitas, requiere personal entrenado, resultado subjetivo y dependiente de la técnica del lector, y riesgo de falso negativo si hubo vacuna viva reciente"
+            },
+            "IGRA": {
+              "método": "muestra de sangre; en Estados Unidos están aprobadas QuantiFERON-TB Gold+ y T-SPOT.TB",
+              "mide": "nivel de interferón gamma",
+              "sensibilidad": "94.1 % para QuantiFERON y 95.6 % para T-SPOT",
+              "especificidad": "97.3 % y 97.1 % respectivamente",
+              "afectada_por_BCG": "no",
+              "ventajas": "no requiere visita de control, resultado objetivo sin variabilidad del lector, mayor sensibilidad y especificidad",
+              "desventajas": "costo, disponibilidad, y no recomendada en menores de dos años"
+            }
+          },
+          "enfasis": "Las tres diferencias más limpias para responder son: la vía (intradérmica frente a sangre), la influencia de la vacuna BCG (sí frente a no) y la objetividad del resultado (subjetivo frente a objetivo). El rendimiento diagnóstico es una cuarta.",
+          "trampa": "Afirmar que alguna de las dos confirma tuberculosis activa. Ninguna distingue latente de activa."
+        },
+        {
+          "id": "lectura-tb::puntos-de-corte-ppd",
+          "nombre": "Los tres puntos de corte del PPD",
+          "alto_rendimiento": true,
+          "contenido": "La induración que se considera positiva cambia según el riesgo de la persona.",
+          "cifras": {
+            "15 mm o más": "positivo en personas sin factores de riesgo",
+            "10 mm o más": "positivo en riesgo bajo a intermedio de progresión: residencia previa en países con TB frecuente, diabetes, insuficiencia renal crónica, consumo de alcohol o drogas intravenosas, trabajadores de laboratorio de micobacterias, menores de cinco años, bajo peso",
+            "5 mm o más": "positivo en riesgo aumentado: inmunocomprometidos, infección por VIH, trasplantados, contacto cercano con alguien con TB, evidencia clínica o radiográfica de infección actual o previa"
+          },
+          "enfasis": "Tres cortes, tres poblaciones. A mayor riesgo, menor induración exigida. Es el tipo de dato que el control de lectura convierte en viñeta.",
+          "trampa": "Medir el eritema en lugar de la induración."
+        },
+        {
+          "id": "lectura-tb::latente-vs-activa",
+          "nombre": "Infección latente frente a enfermedad activa",
+          "alto_rendimiento": true,
+          "contenido": "Comparación punto por punto que trae la lectura.",
+          "comparacion": {
+            "latente": {
+              "síntomas": "ninguno",
+              "contagiosidad": "no contagiosa",
+              "esputo": "baciloscopía y cultivos negativos",
+              "radiografía": "habitualmente normal",
+              "manejo": "se considera tratamiento en todos, sobre todo en riesgo alto de progresión; no requiere aislamiento"
+            },
+            "activa": {
+              "síntomas": "tos de al menos tres semanas, hemoptisis, pérdida de peso, fiebre, sudores nocturnos",
+              "contagiosidad": "contagiosa",
+              "esputo": "baciloscopía y cultivos pueden ser positivos o negativos",
+              "radiografía": "puede mostrar hallazgos compatibles",
+              "manejo": "requiere esquema farmacológico y puede necesitar aislamiento"
+            }
+          },
+          "cifras": {
+            "progresion_sin_tratamiento": "5 a 10 % de las infecciones latentes progresan a enfermedad activa",
+            "ventana_de_positivizacion": "tanto el PPD como el IGRA pueden tardar de dos a ocho semanas en reaccionar tras la exposición"
+          },
+          "factores_de_progresion": "inmunosupresión, diabetes mellitus, uso de drogas intravenosas, bajo peso corporal y edad menor de cinco años",
+          "enfasis": "La ventana de dos a ocho semanas explica por qué una prueba negativa temprana no descarta infección reciente."
+        },
+        {
+          "id": "lectura-tb::tratamiento-latente",
+          "nombre": "Esquemas preferidos para infección latente",
+          "alto_rendimiento": true,
+          "contenido": "La lectura recomienda tres esquemas preferidos, todos con una rifamicina, en lugar del estándar previo de seis o nueve meses de isoniacida sola.",
+          "esquemas_preferidos": {
+            "isoniacida más rifapentina": "una vez por semana durante 12 semanas",
+            "rifampicina sola": "diaria durante cuatro meses",
+            "isoniacida más rifampicina": "diaria durante tres meses"
+          },
+          "alternativos": "isoniacida en monoterapia, diaria o dos veces por semana, durante seis o nueve meses. Los esquemas intermitentes deben administrarse bajo observación directa.",
+          "cifras": {
+            "tasa_de_finalizacion_isoniacida_9_meses": "menor de 60 %"
+          },
+          "enfasis": "El argumento de la lectura es la adherencia: los esquemas cortos con rifamicina se completan mucho más que los nueve meses de isoniacida. Antes de tratar una infección latente hay que EXCLUIR enfermedad activa.",
+          "trampa": "Iniciar tratamiento de infección latente sin haber descartado enfermedad activa."
+        },
+        {
+          "id": "lectura-tb::tratamiento-enfermedad",
+          "nombre": "Esquema para enfermedad activa sensible según la lectura",
+          "alto_rendimiento": true,
+          "contenido": "Fase intensiva de ocho semanas con cuatro fármacos (isoniacida, rifampicina, pirazinamida y etambutol), seguida de una fase de continuación de 18 semanas o más con dos fármacos según las pruebas de susceptibilidad.",
+          "detalle": "Si la susceptibilidad confirma sensibilidad a isoniacida y rifampicina, se puede suspender el etambutol y completar la fase intensiva con tres fármacos. La fase de continuación es con isoniacida más rifampicina.",
+          "seguimiento": "Evaluaciones basal y mensual. Se obtienen baciloscopías y cultivos mensuales hasta tener dos muestras consecutivas negativas; esos resultados determinan la duración de la fase de continuación.",
+          "enfasis": "Con cavitación en la radiografía inicial y cultivo positivo al terminar los dos meses de fase intensiva, se recomienda extender la continuación a siete meses."
+        },
+        {
+          "id": "lectura-tb::piridoxina",
+          "nombre": "Piridoxina: el detalle fino que el curso ya evaluó",
+          "alto_rendimiento": true,
+          "contenido": "La vitamina B6 se administra junto con isoniacida a todos los pacientes con riesgo de neuropatía: gestantes, lactantes amamantados, adultos mayores, y personas con VIH, diabetes, alcoholismo, desnutrición o insuficiencia renal crónica.",
+          "cifras": {
+            "dosis_preventiva": "25 a 50 mg al día",
+            "dosis_si_ya_hay_neuropatía": "los expertos recomiendan aumentar a 100 mg al día"
+          },
+          "enfasis": "Este es exactamente el detalle que apareció en el control de lectura del curso, aplicado a una gestante. La lista de poblaciones de riesgo es lo que hay que saber, no solo la dosis.",
+          "relacionado": [
+            "tb::piridoxina"
+          ]
+        },
+        {
+          "id": "lectura-tb::monitoreo-de-farmacos",
+          "nombre": "Monitoreo y efectos adversos por fármaco",
+          "alto_rendimiento": true,
+          "contenido": "Cada fármaco tiene su vigilancia propia. Es la otra fuente de detalles finos para viñeta clínica.",
+          "por_farmaco": {
+            "etambutol": "agudeza visual con carta de Snellen y discriminación de color con test de Ishihara, al inicio y mensualmente. Efectos: neuritis óptica retrobulbar, neuritis periférica y reacciones cutáneas. Ajuste renal necesario.",
+            "isoniacida": "no se recomienda monitoreo rutinario de laboratorio en todos. Efectos: elevación asintomática de transaminasas, hepatitis por fármacos, neuropatía periférica, reacciones de hipersensibilidad y síndrome lupus-like. El riesgo de hepatitis aumenta con la edad, hepatitis viral, consumo de alcohol, y embarazo o posparto.",
+            "pirazinamida": "pruebas hepáticas en pacientes con enfermedad hepática; el ácido úrico sérico puede servir como marcador de adherencia. Efectos: gota aguda, hiperuricemia asintomática, hepatitis por fármacos, poliartralgia no gotosa.",
+            "rifampicina": "sin monitoreo rutinario. Efectos: hepatitis, coloración anaranjada de fluidos corporales, trombocitopenia, síntomas gripales. Causa interacciones importantes por inducción enzimática hepática, incluidos anticonceptivos orales, metadona y warfarina. Puede dar falsos positivos de opiáceos.",
+            "rifapentina": "secreciones rojas y tinción de lentes de contacto, con efectos similares a los de la rifampicina."
+          },
+          "enfasis": "Snellen e Ishihara con etambutol es el detalle que el curso ya usó en un control de lectura. La elevación de transaminasas hasta cinco veces ocurre en 10 a 20 % de los pacientes y suele normalizarse sin suspender, fenómeno llamado adaptación hepática.",
+          "trampa": "Suspender isoniacida ante cualquier elevación de transaminasas."
+        },
+        {
+          "id": "lectura-tb::a-quien-testear",
+          "nombre": "A quién testear y a quién no",
+          "alto_rendimiento": true,
+          "contenido": "Se testea a quienes tienen síntomas de enfermedad y a los asintomáticos con riesgo aumentado de infección latente o de progresión.",
+          "poblaciones": [
+            "personas nacidas o residentes previos de países con alta prevalencia",
+            "quienes viven o vivieron en entornos colectivos como albergues, cárceles o asilos",
+            "personas con VIH, diabetes, gastrectomía o derivación yeyunoileal, bajo peso, silicosis, insuficiencia renal crónica, leucemia o cáncer de cabeza, cuello o pulmón",
+            "personas en terapia inmunosupresora activa, incluidos corticoides sistémicos a 15 mg o más de prednisona al día",
+            "contactos de alguien con tuberculosis",
+            "infección reciente en los últimos dos años"
+          ],
+          "personal_de_salud": "Se recomienda prueba inicial al ingresar. La repetición solo se recomienda ante exposición conocida o según la evaluación de riesgo del establecimiento: la incidencia de infección latente en el personal de salud es similar a la de la población general, por eso NO se recomienda retesteo periódico.",
+          "enfasis": "No se debe testear a personas de bajo riesgo, por el bajo valor predictivo positivo en esa población. La silicosis figura en la lista de condiciones que justifican prueba.",
+          "relacionado": [
+            "ocupacional::silicosis"
+          ],
+          "trampa": "Retestear rutinariamente al personal de salud sin exposición conocida."
+        }
+      ],
+      "discrepancias_con_los_ppt": [
+        {
+          "punto": "Duración y frecuencia del esquema para tuberculosis sensible",
+          "en_la_lectura": "Fase intensiva de 8 semanas con cuatro fármacos y continuación de 18 semanas o más, según el estándar estadounidense.",
+          "en_el_ppt_del_curso": "Norma peruana MINSA 2023: primera fase de 2 meses de HREZ diario con 50 dosis, y segunda fase de 4 meses de H3R3 tres veces por semana con 54 dosis.",
+          "observacion": "No es contradicción sino dos normativas distintas. En un examen del curso manda la norma peruana; en un control de lectura, lo que dice el artículo. Conviene saber cuál te están preguntando por el contexto de la pregunta.",
+          "estado": "aclarado, se conservan ambas"
+        }
+      ]
+    }
   }
 }

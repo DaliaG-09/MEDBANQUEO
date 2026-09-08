@@ -12,13 +12,13 @@
       "tb",
       "nac",
       "asma",
-      "nih"
+      "nih",
+      "bronquiec"
     ],
     "temas_pendientes": [
       "anatomia",
       "ayudadx",
       "semiologia",
-      "bronquiec",
       "epid",
       "irasdra",
       "ocupacional",
@@ -1600,5 +1600,207 @@
     "pregunta_de_integracion": "¿Cómo influyen la identificación temprana del agente etiológico y la evaluación del riesgo de resistencia antimicrobiana en la elección del tratamiento empírico en la neumonía intrahospitalaria, y qué consecuencias puede tener una decisión inadecuada en el pronóstico del paciente?",
     "discrepancias_detectadas": [],
     "_nota_de_alcance": "Tema independiente de nac. Neumonía adquirida en la comunidad y neumonía intrahospitalaria se tratan como dos temas separados, con sus propias definiciones, etiologías y tratamientos. No se contrastan entre sí salvo que la pregunta lo pida explícitamente."
+  },
+  "bronquiec": {
+    "nombre": "Bronquitis aguda, bronquitis crónica y bronquiectasias",
+    "fuente": {
+      "archivo": "SEMANA 01-PDF-Bronquitis aguda bronquitis crónica y bronquiectasias.pdf",
+      "semana": 1,
+      "sesion": 2,
+      "tipo": "ppt"
+    },
+    "guia_de_referencia": "Panel de expertos CHEST 2020 para tos crónica por bronquitis crónica. Revisión de bronquiectasias del NEJM 2022.",
+    "contenidos_declarados": [
+      "Bronquitis aguda",
+      "Bronquitis crónica",
+      "Bronquiectasias"
+    ],
+    "_nota_de_alcance": "Las tres entidades comparten tos productiva y el curso las enseña juntas justamente para que se distingan. La clase abre pidiendo diferenciarlas por criterios clínicos, fisiopatológicos y radiológicos.",
+    "conceptos": [
+      {
+        "id": "bronquiec::bronquitis-aguda-definicion",
+        "nombre": "Bronquitis aguda: definición y diagnóstico diferencial",
+        "alto_rendimiento": true,
+        "contenido": "Se diagnostica cuando NO hay indicios clínicos ni radiológicos de neumonía. La ausencia de criterios del síndrome de respuesta inflamatoria sistémica indica bronquitis o traqueítis.",
+        "diferenciacion": {
+          "bronquiolitis": "compromete vías respiratorias menores",
+          "bronquiectasias": "dilatación permanente de los bronquios",
+          "bronquitis crónica": "tos y esputo por 3 meses durante 2 años consecutivos"
+        },
+        "cifras": {
+          "incidencia": "44 casos por cada 1000 adultos al año",
+          "proporcion_de_adultos": "afecta al 5 % de los adultos anualmente",
+          "estacionalidad": "mayor incidencia en otoño e invierno",
+          "ranking": "novena enfermedad más frecuente en pacientes ambulatorios en Estados Unidos"
+        },
+        "enfasis_docente": "Es un diagnóstico de exclusión: primero se descarta neumonía por clínica y radiología.",
+        "trampa": "Diagnosticar bronquitis aguda sin haber descartado neumonía."
+      },
+      {
+        "id": "bronquiec::bronquitis-aguda-etiologia",
+        "nombre": "Etiología y clínica de la bronquitis aguda",
+        "alto_rendimiento": true,
+        "contenido": "Se considera principalmente viral, aunque solo se aíslan virus en el 8 al 37 % de los casos.",
+        "agentes": {
+          "bacterias típicas": "Streptococcus pneumoniae, Haemophilus influenzae y Moraxella catarrhalis",
+          "bacterias atípicas, 25 % de los casos": "Bordetella pertussis, Chlamydia pneumoniae y Mycoplasma pneumoniae"
+        },
+        "sintoma_cardinal": "Tos de reciente aparición que persiste más de 1 semana. Los pacientes suelen consultar tras 4 a 7 días de tos que no remite.",
+        "sintomas_asociados": "producción de esputo, fiebre, malestar y roncantes. En tos ferina: paroxismos de tos, gallos o vómitos.",
+        "cifras": {
+          "aislamiento_viral": "8 a 37 %",
+          "atipicas": "25 %",
+          "procalcitonina": "menor de 0.1 ng/L hace improbable la infección bacteriana"
+        },
+        "enfasis_docente": "La tos de más de una semana es el síntoma cardinal. Los gallos y los vómitos tras el acceso de tos apuntan a tos ferina."
+      },
+      {
+        "id": "bronquiec::bronquitis-aguda-tratamiento",
+        "nombre": "Tratamiento y pronóstico de la bronquitis aguda",
+        "alto_rendimiento": true,
+        "contenido": "Los antibióticos NO se recomiendan de forma rutinaria. Si se prescriben, se prefiere azitromicina 500 mg al día por 3 días. Para tos ferina: eritromicina, doxiciclina o azitromicina.",
+        "lo_que_no_sirve": "Antihistamínicos, antitusivos y expectorantes sin receta no tienen utilidad aparente. Los corticosteroides orales NO son útiles y no deben utilizarse.",
+        "cifras": {
+          "duracion_de_la_tos": "10 a 14 días",
+          "sintomas_persistentes": "hasta 20 % de los pacientes tiene síntomas persistentes o recidivantes durante 1 mes",
+          "azitromicina": "500 mg al día por 3 días"
+        },
+        "enfasis_docente": "Deben sopesarse efectos secundarios, resistencia antimicrobiana y costes frente a los beneficios modestos del antibiótico.",
+        "trampa": "Prescribir corticoide oral o antitusivo. El PPT los descarta explícitamente."
+      },
+      {
+        "id": "bronquiec::bronquitis-cronica",
+        "nombre": "Bronquitis crónica: definición y contexto",
+        "alto_rendimiento": true,
+        "contenido": "Tos con producción de esputo durante al menos 3 meses al año durante 2 años consecutivos, CUANDO SE HAN EXCLUIDO otras causas respiratorias o cardíacas de tos crónica y productiva.",
+        "cifras": {
+          "criterio_temporal": "3 meses al año durante 2 años consecutivos"
+        },
+        "factores_de_riesgo": "El tabaquismo es el más significativo a nivel mundial. También combustibles de biomasa, inhalantes irritantes, contaminantes ambientales y toxinas. Condiciones genéticas e infecciones respiratorias aumentan la probabilidad.",
+        "relacion_con_epoc": "Los pacientes con bronquitis crónica se encuentran en el espectro de los que tienen EPOC. Los pacientes con EPOC que además tienen bronquitis crónica presentan disnea más severa, tos nocturna más frecuente y peores puntuaciones de calidad de vida.",
+        "enfasis_docente": "La exclusión de otras causas es parte de la definición, no un paso opcional. La historia de exposiciones inhaladas es parte esencial del diagnóstico.",
+        "trampa": "Aplicar el criterio de 3 meses por 2 años sin excluir causas cardíacas o respiratorias de tos productiva."
+      },
+      {
+        "id": "bronquiec::bronquitis-cronica-tratamiento",
+        "nombre": "Qué dice CHEST sobre tratar la tos de la bronquitis crónica estable",
+        "alto_rendimiento": true,
+        "contenido": "Tres sugerencias del panel de expertos, todas declaraciones de consenso sin clasificar.",
+        "sugerencias": {
+          "factores de riesgo": "el tabaquismo y las exposiciones ambientales a polvo, inhalantes irritantes y contaminantes son factores de riesgo para que la tos crónica se deba a bronquitis crónica",
+          "tratamiento farmacológico": "NO hay evidencia suficiente para recomendar el uso rutinario de antibióticos, broncodilatadores ni mucolíticos para aliviar la tos en sí",
+          "tratamiento no farmacológico": "NO se sugiere el uso rutinario de tratamientos como la presión positiva espiratoria para aliviar la tos, hasta que se demuestren seguros y eficaces"
+        },
+        "enfasis_docente": "Siempre se debe alentar el abandono del tabaco. La tos y la producción de esputo pueden reducirse o desaparecer al dejar de fumar.",
+        "trampa": "Recomendar mucolíticos o antibióticos de rutina para la tos de la bronquitis crónica estable."
+      },
+      {
+        "id": "bronquiec::bronquiectasias-definicion",
+        "nombre": "Bronquiectasias: definición y subtipos",
+        "alto_rendimiento": true,
+        "contenido": "Enfermedad pulmonar crónica definida por la DILATACIÓN PERMANENTE de los bronquios, con un síndrome clínico de tos, producción de esputo y exacerbaciones recurrentes.",
+        "subtipos_radiograficos": "cilíndricos, varicosos y quísticos, que a menudo se superponen y coexisten",
+        "cifras": {
+          "prevalencia": "aproximadamente 600 por 100 000 personas",
+          "retraso_diagnostico": "3.5 a 17 años desde el inicio de los síntomas",
+          "costo_anual": "aproximadamente 80 000 dólares por individuo",
+          "poblacion": "mayor incidencia en mayores de 65 años y más común en mujeres"
+        },
+        "enfasis_docente": "La palabra clave es permanente: eso la separa de la broncoconstricción reversible del asma y de la bronquitis."
+      },
+      {
+        "id": "bronquiec::circulo-vicioso",
+        "nombre": "El círculo vicioso fisiopatológico",
+        "alto_rendimiento": true,
+        "contenido": "Cuatro componentes que se perpetúan entre sí: inflamación con actividad neutrofílica aumentada y liberación de proteasas y citocinas proinflamatorias; deterioro del aclaramiento mucociliar con acumulación de secreciones que favorece la infección; infección con colonización bacteriana crónica que perpetúa el daño tisular; y daño estructural con dilatación bronquial y destrucción de la pared.",
+        "enfasis_docente": "Cada componente alimenta a los demás. Es el concepto que explica por qué el tratamiento ataca varios frentes a la vez."
+      },
+      {
+        "id": "bronquiec::radiologia",
+        "nombre": "Hallazgos tomográficos y signo del anillo de sello",
+        "alto_rendimiento": true,
+        "contenido": "La tomografía computarizada de alta resolución es el estándar de oro para el diagnóstico.",
+        "hallazgos": [
+          "relación broncoarterial aumentada, mayor de 1.5, siendo normal 0.7",
+          "falta de estrechamiento de las vías aéreas hacia la periferia",
+          "quistes globulares al final de los bronquios",
+          "impactación de moco en las vías respiratorias"
+        ],
+        "cifras": {
+          "relacion_broncoarterial_normal": "0.7",
+          "relacion_broncoarterial_patologica": "mayor de 1.5"
+        },
+        "signo_del_anillo_de_sello": "Bronquios dilatados con paredes engrosadas, cuando el diámetro bronquial supera al del vaso pulmonar adyacente.",
+        "enfasis_docente": "La espirometría puede mostrar patrón obstructivo pero NO confirma bronquiectasias: no es sensible ni específica.",
+        "trampa": "Elegir espirometría como prueba confirmatoria. Es el distractor B del caso del PPT."
+      },
+      {
+        "id": "bronquiec::condiciones-asociadas",
+        "nombre": "Condiciones asociadas a bronquiectasias",
+        "alto_rendimiento": true,
+        "contenido": "El curso las agrupa en seis categorías.",
+        "categorias": {
+          "hereditarias con deterioro del aclaramiento mucociliar": "fibrosis quística, discinesia ciliar primaria, deficiencia de alfa-1 antitripsina",
+          "inhalación": "aspiración, reflujo gastroesofágico, lesión por inhalación tóxica o térmica",
+          "postinfecciosas": "infecciones del tracto respiratorio inferior en la infancia, bronquitis bacteriana prolongada, infecciones granulomatosas",
+          "anomalías estructurales": "síndrome de Williams-Campbell, síndrome de Mounier-Kuhn, síndrome de Marfan",
+          "trastornos inflamatorios idiopáticos": "sarcoidosis, artritis reumatoide, espondilitis anquilosante",
+          "obstrucción": "asma, EPOC o enfisema, compresión extrínseca de las vías respiratorias"
+        },
+        "enfasis_docente": "Las infecciones respiratorias repetidas en la infancia son la pista epidemiológica que el curso usa en su caso."
+      },
+      {
+        "id": "bronquiec::tratamiento",
+        "nombre": "Tratamiento de las bronquiectasias",
+        "alto_rendimiento": true,
+        "contenido": "Se separa el manejo de la exacerbación del manejo crónico y del no farmacológico.",
+        "exacerbaciones": [
+          "aumentar la frecuencia de aclaramiento de vías respiratorias",
+          "antibióticos basados en cultivos de esputo, durante 14 días",
+          "hospitalización con terapia intravenosa en casos graves"
+        ],
+        "terapia_cronica": [
+          "erradicación de Pseudomonas aeruginosa",
+          "broncodilatadores antes de la fisioterapia",
+          "macrólidos tres veces por semana en pacientes con 3 o más exacerbaciones al año",
+          "antibióticos inhalados para infecciones recurrentes"
+        ],
+        "no_farmacologico": [
+          "técnicas de aclaramiento de moco: ciclo de respiración activa, presión espiratoria positiva",
+          "ejercicio aeróbico",
+          "oxígeno suplementario para hipoxemia"
+        ],
+        "cifras": {
+          "antibiotico_en_exacerbacion": "14 días",
+          "umbral_para_macrolidos": "3 o más exacerbaciones al año",
+          "mortalidad_5_anos": "11.5 % sin infección por micobacterias no tuberculosas y 12.6 % con esta complicación"
+        },
+        "recomendaciones_del_panel": [
+          "la frecuencia de limpieza de vías respiratorias se determina por la gravedad de la enfermedad y la cantidad de secreciones",
+          "las técnicas deben ser enseñadas por profesionales con formación avanzada",
+          "las técnicas deben individualizarse, porque existen muchas diferentes"
+        ],
+        "enfasis_docente": "El tratamiento es principalmente médico. La cirugía queda solo para casos localizados y refractarios.",
+        "trampa": "Proponer cirugía extensa como tratamiento curativo. Es el distractor D del caso del PPT."
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "bronquiec::caso-bronquiectasias",
+        "uso": "ítem de opción múltiple con respuesta y descarte razonado de las cinco alternativas",
+        "enunciado": "Mujer de 42 años con tos crónica productiva desde hace 2 años, con aumento del volumen del esputo en los últimos meses. Refiere varias infecciones respiratorias desde la infancia. Expectora abundante secreción purulenta, sobre todo en las mañanas. No fuma. Ha recibido varios ciclos de antibióticos por bronquitis, con mejoría parcial. Examen físico: crépitos basales bilaterales y acropaquia. Se solicita tomografía de tórax de alta resolución.",
+        "respuesta": "La tomografía de tórax es el estudio de elección y puede mostrar dilatación bronquial en forma de anillo de sello",
+        "razonamiento_del_ppt": "Los signos clave son tos crónica productiva con esputo purulento, infecciones respiratorias recurrentes desde la infancia, acropaquia y respuesta solo parcial a los antibióticos. Ese conjunto es altamente sugestivo de bronquiectasias.",
+        "distractores_y_por_que_no": {
+          "EPOC por el antecedente de infecciones": "el EPOC se asocia a tabaquismo crónico o exposición a biomasa, ausentes aquí, y rara vez cursa con acropaquia",
+          "La espirometría es la prueba más sensible": "puede mostrar patrón obstructivo pero no confirma bronquiectasias; no es sensible ni específica",
+          "Cirugía pulmonar extensa curativa en todos los casos": "el tratamiento es principalmente médico; la cirugía es solo para casos localizados y refractarios",
+          "La acropaquia sugiere tuberculosis activa": "la acropaquia puede estar presente en bronquiectasias crónicas y no indica necesariamente tuberculosis activa"
+        },
+        "estructura_a_replicar": "la negación explícita de un factor de riesgo (no fuma) sirve para descartar el distractor principal; la mejoría solo PARCIAL con antibióticos es la pista de que hay daño estructural de base"
+      }
+    ],
+    "pregunta_de_integracion": "¿Qué características clínicas, fisiopatológicas y radiológicas permiten diferenciar de manera precisa entre bronquitis aguda, bronquitis crónica y bronquiectasias, y por qué es importante establecer un diagnóstico diferencial oportuno en el manejo ambulatorio y hospitalario del paciente con tos crónica?",
+    "discrepancias_detectadas": []
   }
 }

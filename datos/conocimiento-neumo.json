@@ -6,18 +6,18 @@
     "modulo": "Neumología",
     "ingesta": "2026-09-07",
     "temas_ingeridos": [
-      "aga",
-      "pleura",
-      "epoc",
-      "tb",
+      "anatomia",
+      "ayudadx",
       "nac",
-      "asma",
       "nih",
+      "asma",
       "bronquiec",
-      "ayudadx"
+      "aga",
+      "epoc",
+      "pleura",
+      "tb"
     ],
     "temas_pendientes": [
-      "anatomia",
       "semiologia",
       "epid",
       "irasdra",
@@ -25,6 +25,7 @@
       "sahos"
     ],
     "semanas_completas": [
+      1,
       2
     ]
   },
@@ -2074,6 +2075,204 @@
       }
     ],
     "pregunta_de_integracion": "¿Qué indicaciones clínicas conoces para cada examen auxiliar en la práctica neumológica, y qué ventajas, desventajas, contraindicaciones y complicaciones deben valorarse antes de indicarlo?",
+    "discrepancias_detectadas": []
+  },
+  "anatomia": {
+    "nombre": "Anatomía y fisiología del aparato respiratorio",
+    "fuente": {
+      "archivo": "SEMANA 01-PDF- Anatomía y fisiología del aparato respiratorio.pdf",
+      "semana": 1,
+      "sesion": 1,
+      "tipo": "ppt"
+    },
+    "_nota_de_alcance": "Este tema NO se evalúa como anatomía descriptiva. Su propio caso de aplicación es una gasometría que pide el mecanismo fisiológico. Solo se marcan como alto rendimiento los conceptos que alimentan gasometría, espirometría, SDRA y SAHOS. El resto queda como material de apoyo para explicar el porqué, no para preguntar de memoria.",
+    "conceptos": [
+      {
+        "id": "anatomia::relacion-vq",
+        "nombre": "Relación ventilación-perfusión",
+        "alto_rendimiento": true,
+        "contenido": "En un pulmón normal ventilación y perfusión están acopladas, con cociente V/Q cercano a 1 en la mayoría de las unidades.",
+        "escala": {
+          "V/Q normal": "cercano a 1",
+          "V/Q bajo": "ventilación insuficiente para la perfusión",
+          "V/Q alto": "ventilación excesiva para la perfusión",
+          "V/Q igual a 0": "cortocircuito o shunt",
+          "V/Q infinito": "espacio muerto"
+        },
+        "por_patologia": {
+          "pulmón normal": "buena concordancia centrada alrededor de 1",
+          "asma": "distribución bimodal con áreas de bajo V/Q",
+          "EPOC": "patrón similar al asma más un modo de V/Q alto adicional",
+          "neumonía": "cortocircuito puro con ensanchamiento menor de la distribución"
+        },
+        "cifras": {
+          "ventilacion_alveolar": "aproximadamente 5 L/min, similar al flujo sanguíneo pulmonar, lo que da un V/Q global cercano a 1"
+        },
+        "enfasis_docente": "Los dos extremos de la misma escala tienen nombre propio: cero es shunt, infinito es espacio muerto. Esa simetría es lo evaluable."
+      },
+      {
+        "id": "anatomia::causas-de-hipoxemia-y-respuesta-al-oxigeno",
+        "nombre": "Causas de hipoxemia y su respuesta al oxígeno",
+        "alto_rendimiento": true,
+        "contenido": "Cuatro mecanismos, diferenciados por cómo responden al oxígeno suplementario.",
+        "detalle": {
+          "hipoventilación": "ventilación alveolar insuficiente para las demandas metabólicas. Responde BIEN al oxígeno.",
+          "alteración V/Q": "desequilibrio entre ventilación y perfusión. Es la causa MÁS FRECUENTE de hipoxemia. Mejora PARCIALMENTE con oxígeno.",
+          "alteración de la difusión": "engrosamiento de la membrana alveolocapilar. Más evidente durante el ejercicio. Responde al oxígeno.",
+          "cortocircuito": "sangre que no contacta con alvéolos ventilados. NO responde o responde poco al oxígeno."
+        },
+        "enfasis_docente": "La respuesta al oxígeno es la variable que separa el shunt de todo lo demás, y la alteración V/Q es la causa más frecuente. Esto conecta directo con la tabla diferencial del PPT de gasometría.",
+        "relacionado": [
+          "aga::causas-de-hipoxemia"
+        ]
+      },
+      {
+        "id": "anatomia::espacio-muerto",
+        "nombre": "Espacio muerto y ventilación alveolar",
+        "alto_rendimiento": true,
+        "contenido": "La ventilación alveolar es la porción de la ventilación por minuto que llega a los alvéolos y participa en el intercambio. El espacio muerto es la porción del volumen corriente que no participa.",
+        "tipos": {
+          "anatómico": "vía aérea de conducción, de 100 a 150 mL",
+          "fisiológico": "el anatómico más las áreas ventiladas pero no perfundidas"
+        },
+        "cifras": {
+          "espacio_muerto_anatomico": "100 a 150 mL",
+          "VD/VC_patologico": "puede aumentar hasta 0.8 a 0.9 en embolia pulmonar y EPOC"
+        },
+        "enfasis_docente": "Cuando el cociente espacio muerto sobre volumen corriente sube a 0.8 o 0.9, hace falta un gran aumento compensador de la ventilación por minuto. Eso explica la taquipnea del tromboembolismo."
+      },
+      {
+        "id": "anatomia::control-de-la-respiracion",
+        "nombre": "Control químico de la respiración",
+        "alto_rendimiento": true,
+        "contenido": "La ventilación se controla por factores neurogénicos y químicos.",
+        "factores_quimicos": {
+          "aumento de PaCO2": "principal estímulo respiratorio",
+          "disminución de PaO2": "estímulo secundario, pero PRINCIPAL en el paciente con EPOC",
+          "acidosis metabólica": "aumenta la ventilación, respiración de Kussmaul"
+        },
+        "factores_neurogenicos": "centro respiratorio en el tronco encefálico, nervios frénico e intercostal, receptores en músculos respiratorios. Se deprime por hipoxemia grave y sedantes.",
+        "enfasis_docente": "En el retenedor crónico de CO2 el estímulo principal pasa a ser la hipoxemia. De ahí la precaución con la oxigenoterapia en EPOC.",
+        "relacionado": [
+          "epoc::oxigenoterapia",
+          "epoc::retenedor crónico de CO₂"
+        ]
+      },
+      {
+        "id": "anatomia::difusion",
+        "nombre": "Difusión de gases y DLCO",
+        "alto_rendimiento": true,
+        "contenido": "La difusión a través de la membrana alveolocapilar depende de la superficie de intercambio, el espesor de la membrana, el gradiente de presión, la solubilidad del gas y su peso molecular.",
+        "cifras": {
+          "velocidad_relativa": "el CO2 difunde aproximadamente 20 veces más rápido que el O2, por su mayor solubilidad, pese a su mayor peso molecular"
+        },
+        "enfasis_docente": "Que el CO2 difunda 20 veces más rápido explica por qué en la alteración de difusión pura hay hipoxemia sin hipercapnia. La DLCO evalúa la integridad de la membrana alveolocapilar."
+      },
+      {
+        "id": "anatomia::transporte-de-gases",
+        "nombre": "Transporte de oxígeno y de dióxido de carbono",
+        "alto_rendimiento": true,
+        "contenido": "El aporte total de oxígeno es el producto del contenido arterial de oxígeno por el gasto cardíaco.",
+        "oxigeno": {
+          "unido a hemoglobina": "97 a 98 %",
+          "disuelto en plasma": "2 a 3 %"
+        },
+        "dioxido_de_carbono": {
+          "como bicarbonato": "90 %",
+          "disuelto en plasma": "5 %",
+          "como compuestos carbamino": "5 %, unido a grupos amino terminales de proteínas, principalmente hemoglobina"
+        },
+        "cifras": {
+          "CO2_arterial": "aproximadamente 21.5 mmol por litro",
+          "CO2_venoso_mixto": "aproximadamente 23.3 mmol por litro"
+        },
+        "enfasis_docente": "La unión del oxígeno a la hemoglobina es alostérica y se altera en la intoxicación por monóxido de carbono y en la metahemoglobinemia, donde la saturación medida engaña."
+      },
+      {
+        "id": "anatomia::volumenes-pulmonares",
+        "nombre": "Volúmenes pulmonares con sus valores",
+        "alto_rendimiento": true,
+        "contenido": "Valores de referencia que el curso da y que se usan al leer una espirometría.",
+        "cifras": {
+          "capacidad pulmonar total": "6 a 8 L",
+          "volumen residual": "2 L",
+          "capacidad vital": "4 a 6 L",
+          "volumen corriente": "0.5 L"
+        },
+        "enfasis_docente": "Se alteran de forma característica en enfermedades restrictivas y obstructivas.",
+        "relacionado": [
+          "ayudadx::volumenes-pulmonares"
+        ]
+      },
+      {
+        "id": "anatomia::zonas-de-west",
+        "nombre": "Zonas de West",
+        "alto_rendimiento": false,
+        "contenido": "La perfusión varía según la relación entre presión arterial pulmonar, presión alveolar y presión venosa pulmonar.",
+        "zonas": {
+          "Zona I": "presión arterial menor que la alveolar: sin perfusión",
+          "Zona II": "arterial mayor que alveolar, y alveolar mayor que venosa: perfusión intermitente",
+          "Zona III": "arterial mayor que venosa, y venosa mayor que alveolar: perfusión continua",
+          "Zona IV": "reducción de perfusión basal por compresión vascular"
+        },
+        "enfasis_docente": "La gravedad influye, pero también factores no gravitacionales como la estructura vascular."
+      },
+      {
+        "id": "anatomia::cierre-de-via-aerea",
+        "nombre": "Cierre de la vía aérea y edad",
+        "alto_rendimiento": false,
+        "contenido": "Ocurre cuando la presión pleural supera la presión en la vía aérea. El volumen de cierre es el volumen por encima del residual donde empieza el cierre; la capacidad de cierre es ese volumen más el residual.",
+        "enfasis_docente": "Cuando la capacidad de cierre supera la capacidad residual funcional hay cierre durante la respiración normal. Eso explica la disminución de la oxigenación con la edad, y aumenta además en supino y en enfermedad pulmonar."
+      },
+      {
+        "id": "anatomia::via-aerea-y-alveolos",
+        "nombre": "Vía aérea, alvéolos y pulmones",
+        "alto_rendimiento": false,
+        "contenido": "Tráquea de 10 a 12 cm que se divide en la carina. Aproximadamente 25 divisiones entre tráquea y alvéolos: las primeras 7 forman bronquios y las siguientes 16 a 18 forman bronquiolos. Los bronquiolos no tienen cartílago y contienen células de Clara que producen surfactante.",
+        "alveolos": "300 millones por pulmón, con superficie total de 40 a 80 m2. Neumocitos tipo I con citoplasma muy delgado que facilita el intercambio, y neumocitos tipo II que producen surfactante.",
+        "pulmones": "El derecho tiene tres lóbulos, el izquierdo dos separados por la cisura oblicua.",
+        "diafragma": "Inervado por los nervios frénicos; el 50 % de sus fibras son de contracción lenta y resistentes a la fatiga.",
+        "vascularizacion": "Suministro dual por arteria pulmonar y arterias bronquiales; drenaje a cuatro venas pulmonares principales."
+      },
+      {
+        "id": "anatomia::tono-bronquial",
+        "nombre": "Flujo aéreo, resistencia y tono bronquial",
+        "alto_rendimiento": false,
+        "contenido": "El flujo es máximo en la tráquea y disminuye hacia la periferia; en las vías terminales ocurre por difusión. Resistencia normal de 0.1 a 0.2 kPa por litro.",
+        "tono": "Mantenido por nervios eferentes vagales, reducido por atropina y agonistas beta2, con ritmo circadiano de máximo a las 4 de la mañana, y aumenta con estímulos inhalados irritantes.",
+        "enfasis_docente": "El máximo de tono bronquial a las 4 de la mañana explica los síntomas nocturnos del asma.",
+        "relacionado": [
+          "asma::diagnostico"
+        ]
+      },
+      {
+        "id": "anatomia::defensa-pulmonar",
+        "nombre": "Mecanismos de defensa pulmonar",
+        "alto_rendimiento": false,
+        "contenido": "Mecanismos físicos con humidificación, filtración, tos y estornudo; aclaramiento mucociliar con cilios que transportan moco hacia la faringe; secreciones con mucinas, moléculas antimicrobianas, anticuerpos y citocinas; inmunidad celular con macrófagos alveolares y neutrófilos; y factores humorales como alfa-antitripsina, defensas antioxidantes, lisozima, lactoferrina e interferones.",
+        "enfasis_docente": "Estos son los mecanismos que el patógeno debe superar antes de llegar al alvéolo, concepto que el PPT de NAC retoma en su fisiopatología.",
+        "relacionado": [
+          "nac::etiologia"
+        ]
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "anatomia::caso-sahos",
+        "uso": "ítem de opción múltiple; pese a ser la clase de anatomía, el caso es gasométrico y clínico",
+        "enunciado": "Mujer de 58 años con obesidad grado II e hipertensión controlada. Acude por disnea progresiva, somnolencia diurna, ronquidos nocturnos y cefalea matutina. FR 10 rpm, SatO2 88 % al aire ambiente, PaCO2 60 mmHg, PaO2 58 mmHg, pH 7.28, HCO3 29 mEq/L. Examen neurológico con somnolencia sin déficit focal. Polisomnografía con múltiples eventos de apnea obstructiva. Radiografía sin consolidaciones ni derrames. Espirometría normal.",
+        "pregunta": "¿Cuál de los siguientes mecanismos fisiológicos explica mejor la alteración gasométrica observada?",
+        "respuesta": "Hipoventilación alveolar por obstrucción intermitente de la vía aérea superior",
+        "razonamiento_del_ppt": "Hay hipoventilación crónica compensada: PaCO2 alta, pH bajo y bicarbonato elevado. No hay signos de enfermedad parenquimatosa ni alteración obstructiva en la espirometría. El diagnóstico probable es apnea obstructiva del sueño: durante el sueño colapsa la vía aérea superior, generando hipoventilación intermitente con aumento sostenido de CO2 y desaturación nocturna, y el riñón compensa elevando el bicarbonato.",
+        "distractores_y_por_que_no": {
+          "Disminución del gradiente alveolocapilar por edema pulmonar": "la radiografía no muestra consolidaciones ni derrames",
+          "Hipoventilación por alteración neuromuscular primaria": "el examen neurológico no muestra déficit focal y la causa está documentada en la polisomnografía",
+          "Shunt aumentado por fibrosis pulmonar basal": "la espirometría es normal y no hay enfermedad parenquimatosa"
+        },
+        "estructura_a_replicar": "pregunta por el MECANISMO, no por el diagnóstico; la radiografía y la espirometría normales están puestas para descartar tres distractores de un golpe; los valores normales vienen escritos al lado de cada resultado"
+      }
+    ],
+    "pregunta_de_integracion": "¿Cómo se relacionan las alteraciones estructurales del sistema respiratorio con los signos y síntomas funcionales en las patologías clínicas frecuentes?",
     "discrepancias_detectadas": []
   }
 }

@@ -15,12 +15,12 @@
       "aga",
       "epoc",
       "pleura",
-      "tb"
+      "tb",
+      "irasdra",
+      "epid"
     ],
     "temas_pendientes": [
       "semiologia",
-      "epid",
-      "irasdra",
       "ocupacional",
       "sahos"
     ],
@@ -2273,6 +2273,401 @@
       }
     ],
     "pregunta_de_integracion": "¿Cómo se relacionan las alteraciones estructurales del sistema respiratorio con los signos y síntomas funcionales en las patologías clínicas frecuentes?",
+    "discrepancias_detectadas": []
+  },
+  "irasdra": {
+    "nombre": "Insuficiencia respiratoria aguda y síndrome de distrés respiratorio del adulto",
+    "fuente": {
+      "archivo": "SEMANA 03-PDF-Insuficiencia Respiratoria Aguda. Síndrome de Distrés Respiratorio del Adulto.pdf",
+      "semana": 3,
+      "sesion": 7,
+      "tipo": "ppt"
+    },
+    "guia_de_referencia": "Definición de Berlín 2012. Fan et al. 2023 para manejo del SDRA. GOLD 2024 para oxigenoterapia en EPOC.",
+    "contenidos_declarados": [
+      "Introducción",
+      "Clasificación hipoxémica, hipercápnica y mixta",
+      "Etiología y factores desencadenantes",
+      "Fisiopatología",
+      "Cuadro clínico y signos de alarma",
+      "Diagnóstico",
+      "Manejo inicial y soporte vital"
+    ],
+    "conceptos": [
+      {
+        "id": "irasdra::definicion",
+        "nombre": "Definición y cifras de corte",
+        "alto_rendimiento": true,
+        "contenido": "Incapacidad del aparato respiratorio para mantener una adecuada oxigenación o eliminación de dióxido de carbono, o ambas, en reposo, en un paciente previamente normocápnico.",
+        "cifras": {
+          "hipoxemia": "PaO2 menor de 60 mmHg",
+          "hipercapnia": "PaCO2 mayor de 50 mmHg",
+          "acidosis respiratoria": "pH menor de 7.35"
+        },
+        "enfasis_docente": "Los dos números que definen la insuficiencia respiratoria son 60 y 50. La coletilla previamente normocápnico importa: en el retenedor crónico el criterio no aplica igual.",
+        "trampa": "Usar el umbral de PaCO2 de 45 de la gasometría general. Aquí el corte es 50."
+      },
+      {
+        "id": "irasdra::clasificacion",
+        "nombre": "Los tipos de insuficiencia respiratoria",
+        "alto_rendimiento": true,
+        "contenido": "Tres formas de presentación según el gas alterado.",
+        "detalle": {
+          "Tipo I, hipoxémica": "hipoxemia sin hipercapnia. Se observa en neumonía, SDRA y edema pulmonar.",
+          "Tipo II, hipercápnica": "con retención de CO2. Común en EPOC agudizado, enfermedades neuromusculares y fármacos depresores.",
+          "Tipo III o IV, mixta": "frecuente en postoperatorios, trauma, sepsis o estados de bajo gasto."
+        },
+        "enfasis_docente": "El tipo se decide leyendo la PaCO2, no la PaO2: las tres formas tienen hipoxemia."
+      },
+      {
+        "id": "irasdra::epidemiologia-y-causas",
+        "nombre": "Epidemiología y causas más frecuentes",
+        "alto_rendimiento": false,
+        "contenido": "Causas más frecuentes: neumonía grave, exacerbaciones de EPOC, embolia pulmonar masiva, edema agudo de pulmón y trauma torácico.",
+        "cifras": {
+          "ingresos_a_UCI": "20 a 30 % de los ingresos",
+          "mortalidad_en_forma_grave": "30 a 45 %"
+        },
+        "enfasis_docente": "La pandemia por SARS-CoV-2 incrementó la incidencia de SDRA secundario a neumonía viral y redefinió estrategias de ventilación."
+      },
+      {
+        "id": "irasdra::mecanismos-de-hipoxemia",
+        "nombre": "Los cinco mecanismos de hipoxemia",
+        "alto_rendimiento": true,
+        "contenido": "Alteración de la relación ventilación-perfusión, cortocircuito, hipoventilación alveolar, disminución del contenido de oxígeno inspirado, y alteración de la difusión.",
+        "en_el_sdra": "Predomina el SHUNT intrapulmonar por colapso alveolar y presencia de membranas hialinas, con pérdida de la capacidad de respuesta al oxígeno suplementario.",
+        "hipercapnia": "Se relaciona con hipoventilación alveolar, propia de enfermedades obstructivas crónicas, enfermedades neuromusculares o sedación excesiva. El aumento del espacio muerto también contribuye.",
+        "enfasis_docente": "Que el SDRA sea shunt explica por qué no mejora con oxígeno suplementario. Es la conexión directa con la tabla de causas de hipoxemia del PPT de gasometría.",
+        "relacionado": [
+          "aga::causas-de-hipoxemia",
+          "anatomia::causas-de-hipoxemia-y-respuesta-al-oxigeno"
+        ]
+      },
+      {
+        "id": "irasdra::criterios-de-berlin",
+        "nombre": "Criterios de Berlín para SDRA",
+        "alto_rendimiento": true,
+        "contenido": "Cuatro criterios que deben cumplirse todos.",
+        "criterios": [
+          "inicio dentro de los 7 días posteriores a un evento clínico conocido, como neumonía, sepsis o trauma",
+          "opacidades bilaterales en radiografía o tomografía",
+          "no explicado completamente por edema cardiogénico, siendo útil el ecocardiograma",
+          "hipoxemia clasificada según el cociente PaO2/FiO2"
+        ],
+        "cifras": {
+          "ventana_temporal": "7 días"
+        },
+        "enfasis_docente": "El tercer criterio es el que obliga a descartar causa cardíaca. El cociente PaO2/FiO2 clasifica la gravedad una vez cumplidos los otros tres.",
+        "trampa": "Diagnosticar SDRA solo por hipoxemia grave y opacidades bilaterales, sin descartar edema cardiogénico ni verificar la ventana de 7 días."
+      },
+      {
+        "id": "irasdra::diagnostico",
+        "nombre": "Diagnóstico clínico y paraclínico",
+        "alto_rendimiento": true,
+        "contenido": "La gasometría arterial es el estándar diagnóstico.",
+        "clinica": [
+          "disnea",
+          "taquipnea",
+          "uso de músculos accesorios",
+          "cianosis",
+          "confusión o alteración del sensorio"
+        ],
+        "imagenes": "Radiografía y tomografía identifican consolidaciones, infiltrados difusos, colapso o signos de edema. La tomografía de alta resolución es útil para patrón intersticial o embolia pulmonar.",
+        "ecografia": {
+          "líneas B difusas": "edema intersticial",
+          "consolidaciones subpleurales": "neumonía o SDRA",
+          "pulmón deslizante presente": "descarta neumotórax",
+          "protocolo BLUE": "permite un diagnóstico sindrómico en menos de 5 minutos"
+        },
+        "enfasis_docente": "En pacientes crónicos la presentación puede ser insidiosa. La ecografía pulmonar da diagnóstico sindrómico en menos de 5 minutos, dato concreto y preguntable."
+      },
+      {
+        "id": "irasdra::oxigenoterapia",
+        "nombre": "Oxigenoterapia y elección de dispositivo",
+        "alto_rendimiento": true,
+        "contenido": "Se individualiza según causa y gravedad, escalando de bajo flujo a alto flujo, ventilación no invasiva y ventilación mecánica invasiva.",
+        "dispositivos": {
+          "cánula nasal de alto flujo": "mejora la oxigenación sin intubación. Útil en neumonía viral, SDRA leve e inmunocomprometidos. Mejora la comodidad, reduce la disnea y la necesidad de intubación.",
+          "mascarilla con reservorio": "en hipoxemia severa transitoria",
+          "oxigenoterapia titulada en EPOC": "objetivo de saturación de 88 a 92 % para evitar hipercapnia"
+        },
+        "cifras": {
+          "objetivo_SatO2_en_EPOC": "88 a 92 %"
+        },
+        "enfasis_docente": "El objetivo de 88 a 92 % en EPOC es de las cifras más preguntables del tema: subir la FiO2 sin control en un retenedor crónico agrava la hipercapnia.",
+        "relacionado": [
+          "epoc::oxigenoterapia",
+          "anatomia::control-de-la-respiracion"
+        ]
+      },
+      {
+        "id": "irasdra::manejo-y-terapias-avanzadas",
+        "nombre": "Manejo general y terapias avanzadas",
+        "alto_rendimiento": true,
+        "contenido": "Manejo general en cuatro puntos: oxigenoterapia, soporte hemodinámico, corrección del factor desencadenante como infección, insuficiencia cardíaca o tromboembolismo, y vigilancia intensiva.",
+        "avanzadas": {
+          "ECMO": "indicada en SDRA refractario con hipoxemia persistente, con PaO2/FiO2 menor de 80 pese a tratamiento óptimo",
+          "corticosteroides": "su uso en SDRA sigue siendo controversial, con indicación en fases tardías seleccionadas"
+        },
+        "ventilacion": "Ventilación mecánica protectora con uso juicioso de PEEP, posición prona y relajantes musculares.",
+        "cifras": {
+          "umbral_para_ECMO": "PaO2/FiO2 menor de 80 pese a tratamiento óptimo"
+        },
+        "enfasis_docente": "Corregir el factor desencadenante es parte del manejo, no un paso posterior. Los corticoides en SDRA son controversiales: afirmarlos como indicados de rutina es error."
+      },
+      {
+        "id": "irasdra::pronostico",
+        "nombre": "Pronóstico y seguimiento",
+        "alto_rendimiento": false,
+        "contenido": "La mortalidad depende de etiología, edad, comorbilidades y prontitud del tratamiento.",
+        "cifras": {
+          "mortalidad_SDRA_severo": "35 a 45 %, disminuida gracias a estrategias de protección pulmonar y posición prona"
+        },
+        "seguimiento": "Evaluación de función pulmonar, rehabilitación respiratoria y monitoreo de complicaciones como fibrosis o disfunción muscular."
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "irasdra::caso-neumonia-grave",
+        "uso": "caso abierto con SIETE preguntas encadenadas; es el formato más parecido al taller de casos clínicos",
+        "enunciado": "Varón de 64 años, tiempo de enfermedad de 5 días, con disnea progresiva, fiebre y tos con expectoración purulenta. Hoy presenta taquipnea y uso de músculos accesorios. Antecedentes: exfumador de 20 paquetes-año, hipertensión controlada, vacunado contra COVID-19 pero no contra influenza ni neumococo, sin EPOC ni asma. Examen: FC 112, FR 34, temperatura 38.3 °C, SatO2 84 % al aire ambiente, estertores crepitantes bilaterales, uso de músculos accesorios y cianosis labial leve. Radiografía: opacidades alveolares bilaterales sin cardiomegalia. Gasometría al aire ambiente: pH 7.31, PaCO2 48 mmHg, PaO2 54 mmHg, HCO3 22 mEq/L, FiO2 0.21, PaO2/FiO2 aproximadamente 257. Hemograma con leucocitosis y neutrofilia. Procalcitonina 2.4 ng/mL. PCR 102 mg/L.",
+        "preguntas": [
+          "¿El paciente presenta insuficiencia respiratoria aguda? ¿De qué tipo: hipoxémica, hipercápnica o mixta?",
+          "¿Se puede considerar diagnóstico de SDRA? ¿Por qué? Según la definición de Berlín, ¿en qué categoría se clasificaría?",
+          "¿Qué pruebas o imágenes adicionales podrían solicitarse para confirmar o descartar SDRA?",
+          "¿Cuál sería el manejo inicial en términos de oxigenoterapia? ¿Qué dispositivos están indicados?",
+          "¿Considerarías ventilación no invasiva o alta concentración de oxígeno? ¿Por qué?",
+          "¿Qué medidas terapéuticas deben implementarse de inmediato y cuáles escalarse si no mejora?",
+          "¿Qué diagnósticos diferenciales considerarías?"
+        ],
+        "claves": "PaO2 de 54 cumple criterio de hipoxemia; PaCO2 de 48 está por debajo del corte de 50, así que no es hipercápnica pura. Las opacidades bilaterales sin cardiomegalia y el PaO2/FiO2 de 257 encajan con SDRA leve dentro de la ventana de 7 días. La ausencia de EPOC está declarada explícitamente para que no se aplique el objetivo de 88 a 92 %. Se pide ecocardiograma para descartar edema cardiogénico.",
+        "estructura_a_replicar": "siete preguntas encadenadas sobre un solo caso, que van de clasificar a decidir dispositivo y a escalar; los antecedentes negativos (EPOC menos, asma menos) están escritos a propósito para cerrar caminos; la vacunación incompleta es factor de riesgo y no adorno"
+      }
+    ],
+    "discrepancias_detectadas": []
+  },
+  "epid": {
+    "nombre": "Enfermedad pulmonar intersticial difusa",
+    "fuente": {
+      "archivo": "SEMANA 03-PDF-Enfermedad Pulmonar Intersticial Difusa.pdf",
+      "semana": 3,
+      "sesion": 8,
+      "tipo": "ppt"
+    },
+    "guia_de_referencia": "SEPAR 2023 y ATS/ERS/JRS/ALAT 2022.",
+    "contenidos_declarados": [
+      "Definición",
+      "Fisiopatología",
+      "Intersticio pulmonar",
+      "Clasificación",
+      "Anamnesis",
+      "Clínica",
+      "Laboratorio y radiología"
+    ],
+    "conceptos": [
+      {
+        "id": "epid::definicion-e-intersticio",
+        "nombre": "Definición e intersticio pulmonar",
+        "alto_rendimiento": true,
+        "contenido": "Grupo heterogéneo de enfermedades que afectan predominantemente al intersticio pulmonar, aunque también pueden comprometer parénquima, vasos y vías respiratorias periféricas. Se caracterizan por inflamación o fibrosis progresiva que compromete la función respiratoria.",
+        "intersticio": {
+          "normal": "espacio virtual entre la membrana basal del epitelio alveolar y el epitelio capilar",
+          "patológico": "células inflamatorias, células epiteliales hiperplásicas, depósito de colágeno, proliferación de músculo liso, células malignas, granulomas y fibras de amiloide"
+        },
+        "enfasis_docente": "Son entidades heterogéneas con características clínicas, funcionales y radiológicas MUY SEMEJANTES entre sí. Por eso el diagnóstico exige combinar clínica, función, inmunología e imagen."
+      },
+      {
+        "id": "epid::clasificacion",
+        "nombre": "Clasificación en cuatro grupos",
+        "alto_rendimiento": true,
+        "contenido": "El curso la organiza en cuatro grandes grupos.",
+        "grupos": {
+          "1. De causa conocida": "asociada a enfermedades del tejido conectivo (artritis reumatoide, esclerosis sistémica, dermatomiositis); ocupacional o ambiental (neumoconiosis, alveolitis por hipersensibilidad); inducidas por fármacos o radiación",
+          "2. Idiopáticas": "fibrosis pulmonar idiopática, que es el prototipo de EPID progresiva; neumonía intersticial no específica; neumonía intersticial descamativa; bronquiolitis respiratoria con enfermedad intersticial; neumonía organizada criptogénica; neumonía intersticial aguda",
+          "3. En condiciones especiales": "asociada a enfermedades hematológicas o trasplante, y en inmunodeprimidos",
+          "4. No clasificadas": "sin encuadre en los anteriores"
+        },
+        "cifras": {
+          "mas_frecuentes": "fibrosis pulmonar idiopática y sarcoidosis representan el 50 % de las EPID"
+        },
+        "enfasis_docente": "La fibrosis pulmonar idiopática es el prototipo de EPID progresiva. Hay diferencias entre países en la frecuencia relativa."
+      },
+      {
+        "id": "epid::fenotipo-progresivo",
+        "nombre": "Fenotipo progresivo y sus criterios",
+        "alto_rendimiento": true,
+        "contenido": "Algunas EPID que no son fibrosis pulmonar idiopática pueden comportarse de forma progresiva, con deterioro clínico, funcional y radiológico.",
+        "criterios_ATS_ERS_2022": [
+          "disminución de la capacidad vital forzada de 10 % o más",
+          "aumento de la disnea",
+          "empeoramiento radiológico en la tomografía de alta resolución"
+        ],
+        "cifras": {
+          "caida_de_CVF": "10 % o más"
+        },
+        "enfasis_docente": "El reconocimiento del fenotipo progresivo cambió el enfoque terapéutico en las que no son fibrosis pulmonar idiopática: habilita el uso de nintedanib. Los tres criterios son clínico, funcional y radiológico, uno de cada tipo."
+      },
+      {
+        "id": "epid::anamnesis",
+        "nombre": "La anamnesis orienta un tercio de los diagnósticos",
+        "alto_rendimiento": true,
+        "contenido": "Con una buena anamnesis se puede orientar el diagnóstico en la tercera parte de las EPID.",
+        "edad": {
+          "20 a 40 años": "sarcoidosis, histiocitosis X, asociadas a enfermedades del colágeno y linfangioleiomiomatosis",
+          "mayores de 50 años": "fibrosis pulmonar idiopática"
+        },
+        "sexo": {
+          "mujeres": "más frecuentes las asociadas a enfermedades del colágeno; la linfangioleiomiomatosis es propia de mujeres"
+        },
+        "antecedentes_familiares": "puede haber historia hereditaria en fibrosis pulmonar idiopática, microlitiasis alveolar, neurofibromatosis, sarcoidosis y esclerosis tuberosa",
+        "tabaquismo": "asociado a neumonía intersticial descamativa, bronquiolitis respiratoria e histiocitosis X. Ocurre LO CONTRARIO con la sarcoidosis y la alveolitis alérgica extrínseca.",
+        "farmacos": {
+          "quimioterápicos": "busulfán, bleomicina, metotrexato",
+          "antibióticos": "nitrofurantoína",
+          "misceláneos": "sales de oro, amiodarona, difenilhidantoína, procainamida"
+        },
+        "historia_laboral": "debe consignarse en orden cronológico, con exposiciones, fechas y duración. Los agentes orgánicos causan alveolitis alérgica extrínseca; los polvos inorgánicos causan neumoconiosis.",
+        "enfasis_docente": "El tabaquismo PROTEGE en sarcoidosis y alveolitis alérgica extrínseca. Esa inversión es contraintuitiva y por eso muy preguntable.",
+        "trampa": "Asumir que el tabaco es factor de riesgo para todas las EPID."
+      },
+      {
+        "id": "epid::clinica-y-examen",
+        "nombre": "Clínica y hallazgos del examen físico",
+        "alto_rendimiento": true,
+        "contenido": "Inicio generalmente gradual, aunque también puede ser agudo. El síntoma más frecuente es la disnea con disminución de la tolerancia al ejercicio; en segundo lugar, tos seca.",
+        "examen_fisico": {
+          "crepitantes inspiratorios tipo velcro": "simétricos, presentes en más del 90 % de las fibrosis pulmonares idiopáticas y en el 60 % de las EPID asociadas a enfermedad del tejido conectivo; menos frecuentes en neumonitis por hipersensibilidad",
+          "sibilancias": "reflejan bronquiolitis u obstrucción bronquial; se asocian a síndrome de Churg-Strauss y neumonitis por hipersensibilidad",
+          "hipocratismo digital": "marcador de enfermedad fibrótica avanzada, sobre todo en fibrosis pulmonar idiopática; raro en sarcoidosis"
+        },
+        "cifras": {
+          "velcro_en_FPI": "más del 90 %",
+          "velcro_en_EPID_por_tejido_conectivo": "60 %"
+        },
+        "enfasis_docente": "El grado de disnea se relaciona con la gravedad y el pronóstico. Los rales velcro más acropaquia en un mayor de 50 años son la combinación que orienta a fibrosis pulmonar idiopática."
+      },
+      {
+        "id": "epid::funcion-respiratoria",
+        "nombre": "Pruebas de función respiratoria y gasometría",
+        "alto_rendimiento": true,
+        "contenido": "El patrón funcional típico es restrictivo, aunque algunos casos pueden cursar con patrón obstructivo.",
+        "hallazgos": {
+          "espirometría": "patrón restrictivo con capacidad vital forzada disminuida",
+          "pletismografía": "capacidad pulmonar total y volúmenes disminuidos",
+          "DLCO": "disminuida",
+          "AGA": "gradiente alveoloarterial de oxígeno AUMENTADO, hipocapnia moderada, hipoxemia evidente e hipercapnia solo en estadios avanzados",
+          "prueba de esfuerzo": "hipoxemia y desaturación desencadenadas por el ejercicio"
+        },
+        "enfasis_docente": "La hipercapnia aparece solo en estadios avanzados: encontrarla temprano obliga a pensar en otra cosa. La desaturación con el ejercicio puede ser el primer hallazgo con reposo casi normal.",
+        "relacionado": [
+          "ayudadx::espirometria-principios",
+          "aga::ecuacion-gas-alveolar"
+        ]
+      },
+      {
+        "id": "epid::radiologia",
+        "nombre": "Patrones radiológicos y TCAR",
+        "alto_rendimiento": true,
+        "contenido": "La radiografía es indispensable en el diagnóstico inicial y el seguimiento. La tomografía de alta resolución es la piedra angular del diagnóstico.",
+        "cifras": {
+          "alteracion_radiografica_al_diagnostico": "90 % de los casos"
+        },
+        "patrones": [
+          "vidrio esmerilado",
+          "nodular",
+          "reticular",
+          "retículonodular",
+          "panal de abeja"
+        ],
+        "caracteristicas": "Localización difusa en ambos hemitórax y disminución del tamaño de los campos pulmonares.",
+        "por_entidad": {
+          "fibrosis pulmonar idiopática": "patrón de neumonía intersticial usual",
+          "neumonía intersticial no específica": "vidrio deslustrado difuso"
+        },
+        "patron_alveolar": "Algunas EPID pueden cursar con patrón alveolar: neumonía intersticial aguda, neumonía intersticial no específica, neumonía intersticial linfocítica, proteinosis alveolar, alveolitis alérgica extrínseca y eosinofilias pulmonares.",
+        "enfasis_docente": "La disminución del tamaño de los campos pulmonares es el signo que delata la restricción en la placa. La tomografía es la piedra angular, pero el contexto clínico y la evaluación funcional son esenciales."
+      },
+      {
+        "id": "epid::laboratorio",
+        "nombre": "Laboratorio orientado por sospecha",
+        "alto_rendimiento": false,
+        "contenido": "Inespecíficos: elevación de la velocidad de sedimentación e hipergammaglobulinemia.",
+        "orientados": {
+          "eosinofilia": "eosinofilias pulmonares",
+          "aumento de LDH": "proteinosis alveolar",
+          "hipercalcemia e hipercalciuria": "sarcoidosis",
+          "enzima convertidora de angiotensina": "sarcoidosis y otras EPID",
+          "factor reumatoideo": "artritis reumatoide",
+          "anticuerpos antinucleares": "lupus",
+          "anti-ENA": "esclerosis sistémica",
+          "anti Jo-1": "dermatomiositis y polimiositis",
+          "enzimas musculares como creatinfosfocinasa y aldolasa": "dermatomiositis y polimiositis",
+          "precipitinas séricas": "alveolitis alérgica extrínseca",
+          "ANCA": "vasculitis"
+        },
+        "enfasis_docente": "Cada anticuerpo apunta a una entidad concreta. Es una tabla de correspondencias, muy preguntable por emparejamiento."
+      },
+      {
+        "id": "epid::diagnostico-multidisciplinario",
+        "nombre": "Ruta diagnóstica",
+        "alto_rendimiento": true,
+        "contenido": "El diagnóstico combina características clínicas, fisiopatológicas, inmunológicas y de imagen. Puede ser necesaria biopsia pulmonar quirúrgica con examen histológico.",
+        "pruebas": [
+          "espirometría con patrón restrictivo",
+          "radiografía con patrón reticular bilateral",
+          "tomografía de alta resolución",
+          "serologías autoinmunes",
+          "evaluación de factores ocupacionales y ambientales",
+          "biopsia pulmonar si la tomografía no es concluyente: transbronquial, criobiopsia o quirúrgica",
+          "evaluación multidisciplinaria con neumólogo, radiólogo y patólogo"
+        ],
+        "enfasis_docente": "La biopsia se indica SOLO si la tomografía no es concluyente. La evaluación multidisciplinaria es parte del estándar, no un lujo."
+      },
+      {
+        "id": "epid::tratamiento",
+        "nombre": "Tratamiento según tipo",
+        "alto_rendimiento": true,
+        "contenido": "El tratamiento cambia según el grupo etiológico.",
+        "detalle": {
+          "fibrosis pulmonar idiopática": "antifibróticos, pirfenidona o nintedanib; oxigenoterapia si hay hipoxemia; considerar trasplante pulmonar",
+          "EPID asociada a enfermedad del tejido conectivo": "inmunosupresores como micofenolato, ciclofosfamida o azatioprina, y glucocorticoides con dosis y duración según gravedad",
+          "EPID progresiva no FPI": "nintedanib, aprobado en el fenotipo progresivo"
+        },
+        "manejo_integral": "rehabilitación pulmonar, vacunas contra neumococo e influenza, y cuidados paliativos en fases avanzadas",
+        "enfasis_docente": "Antifibrótico en la idiopática, inmunosupresor en la autoinmune. Invertir esos dos es el error conceptual que el curso quiere evitar.",
+        "trampa": "Dar corticoides e inmunosupresores en fibrosis pulmonar idiopática."
+      },
+      {
+        "id": "epid::pronostico",
+        "nombre": "Pronóstico",
+        "alto_rendimiento": false,
+        "contenido": "Variable según el tipo.",
+        "cifras": {
+          "fibrosis pulmonar idiopática": "supervivencia media de 2 a 5 años",
+          "neumonía intersticial no específica y neumonía organizada criptogénica": "mejor pronóstico"
+        },
+        "mal_pronostico": [
+          "fenotipo progresivo",
+          "hipoxemia persistente",
+          "afectación extensa en la tomografía de alta resolución"
+        ]
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "epid::caso-amianto",
+        "uso": "aparece DOS veces, al abrir y en la aplicación; pregunta abierta con tres consignas encadenadas",
+        "enunciado": "Varón de 63 años con hipertensión esencial, miocardiopatía hipertensiva, tabaquismo crónico no actual de 80 paquetes-año y obesidad grado II. Trabajó 18 años en fábrica de filtros de precipitación con amianto, carbón activado y polvo de celulosa, hasta hace 20 años. Consulta por disnea de 1 año de evolución, grado 2 de la escala mMRC, que progresa a grado 3 a 4 en los últimos 10 días, con tos y expectoración mucopurulenta. Sin ortopnea, sin disnea paroxística nocturna, sin fiebre. Medicación: enalapril 40 mg, amlodipino 20 mg, furosemida 40 mg y clonazepam 0.5 mg. Examen: temperatura 36 °C, FR 20, FC 84, SatO2 ambiental 85 %, SatO2 con FiO2 24 % de 90 %, PA 140/80. Ruidos cardíacos normofonéticos, sin ingurgitación yugular ni reflujo hepatoyugular, edemas ++/++++ infrapatelares. Buena mecánica respiratoria, murmullo vesicular conservado, rales velcro en ambas bases y acropaquia. AGA: pH 7.43, pCO2 30.2, pO2 55.7, HCO3 19.9, SO2 82.6 %. Espirometría: VEF1/FVC 0.84, VEF1 80 %, FVC 76 %, sin respuesta a broncodilatadores.",
+        "preguntas": [
+          "¿Cuál sería tu planteamiento diagnóstico y tu plan de trabajo?",
+          "Considerando el caso y los hallazgos en tomografía, ¿qué etiologías plantearía?",
+          "Explique la fisiopatología de la EPID",
+          "¿Qué relación existe entre el intersticio y la EPID?"
+        ],
+        "claves": "La espirometría muestra cociente conservado en 0.84 con FVC reducida a 76 %: patrón restrictivo, no obstructivo. El AGA es alcalosis respiratoria con hipoxemia. Los rales velcro basales más acropaquia orientan a EPID fibrosante. La exposición a amianto por 18 años, con latencia de 20 años, es la pista ocupacional. La ausencia de ortopnea, disnea paroxística nocturna e ingurgitación yugular está escrita para alejar el origen cardíaco pese a la miocardiopatía hipertensiva.",
+        "estructura_a_replicar": "antecedentes cardiológicos que compiten con el diagnóstico respiratorio, y negaciones explícitas puestas para descartarlos; la ocupación con años de exposición Y años de latencia; la espirometría dada con los tres números para que se lea que el cociente está conservado"
+      }
+    ],
     "discrepancias_detectadas": []
   }
 }

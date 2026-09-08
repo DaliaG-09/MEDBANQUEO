@@ -1070,7 +1070,8 @@
         "estructura_a_replicar": "escalera de seis pasos que termina en sustentación oral; los datos permiten calcular casi todo el CURB-65 pero falta uno a propósito"
       }
     ],
-    "discrepancias_detectadas": []
+    "discrepancias_detectadas": [],
+    "_nota_de_alcance": "Tema independiente de nih. Ver la nota equivalente en ese tema."
   },
   "asma": {
     "nombre": "Asma bronquial",
@@ -1597,13 +1598,7 @@
       }
     ],
     "pregunta_de_integracion": "¿Cómo influyen la identificación temprana del agente etiológico y la evaluación del riesgo de resistencia antimicrobiana en la elección del tratamiento empírico en la neumonía intrahospitalaria, y qué consecuencias puede tener una decisión inadecuada en el pronóstico del paciente?",
-    "discrepancias_detectadas": [
-      {
-        "punto": "Vigencia de la categoría de neumonía asociada a la atención sanitaria",
-        "material_del_curso": "Este PPT enseña la NAAS como categoría con sus propios factores de riesgo. El PPT de NAC de la misma semana dice que se recomienda ABANDONAR la categorización de neumonía asociada a la atención médica para guiar la cobertura antibiótica extendida.",
-        "observacion": "Los dos PPTs del curso se contradicen entre sí. La postura ATS/IDSA vigente es abandonar la categoría; el PPT de intrahospitalaria la mantiene, mencionando además que en Europa la etiología se parece a la de la NAC. Conviene preguntar a la profesora cuál postura evalúa antes de responder en un examen.",
-        "estado": "sin confirmar"
-      }
-    ]
+    "discrepancias_detectadas": [],
+    "_nota_de_alcance": "Tema independiente de nac. Neumonía adquirida en la comunidad y neumonía intrahospitalaria se tratan como dos temas separados, con sus propias definiciones, etiologías y tratamientos. No se contrastan entre sí salvo que la pregunta lo pida explícitamente."
   }
 }

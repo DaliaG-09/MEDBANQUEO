@@ -17,17 +17,19 @@
       "pleura",
       "tb",
       "irasdra",
-      "epid"
-    ],
-    "temas_pendientes": [
-      "semiologia",
+      "epid",
       "ocupacional",
       "sahos"
     ],
+    "temas_pendientes": [
+      "semiologia"
+    ],
     "semanas_completas": [
       1,
-      2
-    ]
+      2,
+      3
+    ],
+    "pendiente": "Las tres lecturas asignadas: NAC, asma y tuberculosis."
   },
   "aga": {
     "nombre": "Análisis de gases arteriales",
@@ -2666,6 +2668,373 @@
         ],
         "claves": "La espirometría muestra cociente conservado en 0.84 con FVC reducida a 76 %: patrón restrictivo, no obstructivo. El AGA es alcalosis respiratoria con hipoxemia. Los rales velcro basales más acropaquia orientan a EPID fibrosante. La exposición a amianto por 18 años, con latencia de 20 años, es la pista ocupacional. La ausencia de ortopnea, disnea paroxística nocturna e ingurgitación yugular está escrita para alejar el origen cardíaco pese a la miocardiopatía hipertensiva.",
         "estructura_a_replicar": "antecedentes cardiológicos que compiten con el diagnóstico respiratorio, y negaciones explícitas puestas para descartarlos; la ocupación con años de exposición Y años de latencia; la espirometría dada con los tres números para que se lea que el cociente está conservado"
+      }
+    ],
+    "discrepancias_detectadas": []
+  },
+  "ocupacional": {
+    "nombre": "Enfermedades respiratorias ocupacionales",
+    "fuente": {
+      "archivo": "SEMANA 03-PDF-Enfermedades Respiratorias Ocupacionales.pdf",
+      "semana": 3,
+      "sesion": 9,
+      "tipo": "ppt"
+    },
+    "guia_de_referencia": "ATS 2020 para enfermedades no malignas por asbesto. Guía técnica MINSA 2021 de vigilancia de trabajadores con riesgo respiratorio. Ley peruana N.º 29783 de Seguridad y Salud en el Trabajo.",
+    "contenidos_declarados": [
+      "Clasificación",
+      "Epidemiología",
+      "Factores de riesgo ocupacionales",
+      "Fisiopatología",
+      "Manifestaciones clínicas",
+      "Diagnóstico",
+      "Tratamiento"
+    ],
+    "conceptos": [
+      {
+        "id": "ocupacional::definicion-y-clasificacion",
+        "nombre": "Definición y las siete categorías",
+        "alto_rendimiento": true,
+        "contenido": "Patologías del aparato respiratorio causadas, desencadenadas o AGRAVADAS por exposiciones en el lugar de trabajo. Importantes en minería, textiles, construcción e industria química.",
+        "clasificacion": [
+          "neumoconiosis: silicosis, asbestosis y antracosis",
+          "asma ocupacional",
+          "EPOC ocupacional",
+          "alveolitis alérgica extrínseca",
+          "bronquitis crónica por irritantes",
+          "cáncer pulmonar ocupacional",
+          "lesiones agudas: edema pulmonar tóxico y bronquiolitis obliterante"
+        ],
+        "enfasis_docente": "La definición incluye agravadas, no solo causadas: un asma preexistente que empeora en el trabajo también entra."
+      },
+      {
+        "id": "ocupacional::silicosis",
+        "nombre": "Silicosis",
+        "alto_rendimiento": true,
+        "contenido": "Causada por inhalación prolongada de sílice cristalina. Se presenta como fibrosis nodular progresiva, inicialmente asintomática, con patrón restrictivo.",
+        "enfasis_docente": "Tiene RIESGO ELEVADO DE TUBERCULOSIS. Esa asociación es el dato que el curso destaca y conecta directamente con el tema de TB.",
+        "relacionado": [
+          "tb::clinica-y-localizacion"
+        ],
+        "trampa": "Olvidar el cribado de tuberculosis en un paciente con silicosis."
+      },
+      {
+        "id": "ocupacional::asbestosis",
+        "nombre": "Asbestosis",
+        "alto_rendimiento": true,
+        "contenido": "Asociada a la inhalación de fibras de asbesto. Causa fibrosis pulmonar difusa y engrosamiento pleural.",
+        "enfasis_docente": "Tiene relación DIRECTA con el mesotelioma pleural maligno. Asbesto y mesotelioma es la asociación clásica del tema.",
+        "relacionado": [
+          "epid::anamnesis",
+          "pleura::etiologia-del-derrame"
+        ]
+      },
+      {
+        "id": "ocupacional::antracosis",
+        "nombre": "Antracosis o pulmón del minero",
+        "alto_rendimiento": true,
+        "contenido": "Ocurre por depósito de polvo de carbón. Puede ser simple o complicada, esta última con fibrosis masiva. El pigmento antracótico se encuentra en macrófagos ubicados en linfonódulos.",
+        "enfasis_docente": "La distinción entre simple y complicada por fibrosis masiva es lo evaluable."
+      },
+      {
+        "id": "ocupacional::asma-ocupacional",
+        "nombre": "Asma ocupacional",
+        "alto_rendimiento": true,
+        "contenido": "Desencadenada por alergenos del ambiente laboral como harinas, látex e isocianatos. Presenta síntomas típicos de asma con MEJORÍA FUERA DEL TRABAJO.",
+        "enfasis_docente": "El patrón temporal es el diagnóstico: síntomas durante la jornada que disminuyen o desaparecen en días libres, licencias y vacaciones. Sin ese patrón no se sostiene el origen ocupacional.",
+        "relacionado": [
+          "asma::contextos-especiales"
+        ]
+      },
+      {
+        "id": "ocupacional::alveolitis-alergica",
+        "nombre": "Alveolitis alérgica extrínseca o neumonitis por hipersensibilidad",
+        "alto_rendimiento": true,
+        "contenido": "Reacción inmunológica a partículas ORGÁNICAS: hongos, polvo de aves, caña de azúcar. Produce infiltrado intersticial difuso.",
+        "enfasis_docente": "Orgánico da alveolitis alérgica; inorgánico da neumoconiosis. Esa división es la regla que ordena todo el tema. Además no todos los expuestos se afectan, porque es una reacción de hipersensibilidad individual.",
+        "relacionado": [
+          "epid::clasificacion",
+          "epid::anamnesis"
+        ],
+        "trampa": "Descartar el diagnóstico porque los demás trabajadores expuestos están sanos. Es exactamente el señuelo del caso del PPT."
+      },
+      {
+        "id": "ocupacional::bronquitis-y-cancer",
+        "nombre": "Bronquitis crónica ocupacional y cáncer pulmonar ocupacional",
+        "alto_rendimiento": false,
+        "contenido": "La bronquitis crónica ocupacional se presenta en trabajadores expuestos a irritantes químicos como gases industriales, con tos crónica y expectoración.",
+        "cancer": "Relacionado con exposición prolongada a asbesto, arsénico, cromo, níquel y humo de diesel. Generalmente aparece tras DÉCADAS de exposición.",
+        "enfasis_docente": "La latencia de décadas explica por qué se pregunta por trabajos antiguos, no solo por el actual."
+      },
+      {
+        "id": "ocupacional::factores-de-riesgo",
+        "nombre": "Los cuatro grupos de agentes",
+        "alto_rendimiento": true,
+        "contenido": "Polvo mineral (sílice, carbón, asbesto); sustancias químicas irritantes (amoníaco, cloro, vapores ácidos); humos metálicos (plomo, cromo, estaño); y agentes biológicos (hongos, bacterias, endotoxinas).",
+        "fisiopatologia": "Los agentes inhalados inducen inflamación crónica, fibrosis, hiperreactividad bronquial o mutaciones celulares. La respuesta depende del tipo de partícula, su tamaño, la duración de la exposición y la susceptibilidad individual.",
+        "enfasis_docente": "La susceptibilidad individual explica por qué solo un trabajador se enferma entre varios expuestos."
+      },
+      {
+        "id": "ocupacional::diagnostico",
+        "nombre": "Historia clínica ocupacional y exámenes",
+        "alto_rendimiento": true,
+        "contenido": "El diagnóstico requiere correlacionar los síntomas con una historia laboral detallada, la evaluación clínica y los estudios complementarios.",
+        "historia_ocupacional": [
+          "tiempo de exposición, tipo de actividad y turnos laborales",
+          "uso de equipo de protección personal",
+          "evaluación de las condiciones del entorno laboral"
+        ],
+        "examenes": {
+          "espirometría": "patrón obstructivo o restrictivo según la enfermedad",
+          "radiografía y tomografía de alta resolución": "detectan fibrosis, nódulos o engrosamiento pleural",
+          "pruebas de provocación inespecíficas": "para asma ocupacional",
+          "IgE específica o pruebas cutáneas": "para hipersensibilidad"
+        },
+        "clinica": "tos crónica, disnea progresiva, sibilancias, opresión torácica y hemoptisis ocasional. En fases avanzadas hipoxemia, acropaquia y signos de cor pulmonale.",
+        "diferenciales": [
+          "EPOC de origen no ocupacional",
+          "tuberculosis pulmonar",
+          "fibrosis pulmonar idiopática",
+          "asma no ocupacional"
+        ],
+        "enfasis_docente": "Preguntar si usa protección respiratoria es parte del interrogatorio. En los dos casos del PPT la respuesta es que no la usa."
+      },
+      {
+        "id": "ocupacional::tratamiento-y-prevencion",
+        "nombre": "Tratamiento, prevención y marco legal",
+        "alto_rendimiento": true,
+        "contenido": "El primer paso del tratamiento es EVITAR NUEVA EXPOSICIÓN al agente causal. Luego tratamiento farmacológico según la entidad, con broncodilatadores y corticoides inhalados o sistémicos, oxigenoterapia si hay insuficiencia respiratoria, y rehabilitación pulmonar.",
+        "prevencion": [
+          "evaluaciones médicas periódicas",
+          "control ambiental y ventilación adecuada",
+          "equipos de protección personal",
+          "capacitación al trabajador",
+          "registro de enfermedades ocupacionales notificables",
+          "evaluación de incidencia y prevalencia por industria"
+        ],
+        "marco_legal": "La Ley N.º 29783 de Seguridad y Salud en el Trabajo obliga al empleador a proteger la salud de los trabajadores, con evaluaciones médicas periódicas, identificación de agentes de riesgo y uso de equipos de protección.",
+        "cifras": {
+          "mortalidad_mundial": "más de 2 millones de muertes anuales por enfermedades relacionadas al trabajo",
+          "en_Peru": "las neumoconiosis son una de las principales causas de incapacidad en mineros y trabajadores de construcción"
+        },
+        "enfasis_docente": "Retirar la exposición va PRIMERO, antes que cualquier fármaco. Un tratamiento que no incluye apartar al paciente del agente está incompleto.",
+        "trampa": "Proponer solo tratamiento farmacológico sin retirar la exposición."
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "ocupacional::caso-heno",
+        "uso": "aparece DOS veces, al abrir y en la aplicación; opción múltiple con radiografía",
+        "enunciado": "Mujer de 43 años que trabaja en una granja. Cada vez que descarga el heno presenta fiebre, tos, disnea y producción de esputo. Se resuelve en dos a cinco días, pero reaparece al reexponerse al heno. No usa mascarilla. Ninguno de los demás trabajadores de la granja está afectado, y empiezan a preguntarse si está fingiendo. Examen: taquipnea y estertores finos, sin sibilancias. Se muestra su radiografía.",
+        "alternativas": [
+          "Neumonía adquirida en la comunidad",
+          "Neumonitis por hipersensibilidad",
+          "Bronquitis crónica",
+          "Bronquitis aguda",
+          "Bronquiectasia"
+        ],
+        "respuesta": "Neumonitis por hipersensibilidad",
+        "claves": "La relación temporal con la exposición al heno, la resolución en días al retirarse y la recurrencia al reexponerse son el patrón. Los estertores finos sin sibilancias apuntan a compromiso intersticial y no bronquial. Que los demás trabajadores estén sanos NO descarta el diagnóstico: es una reacción de hipersensibilidad individual.",
+        "estructura_a_replicar": "el enunciado incluye una duda explícita del entorno (si está fingiendo) que funciona como señuelo emocional; el dato de que nadie más se enferma parece descartar lo ocupacional y en realidad es coherente con hipersensibilidad"
+      },
+      {
+        "id": "ocupacional::caso-silo",
+        "uso": "caso abierto con dos preguntas encadenadas",
+        "enunciado": "Varón de 31 años sin antecedentes respiratorios ni alérgicos, extabaquista con abandono hace diez años e índice paquete-año de 1. Trabaja como operario en silo de almacenamiento de granos desde los 26 años. En 2019 presentó un primer episodio de broncoespasmo mientras vaciaba a pala una secadora de granos, en espacio confinado de 6 metros de profundidad, levantando nube de polvo orgánico vegetal, sin protección respiratoria. Después continuó con cuadros de broncoespasmo progresivos en frecuencia e intensidad, con disnea clase funcional II y tos seca. Los síntomas se presentan durante la jornada laboral y disminuyen o desaparecen en días libres y licencias.",
+        "preguntas": [
+          "¿Cuál es el diagnóstico presuntivo más probable?",
+          "¿Qué examen solicitarías para confirmar tu diagnóstico presuntivo?"
+        ],
+        "claves": "Asma ocupacional. El patrón temporal laboral es el eje. El índice paquete-año de 1 está puesto para que se descarte el tabaco como causa: es una exposición trivial. La confirmación se orienta a pruebas de provocación o monitoreo funcional dentro y fuera del trabajo.",
+        "estructura_a_replicar": "un antecedente cuantificado en un valor deliberadamente bajo (IPA de 1) para que se descarte como causa; la mejoría en días libres escrita de forma explícita como pista central; se pregunta el examen CONFIRMATORIO, no solo el diagnóstico"
+      }
+    ],
+    "discrepancias_detectadas": []
+  },
+  "sahos": {
+    "nombre": "Síndrome de apnea-hipopnea obstructiva del sueño",
+    "fuente": {
+      "archivo": "SEMANA 03-PDF-Síndrome de apnea-hipopnea obstructiva del sueño.pdf",
+      "semana": 3,
+      "sesion": 8,
+      "tipo": "ppt"
+    },
+    "guia_de_referencia": "American Academy of Sleep Medicine 2020 y 2025.",
+    "contenidos_declarados": [
+      "Concepto",
+      "Epidemiología",
+      "Factores de riesgo",
+      "Características clínicas",
+      "Diagnóstico",
+      "Criterios de severidad",
+      "Tratamiento"
+    ],
+    "conceptos": [
+      {
+        "id": "sahos::definicion",
+        "nombre": "Definición",
+        "alto_rendimiento": true,
+        "contenido": "Episodios recurrentes de obstrucción parcial o completa de la vía aérea superior durante el sueño, que provocan hipoxia intermitente, fragmentación del sueño y despertares repetidos.",
+        "enfasis_docente": "La obstrucción es de la vía aérea SUPERIOR. Eso lo separa de la apnea central y explica la gasometría de hipoventilación con espirometría normal.",
+        "relacionado": [
+          "anatomia::caso-sahos"
+        ]
+      },
+      {
+        "id": "sahos::definiciones-operativas",
+        "nombre": "Apnea, hipopnea, IAH, RDI y RERA",
+        "alto_rendimiento": true,
+        "contenido": "Definiciones exactas con sus cifras. Son la base de todo el tema.",
+        "detalle": {
+          "apnea": "pausa completa del flujo aéreo por 10 segundos o más; reducción del flujo de 90 % o más",
+          "hipopnea": "reducción parcial del flujo de 30 % o más durante 10 segundos o más, acompañada de desaturación de 3 a 4 % o de un microdespertar",
+          "IAH": "índice de apnea-hipopnea: número promedio de apneas e hipopneas por hora de sueño",
+          "RERA": "eventos respiratorios que no cumplen criterios de apnea ni hipopnea pero provocan microdespertar por aumento del esfuerzo respiratorio",
+          "RDI": "índice de trastornos respiratorios: apneas más hipopneas más RERAs por hora de sueño"
+        },
+        "cifras": {
+          "duracion_minima": "10 segundos",
+          "caida_de_flujo_en_apnea": "90 % o más",
+          "caida_de_flujo_en_hipopnea": "30 % o más",
+          "desaturacion_en_hipopnea": "3 a 4 %"
+        },
+        "enfasis_docente": "El RDI es MÁS SENSIBLE que el IAH porque suma los RERAs, y se usa sobre todo con polisomnografía completa, que es la que detecta esos eventos sutiles.",
+        "trampa": "Confundir IAH con RDI. La diferencia es exactamente los RERAs."
+      },
+      {
+        "id": "sahos::criterios-diagnosticos",
+        "nombre": "Criterios diagnósticos",
+        "alto_rendimiento": true,
+        "contenido": "Se diagnostica con IAH de 5 o más eventos por hora ACOMPAÑADO de síntomas diurnos, o bien con IAH o RDI de 15 o más aun SIN síntomas.",
+        "cifras": {
+          "con_sintomas": "IAH de 5 o más",
+          "sin_sintomas": "IAH o RDI de 15 o más"
+        },
+        "enfasis_docente": "El umbral cambia según haya o no síntomas: 5 con síntomas, 15 sin ellos. Es la cifra más preguntable del tema.",
+        "trampa": "Aplicar el umbral de 5 a un paciente asintomático."
+      },
+      {
+        "id": "sahos::cribado",
+        "nombre": "Herramientas de cribado y STOP-Bang",
+        "alto_rendimiento": true,
+        "contenido": "Escala de somnolencia de Epworth, cuestionarios tipo Berlín, STOP y STOP-Bang.",
+        "stop_bang": {
+          "0 a 2": "bajo riesgo",
+          "3 a 4": "riesgo intermedio",
+          "5 a 8": "alto riesgo para SAHOS moderado o severo"
+        },
+        "enfasis_docente": "El STOP-Bang es el más recomendado por su facilidad, buena sensibilidad y correlación con la severidad. Pero NINGUNO de estos instrumentos es diagnóstico sin confirmación objetiva: solo identifican riesgo.",
+        "trampa": "Dar el diagnóstico con un cuestionario. Es cribado, no confirmación."
+      },
+      {
+        "id": "sahos::estudios-de-sueno",
+        "nombre": "Polisomnografía y pruebas domiciliarias",
+        "alto_rendimiento": true,
+        "contenido": "La polisomnografía nocturna tipo I es el ESTÁNDAR DE ORO. Incluye electroencefalograma, electrooculograma, electromiograma, electrocardiograma, flujo aéreo, esfuerzo respiratorio y oximetría, para medir IAH o RDI.",
+        "domiciliarias": "Los equipos ambulatorios tipo II o III tienen sensibilidad mayor de 80 %, son aceptables en sujetos sin comorbilidades complejas y correlacionan fuerte con la polisomnografía en casos moderados a graves.",
+        "cifras": {
+          "sensibilidad_domiciliaria": "mayor de 80 %"
+        },
+        "enfasis_docente": "El PPT tiene una pregunta directa sobre cuál es el estándar de oro, y la respuesta es la polisomnografía nocturna, no la oximetría ni la poligrafía ni los cuestionarios."
+      },
+      {
+        "id": "sahos::factores-de-riesgo",
+        "nombre": "Factores de riesgo",
+        "alto_rendimiento": true,
+        "contenido": "Se agrupan en anatómicos, demográficos y modificables.",
+        "anatomicos": "cuello grueso, acúmulo adiposo perifaríngeo, micrognatia, retrognatia e hipertrofia amigdalar, que favorecen el colapso de la vía aérea",
+        "edad_y_sexo": "mayor prevalencia por encima de los 50 años, con relación hombre a mujer de aproximadamente 4.9 a 1 en adultos; tras la menopausia esa relación se aproxima a la paridad",
+        "obesidad": "Es el factor modificable MÁS IMPORTANTE: un aumento del 10 % del peso se asocia a multiplicar por 6 el riesgo de SAHOS moderado a grave.",
+        "otros_modificables": "tabaquismo, alcohol, sedantes e hipnóticos, posición supina al dormir, congestión nasal crónica y embarazo",
+        "comorbilidades": "hipertensión resistente, diabetes tipo 2, síndrome metabólico, acromegalia, hipotiroidismo, insuficiencia cardíaca, fibrilación auricular, fallo renal crónico, síndrome de Down y Prader-Willi",
+        "cifras": {
+          "aumento_de_peso": "10 % de aumento multiplica por 6 el riesgo",
+          "relacion_hombre_mujer": "4.9 a 1"
+        },
+        "enfasis_docente": "La menopausia iguala el riesgo entre sexos. Y la hipertensión resistente es una comorbilidad que debe hacer sospechar SAHOS."
+      },
+      {
+        "id": "sahos::clinica",
+        "nombre": "Manifestaciones nocturnas y diurnas",
+        "alto_rendimiento": true,
+        "contenido": "Los síntomas se dividen según el momento del día.",
+        "nocturnos": [
+          "ronquidos fuertes y persistentes",
+          "episodios de apnea o asfixia reportados por familiares o la pareja",
+          "despertares bruscos con sensación de falta de aire",
+          "fragmentación del sueño con despertares frecuentes",
+          "nicturia",
+          "boca seca"
+        ],
+        "diurnos": [
+          "somnolencia excesiva diurna",
+          "fatiga",
+          "disminución del rendimiento cognitivo en atención, memoria y funciones ejecutivas",
+          "aumento del riesgo de accidentes vehiculares"
+        ],
+        "riesgos_asociados": "hipertensión, infarto, accidente cerebrovascular, diabetes, fibrilación auricular, y aumento de la mortalidad cardiovascular y global",
+        "enfasis_docente": "Muchos casos quedan sin diagnosticar por ausencia de somnolencia o acceso limitado a estudios del sueño. La ausencia de somnolencia no descarta el diagnóstico."
+      },
+      {
+        "id": "sahos::tratamiento-no-invasivo",
+        "nombre": "CPAP, avance mandibular y estilo de vida",
+        "alto_rendimiento": true,
+        "contenido": "El CPAP o APAP es el tratamiento de elección en SAHOS moderado a severo, y en pacientes con somnolencia, deterioro de calidad de vida o hipertensión asociada.",
+        "adherencia": "Se define como uso de 4 horas o más por noche en el 70 % o más de las noches; para beneficios óptimos se recomiendan 6 horas o más por noche. El uso prolongado se correlaciona con mayor reducción de mortalidad y mejoras cognitivas y cardiovasculares.",
+        "avance_mandibular": "Principalmente para SAHOS leve a moderado o en quienes no toleran CPAP. Reduce el IAH más de 50 % en aproximadamente un tercio de los casos. Se aconsejan dispositivos personalizados, con seguimiento dental y poligrafía posterior.",
+        "estilo_de_vida": "Pérdida de peso de 10 % o más puede disminuir el IAH entre 26 y 56 %. Ejercicio regular, evitar alcohol y sedantes, dejar de fumar y terapia posicional evitando el decúbito supino.",
+        "farmacos": "La tirzepatida fue aprobada por la FDA como primer fármaco indicado para SAHOS moderado a severo en pacientes con obesidad, con reducción del IAH de hasta 63 % en ensayos fase III. AD-109 sigue en desarrollo, sin aprobación.",
+        "cifras": {
+          "adherencia_minima": "4 horas por noche en 70 % de las noches",
+          "adherencia_optima": "6 horas o más",
+          "perdida_de_peso": "10 % o más reduce el IAH entre 26 y 56 %",
+          "CPAP_en_sindrome_coronario": "4 horas o más al día redujo eventos adversos, HR 0.17"
+        },
+        "enfasis_docente": "La cifra de adherencia, 4 horas en el 70 % de las noches, es de las más preguntables. Y el CPAP es de elección en moderado a severo, no en todos."
+      },
+      {
+        "id": "sahos::tratamiento-invasivo",
+        "nombre": "Opciones quirúrgicas y dispositivos implantables",
+        "alto_rendimiento": false,
+        "contenido": "Se reservan para casos seleccionados.",
+        "opciones": {
+          "estimulación del nervio hipogloso": "en SAHOS moderado a severo que no toleran CPAP y cumplen criterios anatómicos: índice de masa corporal de 32 o menos y colapso no concéntrico en endoscopía del sueño inducido. Éxito clínico en 74 % a 3 años",
+          "uvulopalatofaringoplastia": "tasa de éxito de 35 a 50 % en reducción del IAH; indicada con obstrucción palatal identificada",
+          "avance maxilomandibular": "reducción promedio del IAH de 85 % y curación en 50 %; indicado en SAHOS severo con anomalías craneofaciales o fracaso de CPAP y avance mandibular",
+          "traqueostomía": "elimina el SAHOS pero se reserva exclusivamente para casos refractarios o situaciones especiales, por su alta morbilidad"
+        },
+        "enfasis_docente": "Se recomienda hacer endoscopía del sueño inducido por medicamentos ANTES de indicar cirugía, para personalizar según el sitio de colapso."
+      },
+      {
+        "id": "sahos::epidemiologia-y-pronostico",
+        "nombre": "Epidemiología y pronóstico",
+        "alto_rendimiento": false,
+        "contenido": "Prevalencia global estimada de 936 millones de adultos entre 30 y 69 años con SAHOS leve a severo, y alrededor de 425 millones con moderado a severo.",
+        "cifras": {
+          "prevalencia_general": "9 a 38 %",
+          "hombres": "13 a 33 %",
+          "mujeres": "6 a 19 %",
+          "mayores de 65 años": "hasta 84 %, con 90 % en hombres y 78 % en mujeres"
+        },
+        "pronostico": "Sin tratamiento hay alto riesgo de hipertensión, arritmias, enfermedad cardiovascular, accidente cerebrovascular, resistencia a la insulina y deterioro cognitivo. Con tratamiento adecuado mejora la calidad de vida, se reduce el riesgo cardiovascular y aumenta la expectativa de vida.",
+        "enfasis_docente": "Los niveles moderados a severos, con IAH de 15 o más, se asocian con mayor riesgo cardiovascular y mortalidad INCLUSO en ausencia de somnolencia clínica."
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "sahos::pregunta-estandar-de-oro",
+        "uso": "pregunta directa de opción múltiple",
+        "enunciado": "¿Cuál es la prueba considerada el estándar de oro para el diagnóstico del síndrome de apnea-hipopnea obstructiva del sueño?",
+        "alternativas": [
+          "Oximetría nocturna",
+          "Poligrafía respiratoria domiciliaria",
+          "Polisomnografía nocturna",
+          "Escala de somnolencia de Epworth",
+          "Cuestionario STOP-Bang"
+        ],
+        "respuesta": "Polisomnografía nocturna",
+        "claves": "Epworth y STOP-Bang son cribado, no diagnóstico. La poligrafía domiciliaria es aceptable pero no es el estándar. La oximetría sola es insuficiente.",
+        "estructura_a_replicar": "pregunta de conocimiento puro, sin caso, con distractores que son todos herramientas válidas pero de otra categoría: cribado contra confirmación"
       }
     ],
     "discrepancias_detectadas": []

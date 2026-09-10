@@ -6,10 +6,10 @@
     "modulo": "Cardiología",
     "temas_ingeridos": [
       "ekg1",
-      "ekg2"
+      "ekg2",
+      "anatomia-cardiaca"
     ],
     "temas_pendientes": [
-      "anatomia-cardiaca",
       "ayudadx-cardio",
       "coronaria",
       "hta",
@@ -470,6 +470,228 @@
         "recomendacion": "Preguntar a la profesora antes del taller de EKG patológico. Mientras tanto, al responder conviene decir 'cara inferior (DII, DIII, aVF)', que es correcto en ambos esquemas, y evitar afirmar que miran el ventrículo derecho.",
         "estado": "se responde con el PPT; nota informativa al pie",
         "respuesta_en_examen": "El PPT rotula DII, DIII y aVF como 'derecha-inferior' y las lista como 'derivaciones derechas (miran ventrículo derecho)'. También rotula 'DIII, V1, V2' como derecha."
+      }
+    ]
+  },
+  "anatomia-cardiaca": {
+    "nombre": "Anatomía, semiología y fisiología cardíaca",
+    "fuente": {
+      "archivo": "SEMANA 04-PDF-Anatomía, semiología y fisiología Cardiaca.pdf",
+      "semana": 4,
+      "sesion": 10,
+      "tipo": "ppt"
+    },
+    "referencias": "Harrison, Principios de Medicina Interna. Farreras-Rozman.",
+    "contenidos_declarados": [
+      "Anatomía del corazón y grandes vasos",
+      "Ciclo cardiaco y hemodinamia",
+      "Examen físico"
+    ],
+    "conceptos": [
+      {
+        "id": "cardio::capas-y-localizacion",
+        "nombre": "Capas del corazón y localización",
+        "alto_rendimiento": true,
+        "contenido": "Órgano muscular hueco que bombea sangre, rodeado por el pericardio. Se ubica en la región central torácica, en el mediastino medio, entre ambos pulmones, con forma de pirámide inclinada: la punta hacia abajo y a la izquierda, y la base mirando hacia arriba.",
+        "capas": {
+          "endocardio": "capa interna delgada, de endotelio y tejido conectivo subendotelial; también cubre las valvas",
+          "miocardio": "capa media gruesa y helicoidal, de músculo cardíaco",
+          "epicardio": "capa externa delgada, de mesotelio, formada por la lámina visceral del pericardio seroso"
+        },
+        "cifras": {
+          "peso": "250 a 300 gramos"
+        },
+        "enfasis_docente": "El epicardio ES la lámina visceral del pericardio seroso. Esa identidad conecta con el tema de enfermedades del pericardio.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "cardio::nomenclatura-atrio",
+        "nombre": "Atrio contra aurícula: la precisión terminológica del curso",
+        "alto_rendimiento": true,
+        "contenido": "En inglés y latín 'auricula' es un falso amigo que no debe traducirse como aurícula sino como orejuela. Por eso la terminología anatómica prefiere el término atrio para lo que tradicionalmente se llama aurícula.",
+        "enfasis_docente": "El curso dedica una diapositiva completa a esto, así que le da importancia. Orejuela y atrio no son sinónimos.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "cardio::valvulas",
+        "nombre": "Las cuatro válvulas: valvas y comportamiento en el ciclo",
+        "alto_rendimiento": true,
+        "contenido": "Cada válvula tiene su número de valvas y se abre o cierra en una fase determinada.",
+        "detalle": {
+          "tricúspide": "comunica atrio y ventrículo derechos. Tres valvas: anterior, septal y posterior. En sístole se CIERRA, en diástole se ABRE. Sostenida por cuerdas tendíneas y músculos papilares.",
+          "pulmonar": "tres valvas semilunares: anterior, derecha e izquierda. En sístole se ABRE, en diástole se CIERRA. Lleva la sangre del ventrículo a los pulmones por la arteria pulmonar.",
+          "mitral": "comunica atrio y ventrículo izquierdos. Anillo de implantación, dos pilares (anterior y posterior), dos valvas (anterior y posterior) y cuerdas tendíneas.",
+          "aórtica": "comunica el ventrículo izquierdo con la aorta ascendente. En sístole se ABRE, en diástole se CIERRA."
+        },
+        "enfasis_docente": "Las auriculoventriculares y las sigmoideas funcionan en espejo: cuando unas se abren las otras se cierran. La mitral es la única con DOS valvas; las otras tres tienen tres.",
+        "trampa": "Confundir el número de valvas: la mitral es bicúspide, el resto son tricúspides o trivalvas.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "cardio::cavidades",
+        "nombre": "Morfología interna y estructuras de cada cavidad",
+        "alto_rendimiento": false,
+        "contenido": "Cuatro cavidades separadas en derecha e izquierda; arriba los atrios, abajo los ventrículos, con el tabique como separación. Estructuras nombradas: fosa oval y músculos pectíneos.",
+        "corazon_derecho": "El atrio derecho recibe sangre venosa por las venas cavas; el seno venoso la recoge; la orejuela derecha está en la cara anterior y la fosa oval en la cara lateral. El ventrículo derecho tiene músculos papilares anterior y posterior.",
+        "corazon_izquierdo": "El atrio izquierdo recibe las cuatro venas pulmonares y tiene orejuela izquierda y fosa oval. El ventrículo izquierdo es más ancho y largo que el derecho, con cuerdas tendinosas y músculos papilares anterior y posterior.",
+        "morfologia_externa": "dos venas cavas, arteria pulmonar, cuatro venas pulmonares, aorta ascendente, pericardio, arterias coronarias y grasa.",
+        "formatos": [
+          "banco"
+        ]
+      },
+      {
+        "id": "cardio::gasto-cardiaco",
+        "nombre": "Gasto cardíaco y ley de Frank-Starling",
+        "alto_rendimiento": true,
+        "contenido": "Cantidad de sangre bombeada por cada ventrículo en un minuto.",
+        "formula": "Gasto cardíaco = volumen de eyección × frecuencia cardíaca",
+        "frank_starling": "Cuanto más se estira el músculo cardíaco, mayor será su fuerza de contracción y mayor el volumen de eyección.",
+        "determinantes": {
+          "función sistólica": "contractilidad ventricular y postcarga",
+          "función diastólica": "relajación ventricular y precarga"
+        },
+        "enfasis_docente": "La fórmula del gasto cardíaco es de cálculo directo y aparece en escalas y decisiones de manejo. Frank-Starling explica por qué la precarga importa.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "cardio::precarga-postcarga",
+        "nombre": "Precarga y postcarga",
+        "alto_rendimiento": true,
+        "contenido": "Definiciones tal como las da el curso.",
+        "precarga": "Grado de tensión del músculo al inicio de la contracción. Presión al final de la diástole, es decir presión durante el llenado ventricular. El PPT indica que depende de geometría ventricular, impedancia aórtica y resistencia periférica.",
+        "postcarga": "Presión en la arteria transmitida por el ventrículo. Presión arterial contra la cual el ventrículo se contrae. El PPT indica que depende de retorno venoso, distensibilidad ventricular y sístole auricular.",
+        "enfasis_docente": "Las DEFINICIONES son claras y son lo esencial: precarga es tensión al inicio de la contracción, postcarga es la presión contra la que se contrae. VER LA DISCREPANCIA REGISTRADA sobre los factores de los que depende cada una.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "cardio::presion-arterial-media",
+        "nombre": "Presión arterial media: las dos fórmulas",
+        "alto_rendimiento": true,
+        "contenido": "El curso da dos formas equivalentes de calcularla.",
+        "formulas": {
+          "forma 1": "PAM = PD + (PS − PD) / 3",
+          "forma 2": "PAM = (PS + 2·PD) / 3"
+        },
+        "enfasis_docente": "Son algebraicamente equivalentes; conviene saber las dos porque el examen puede dar cualquiera. Es cálculo directo con dos números de las funciones vitales.",
+        "trampa": "Promediar sistólica y diastólica. La diastólica pesa el doble porque la diástole dura más.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "cardio::focos-de-auscultacion",
+        "nombre": "Los cuatro focos de auscultación",
+        "alto_rendimiento": true,
+        "contenido": "Ubicación exacta de cada foco según el curso.",
+        "focos": {
+          "mitral": "espacio intercostal izquierdo medial a la línea medioclavicular, en el ápice del corazón",
+          "tricúspide": "cuarto o quinto espacio intercostal derecho, junto al borde esternal",
+          "pulmonar": "segundo espacio intercostal izquierdo, junto al borde esternal",
+          "aórtico": "segundo espacio intercostal derecho, junto al borde esternal"
+        },
+        "enfasis_docente": "Los dos focos de la base están en el segundo espacio, uno a cada lado: aórtico a la derecha y pulmonar a la izquierda. Es la pareja que más se invierte al responder.",
+        "trampa": "Cruzar aórtico y pulmonar.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "cardio::ruidos-cardiacos",
+        "nombre": "Ruidos cardíacos",
+        "alto_rendimiento": true,
+        "contenido": "Se producen por el cierre súbito de las valvas unidireccionales que normalmente impiden el retorno del flujo sanguíneo durante las contracciones del corazón. Con estetoscopio se oyen dos tonos.",
+        "detalle": {
+          "primer ruido": "según el PPT, corresponde al pase de la sangre de la aurícula a los ventrículos",
+          "segundo ruido": "según el PPT, corresponde a la expulsión de la sangre del corazón"
+        },
+        "enfasis_docente": "El principio general que da el curso es que los ruidos se producen por el CIERRE de las valvas. VER LA DISCREPANCIA REGISTRADA sobre la descripción de cada ruido.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "cardio::potencial-de-accion",
+        "nombre": "Potencial de acción: respuesta rápida y lenta",
+        "alto_rendimiento": false,
+        "contenido": "El potencial de acción es diferente en el tejido muscular, de respuesta rápida, que en el tejido de conducción, de respuesta lenta.",
+        "enfasis_docente": "Esta distinción es la base para entender las arritmias y los antiarrítmicos, que se ven en semana 5.",
+        "formatos": [
+          "banco",
+          "sustentacion"
+        ]
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "cardio::caso-soplo-mitral",
+        "uso": "caso de aplicación, abierto, con dos preguntas encadenadas",
+        "enunciado": "Mujer de 85 años con antecedente de hipertensión arterial crónica de mal control. Acude por cansancio. Al examen presenta pulso deficitario, PA 130/70, FC 90, y se ausculta soplo mitral sistólico.",
+        "preguntas": [
+          "¿Cuál es la causa del soplo en la paciente?",
+          "¿Este hallazgo predispone a algún factor de muerte a la paciente?"
+        ],
+        "claves": "El pulso deficitario es el dato central: sugiere que no todos los latidos llegan a la periferia, lo que orienta a fibrilación auricular. La hipertensión crónica mal controlada lleva a dilatación auricular. La segunda pregunta apunta al riesgo tromboembólico y de ictus.",
+        "estructura_a_replicar": "un solo hallazgo semiológico poco común, el pulso deficitario, es la llave de todo el caso; la segunda pregunta no pide diagnóstico sino CONSECUENCIA pronóstica"
+      }
+    ],
+    "pregunta_de_integracion": "¿Qué sabes del ciclo cardíaco?",
+    "discrepancias_detectadas": [
+      {
+        "punto": "Factores de los que dependen la precarga y la postcarga",
+        "material_del_curso": "Precarga: geometría ventricular, impedancia aórtica y resistencia periférica. Postcarga: retorno venoso, distensibilidad ventricular y sístole auricular.",
+        "observacion": "Las listas parecen intercambiadas respecto de la fisiología habitual: el retorno venoso, la distensibilidad ventricular y la sístole auricular son determinantes de la PRECARGA, mientras que la impedancia aórtica, la resistencia periférica y la geometría ventricular lo son de la POSTCARGA. Las DEFINICIONES que da el PPT sí son correctas; lo que queda dudoso son las dos listas de factores.",
+        "respuesta_en_examen": "lo que dice el PPT",
+        "estado": "se responde con el PPT; nota informativa al pie"
+      },
+      {
+        "punto": "Descripción del primer y segundo ruido",
+        "material_del_curso": "Primer ruido: pase de la sangre de la aurícula a los ventrículos. Segundo ruido: expulsión de la sangre del corazón.",
+        "observacion": "La misma diapositiva empieza diciendo que los ruidos se producen por el CIERRE de las valvas, y luego los describe por el paso de sangre. Habitualmente el primer ruido corresponde al cierre de mitral y tricúspide al inicio de la sístole, y el segundo al cierre de aórtica y pulmonar al inicio de la diástole. Al responder conviene mencionar el cierre valvular, que es lo que la propia diapositiva enuncia como principio.",
+        "respuesta_en_examen": "lo que dice el PPT",
+        "estado": "se responde con el PPT; nota informativa al pie"
+      },
+      {
+        "punto": "Foco de auscultación tricuspídeo",
+        "material_del_curso": "cuarto o quinto espacio intercostal derecho, junto al borde esternal",
+        "observacion": "La ubicación más difundida es el borde esternal IZQUIERDO bajo, cuarto o quinto espacio. El curso lo indica a la derecha.",
+        "respuesta_en_examen": "lo que dice el PPT",
+        "estado": "se responde con el PPT; nota informativa al pie"
       }
     ]
   }

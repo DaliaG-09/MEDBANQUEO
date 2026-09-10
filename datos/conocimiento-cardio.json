@@ -19,7 +19,8 @@
       "endocarditis",
       "tep"
     ],
-    "nota": "El EKG es a Cardiología lo que el AGA fue a Neumología: cuatro sesiones y tres talleres aplicativos. Es el eje de mayor rendimiento del módulo."
+    "nota": "El EKG es a Cardiología lo que el AGA fue a Neumología: cuatro sesiones y tres talleres aplicativos. Es el eje de mayor rendimiento del módulo.",
+    "politica_de_discrepancias": "El PPT del curso es la RESPUESTA CORRECTA en toda evaluación. Cuando el material del curso difiere de la convención habitual, la pregunta se genera igual y se califica según el PPT. La observación se muestra DESPUÉS, como nota al pie del feedback, nunca como parte de la calificación ni como corrección de la respuesta."
   },
   "ekg1": {
     "nombre": "Electrocardiograma normal I",
@@ -345,7 +346,8 @@
         "material_del_curso": "El PPT rotula DII, DIII y aVF como 'derecha-inferior' y las lista como 'derivaciones derechas (miran ventrículo derecho)'. También rotula 'DIII, V1, V2' como derecha.",
         "observacion": "La convención habitual es que DII, DIII y aVF son las derivaciones de la cara INFERIOR o diafragmática, no del ventrículo derecho. El ventrículo derecho se explora con derivaciones derechas específicas, V3R y V4R, y en parte con V1. Además V1 y V2 se consideran septales y V3 y V4 anteriores, mientras el PPT agrupa V1, V2 y V3 como septo. Esto importa porque de la agrupación depende dónde se localiza un infarto, que es contenido del parcial.",
         "recomendacion": "Preguntar a la profesora antes del taller de EKG patológico. Mientras tanto, al responder conviene decir 'cara inferior (DII, DIII, aVF)', que es correcto en ambos esquemas, y evitar afirmar que miran el ventrículo derecho.",
-        "estado": "sin confirmar"
+        "estado": "se responde con el PPT; nota informativa al pie",
+        "respuesta_en_examen": "El PPT rotula DII, DIII y aVF como 'derecha-inferior' y las lista como 'derivaciones derechas (miran ventrículo derecho)'. También rotula 'DIII, V1, V2' como derecha."
       }
     ]
   }

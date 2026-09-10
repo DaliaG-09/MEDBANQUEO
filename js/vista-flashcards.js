@@ -5,7 +5,7 @@ async function vFlash(){
 async function nuevaCard(){
   cargando("Preparando la tarjeta");
   const venc=vencidos();
-  const cid=(venc.length?venc[Math.floor(Math.random()*Math.min(venc.length,5))]:null)||elegirConcepto("auto"), d=S.dominio[cid];
+  const cid=(venc.length?venc[Math.floor(Math.random()*Math.min(venc.length,5))]:null)||elegirConceptoPorFormato("flashcard"), d=S.dominio[cid];
   const nivel=d?d.nivel:0;
   // Las tarjetas evolucionan: de recordar a aplicar, según el nivel del concepto.
   const escalera=["¿qué es y cómo se define?","reconócelo en un dato clínico suelto",
@@ -19,7 +19,7 @@ async function nuevaCard(){
 Genera UNA flashcard de recall activo.
 Concepto: ${nom(cid)} (tema: ${temaDe(cid)})
 Nivel de la tarjeta: ${tarea}
-La tarjeta no es una definición copiada: obliga a recuperar información, no a reconocerla.
+La tarjeta no es una definición copiada: obliga a recuperar información, no a reconocerla.\nOBLIGATORIO: frente y reverso BREVES, de una o dos frases. Nada de casos clínicos ni viñetas largas: esto es recuerdo puntual, no aplicación.
 
 Devuelve SOLO este JSON, sin backticks:
 {"frente":"","reverso":"","perla":"","tarea":"","arquetipo":""}`, 700);

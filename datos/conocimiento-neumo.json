@@ -32,11 +32,11 @@
     "pendiente": "Las tres lecturas asignadas: NAC, asma y tuberculosis.",
     "lecturas_ingeridas": [
       "tuberculosis",
-      "nac"
-    ],
-    "lecturas_pendientes": [
+      "nac",
       "asma"
-    ]
+    ],
+    "lecturas_pendientes": [],
+    "estado": "Módulo de Neumología completo: 14 PPTs y 3 lecturas."
   },
   "aga": {
     "nombre": "Análisis de gases arteriales",
@@ -1267,8 +1267,10 @@
       {
         "punto": "Clasificación de gravedad usada en el caso de la gestante",
         "material_del_curso": "Las alternativas del caso usan la clasificación clásica: intermitente, episódica frecuente, persistente moderado, persistente grave.",
-        "observacion": "Las diapositivas enseñan la gravedad de GINA 2024, que es retrospectiva y solo tiene leve, moderada y grave según el tratamiento necesario. El caso pregunta por una clasificación distinta de la que la clase explica, y el PPT no da la respuesta. Por los datos (síntomas frecuentes, nocturnos más de 2 veces por semana y sibilancias con esfuerzos mínimos) las lecturas razonables son persistente moderado o persistente grave, inclinándose a grave por la limitación con esfuerzos mínimos. Conviene preguntárselo a la profesora antes de fijar respuesta.",
-        "estado": "sin confirmar"
+        "observacion": "RESUELTO con la lectura asignada del curso. La lectura de asma (AFP 2023) trae la tabla NAEPP con exactamente esas categorías, así que el caso no usa una clasificación ajena: usa la de su propia lectura. Aplicando la tabla: despertares nocturnos más de 2 veces por semana corresponde a 'más de 1 vez por semana pero no todas las noches', que es persistente MODERADO; síntomas intercrisis frecuentes pero no a lo largo de todo el día también es moderado. La duda queda solo en 'sibilancias con esfuerzos mínimos': si se lee como limitación extrema iría a severo, y por la regla de asignar la categoría más severa donde aparezca cualquier característica, eso mandaría. La lectura más defendible es persistente moderado, con severo como alternativa argumentable.",
+        "estado": "resuelto con la lectura del curso; confirmar con la docente el peso de 'esfuerzos mínimos'",
+        "respuesta_mas_defendible": "Persistente moderado",
+        "correccion": "Antes se sugirió persistente grave. Con la tabla NAEPP a la vista, moderado está mejor sustentado."
       }
     ]
   },
@@ -3402,6 +3404,184 @@
           "estado": "aclarado, se conservan ambas"
         }
       ]
+    },
+    "asma": {
+      "titulo": "Chronic Asthma Treatment: Common Questions and Answers",
+      "autores": "Raymond, Peterson y Coulter",
+      "publicacion": "American Family Physician, 2023; 107(4):358-368",
+      "fuente": {
+        "archivo": "SEMANA 02-PDF-LECTURA ASMA.pdf",
+        "semana": 2,
+        "tipo": "lectura"
+      },
+      "_nota_de_uso": "Material del control de lectura. Contenido parafraseado, no reproducido.",
+      "conceptos": [
+        {
+          "id": "lectura-asma::clasificacion-naepp",
+          "nombre": "Clasificación de gravedad NAEPP: la tabla que usa el caso del curso",
+          "alto_rendimiento": true,
+          "contenido": "Clasificación por síntomas al momento del diagnóstico, en pacientes que aún NO reciben medicación de control. Se asigna la categoría MÁS SEVERA en la que aparezca cualquier característica.",
+          "tabla": {
+            "Intermitente": {
+              "síntomas": "2 días por semana o menos",
+              "despertares nocturnos": "2 veces al mes o menos",
+              "uso de SABA": "2 días por semana o menos",
+              "limitación de actividad": "ninguna",
+              "función pulmonar": "FEV1 normal entre exacerbaciones, mayor de 80 %",
+              "exacerbaciones con corticoide oral": "0 a 1 por año"
+            },
+            "Persistente leve": {
+              "síntomas": "más de 2 días por semana pero no diarios",
+              "despertares nocturnos": "3 a 4 veces al mes",
+              "uso de SABA": "más de 2 días por semana pero no más de 1 vez al día",
+              "limitación de actividad": "limitación menor",
+              "función pulmonar": "FEV1 80 % o más, cociente normal",
+              "exacerbaciones": "2 o más por año"
+            },
+            "Persistente moderado": {
+              "síntomas": "diarios",
+              "despertares nocturnos": "más de 1 vez por semana pero no todas las noches",
+              "uso de SABA": "diario",
+              "limitación de actividad": "alguna limitación",
+              "función pulmonar": "FEV1 mayor de 60 % pero menor de 80 %, cociente normal",
+              "exacerbaciones": "2 o más por año"
+            },
+            "Persistente severo": {
+              "síntomas": "a lo largo de todo el día",
+              "despertares nocturnos": "todas las noches",
+              "uso de SABA": "varias veces al día",
+              "limitación de actividad": "extremadamente limitada",
+              "función pulmonar": "FEV1 menor de 60 %, cociente reducido más de 5 %",
+              "exacerbaciones": "2 o más por año"
+            }
+          },
+          "FEV1_FVC_normal_por_edad": {
+            "8 a 19 años": "85 %",
+            "20 a 39 años": "80 %",
+            "40 a 59 años": "75 %",
+            "60 a 80 años": "70 %"
+          },
+          "una_vez_controlada": "Cuando el asma ya está controlada, la gravedad se define por el escalón MÍNIMO de tratamiento necesario para mantener el control: paso 1 es intermitente, paso 2 leve, pasos 3 o 4 moderado, y pasos 5 o 6 severo.",
+          "enfasis": "La regla de asignar la categoría más severa donde aparezca CUALQUIER característica es lo que decide los casos ambiguos. Un solo criterio en la fila de arriba manda sobre los demás.",
+          "relacionado": [
+            "asma::gravedad-gina"
+          ]
+        },
+        {
+          "id": "lectura-asma::herramientas-de-control",
+          "nombre": "Herramientas validadas para medir control",
+          "alto_rendimiento": true,
+          "contenido": "La gravedad y el control se evalúan al diagnóstico y en cada visita, analizando el nivel de deterioro y el riesgo de exacerbaciones futuras.",
+          "instrumentos": {
+            "Asthma Control Test": "cuestionario validado de cinco a siete ítems, con sensibilidad y especificidad de 70 % usando un punto de corte mayor de 19 para clasificar el asma como bien controlada",
+            "asthma APGAR": "actividades, persistencia, desencadenantes, medicación y respuesta al tratamiento; rinde de forma similar al Asthma Control Test"
+          },
+          "espirometria": "Se recomienda en TODOS los pacientes al diagnóstico. La evidencia para repetirla cuando empeora el control es débil.",
+          "cifras": {
+            "adultos_sin_control_adecuado": "62 %",
+            "prevalencia_en_EEUU": "7.8 % en adultos y niños",
+            "FEV1_menor_de_60": "duplica la probabilidad de exacerbación frente a un FEV1 mayor de 80 %"
+          },
+          "no_recomendado": "La terapia guiada por óxido nítrico exhalado redujo exacerbaciones pero no se correlacionó con mejoras en control de síntomas ni calidad de vida, así que no se recomienda sin otros complementos. La guiada por eosinófilos en esputo tiene el mismo problema.",
+          "enfasis": "Que el 62 % de los adultos con asma no esté bien controlado es la cifra de apertura de la lectura."
+        },
+        {
+          "id": "lectura-asma::smart",
+          "nombre": "Terapia SMART: mantenimiento y rescate con el mismo inhalador",
+          "alto_rendimiento": true,
+          "contenido": "Usa una combinación de corticoide inhalado más beta2 de acción prolongada tanto para control diario como para rescate según necesidad. Es el tratamiento PREFERIDO para asma moderada en adolescentes y adultos, por su eficacia en reducir exacerbaciones graves.",
+          "por_que_formoterol": "El formoterol es un beta2 de acción prolongada pero de inicio rápido, similar al de los de acción corta. Por eso es el recomendado para este esquema. La mayoría de ensayos usaron budesonida con formoterol.",
+          "cuando_considerarlo_en_leve": "Cuando el paciente no puede adherirse a la terapia de control diaria y está en riesgo de sobreusar el beta2 de acción corta.",
+          "limites": "Evidencia insuficiente en menores de 12 años. En niños de 4 a 11 años redujo exacerbaciones frente a corticoide inhalado solo, pero los datos no alcanzan para hacerlo la terapia preferida.",
+          "enfasis": "El mecanismo propuesto de su beneficio es la exposición temprana al corticoide y la reducción más precoz de la inflamación, comparado con usar solo un beta2 de acción corta a demanda.",
+          "relacionado": [
+            "asma::vias-y-pasos"
+          ]
+        },
+        {
+          "id": "lectura-asma::antes-de-escalar",
+          "nombre": "Los siete factores modificables antes de subir de escalón",
+          "alto_rendimiento": true,
+          "contenido": "Antes de aumentar la intensidad del tratamiento hay que revisar esta lista.",
+          "factores": {
+            "comorbilidades": "apnea obstructiva del sueño, rinitis o sinusitis, obesidad, reflujo gastroesofágico y depresión",
+            "exposiciones ambientales y alérgenos": "revisar exposiciones ocupacionales con todos los adultos",
+            "diagnóstico incorrecto de asma": "ocurre en 25 a 35 % de los pacientes con diagnóstico de asma en atención primaria",
+            "medicamentos que empeoran el asma": "betabloqueadores no selectivos, aspirina y antiinflamatorios no esteroideos",
+            "técnica incorrecta del inhalador": "hasta en 80 % de los pacientes",
+            "mala adherencia": "aproximadamente 50 % de adultos y niños en terapia prolongada",
+            "tabaquismo activo o pasivo": "eliminar la exposición pasiva mejora el control y reduce hospitalizaciones"
+          },
+          "como_evaluar_la_tecnica": "Se demuestra el método y se pide al paciente que lo repita TRES veces en la visita inicial. En los controles hay que pedirle que muestre cómo usa el inhalador, en lugar de preguntarle si lo usa.",
+          "enfasis": "Que el diagnóstico de asma sea incorrecto en 25 a 35 % de los casos de atención primaria es la cifra más contundente de la lectura. Y pedir que MUESTRE la técnica en vez de preguntar si la usa es el detalle práctico que se presta a pregunta.",
+          "relacionado": [
+            "asma::antes-de-subir-escalon"
+          ],
+          "trampa": "Escalar el tratamiento sin haber revisado técnica, adherencia y diagnóstico."
+        },
+        {
+          "id": "lectura-asma::clases-de-farmacos",
+          "nombre": "Aliviadores y controladores: beneficios y advertencias",
+          "alto_rendimiento": true,
+          "contenido": "Los medicamentos se dividen en aliviadores, de rescate, y controladores, de mantenimiento.",
+          "aliviadores": {
+            "beta2 de acción corta": "salbutamol y levalbuterol. Mejoran el FEV1 en 3 a 5 minutos con efectos adversos mínimos. Son los preferidos para síntomas agudos.",
+            "antimuscarínicos de acción corta": "ipratropio. Inicio más lento, no se usan en monoterapia. Combinados con beta2 de acción corta reducen hospitalizaciones por exacerbaciones graves."
+          },
+          "controladores": {
+            "corticoides inhalados": "los MÁS EFECTIVOS. Reducen exacerbaciones, hospitalizaciones y necesidad de rescate.",
+            "beta2 de acción prolongada": "el complemento de primera elección para usar CON un corticoide inhalado",
+            "antimuscarínicos de acción prolongada y antileucotrienos": "terapias controladoras de segunda línea"
+          },
+          "advertencias_de_la_FDA": {
+            "beta2 de acción prolongada en monoterapia": "advertencia de recuadro por aumento del riesgo de muerte relacionada con asma. NO se recomienda.",
+            "montelukast": "advertencia de recuadro por eventos neuropsiquiátricos serios, incluido suicidio"
+          },
+          "efectos_por_dosis_alta": {
+            "corticoide inhalado prolongado": "más de 1 mg al día por al menos tres años puede aumentar el riesgo de cataratas en adultos",
+            "crecimiento en niños": "se detectó reducción de la velocidad de crecimiento de 0.48 cm por año, que NO persiste en la adultez ni altera la talla final"
+          },
+          "antileucotrienos": "Reducen exacerbaciones en monoterapia pero son solo la mitad de efectivos que un corticoide inhalado. Sirven como alternativa en asma persistente leve o como complemento, y son efectivos para broncoespasmo inducido por ejercicio.",
+          "enfasis": "No hay evidencia de que la combinación de corticoide inhalado con beta2 de acción prolongada aumente el riesgo de eventos graves comparada con el corticoide solo. El problema es el beta2 EN MONOTERAPIA.",
+          "trampa": "Atribuir la advertencia de la FDA a la combinación, cuando es a la monoterapia."
+        },
+        {
+          "id": "lectura-asma::inmunoterapia",
+          "nombre": "Inmunoterapia con alérgenos: subcutánea sí, sublingual no",
+          "alto_rendimiento": true,
+          "contenido": "La inmunoterapia subcutánea puede considerarse en personas de cinco años o más con asma alérgica leve a moderada, y debe EVITARSE en asma severa. La sublingual NO se recomienda para el manejo del asma.",
+          "requisitos": [
+            "el asma debe estar óptimamente controlada al iniciar, en la fase de aumento y en el mantenimiento",
+            "debe realizarse bajo supervisión directa de un clínico",
+            "requiere toma de decisiones compartida"
+          ],
+          "definicion_de_asma_alergica": "Síntomas que ocurren con la exposición a alérgenos, más evidencia de sensibilización por pruebas cutáneas o IgE sérica in vitro.",
+          "enfasis": "Subcutánea en leve a moderada, evitar en severa, sublingual no aprobada ni recomendada. Ese contraste de tres partes es lo evaluable.",
+          "trampa": "Indicar inmunoterapia en asma severa, o proponer la vía sublingual."
+        },
+        {
+          "id": "lectura-asma::asma-severa-y-biologicos",
+          "nombre": "Asma severa y agentes biológicos",
+          "alto_rendimiento": true,
+          "contenido": "Asma severa es la que sigue sin control pese a corticoide inhalado en dosis alta combinado con beta2 de acción prolongada, antimuscarínico o antileucotrieno durante el último año, o que requiere corticoides orales de forma regular.",
+          "pasos_previos": "Primero confirmar el diagnóstico, evaluar la adherencia a los inhaladores de control optimizados, y manejar comorbilidades y factores agravantes. Si la respuesta es pobre, pedir IgE sérica y eosinófilos en sangre para orientar la derivación y elegir el biológico.",
+          "biologicos": {
+            "omalizumab": "antagonista de IgE. El asma alérgica mediada por IgE explicaría más del 50 % de los casos difíciles de controlar.",
+            "antagonistas de interleucina 5": "benralizumab, mepolizumab y reslizumab, aprobados para asma eosinofílica severa",
+            "antagonistas de interleucina 4/13": "dupilumab, para fenotipo eosinofílico o dependiente de corticoide"
+          },
+          "cifras": {
+            "umbral_de_eosinofilos": "300 células por microlitro o más define el fenotipo eosinofílico para antagonistas de interleucina 5 y 4/13",
+            "reduccion_con_anti_IL5": "aproximadamente 50 % de reducción de exacerbaciones en pacientes con al menos dos controladores"
+          },
+          "corticoides_orales": "Son el pilar del tratamiento del asma severa, a la dosis efectiva más baja, pero su uso está limitado por efectos adversos significativos.",
+          "enfasis": "El umbral de 300 eosinófilos por microlitro es la cifra que decide el biológico. Conecta con el umbral de eosinófilos de EPOC, que es distinto y no hay que confundir.",
+          "relacionado": [
+            "epoc::eosinofilos"
+          ]
+        }
+      ],
+      "discrepancias_con_los_ppt": []
     }
   }
 }

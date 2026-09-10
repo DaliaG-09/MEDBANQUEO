@@ -36,7 +36,8 @@
       "asma"
     ],
     "lecturas_pendientes": [],
-    "estado": "Módulo de Neumología completo: 14 PPTs y 3 lecturas."
+    "estado": "Módulo de Neumología completo: 14 PPTs y 3 lecturas.",
+    "politica_de_discrepancias": "El PPT del curso es la RESPUESTA CORRECTA en toda evaluación. Cuando el material del curso difiere de la convención habitual, la pregunta se genera igual y se califica según el PPT. La observación se muestra DESPUÉS, como nota al pie del feedback, nunca como parte de la calificación ni como corrección de la respuesta."
   },
   "aga": {
     "nombre": "Análisis de gases arteriales",
@@ -272,9 +273,10 @@
       {
         "punto": "Rango normal de SaO2",
         "material_del_curso": "80 a 100 %",
-        "observacion": "Confirmado con la estudiante: el rango normal correcto es 95 a 100 %. El PPT tiene un error en ese renglón.",
-        "estado": "error del PPT, corregido",
-        "valor_correcto": "95 a 100 %"
+        "observacion": "La estudiante confirmó que el rango normal es 95 a 100 %. El PPT dice 80 a 100 %, que es un error de tipeo del material y no una postura del curso, así que aquí NO aplica la regla de responder con el PPT.",
+        "estado": "corregido por indicación de la estudiante",
+        "valor_correcto": "95 a 100 %",
+        "respuesta_en_examen": "95 a 100 %"
       },
       {
         "punto": "Orden de la guía de interpretación",
@@ -1442,8 +1444,8 @@
       },
       {
         "id": "nih::naas",
-        "nombre": "Neumonía asociada a la atención sanitaria (*)",
-        "alto_rendimiento": false,
+        "nombre": "Neumonía asociada a la atención sanitaria",
+        "alto_rendimiento": true,
         "contenido": "Se desarrolla en pacientes NO hospitalizados que tienen múltiples riesgos de estar colonizados por patógenos nosocomiales multirresistentes.",
         "factores_de_riesgo": [
           "hospitalización de 2 días o más en los 90 días previos",
@@ -1455,8 +1457,8 @@
         ],
         "diferencias_regionales": "Estudios de Estados Unidos reportan que suele deberse a microorganismos multirresistentes en pacientes críticos; datos europeos sugieren que su etiología es similar a la de la neumonía adquirida en la comunidad.",
         "marca": "(*) PUNTO POR ACLARAR CON LA DOCENTE",
-        "nota_del_asterisco": "Este PPT enseña la NAAS como categoría propia. El PPT de NAC de la misma semana dice que se recomienda abandonar esa categorización para guiar la cobertura antibiótica. No está claro cuál postura evalúa el curso. Se conserva el contenido tal como lo da esta clase, pero marcado: no preguntar sobre él hasta confirmarlo.",
-        "preguntable": false
+        "preguntable": true,
+        "nota_al_pie": "Este PPT enseña la NAAS como categoría propia. El PPT de NAC de la misma semana dice que se recomienda abandonar esa categorización para guiar la cobertura antibiótica. No está claro cuál postura evalúa el curso. Se conserva el contenido tal como lo da esta clase, pero marcado: no preguntar sobre él hasta confirmarlo."
       },
       {
         "id": "nih::mortalidad",
@@ -3211,7 +3213,8 @@
           "en_la_lectura": "Fase intensiva de 8 semanas con cuatro fármacos y continuación de 18 semanas o más, según el estándar estadounidense.",
           "en_el_ppt_del_curso": "Norma peruana MINSA 2023: primera fase de 2 meses de HREZ diario con 50 dosis, y segunda fase de 4 meses de H3R3 tres veces por semana con 54 dosis.",
           "observacion": "No es contradicción sino dos normativas distintas. En un examen del curso manda la norma peruana; en un control de lectura, lo que dice el artículo. Conviene saber cuál te están preguntando por el contexto de la pregunta.",
-          "estado": "aclarado, se conservan ambas"
+          "estado": "aclarado, se conservan ambas",
+          "prioridad": "Si la pregunta es de examen del curso, manda el PPT. Si es control de lectura, manda el artículo."
         }
       ]
     },
@@ -3401,7 +3404,8 @@
           "en_la_lectura": "Destaca el CRB-65 por estar bien validado en atención primaria y no requerir laboratorio.",
           "en_el_ppt_del_curso": "Menciona que la guía recomienda el PSI con recomendación fuerte y sugiere el CURB-65 como alternativa condicional.",
           "observacion": "No se contradicen: son tres escalas del mismo grupo con distinto nivel de exigencia de datos. Conviene saber las tres y cuál conviene según el escenario, ambulatorio u hospitalario.",
-          "estado": "aclarado, se conservan ambas"
+          "estado": "aclarado, se conservan ambas",
+          "prioridad": "Si la pregunta es de examen del curso, manda el PPT. Si es control de lectura, manda el artículo."
         }
       ]
     },

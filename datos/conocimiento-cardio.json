@@ -5,12 +5,12 @@
     "curso": "Medicina Interna I · MH-701 · UCSUR · 2026-2",
     "modulo": "Cardiología",
     "temas_ingeridos": [
-      "ekg1"
+      "ekg1",
+      "ekg2"
     ],
     "temas_pendientes": [
       "anatomia-cardiaca",
       "ayudadx-cardio",
-      "ekg2",
       "coronaria",
       "hta",
       "pericardio",
@@ -257,6 +257,95 @@
         "material_del_curso": "normal 60 a 99, bradicardia menos de 59",
         "observacion": "Queda un hueco entre 59 y 60. Es un detalle de redacción del PPT sin consecuencia clínica, pero si en un examen aparece una frecuencia de 59 o 60 justo, conviene justificar la respuesta en vez de solo dar la etiqueta.",
         "estado": "detalle de redacción"
+      }
+    ]
+  },
+  "ekg2": {
+    "nombre": "Electrocardiograma normal II",
+    "fuente": {
+      "archivo": "SEMANA 04-PDF-EKG normal II.pdf",
+      "semana": 4,
+      "sesion": 11,
+      "tipo": "ppt"
+    },
+    "referencias": "Harrison, Principios de Medicina Interna. Farreras-Rozman, Medicina Interna.",
+    "contenidos_declarados": [
+      "Lectura de electrocardiogramas",
+      "Trazado normal del EKG"
+    ],
+    "_nota_de_alcance": "Esta sesión es casi enteramente práctica: ocho trazados para leer con la misma plantilla de ocho campos. Su valor principal no es contenido nuevo sino el FORMATO de respuesta, que es el del taller aplicativo.",
+    "conceptos": [
+      {
+        "id": "ekg2::plantilla-de-lectura",
+        "nombre": "La plantilla de ocho campos: el formato de respuesta del taller",
+        "alto_rendimiento": true,
+        "contenido": "Cada trazado se responde llenando siempre los mismos ocho campos, en este orden.",
+        "campos": [
+          "Ritmo",
+          "Frecuencia cardíaca",
+          "Intervalo PR",
+          "Duración del QRS",
+          "Intervalo QT",
+          "Eje",
+          "Anomalías",
+          "Diagnóstico"
+        ],
+        "enfasis_docente": "Los ocho campos aparecen idénticos en los ocho trazados de la clase. Es la estructura exacta que va a pedir el taller aplicativo de EKG: no se responde con un diagnóstico suelto, se llenan los ocho campos y el diagnóstico es el último.",
+        "trampa": "Dar el diagnóstico sin haber consignado los seis valores medibles que lo sustentan.",
+        "relacionado": [
+          "ekg1::mnemotecnia-freh"
+        ]
+      },
+      {
+        "id": "ekg2::agrupacion-por-plano",
+        "nombre": "Agrupación de derivaciones por plano corporal",
+        "alto_rendimiento": true,
+        "contenido": "Primera forma de agrupar las doce derivaciones.",
+        "grupos": {
+          "plano frontal o de miembros": "DI, DII, DIII, aVR, aVL, aVF",
+          "plano horizontal o precordiales": "V1, V2, V3, V4, V5, V6"
+        },
+        "enfasis_docente": "Seis y seis. Es la agrupación que se usa para calcular el eje, que solo se hace con las del plano frontal.",
+        "relacionado": [
+          "ekg1::eje-cardiaco"
+        ]
+      },
+      {
+        "id": "ekg2::agrupacion-por-anatomia",
+        "nombre": "Agrupación por anatomía cardíaca: dónde se localiza la lesión",
+        "alto_rendimiento": true,
+        "contenido": "Segunda forma de agrupar, y la que el curso destaca por su valor en lesiones isquémicas: suelen alterarse juntas las derivaciones que son anatómicamente compatibles.",
+        "grupos_del_ppt": {
+          "DII, DIII, aVF": "el PPT las rotula como derecha-inferior",
+          "DI, aVL, V5, V6": "izquierda, lateral",
+          "DIII, V1, V2": "derecha",
+          "V1, V2, V3": "septo",
+          "aVR": "control"
+        },
+        "listado_del_ppt": {
+          "derivaciones izquierdas": "DI, aVL, V5, V6",
+          "derivaciones derechas": "DII, DIII, aVF"
+        },
+        "enfasis_docente": "El concepto central es correcto y es la base para localizar un infarto: si un grupo anatómicamente compatible se altera junto, ahí está la lesión. VER LA DISCREPANCIA REGISTRADA sobre los rótulos.",
+        "trampa": "Leer una alteración en una sola derivación aislada como lesión. Debe afectar al grupo anatómicamente compatible."
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "ekg2::ocho-trazados",
+        "uso": "ocho trazados consecutivos, todos con la misma plantilla; es el grueso de la sesión",
+        "enunciado": "Se presentan ocho electrocardiogramas distintos para lectura completa.",
+        "consigna": "Encuentre la siguiente información: Ritmo, Frecuencia cardíaca, Intervalo PR, Duración del QRS, Intervalo QT, Eje, Anomalías, Diagnóstico.",
+        "estructura_a_replicar": "repetición del mismo esquema de ocho campos sobre trazados distintos; entrena automatismo de lectura, no reconocimiento de patrones sueltos. Los seis campos medibles van antes que 'Anomalías' y 'Diagnóstico', que son los dos últimos."
+      }
+    ],
+    "discrepancias_detectadas": [
+      {
+        "punto": "Rótulos de la agrupación anatómica de derivaciones",
+        "material_del_curso": "El PPT rotula DII, DIII y aVF como 'derecha-inferior' y las lista como 'derivaciones derechas (miran ventrículo derecho)'. También rotula 'DIII, V1, V2' como derecha.",
+        "observacion": "La convención habitual es que DII, DIII y aVF son las derivaciones de la cara INFERIOR o diafragmática, no del ventrículo derecho. El ventrículo derecho se explora con derivaciones derechas específicas, V3R y V4R, y en parte con V1. Además V1 y V2 se consideran septales y V3 y V4 anteriores, mientras el PPT agrupa V1, V2 y V3 como septo. Esto importa porque de la agrupación depende dónde se localiza un infarto, que es contenido del parcial.",
+        "recomendacion": "Preguntar a la profesora antes del taller de EKG patológico. Mientras tanto, al responder conviene decir 'cara inferior (DII, DIII, aVF)', que es correcto en ambos esquemas, y evitar afirmar que miran el ventrículo derecho.",
+        "estado": "sin confirmar"
       }
     ]
   }

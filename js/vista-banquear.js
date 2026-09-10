@@ -36,7 +36,10 @@ async function siguienteBanco(){
 
   cargando("Preparando una pregunta nueva");
 
-  const cid=elegirConcepto(s.tema);
+  // El formato manda sobre el eje: si toca cálculo, el concepto debe admitir cálculo.
+  const fmtSesion=["calculo","caso","flashcard","banco","sustentacion","imagen"][s.i%6];
+  const cid = s.tema==="auto" ? (elegirConceptoPorFormato(fmtSesion)||elegirConcepto(s.tema))
+                              : elegirConcepto(s.tema);
   const eje=siguienteEje(cid);
   const d=S.dominio[cid];
   const dif=Math.min(5,Math.max(1,(d?d.nivel+1:2)));

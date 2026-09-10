@@ -20,7 +20,16 @@
       "tep"
     ],
     "nota": "El EKG es a Cardiología lo que el AGA fue a Neumología: cuatro sesiones y tres talleres aplicativos. Es el eje de mayor rendimiento del módulo.",
-    "politica_de_discrepancias": "JERARQUÍA DE RESPUESTAS, en este orden:\n1. Si la estudiante ya resolvió el punto, MANDA SU RESPUESTA. Queda marcada con estado 'resuelto por la estudiante' y no se vuelve a cuestionar ni a reabrir en sesiones futuras.\n2. En todo lo demás, MANDA EL PPT del curso, aunque difiera de la convención habitual. La pregunta se genera igual y se califica según el PPT: ella puede respaldarse mostrando la diapositiva.\n3. La observación sobre la convención se muestra DESPUÉS, como nota al pie del feedback, nunca como parte de la calificación ni como corrección de su respuesta.\nNunca preguntarle de nuevo algo que ya decidió."
+    "politica_de_discrepancias": "JERARQUÍA DE RESPUESTAS, en este orden:\n1. Si la estudiante ya resolvió el punto, MANDA SU RESPUESTA. Queda marcada con estado 'resuelto por la estudiante' y no se vuelve a cuestionar ni a reabrir en sesiones futuras.\n2. En todo lo demás, MANDA EL PPT del curso, aunque difiera de la convención habitual. La pregunta se genera igual y se califica según el PPT: ella puede respaldarse mostrando la diapositiva.\n3. La observación sobre la convención se muestra DESPUÉS, como nota al pie del feedback, nunca como parte de la calificación ni como corrección de su respuesta.\nNunca preguntarle de nuevo algo que ya decidió.",
+    "formatos": {
+      "flashcard": "Recuerdo puntual: valores normales, listas cerradas, definiciones, mnemotecnias. Nunca un caso clínico.",
+      "calculo": "Fórmulas y valores que se operan: compensación, PaFiO2, frecuencia cardíaca, eje, escalas.",
+      "imagen": "Lectura de radiografía o de trazado electrocardiográfico.",
+      "caso": "Aplicable a un paciente completo: diagnóstico, decisión, tratamiento, complicaciones.",
+      "sustentacion": "Tiene un porqué que defender o una trampa que argumentar.",
+      "lectura": "Proviene de una lectura asignada; alimenta el género de control de lectura.",
+      "banco": "Sirve para pregunta suelta de banco, en cualquier tipo."
+    }
   },
   "ekg1": {
     "nombre": "Electrocardiograma normal I",
@@ -52,7 +61,14 @@
           "I2": "Infartos e Intervalos"
         },
         "enfasis_docente": "FREH II es la secuencia que van a esperar en la sustentación. Responder en ese orden es parte de la respuesta.",
-        "trampa": "Saltar directo a buscar isquemia sin haber establecido frecuencia, ritmo y eje."
+        "trampa": "Saltar directo a buscar isquemia sin haber establecido frecuencia, ritmo y eje.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ekg1::papel-milimetrado",
@@ -65,7 +81,14 @@
           "cuadrado grande": "5 cuadrados pequeños",
           "derivaciones": "12 en total: 6 frontales (DI, DII, DIII, aVR, aVL, aVF) y 6 horizontales (V1 a V6)"
         },
-        "enfasis_docente": "Todo cálculo de intervalos sale de que 1 mm equivale a 0.04 segundos. Sin esa equivalencia no se puede medir nada."
+        "enfasis_docente": "Todo cálculo de intervalos sale de que 1 mm equivale a 0.04 segundos. Sin esa equivalencia no se puede medir nada.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ekg1::colocacion-de-electrodos",
@@ -85,7 +108,13 @@
           "V5": "quinto espacio intercostal, línea axilar anterior",
           "V6": "quinto espacio intercostal, línea axilar media"
         },
-        "enfasis_docente": "V3 se coloca DESPUÉS de V4, porque se define como el punto intermedio entre ambas. Es el detalle de técnica que más se falla."
+        "enfasis_docente": "V3 se coloca DESPUÉS de V4, porque se define como el punto intermedio entre ambas. Es el detalle de técnica que más se falla.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "ekg1::derivaciones-y-einthoven",
@@ -104,7 +133,14 @@
           "aVF": "pierna izquierda positiva contra brazo derecho más brazo izquierdo negativos"
         },
         "horizontales": "Verdaderamente unipolares: comparan la actividad del electrodo explorador precordial contra la suma de los tres miembros activos, que da cero.",
-        "enfasis_docente": "La distinción bipolar contra monopolar y el concepto de central terminal de Wilson son de definición, muy preguntables."
+        "enfasis_docente": "La distinción bipolar contra monopolar y el concepto de central terminal de Wilson son de definición, muy preguntables.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ekg1::calculo-de-frecuencia",
@@ -122,7 +158,14 @@
           "taquicardia": "más de 100"
         },
         "enfasis_docente": "La advertencia está escrita en mayúsculas en la diapositiva: la regla de los cuadrados SOLO sirve si el ritmo es regular. Usarla en una fibrilación auricular es el error clásico.",
-        "trampa": "Aplicar 300-150-100-75-60-50 a un trazado irregular."
+        "trampa": "Aplicar 300-150-100-75-60-50 a un trazado irregular.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ekg1::ritmo-sinusal",
@@ -139,7 +182,15 @@
         "por_que": "El vector de despolarización auricular va hacia abajo y a la izquierda, desde el nodo sinusal hacia el nodo AV. Por eso se acerca a DII y aVF, dando deflexión positiva, y se aleja de aVR, dando deflexión negativa.",
         "regla_simplificada": "La onda P de origen sinusal es POSITIVA en cara inferior (DII, DIII, aVF) y NEGATIVA en aVR.",
         "enfasis_docente": "Son cinco criterios, lista cerrada y contable. Y el porqué del vector es la pregunta de sustentación típica: no basta decir que la P es positiva en DII, hay que explicar la dirección del vector.",
-        "trampa": "Llamar sinusal a un ritmo con P positiva en DII pero con R-R variable."
+        "trampa": "Llamar sinusal a un ritmo con P positiva en DII pero con R-R variable.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ekg1::ritmo-no-sinusal",
@@ -147,7 +198,13 @@
         "alto_rendimiento": true,
         "contenido": "Secuencia de decisión del curso: primero saber si el ritmo es sinusal buscando la onda P que antecede al QRS. Si no hay onda P, revisar si los complejos QRS tienen intervalo regular. Si no hay onda P y el R-R es variable, se trata de fibrilación auricular, asociada a ondas f minúsculas.",
         "automatismo": "El corazón tiene automatismo. Si el nodo sinusal deja de predominar, el ritmo lo lleva la estructura que le sigue en orden de frecuencia.",
-        "enfasis_docente": "Ausencia de onda P más R-R variable igual fibrilación auricular. Esa combinación de dos hallazgos es la respuesta, no cada uno por separado."
+        "enfasis_docente": "Ausencia de onda P más R-R variable igual fibrilación auricular. Esa combinación de dos hallazgos es la respuesta, no cada uno por separado.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ekg1::eje-cardiaco",
@@ -159,7 +216,14 @@
           "rango alternativo": "alguna bibliografía considera de −30° hasta 110°"
         },
         "enfasis_docente": "El curso da 0° a 90° como normal y menciona explícitamente que otra bibliografía usa −30° a 110°. Conviene responder con el rango del curso y mencionar el otro.",
-        "trampa": "Usar derivaciones precordiales para calcular el eje. Solo sirven las del plano frontal."
+        "trampa": "Usar derivaciones precordiales para calcular el eje. Solo sirven las del plano frontal.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ekg1::onda-p",
@@ -171,7 +235,14 @@
           "altura": "menor de 2.5 mm"
         },
         "morfologia": "Positiva en todas las derivaciones excepto aVR, y bifásica en V1.",
-        "enfasis_docente": "Que la primera mitad sea auricular derecha y la segunda izquierda es lo que permite reconocer crecimientos auriculares."
+        "enfasis_docente": "Que la primera mitad sea auricular derecha y la segunda izquierda es lo que permite reconocer crecimientos auriculares.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ekg1::complejo-qrs",
@@ -193,7 +264,15 @@
           "onda Q amplitud": "no debe superar el 25 % de la onda R que la sigue"
         },
         "enfasis_docente": "La onda Q normal NO se observa en V1 ni V2. Los límites de amplitud de R en V5 y V6 son la puerta a los criterios de hipertrofia.",
-        "trampa": "Considerar patológica una onda Q sin medir si supera el 25 % de la R siguiente."
+        "trampa": "Considerar patológica una onda Q sin medir si supera el 25 % de la R siguiente.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ekg1::intervalo-pr",
@@ -207,7 +286,14 @@
           "alargado": "corresponde a bloqueo auriculoventricular de primer grado",
           "acortado": "taquicardias, síndromes de preexcitación como Wolff-Parkinson-White, ritmos nodales o auriculares bajos"
         },
-        "enfasis_docente": "PR largo igual bloqueo AV de primer grado, PR corto igual preexcitación. Es una correspondencia directa y muy preguntable."
+        "enfasis_docente": "PR largo igual bloqueo AV de primer grado, PR corto igual preexcitación. Es una correspondencia directa y muy preguntable.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ekg1::intervalo-qt",
@@ -218,7 +304,14 @@
           "valor aproximado": "0.30 a 0.40 segundos"
         },
         "donde_medirlo": "En las derivaciones precordiales donde exista onda Q, por ejemplo V5 y V6.",
-        "enfasis_docente": "La dependencia de la frecuencia es lo que obliga a corregirlo. Existen reglas específicas para medirlo."
+        "enfasis_docente": "La dependencia de la frecuencia es lo que obliga a corregirlo. Existen reglas específicas para medirlo.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ekg1::ondas-del-ekg",
@@ -231,7 +324,14 @@
           "onda T": "repolarización ventricular",
           "onda U": "repolarización de los músculos papilares"
         },
-        "enfasis_docente": "La onda U y su correspondencia con los músculos papilares es el dato que suele olvidarse y por eso se pregunta."
+        "enfasis_docente": "La onda U y su correspondencia con los músculos papilares es el dato que suele olvidarse y por eso se pregunta.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       }
     ],
     "casos_del_ppt": [
@@ -295,6 +395,14 @@
         "trampa": "Dar el diagnóstico sin haber consignado los seis valores medibles que lo sustentan.",
         "relacionado": [
           "ekg1::mnemotecnia-freh"
+        ],
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
         ]
       },
       {
@@ -309,6 +417,13 @@
         "enfasis_docente": "Seis y seis. Es la agrupación que se usa para calcular el eje, que solo se hace con las del plano frontal.",
         "relacionado": [
           "ekg1::eje-cardiaco"
+        ],
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "imagen",
+          "sustentacion"
         ]
       },
       {
@@ -328,7 +443,14 @@
           "derivaciones derechas": "DII, DIII, aVF"
         },
         "enfasis_docente": "El concepto central es correcto y es la base para localizar un infarto: si un grupo anatómicamente compatible se altera junto, ahí está la lesión. VER LA DISCREPANCIA REGISTRADA sobre los rótulos.",
-        "trampa": "Leer una alteración en una sola derivación aislada como lesión. Debe afectar al grupo anatómicamente compatible."
+        "trampa": "Leer una alteración en una sola derivación aislada como lesión. Debe afectar al grupo anatómicamente compatible.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       }
     ],
     "casos_del_ppt": [

@@ -37,7 +37,16 @@
     ],
     "lecturas_pendientes": [],
     "estado": "Módulo de Neumología completo: 14 PPTs y 3 lecturas.",
-    "politica_de_discrepancias": "JERARQUÍA DE RESPUESTAS, en este orden:\n1. Si la estudiante ya resolvió el punto, MANDA SU RESPUESTA. Queda marcada con estado 'resuelto por la estudiante' y no se vuelve a cuestionar ni a reabrir en sesiones futuras.\n2. En todo lo demás, MANDA EL PPT del curso, aunque difiera de la convención habitual. La pregunta se genera igual y se califica según el PPT: ella puede respaldarse mostrando la diapositiva.\n3. La observación sobre la convención se muestra DESPUÉS, como nota al pie del feedback, nunca como parte de la calificación ni como corrección de su respuesta.\nNunca preguntarle de nuevo algo que ya decidió."
+    "politica_de_discrepancias": "JERARQUÍA DE RESPUESTAS, en este orden:\n1. Si la estudiante ya resolvió el punto, MANDA SU RESPUESTA. Queda marcada con estado 'resuelto por la estudiante' y no se vuelve a cuestionar ni a reabrir en sesiones futuras.\n2. En todo lo demás, MANDA EL PPT del curso, aunque difiera de la convención habitual. La pregunta se genera igual y se califica según el PPT: ella puede respaldarse mostrando la diapositiva.\n3. La observación sobre la convención se muestra DESPUÉS, como nota al pie del feedback, nunca como parte de la calificación ni como corrección de su respuesta.\nNunca preguntarle de nuevo algo que ya decidió.",
+    "formatos": {
+      "flashcard": "Recuerdo puntual: valores normales, listas cerradas, definiciones, mnemotecnias. Nunca un caso clínico.",
+      "calculo": "Fórmulas y valores que se operan: compensación, PaFiO2, frecuencia cardíaca, eje, escalas.",
+      "imagen": "Lectura de radiografía o de trazado electrocardiográfico.",
+      "caso": "Aplicable a un paciente completo: diagnóstico, decisión, tratamiento, complicaciones.",
+      "sustentacion": "Tiene un porqué que defender o una trampa que argumentar.",
+      "lectura": "Proviene de una lectura asignada; alimenta el género de control de lectura.",
+      "banco": "Sirve para pregunta suelta de banco, en cualquier tipo."
+    }
   },
   "aga": {
     "nombre": "Análisis de gases arteriales",
@@ -88,7 +97,14 @@
             "critico": "menor de -2 o mayor de +2"
           }
         },
-        "enfasis_docente": "El pH compatible con la vida va de 6.80 a 7.70. La escala es logarítmica: un cambio de 0.3 duplica o reduce a la mitad la concentración de hidrogeniones, y un cambio de 1 refleja un cambio de diez veces."
+        "enfasis_docente": "El pH compatible con la vida va de 6.80 a 7.70. La escala es logarítmica: un cambio de 0.3 duplica o reduce a la mitad la concentración de hidrogeniones, y un cambio de 1 refleja un cambio de diez veces.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "aga::guia-de-interpretacion",
@@ -103,7 +119,13 @@
           "Valorar la compensación: si existe, y si es parcial o completa."
         ],
         "enfasis_docente": "La compensación nunca es excesiva. Si parece haberlo sido, probablemente sea iatrogénica.",
-        "trampa": "Un pH normal no descarta un trastorno ácido-base: puede estar completamente compensado. Detenerse en el pH normal es el error frecuente."
+        "trampa": "Un pH normal no descarta un trastorno ácido-base: puede estar completamente compensado. Detenerse en el pH normal es el error frecuente.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "aga::cuatro-trastornos",
@@ -116,7 +138,13 @@
           "acidosis_metabolica": "Disminución del bicarbonato por acumulación de ácidos, como cetonas o ácido láctico. Compensación: aumento de la ventilación para reducir la PCO2.",
           "alcalosis_metabolica": "Aumento del bicarbonato, por ejemplo por pérdida excesiva de ácido. La compensación respiratoria suele ser pequeña o ausente."
         },
-        "enfasis_docente": "La alcalosis metabólica es la que peor compensa. Esperar una compensación respiratoria marcada en ella es un error."
+        "enfasis_docente": "La alcalosis metabólica es la que peor compensa. Esperar una compensación respiratoria marcada en ella es un error.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "aga::niveles-de-evaluacion",
@@ -130,7 +158,11 @@
           "Nivel 4, intervención con oxígeno al 100 %: separa el shunt de los otros factores que contribuyen a la hipoxemia.",
           "Nivel 5, factores modificadores: consumo de oxígeno, gasto cardíaco, hemoglobina, temperatura y otros factores extrapulmonares."
         ],
-        "nota_altitud": "El curso indica explícitamente considerar la altitud al comparar valores, cosa relevante en Perú."
+        "nota_altitud": "El curso indica explícitamente considerar la altitud al comparar valores, cosa relevante en Perú.",
+        "formatos": [
+          "banco",
+          "calculo"
+        ]
       },
       {
         "id": "aga::causas-de-hipoxemia",
@@ -179,7 +211,13 @@
             ]
           }
         },
-        "enfasis_docente": "El shunt es el único que no corrige con oxígeno al 100 %. Esa es la variable que lo separa de todo lo demás. El curso advierte además que varias causas pueden coexistir en un mismo paciente."
+        "enfasis_docente": "El shunt es el único que no corrige con oxígeno al 100 %. Esa es la variable que lo separa de todo lo demás. El curso advierte además que varias causas pueden coexistir en un mismo paciente.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "aga::ecuacion-gas-alveolar",
@@ -192,6 +230,11 @@
         "relacionado": [
           "aga::causas-de-hipoxemia",
           "aga::niveles-de-evaluacion"
+        ],
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard"
         ]
       },
       {
@@ -199,7 +242,12 @@
         "nombre": "Los tres procesos compensatorios ante la desigualdad V/Q",
         "alto_rendimiento": false,
         "contenido": "Cuando la desigualdad ventilación-perfusión reduce la captación pulmonar de oxígeno, el organismo dispone de tres mecanismos innatos: aumento de la ventilación, que eleva la relación V/Q en todo el pulmón; incremento del gasto cardíaco, que permite menor extracción de oxígeno en los tejidos; y mayor extracción tisular de oxígeno.",
-        "enfasis_docente": "Estos mecanismos se activan antes de que el paciente llegue al médico, y tienen un costo: hipoxemia e hipercapnia más severas. El curso lo compara con la elevación de la urea en la insuficiencia renal crónica."
+        "enfasis_docente": "Estos mecanismos se activan antes de que el paciente llegue al médico, y tienen un costo: hipoxemia e hipercapnia más severas. El curso lo compara con la elevación de la urea en la insuficiencia renal crónica.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "sustentacion"
+        ]
       },
       {
         "id": "aga::transporte-de-oxigeno",
@@ -209,14 +257,24 @@
         "cifras": {
           "saturacion_arterial": "aproximadamente 97 %",
           "saturacion_venosa_mixta": "aproximadamente 75 %"
-        }
+        },
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard"
+        ]
       },
       {
         "id": "aga::buffers",
         "nombre": "Sistemas amortiguadores",
         "alto_rendimiento": false,
         "contenido": "Un buffer resiste los cambios de pH ante pequeñas cantidades de ácido o álcali. Los tres principales en humanos son las proteínas, la hemoglobina y el bicarbonato.",
-        "enfasis_docente": "La hemoglobina tiene seis veces más capacidad amortiguadora que las proteínas plasmáticas. El bicarbonato es el más significativo en sangre, por su cantidad disponible y por ser un sistema abierto que permite alterar CO2 y bicarbonato de forma independiente."
+        "enfasis_docente": "La hemoglobina tiene seis veces más capacidad amortiguadora que las proteínas plasmáticas. El bicarbonato es el más significativo en sangre, por su cantidad disponible y por ser un sistema abierto que permite alterar CO2 y bicarbonato de forma independiente.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "sustentacion"
+        ]
       },
       {
         "id": "aga::anion-gap",
@@ -233,7 +291,13 @@
           "E": "Etanol o etilenglicol",
           "S": "Salicilatos"
         },
-        "trampa": "La acidosis tubular renal tipo 1 y la pérdida gastrointestinal de bicarbonato cursan SIN anión gap elevado. El curso las usa como distractores."
+        "trampa": "La acidosis tubular renal tipo 1 y la pérdida gastrointestinal de bicarbonato cursan SIN anión gap elevado. El curso las usa como distractores.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "sustentacion"
+        ]
       }
     ],
     "casos_del_ppt": [
@@ -326,7 +390,13 @@
           }
         },
         "enfasis_docente": "Un exudado cumple AL MENOS UNO de los tres criterios; el trasudado no cumple ninguno.",
-        "trampa": "Buscar que se cumplan los tres criterios. Se leen en disyunción, no en conjunción."
+        "trampa": "Buscar que se cumplan los tres criterios. Se leen en disyunción, no en conjunción.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "pleura::sindrome-pleural",
@@ -334,7 +404,12 @@
         "alto_rendimiento": true,
         "contenido": "El síndrome pleural en la exploración se define por tres hallazgos: disminución o abolición del murmullo vesicular, disminución o abolición de las vibraciones vocales, y matidez franca a la percusión.",
         "enfasis_docente": "El curso llama a esa percusión matidez de madera. La combinación completa es la respuesta, no cada hallazgo suelto.",
-        "sintomas": "astenia y adelgazamiento, disnea de esfuerzo, tos, dolor torácico variable, y fiebre cuando el origen es infeccioso"
+        "sintomas": "astenia y adelgazamiento, disnea de esfuerzo, tos, dolor torácico variable, y fiebre cuando el origen es infeccioso",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "pleura::radiologia-del-derrame",
@@ -346,7 +421,13 @@
           "deteccion_lateral": "desde 75 cm³",
           "ecografia": "detecta desde 3 a 5 mL"
         },
-        "enfasis_docente": "La ecografía torácica define características del líquido, detecta tabicaciones, estima volumen y guía procedimientos. Es superior a la tomografía para identificar loculaciones y para separar lo parenquimatoso de lo pleural."
+        "enfasis_docente": "La ecografía torácica define características del líquido, detecta tabicaciones, estima volumen y guía procedimientos. Es superior a la tomografía para identificar loculaciones y para separar lo parenquimatoso de lo pleural.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "pleura::etiologia-del-derrame",
@@ -359,7 +440,12 @@
           "exudados_neoplasicos": "carcinoma metastásico, linfoma, mesotelioma maligno, cáncer de pulmón, cáncer de mama",
           "otros_exudados": "enfermedades sistémicas, pancreatitis, fármacos, asbestosis, radioterapia"
         },
-        "trampa": "La embolia pulmonar aparece en la lista de trasudados del curso, aunque clásicamente puede dar exudado. Usar la clasificación del curso."
+        "trampa": "La embolia pulmonar aparece en la lista de trasudados del curso, aunque clásicamente puede dar exudado. Usar la clasificación del curso.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "pleura::derrame-paraneumonico",
@@ -377,7 +463,13 @@
           "pH": "menor de 7.2 indica complicación",
           "glucosa": "menor de 60 mg/dL indica complicación",
           "derrame_pequeno": "menor de 1 cm puede tratarse sin drenaje"
-        }
+        },
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "pleura::neumotorax",
@@ -393,7 +485,13 @@
         "cifras": {
           "incidencia": "4 por 100 000 hombres y 1.1 por 100 000 mujeres"
         },
-        "enfasis_docente": "En el neumotórax a tensión la fuga continua genera presión positiva creciente que comprime el pulmón y desplaza el mediastino. La tomografía no se recomienda de rutina por baja sensibilidad; las vistas espiratorias acentúan el contraste."
+        "enfasis_docente": "En el neumotórax a tensión la fuga continua genera presión positiva creciente que comprime el pulmón y desplaza el mediastino. La tomografía no se recomienda de rutina por baja sensibilidad; las vistas espiratorias acentúan el contraste.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "pleura::tratamiento-neumotorax",
@@ -406,7 +504,13 @@
           "Fuga persistente más de 4 días: exploración toracoscópica, identificación y extirpación de bullas.",
           "Recurrencia: toracoscopía como primera opción, con extirpación de bullas y pleurodesis."
         ],
-        "enfasis_docente": "La aspiración con aguja es tan efectiva como la toracostomía con tubo en el manejo de emergencia del neumotórax espontáneo primario. La abrasión pleural toracoscópica es más segura que la pleurectomía apical, pero esta última tiene menor riesgo de recurrencia."
+        "enfasis_docente": "La aspiración con aguja es tan efectiva como la toracostomía con tubo en el manejo de emergencia del neumotórax espontáneo primario. La abrasión pleural toracoscópica es más segura que la pleurectomía apical, pero esta última tiene menor riesgo de recurrencia.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "pleura::hemotorax",
@@ -423,7 +527,13 @@
           "evacuacion_incompleta": "hasta en 20 % de los casos",
           "progresion_a_empiema": "26 % si el hemotórax retenido no se trata"
         },
-        "enfasis_docente": "La cirugía videoasistida temprana, antes de 5 días, disminuye la estancia y la conversión a toracotomía abierta."
+        "enfasis_docente": "La cirugía videoasistida temprana, antes de 5 días, disminuye la estancia y la conversión a toracotomía abierta.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "pleura::toracocentesis",
@@ -436,7 +546,11 @@
           "toracoscopia": "95 % de rendimiento en tuberculosis y cánceres metastásicos pleurales",
           "pleurodesis_talco": "3 a 4 g de talco estéril"
         },
-        "complicaciones": "dolor en el sitio de punción, hemorragia local o intrapleural, neumotórax, infección pleural y edema pulmonar de reexpansión"
+        "complicaciones": "dolor en el sitio de punción, hemorragia local o intrapleural, neumotórax, infección pleural y edema pulmonar de reexpansión",
+        "formatos": [
+          "banco",
+          "flashcard"
+        ]
       }
     ],
     "casos_del_ppt": [
@@ -486,7 +600,13 @@
           "criterio_diagnostico": "FEV1/FVC post broncodilatador menor de 0.7"
         },
         "enfasis_docente": "La espirometría forzada con FEV1/FVC post broncodilatador menor de 0.7 es OBLIGATORIA para establecer el diagnóstico. Sin espirometría no hay diagnóstico de EPOC.",
-        "trampa": "Bronquitis crónica sin obstrucción espirométrica no es EPOC. El curso lo usa como distractor."
+        "trampa": "Bronquitis crónica sin obstrucción espirométrica no es EPOC. El curso lo usa como distractor.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "epoc::clasificacion-gold",
@@ -499,7 +619,12 @@
           "GOLD 3 grave": "FEV1 de 30 a menos de 50 %",
           "GOLD 4 muy grave": "FEV1 menor de 30 %"
         },
-        "trampa": "La gravedad espirométrica y el grupo ABE son dos ejes distintos. Un paciente puede ser GOLD 2 y grupo B a la vez. Confundirlos es el error frecuente."
+        "trampa": "La gravedad espirométrica y el grupo ABE son dos ejes distintos. Un paciente puede ser GOLD 2 y grupo B a la vez. Confundirlos es el error frecuente.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "epoc::grupos-abe",
@@ -511,7 +636,13 @@
           "Grupo B": "bajo riesgo (0 a 1 exacerbación sin hospitalización) y más síntomas",
           "Grupo E": "alto riesgo: 2 o más exacerbaciones, o 1 o más con hospitalización, sin importar el nivel de síntomas"
         },
-        "enfasis_docente": "El grupo E reemplazó a los antiguos C y D. Reconoce que las exacerbaciones importan por sí solas, al margen de los síntomas."
+        "enfasis_docente": "El grupo E reemplazó a los antiguos C y D. Reconoce que las exacerbaciones importan por sí solas, al margen de los síntomas.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "epoc::escalas-de-sintomas",
@@ -530,7 +661,13 @@
           "umbral_CAT": "10 o más indica síntomas significativos y justifica tratamiento regular",
           "equivalencia": "CAT 10 equivale a SGRQ 25"
         },
-        "enfasis_docente": "La mMRC predice el riesgo de mortalidad futura. Se recomienda evaluación multidimensional porque un paciente con mMRC menor de 1 puede tener otros síntomas."
+        "enfasis_docente": "La mMRC predice el riesgo de mortalidad futura. Se recomienda evaluación multidimensional porque un paciente con mMRC menor de 1 puede tener otros síntomas.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "epoc::eosinofilos",
@@ -542,7 +679,12 @@
           "100 a 300 células/µL": "efecto moderado",
           "más de 300 células/µL": "mayor probabilidad de beneficio"
         },
-        "enfasis_docente": "El recuento se combina con la evaluación clínica del riesgo, nunca se usa solo."
+        "enfasis_docente": "El recuento se combina con la evaluación clínica del riesgo, nunca se usa solo.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "epoc::tratamiento-inicial",
@@ -558,7 +700,13 @@
           "disnea persistente": "escalar de monoterapia a LABA más LAMA; si no mejora, cambiar dispositivo o principios activos",
           "exacerbaciones persistentes": "escalar a LABA más LAMA; si persisten, considerar triple terapia sobre todo con eosinófilos de 100 o más células/µL; si persisten pese a triple terapia, considerar roflumilast o un macrólido"
         },
-        "enfasis_docente": "En cada visita se comprueba técnica de inhalación, cumplimiento, tabaquismo y exposición. La técnica se evalúa ANTES de concluir que el tratamiento es insuficiente. La espirometría se repite al menos una vez al año."
+        "enfasis_docente": "En cada visita se comprueba técnica de inhalación, cumplimiento, tabaquismo y exposición. La técnica se evalúa ANTES de concluir que el tratamiento es insuficiente. La espirometría se repite al menos una vez al año.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "epoc::oxigenoterapia",
@@ -575,7 +723,14 @@
             "antecedente de hospitalización por insuficiencia respiratoria aguda"
           ]
         },
-        "enfasis_docente": "La oxigenoterapia mejora la supervivencia en hipoxemia crónica grave en reposo. La ventilación no invasiva reduce mortalidad y previene reingresos."
+        "enfasis_docente": "La oxigenoterapia mejora la supervivencia en hipoxemia crónica grave en reposo. La ventilación no invasiva reduce mortalidad y previene reingresos.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "epoc::exacerbacion",
@@ -587,14 +742,25 @@
           "moderada": "broncodilatador de acción corta más corticoide oral, con o sin antibiótico",
           "grave": "requiere hospitalización o emergencia; puede asociarse a insuficiencia respiratoria aguda"
         },
-        "enfasis_docente": "El límite temporal de 14 días es parte de la definición. Las comorbilidades pueden simular o agravar una exacerbación."
+        "enfasis_docente": "El límite temporal de 14 días es parte de la definición. Las comorbilidades pueden simular o agravar una exacerbación.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "epoc::intervenciones-que-reducen-mortalidad",
         "nombre": "Las cinco intervenciones que reducen mortalidad",
         "alto_rendimiento": true,
         "contenido": "Lista cerrada del curso: triple terapia inhalada en sintomáticos con exacerbaciones frecuentes o graves; abandono del tabaquismo; rehabilitación pulmonar iniciada durante la hospitalización o poco después del alta; oxigenoterapia en hipoxemia crónica grave; y ventilación no invasiva en hipercapnia marcada.",
-        "enfasis_docente": "Es una lista que se presta a preguntar cuál NO reduce mortalidad."
+        "enfasis_docente": "Es una lista que se presta a preguntar cuál NO reduce mortalidad.",
+        "formatos": [
+          "banco",
+          "caso",
+          "sustentacion"
+        ]
       },
       {
         "id": "epoc::vacunas-y-comorbilidades",
@@ -602,7 +768,11 @@
         "alto_rendimiento": false,
         "contenido": "Vacunas recomendadas: antigripal anual, antineumocócica, COVID-19, y además Tdap, herpes zóster y virus sincitial respiratorio según recomendaciones nacionales.",
         "comorbilidades": "cardiovasculares (cardiopatía isquémica, insuficiencia cardíaca, arritmias, hipertensión), cáncer de pulmón sobre todo con enfisema, síndrome metabólico, osteoporosis, depresión y ansiedad, y disfunción muscular con sarcopenia",
-        "enfasis_docente": "Las comorbilidades influyen en mortalidad y hospitalizaciones con independencia de la gravedad de la obstrucción."
+        "enfasis_docente": "Las comorbilidades influyen en mortalidad y hospitalizaciones con independencia de la gravedad de la obstrucción.",
+        "formatos": [
+          "banco",
+          "sustentacion"
+        ]
       },
       {
         "id": "epoc::rehabilitacion",
@@ -611,7 +781,11 @@
         "contenido": "Entrenamiento físico combinado con educación de la enfermedad, apoyo nutricional y psicosocial. Mejora capacidad de ejercicio, síntomas y calidad de vida en todos los estratos de gravedad.",
         "cifras": {
           "duracion": "programas de 6 a 8 semanas con sesiones supervisadas, seguidos de mantenimiento a largo plazo"
-        }
+        },
+        "formatos": [
+          "banco",
+          "flashcard"
+        ]
       }
     ],
     "casos_del_ppt": [
@@ -662,7 +836,12 @@
           "muertes": "1.6 millones al año",
           "progresion_a_activa": "5 a 10 % de los infectados a lo largo de la vida, la mayoría en los primeros 5 años"
         },
-        "enfasis_docente": "Es la enfermedad infecciosa con mayor mortalidad causada por un único agente. Afecta sobre todo a la población económicamente activa."
+        "enfasis_docente": "Es la enfermedad infecciosa con mayor mortalidad causada por un único agente. Afecta sobre todo a la población económicamente activa.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "tb::clinica-y-localizacion",
@@ -670,7 +849,11 @@
         "alto_rendimiento": true,
         "contenido": "La primoinfección suele ser asintomática o paucisintomática: disminución del rendimiento intelectual, astenia, febrícula y, raramente, eritema nodoso. La tuberculosis posprimaria da fiebre vespertina, sudores nocturnos, pérdida de peso, tos, expectoración hemoptoica y disnea en formas avanzadas.",
         "localizacion": "segmentos apicales y dorsales de lóbulos superiores, y segmentos apicales de lóbulos inferiores",
-        "enfasis_docente": "La localización apical se explica por oxigenación óptima y menor circulación linfática. Solo los humanos desarrollan tuberculosis posprimaria, que es la que permite transmitir."
+        "enfasis_docente": "La localización apical se explica por oxigenación óptima y menor circulación linfática. Solo los humanos desarrollan tuberculosis posprimaria, que es la que permite transmitir.",
+        "formatos": [
+          "banco",
+          "sustentacion"
+        ]
       },
       {
         "id": "tb::infeccion-latente",
@@ -678,7 +861,12 @@
         "alto_rendimiento": true,
         "contenido": "Presencia persistente de bacilos sin signos clínicos ni anomalías radiológicas. Se detecta únicamente mediante pruebas inmunológicas: reacción a la tuberculina (PPD) o pruebas de liberación de interferón (IGRA).",
         "enfasis_docente": "El PPD y el IGRA no distinguen infección activa de latente: no sirven para confirmar enfermedad activa. Ese es el punto que el curso convierte en distractor.",
-        "trampa": "Usar PPD como prueba confirmatoria en un sintomático respiratorio."
+        "trampa": "Usar PPD como prueba confirmatoria en un sintomático respiratorio.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "tb::diagnostico-bacteriologico",
@@ -692,14 +880,27 @@
           "cultivo": "medios sólidos Löwenstein-Jensen u Ogawa, o medio líquido MGIT",
           "otros": "Xpert MTB/RIF, técnicas de amplificación génica, histología con granulomas epitelioides"
         },
-        "enfasis_docente": "Se debe solicitar radiografía de tórax en todo caso probable, pero NINGÚN patrón radiográfico se considera específico para TB. La tomografía se reserva para casos específicos."
+        "enfasis_docente": "Se debe solicitar radiografía de tórax en todo caso probable, pero NINGÚN patrón radiográfico se considera específico para TB. La tomografía se reserva para casos específicos.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "tb::radiologia",
         "nombre": "Manifestaciones radiológicas",
         "alto_rendimiento": true,
         "contenido": "Infiltrados, condensaciones, micronódulos bronquiolares con patrón de árbol en brote, formación de cavernas, tuberculomas, y adenopatías hiliares y mediastínicas.",
-        "trampa": "Ningún patrón es específico. Afirmar que una imagen confirma TB es error."
+        "trampa": "Ningún patrón es específico. Afirmar que una imagen confirma TB es error.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "tb::definiciones-operativas",
@@ -712,7 +913,13 @@
           "sin confirmación bacteriológica": "diagnosticada por criterio clínico con apoyo de imágenes o histología sugestiva",
           "TB pulmonar": "compromiso del parénquima pulmonar, con o sin confirmación bacteriológica"
         },
-        "enfasis_docente": "Los casos de TB miliar se definen como TB pulmonar. Ese detalle se presta a pregunta."
+        "enfasis_docente": "Los casos de TB miliar se definen como TB pulmonar. Ese detalle se presta a pregunta.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "tb::resistencia",
@@ -727,7 +934,13 @@
           "TB XDR": "cumple RR o MDR, más resistencia a cualquier fluoroquinolona y a al menos un medicamento adicional del Grupo A (bedaquilina o linezolid)"
         },
         "enfasis_docente": "Toda persona afectada debe ser evaluada por pruebas moleculares rápidas para detectar resistencia a isoniacida y rifampicina ANTES de iniciar tratamiento.",
-        "pruebas": "Ensayo con sondas en línea y PMMA como moleculares; MODS y MGIT como fenotípicas."
+        "pruebas": "Ensayo con sondas en línea y PMMA como moleculares; MODS y MGIT como fenotípicas.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "tb::tratamiento-sensible",
@@ -739,14 +952,26 @@
           "TB miliar o extrapulmonar con compromiso de SNC u osteoarticular": "Primera fase 2 meses de HREZ diario, 50 dosis. Segunda fase 10 meses de HR diario, 250 dosis.",
           "TB con VIH": "Primera fase 2 meses de HREZ diario, 50 dosis. Segunda fase 4 meses de HR diario, 100 dosis."
         },
-        "enfasis_docente": "Lo que cambia entre esquemas es la SEGUNDA fase: intermitente en el caso estándar, diaria en VIH, y prolongada a 10 meses en SNC u osteoarticular. La administración es responsabilidad del profesional de enfermería y el monitoreo es mensual."
+        "enfasis_docente": "Lo que cambia entre esquemas es la SEGUNDA fase: intermitente en el caso estándar, diaria en VIH, y prolongada a 10 meses en SNC u osteoarticular. La administración es responsabilidad del profesional de enfermería y el monitoreo es mensual.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "tb::piridoxina",
         "nombre": "Piridoxina con isoniacida",
         "alto_rendimiento": true,
         "contenido": "Todo esquema que incluya isoniacida debe recibir además piridoxina 50 mg al día mientras dure el tratamiento. En coinfección TB-VIH se indican 50 mg de piridoxina para prevenir neuropatía.",
-        "enfasis_docente": "Es una regla absoluta del curso y aparece también en el control de lectura. Omitirla es un error de omisión clásico."
+        "enfasis_docente": "Es una regla absoluta del curso y aparece también en el control de lectura. Omitirla es un error de omisión clásico.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "tb::terapia-preventiva",
@@ -765,7 +990,13 @@
           "rifampicina sola": "4 meses diario. Adultos 10 mg/kg/día, niños 15 mg/kg/día. Máximo 600 mg",
           "rifapentina más isoniacida": "semanal durante 3 meses, 12 dosis, en mayores de 2 años. Máximo 900 mg de cada uno"
         },
-        "enfasis_docente": "En menores de 5 años y en personas con VIH la indicación es independiente del PPD o IGRA. No hay que esperar la prueba."
+        "enfasis_docente": "En menores de 5 años y en personas con VIH la indicación es independiente del PPD o IGRA. No hay que esperar la prueba.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "tb::estudio-de-contactos",
@@ -780,7 +1011,13 @@
         "cifras": {
           "controles_sensible": "3",
           "controles_resistente": "6"
-        }
+        },
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard"
+        ]
       },
       {
         "id": "tb::bcg",
@@ -791,7 +1028,11 @@
           "peso_minimo": "1500 gramos",
           "ventana_prioritaria": "dentro de las 24 horas de nacido",
           "recuperacion": "si no la recibe en 24 horas, administrar lo antes posible durante el primer año de vida, hasta los 11 meses y 29 días"
-        }
+        },
+        "formatos": [
+          "banco",
+          "flashcard"
+        ]
       },
       {
         "id": "tb::comorbilidades",
@@ -807,28 +1048,43 @@
             "tolerancia oral a las 2 horas de 200 mg/dL o más"
           ],
           "umbral_edad_tamizaje_DM": "40 años"
-        }
+        },
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard"
+        ]
       },
       {
         "id": "tb::control-de-infecciones",
         "nombre": "Control de infecciones respiratorias",
         "alto_rendimiento": false,
         "contenido": "Tres medidas en orden jerárquico: administrativas primero, ambientales segundo y protección respiratoria tercero.",
-        "enfasis_docente": "La protección respiratoria NO reemplaza a las anteriores. El orden es lo que se evalúa. La TB es enfermedad ocupacional ligada al trabajo en salud, con control clínico y radiológico anual."
+        "enfasis_docente": "La protección respiratoria NO reemplaza a las anteriores. El orden es lo que se evalúa. La TB es enfermedad ocupacional ligada al trabajo en salud, con control clínico y radiológico anual.",
+        "formatos": [
+          "banco",
+          "sustentacion"
+        ]
       },
       {
         "id": "tb::secuelas-y-cirugia",
         "nombre": "Secuelas y manejo quirúrgico",
         "alto_rendimiento": false,
         "contenido": "Secuelas estructurales: bronquiectasias, pulmón destruido, cavidades, pulmón atrapado, fístula broncopleural. Secuelas funcionales: insuficiencia respiratoria e hiperreactividad bronquial.",
-        "cirugia": "En TB sensible o con secuelas, si hay suficiente reserva respiratoria y complicaciones como hemoptisis masiva o recurrente, fístula broncopleural, empiema pleural, pulmón destruido, bronquiectasias o micetoma. En TB resistente, en tratamiento fallido o lesiones cavitarias o bronquiectasias de gran magnitud."
+        "cirugia": "En TB sensible o con secuelas, si hay suficiente reserva respiratoria y complicaciones como hemoptisis masiva o recurrente, fístula broncopleural, empiema pleural, pulmón destruido, bronquiectasias o micetoma. En TB resistente, en tratamiento fallido o lesiones cavitarias o bronquiectasias de gran magnitud.",
+        "formatos": [
+          "banco"
+        ]
       },
       {
         "id": "tb::reacciones-adversas",
         "nombre": "Manejo de reacciones adversas",
         "alto_rendimiento": false,
         "contenido": "Ante una reacción adversa se suspende el tratamiento según evaluación médica. Para reiniciarlo se identifica el medicamento sospechoso mediante el reto, que se inicia con el fármaco menos probable de haberla causado durante 3 días, añadiendo progresivamente los otros. El manejo es hospitalario con monitoreo estricto.",
-        "factores_de_riesgo": "desnutrición, coinfección con VIH, diabetes mellitus, hepatopatías y nefropatías"
+        "factores_de_riesgo": "desnutrición, coinfección con VIH, diabetes mellitus, hepatopatías y nefropatías",
+        "formatos": [
+          "banco"
+        ]
       }
     ],
     "casos_del_ppt": [
@@ -885,7 +1141,13 @@
         "alto_rendimiento": true,
         "contenido": "Enfermedad aguda por infección del parénquima pulmonar adquirida fuera del entorno hospitalario. El diagnóstico requiere evidencia de un NUEVO infiltrado pulmonar en radiografía, tomografía o ecografía pulmonar, más síntomas compatibles, signos de enfermedad del espacio aéreo como estertores, roncus o egofonía, y anomalías de laboratorio por la respuesta inflamatoria.",
         "enfasis_docente": "Sin imagen con infiltrado nuevo no hay diagnóstico de NAC. La clínica sola no basta.",
-        "trampa": "Diagnosticar NAC solo por clínica compatible."
+        "trampa": "Diagnosticar NAC solo por clínica compatible.",
+        "formatos": [
+          "banco",
+          "caso",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "nac::predictores-clinicos",
@@ -905,7 +1167,12 @@
           "Legionella": "hiponatremia y tos seca",
           "Mycoplasma": "manifestaciones extrapulmonares"
         },
-        "enfasis_docente": "En el anciano la neumonía puede presentarse como confusión sin fiebre. Ese es el sesgo que el curso quiere corregir."
+        "enfasis_docente": "En el anciano la neumonía puede presentarse como confusión sin fiebre. Ese es el sesgo que el curso quiere corregir.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "nac::factores-de-riesgo",
@@ -925,7 +1192,12 @@
           "tabaquismo actual": "OR ajustado hasta 2.00",
           "contacto regular con niños": "OR hasta 1.48"
         },
-        "enfasis_docente": "La disfagia tiene el odds ratio más alto del listado. En un caso con alcoholismo o enfermedad neurológica, la aspiración debe estar en el diferencial."
+        "enfasis_docente": "La disfagia tiene el odds ratio más alto del listado. En un caso con alcoholismo o enfermedad neurológica, la aspiración debe estar en el diferencial.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "nac::etiologia",
@@ -946,7 +1218,12 @@
           "Pseudomonas aeruginosa": "infección o colonización previa, traqueostomía previa, bronquiectasias, EPOC muy grave",
           "SARM": "infección o colonización previa, infecciones cutáneas recurrentes, neumonía grave"
         },
-        "enfasis_docente": "Esta tabla es el molde de los antecedentes que aparecen en los casos: cada comorbilidad del enunciado apunta a un patógeno concreto."
+        "enfasis_docente": "Esta tabla es el molde de los antecedentes que aparecen en los casos: cada comorbilidad del enunciado apunta a un patógeno concreto.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "nac::curb65-y-lugar-de-atencion",
@@ -959,7 +1236,13 @@
           "UCI": "necesidad de ventilación mecánica, presencia de shock, o criterios ATS-IDSA de NAC grave"
         },
         "enfasis_docente": "La guía recomienda el PSI con recomendación FUERTE y sugiere el CURB-65 como alternativa con recomendación condicional, por menor evidencia. Ambas se usan junto con el juicio clínico, nunca solas. Se recomienda admisión directa a UCI si hay hipotensión que requiere vasopresores o insuficiencia respiratoria que requiere ventilación mecánica.",
-        "trampa": "Decidir el lugar de atención solo con el puntaje, sin juicio clínico ni evaluar hipoxemia y soporte domiciliario."
+        "trampa": "Decidir el lugar de atención solo con el puntaje, sin juicio clínico ni evaluar hipoxemia y soporte domiciliario.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "nac::tratamiento-ambulatorio",
@@ -976,7 +1259,13 @@
           "monoterapia con fluoroquinolona respiratoria: levofloxacino, moxifloxacino o gemifloxacino"
         ],
         "definicion_comorbilidad": "enfermedad cardíaca, pulmonar, hepática o renal crónica, diabetes mellitus, alcoholismo, malignidad o asplenia",
-        "enfasis_docente": "La condición del macrólido en monoterapia es la resistencia local menor de 25 %. Ese umbral se presta a pregunta."
+        "enfasis_docente": "La condición del macrólido en monoterapia es la resistencia local menor de 25 %. Ese umbral se presta a pregunta.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "nac::tratamiento-hospitalizado",
@@ -993,7 +1282,13 @@
           "betalactámico más fluoroquinolona respiratoria, recomendación fuerte"
         ],
         "SARM_y_pseudomonas": "Cubrir empíricamente solo si existen factores de riesgo validados localmente. Los más consistentes son el aislamiento previo del organismo y la hospitalización reciente con exposición a antibióticos parenterales en los últimos 90 días.",
-        "enfasis_docente": "Se recomienda ABANDONAR la categoría de neumonía asociada a la atención médica (HCAP) para guiar la cobertura extendida. Es un cambio de guía que se presta a distractor."
+        "enfasis_docente": "Se recomienda ABANDONAR la categoría de neumonía asociada a la atención médica (HCAP) para guiar la cobertura extendida. Es un cambio de guía que se presta a distractor.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "nac::duracion-y-corticoides",
@@ -1007,7 +1302,13 @@
         "estabilidad": "La duración se guía por una medida validada de estabilidad clínica: resolución de anomalías de signos vitales, capacidad para comer y estado mental normal.",
         "corticoides": "No usar rutinariamente en NAC no grave, ni en NAC grave, ni en neumonía grave por influenza. Se respaldan las recomendaciones de la Campaña Sobreviviendo a la Sepsis en NAC con shock séptico refractario.",
         "aspiracion": "En neumonía por aspiración no se sugiere agregar cobertura anaeróbica de rutina, salvo sospecha de absceso pulmonar o empiema.",
-        "enfasis_docente": "Los ensayos no mostraron diferencias en mortalidad, estancia ni falla orgánica con corticoides en NAC."
+        "enfasis_docente": "Los ensayos no mostraron diferencias en mortalidad, estancia ni falla orgánica con corticoides en NAC.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "nac::procalcitonina",
@@ -1018,7 +1319,13 @@
           "sensibilidad_procalcitonina": "varía del 38 % al 91 %"
         },
         "enfasis_docente": "La procalcitonina NO debe usarse para decidir si iniciar o no antibiótico. No existe umbral que discrimine con suficiente precisión entre patógeno viral y bacteriano.",
-        "trampa": "Retener antibióticos por procalcitonina baja. Es el error que el curso marca de forma explícita."
+        "trampa": "Retener antibióticos por procalcitonina baja. Es el error que el curso marca de forma explícita.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "nac::pruebas-microbiologicas",
@@ -1036,6 +1343,11 @@
           "condiciones especiales como inmunosupresión",
           "riesgo de patógenos resistentes",
           "falta de respuesta al tratamiento empírico inicial"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard"
         ]
       },
       {
@@ -1045,7 +1357,11 @@
         "contenido": "En NAC con prueba positiva para influenza se prescribe tratamiento antibacteriano estándar además del antiviral, porque la coinfección bacteriana es común y grave y no puede excluirse. El oseltamivir se prescribe en el entorno hospitalario sin importar la duración de la enfermedad antes del diagnóstico.",
         "seguimiento": "En adultos cuyos síntomas se resolvieron en 5 a 7 días no se sugiere obtener imágenes de control de rutina; el rendimiento positivo va de 0.2 % a 5 %.",
         "vacunas": "Influenza, que disminuye el riesgo de influenza y de neumonía bacteriana, y vacunas neumocócicas polisacárida y conjugada. La eficacia agrupada de la polisacárida contra neumonía neumocócica va del 48 % al 64 %.",
-        "trampa": "Suspender el antibiótico porque la prueba de influenza salió positiva."
+        "trampa": "Suspender el antibiótico porque la prueba de influenza salió positiva.",
+        "formatos": [
+          "banco",
+          "sustentacion"
+        ]
       },
       {
         "id": "nac::complicaciones",
@@ -1055,7 +1371,11 @@
         "cifras": {
           "readmision_30_dias": "15 a 20 %",
           "incidencia_anual_ajustada": "649 por 100 000 hospitalizados en Estados Unidos"
-        }
+        },
+        "formatos": [
+          "banco",
+          "flashcard"
+        ]
       }
     ],
     "casos_del_ppt": [
@@ -1111,7 +1431,12 @@
         "variabilidad": "Los síntomas son nocturnos o al despertar, se desencadenan por ejercicio, risa, alérgenos o aire frío, y empeoran con infecciones virales.",
         "objetivacion": "Reversibilidad con broncodilatador, variabilidad del flujo espiratorio pico, o respuesta al tratamiento antiinflamatorio.",
         "enfasis_docente": "Confirmar el diagnóstico con evidencia objetiva y documentarlo, preferiblemente ANTES de iniciar corticoide inhalado. La exploración física suele ser normal; el hallazgo más frecuente son sibilancias en la espiración forzada.",
-        "trampa": "Un examen físico normal no descarta asma."
+        "trampa": "Un examen físico normal no descarta asma.",
+        "formatos": [
+          "banco",
+          "caso",
+          "sustentacion"
+        ]
       },
       {
         "id": "asma::gravedad-gina",
@@ -1123,14 +1448,25 @@
           "asma grave": "no se controla pese a optimizar dosis altas de ICS-LABA, o requiere esas dosis altas para no descontrolarse"
         },
         "enfasis_docente": "El curso pide EVITAR el término asma leve, por la suposición errónea de que equivale a riesgo bajo. Pacientes con síntomas infrecuentes pueden tener exacerbaciones graves.",
-        "trampa": "Clasificar gravedad al momento del diagnóstico. Es retrospectiva, se mide por el tratamiento que hizo falta."
+        "trampa": "Clasificar gravedad al momento del diagnóstico. Es retrospectiva, se mide por el tratamiento que hizo falta.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "asma::desencadenantes",
         "nombre": "Factores desencadenantes",
         "alto_rendimiento": true,
         "contenido": "Infecciones virales respiratorias; alérgenos domésticos como ácaros, polen y cucarachas; alérgenos laborales; humo de tabaco; ejercicio y aire frío; estrés emocional; y medicamentos como betabloqueadores, aspirina y antiinflamatorios no esteroideos.",
-        "enfasis_docente": "Las respuestas a desencadenantes son más probables cuando el asma no está controlada."
+        "enfasis_docente": "Las respuestas a desencadenantes son más probables cuando el asma no está controlada.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "asma::no-saba-solo",
@@ -1147,7 +1483,12 @@
           "uso_excesivo": "3 o más inhaladores de SABA al año"
         },
         "enfasis_docente": "Todos los pacientes con asma deben recibir corticoide inhalado, incluso los de síntomas poco frecuentes. Es la regla que más se presta a distractor.",
-        "trampa": "Prescribir salbutamol de rescate sin corticoide inhalado."
+        "trampa": "Prescribir salbutamol de rescate sin corticoide inhalado.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "asma::vias-y-pasos",
@@ -1170,7 +1511,13 @@
           "reduccion_exacerbaciones_paso2": "ICS-formoterol según necesidad reduce las exacerbaciones graves en dos tercios frente a SABA solo",
           "MART_vs_alternativa": "la alternativa del paso 3 reduce exacerbaciones alrededor de 20 %"
         },
-        "enfasis_docente": "Los corticoides orales de mantenimiento son el último recurso, por sus efectos secundarios graves."
+        "enfasis_docente": "Los corticoides orales de mantenimiento son el último recurso, por sus efectos secundarios graves.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "asma::antes-de-subir-escalon",
@@ -1181,7 +1528,13 @@
           "mala_tecnica": "hasta el 80 % de los pacientes no usa correctamente su inhalador"
         },
         "enfasis_docente": "Subir el escalón sin revisar técnica y adherencia es el error de manejo que el curso marca. La técnica se revisa en cada oportunidad y se corrige con demostración física.",
-        "trampa": "Escalar tratamiento en un asma no controlada sin descartar mala técnica."
+        "trampa": "Escalar tratamiento en un asma no controlada sin descartar mala técnica.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "asma::dosis-ics",
@@ -1193,7 +1546,12 @@
           "budesonida DPI": "200 a 400 mcg/día",
           "fluticasona propionato": "100 a 250 mcg/día"
         },
-        "enfasis_docente": "Muy pocos pacientes necesitan dosis altas, que aumentan el riesgo de efectos secundarios. Las dosis pediátricas son menores."
+        "enfasis_docente": "Muy pocos pacientes necesitan dosis altas, que aumentan el riesgo de efectos secundarios. Las dosis pediátricas son menores.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "asma::seguimiento-y-reduccion",
@@ -1213,7 +1571,14 @@
           "momento": "elegir un momento sin infecciones respiratorias, viajes ni embarazo"
         },
         "enfasis_docente": "NO se suspende completamente el corticoide inhalado en adultos ni adolescentes con diagnóstico de asma. La función pulmonar se mide al inicio, a los 3 a 6 meses y luego periódicamente.",
-        "trampa": "Suspender del todo el corticoide inhalado tras lograr el control."
+        "trampa": "Suspender del todo el corticoide inhalado tras lograr el control.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "asma::contextos-especiales",
@@ -1226,7 +1591,13 @@
           "adultos mayores": "puede estar sub o sobrediagnosticada; considerar EPOC o superposición asma-EPOC en fumadores y exfumadores",
           "tos como único síntoma": "considerar variante de asma con tos, goteo posnasal, sinusitis crónica, reflujo gastroesofágico, tos por inhibidores de la ECA o disfunción de cuerdas vocales"
         },
-        "enfasis_docente": "En la gestante, el riesgo de suspender el tratamiento es mayor que el del propio tratamiento. Es un punto que el curso pone en su caso de apertura."
+        "enfasis_docente": "En la gestante, el riesgo de suspender el tratamiento es mayor que el del propio tratamiento. Es un punto que el curso pone en su caso de apertura.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "asma::evaluacion-y-comorbilidades",
@@ -1234,7 +1605,11 @@
         "alto_rendimiento": false,
         "contenido": "El control de síntomas se evalúa sobre las últimas 4 semanas, junto con factores de riesgo de evolución desfavorable, comorbilidades, función pulmonar, medicación, técnica de inhalación, adherencia, efectos secundarios y plan de acción escrito.",
         "comorbilidades": "rinitis, rinosinusitis, reflujo gastroesofágico, obesidad, apnea del sueño, depresión y ansiedad",
-        "enfasis_docente": "Todos los pacientes deben tener un plan de acción por escrito, que puede ser manuscrito, impreso, digital o pictórico."
+        "enfasis_docente": "Todos los pacientes deben tener un plan de acción por escrito, que puede ser manuscrito, impreso, digital o pictórico.",
+        "formatos": [
+          "banco",
+          "sustentacion"
+        ]
       },
       {
         "id": "asma::inmunopatogenia",
@@ -1246,7 +1621,10 @@
           "IL-5": "reclutamiento, activación y supervivencia de eosinófilos",
           "IL-13": "metaplasia de células caliciformes, producción de moco, hiperreactividad bronquial y remodelación"
         },
-        "IgE": "El entrecruzamiento de IgE en mastocitos y basófilos libera histamina, leucotrienos y prostaglandinas, causando broncoconstricción inmediata. La IgE además reduce la señalización de interferón tipo I en células dendríticas plasmacitoides, aumentando la susceptibilidad a infecciones virales."
+        "IgE": "El entrecruzamiento de IgE en mastocitos y basófilos libera histamina, leucotrienos y prostaglandinas, causando broncoconstricción inmediata. La IgE además reduce la señalización de interferón tipo I en células dendríticas plasmacitoides, aumentando la susceptibilidad a infecciones virales.",
+        "formatos": [
+          "banco"
+        ]
       }
     ],
     "casos_del_ppt": [
@@ -1441,7 +1819,13 @@
           "ventana_de_inicio": "más de 48 horas tras el ingreso",
           "ventana_post_alta": "hasta 30 días"
         },
-        "enfasis_docente": "Las 48 horas son el corte que separa intrahospitalaria de adquirida en la comunidad. La ventana de 30 días post-alta es el detalle que se presta a pregunta y a distractor."
+        "enfasis_docente": "Las 48 horas son el corte que separa intrahospitalaria de adquirida en la comunidad. La ventana de 30 días post-alta es el detalle que se presta a pregunta y a distractor.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "nih::naas",
@@ -1459,7 +1843,12 @@
         "diferencias_regionales": "Estudios de Estados Unidos reportan que suele deberse a microorganismos multirresistentes en pacientes críticos; datos europeos sugieren que su etiología es similar a la de la neumonía adquirida en la comunidad.",
         "marca": "(*) PUNTO POR ACLARAR CON LA DOCENTE",
         "preguntable": true,
-        "nota_al_pie": "Este PPT enseña la NAAS como categoría propia. El PPT de NAC de la misma semana dice que se recomienda abandonar esa categorización para guiar la cobertura antibiótica. No está claro cuál postura evalúa el curso. Se conserva el contenido tal como lo da esta clase, pero marcado: no preguntar sobre él hasta confirmarlo."
+        "nota_al_pie": "Este PPT enseña la NAAS como categoría propia. El PPT de NAC de la misma semana dice que se recomienda abandonar esa categorización para guiar la cobertura antibiótica. No está claro cuál postura evalúa el curso. Se conserva el contenido tal como lo da esta clase, pero marcado: no preguntar sobre él hasta confirmarlo.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard"
+        ]
       },
       {
         "id": "nih::mortalidad",
@@ -1472,7 +1861,12 @@
           "muertes_por_NAV_directamente": "entre un tercio y la mitad de las muertes relacionadas con NAV son resultado directo de la infección"
         },
         "peor_pronostico": "Pseudomonas aeruginosa y especies de Acinetobacter. Los pacientes quirúrgicos y los de gravedad de rango medio tienen el mayor riesgo asociado.",
-        "trampa": "Confundir mortalidad bruta con atribuible. Son 70 % y 10 %, y la diferencia es el punto de la diapositiva."
+        "trampa": "Confundir mortalidad bruta con atribuible. Son 70 % y 10 %, y la diferencia es el punto de la diapositiva.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "nih::cultivos",
@@ -1484,7 +1878,13 @@
           "muestra del tracto respiratorio inferior": "recomendada, sea cultivo cuantitativo distal o proximal o cualitativo, para enfocar y reducir la terapia empírica inicial. Recomendación FUERTE, evidencia de baja calidad."
         },
         "contras_de_lo_invasivo": "requiere clínicos cualificados, puede comprometer el intercambio de gases durante el procedimiento y tiene costos directos más altos.",
-        "enfasis_docente": "La muestra se toma antes del antibiótico. Ese orden es lo evaluable."
+        "enfasis_docente": "La muestra se toma antes del antibiótico. Ese orden es lo evaluable.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "nih::terapia-empirica",
@@ -1502,7 +1902,13 @@
         },
         "definicion_bajo_riesgo": "paciente sin shock séptico, sin otros factores de riesgo para multirresistentes y que no está en un hospital con alta tasa de resistencia.",
         "enfasis_docente": "El riesgo de infección por Clostridium difficile aumenta con cefalosporinas de tercera generación frente a penicilinas o quinolonas.",
-        "trampa": "Dar amplio espectro a todo paciente hospitalizado sin evaluar riesgo real."
+        "trampa": "Dar amplio espectro a todo paciente hospitalizado sin evaluar riesgo real.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "nih::duracion-individualizada",
@@ -1515,7 +1921,13 @@
           "patógenos altamente resistentes: Pseudomonas aeruginosa, Acinetobacter resistente a carbapenémicos, enterobacterias resistentes a carbapenémicos",
           "pacientes que requieren antibióticos de segunda línea como colistina o tigeciclina"
         ],
-        "enfasis_docente": "El obstáculo mayor para acortar cursos es la mayor tasa de recurrencia con 7 a 8 días frente a 15 días, en particular con Pseudomonas y otros no fermentadores."
+        "enfasis_docente": "El obstáculo mayor para acortar cursos es la mayor tasa de recurrencia con 7 a 8 días frente a 15 días, en particular con Pseudomonas y otros no fermentadores.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "nih::biomarcadores",
@@ -1526,7 +1938,10 @@
           "proteína C reactiva": "significativamente más alta a partir del día 4 en pacientes con mal resultado; desciende entre los días 1 y 7 en todos, pero se mantiene más alta en los desfavorables",
           "procalcitonina": "elevada al inicio en no sobrevivientes; más alta en los días 1, 3 y 7 en pacientes con resultado desfavorable",
           "copeptina y MR-proANP": "la copeptina está elevada al inicio en no sobrevivientes; el MR-proANP tuvo la mayor razón de verosimilitud positiva, 2.71, como predictor de resultado"
-        }
+        },
+        "formatos": [
+          "banco"
+        ]
       },
       {
         "id": "nih::atipicas-generalidades",
@@ -1537,7 +1952,12 @@
           "proporcion_de_NAC": "más del 15 % de todas las neumonías adquiridas en la comunidad"
         },
         "enfasis_docente": "La característica diferenciadora principal es la presencia de hallazgos EXTRAPULMONARES. Los patógenos atípicos no tienen pared celular bacteriana, por eso no responden a betalactámicos.",
-        "trampa": "Tratar una atípica con betalactámico solo. Es el error que la fisiopatología explica."
+        "trampa": "Tratar una atípica con betalactámico solo. Es el error que la fisiopatología explica.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "nih::atipicas-clinica",
@@ -1551,7 +1971,11 @@
         "tos_persistente": "Bordetella pertussis, Mycoplasma pneumoniae y Chlamydia pneumoniae son causas bien conocidas de tos persistente en niños y adultos.",
         "cifras": {
           "mortalidad_Legionella": "10 %, hasta 27 % sin antibiótico adecuado"
-        }
+        },
+        "formatos": [
+          "banco",
+          "flashcard"
+        ]
       },
       {
         "id": "nih::criterios-jrs",
@@ -1566,7 +1990,13 @@
           "sin esputo o sin agente etiológico identificado",
           "recuento de leucocitos menor de 10 000 por microlitro"
         ],
-        "enfasis_docente": "Es una lista cerrada de seis parámetros, muy preguntable por conteo. La ausencia de ruidos adventicios pese a la neumonía es el hallazgo que más contrasta con la neumonía típica."
+        "enfasis_docente": "Es una lista cerrada de seis parámetros, muy preguntable por conteo. La ausencia de ruidos adventicios pese a la neumonía es el hallazgo que más contrasta con la neumonía típica.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "nih::atipicas-tratamiento",
@@ -1579,7 +2009,13 @@
           "umbral_LDH_para_esteroides": "302 a 364 UI/L parece criterio apropiado para iniciar esteroides en neumonía por Mycoplasma refractaria o grave"
         },
         "poblaciones_especiales": "En personas mayores y con enfermedades crónicas el diagnóstico diferencial puede ser difícil o puede haber infección mixta latente; en ellos se considera desde el inicio un betalactámico más un macrólido o tetraciclina, o una fluoroquinolona sola.",
-        "enfasis_docente": "El umbral de LDH entre 302 y 364 es una cifra concreta y por eso muy preguntable."
+        "enfasis_docente": "El umbral de LDH entre 302 y 364 es una cifra concreta y por eso muy preguntable.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       }
     ],
     "casos_del_ppt": [
@@ -1660,7 +2096,13 @@
           "ranking": "novena enfermedad más frecuente en pacientes ambulatorios en Estados Unidos"
         },
         "enfasis_docente": "Es un diagnóstico de exclusión: primero se descarta neumonía por clínica y radiología.",
-        "trampa": "Diagnosticar bronquitis aguda sin haber descartado neumonía."
+        "trampa": "Diagnosticar bronquitis aguda sin haber descartado neumonía.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "bronquiec::bronquitis-aguda-etiologia",
@@ -1678,7 +2120,12 @@
           "atipicas": "25 %",
           "procalcitonina": "menor de 0.1 ng/L hace improbable la infección bacteriana"
         },
-        "enfasis_docente": "La tos de más de una semana es el síntoma cardinal. Los gallos y los vómitos tras el acceso de tos apuntan a tos ferina."
+        "enfasis_docente": "La tos de más de una semana es el síntoma cardinal. Los gallos y los vómitos tras el acceso de tos apuntan a tos ferina.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "bronquiec::bronquitis-aguda-tratamiento",
@@ -1692,7 +2139,13 @@
           "azitromicina": "500 mg al día por 3 días"
         },
         "enfasis_docente": "Deben sopesarse efectos secundarios, resistencia antimicrobiana y costes frente a los beneficios modestos del antibiótico.",
-        "trampa": "Prescribir corticoide oral o antitusivo. El PPT los descarta explícitamente."
+        "trampa": "Prescribir corticoide oral o antitusivo. El PPT los descarta explícitamente.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "bronquiec::bronquitis-cronica",
@@ -1705,7 +2158,13 @@
         "factores_de_riesgo": "El tabaquismo es el más significativo a nivel mundial. También combustibles de biomasa, inhalantes irritantes, contaminantes ambientales y toxinas. Condiciones genéticas e infecciones respiratorias aumentan la probabilidad.",
         "relacion_con_epoc": "Los pacientes con bronquitis crónica se encuentran en el espectro de los que tienen EPOC. Los pacientes con EPOC que además tienen bronquitis crónica presentan disnea más severa, tos nocturna más frecuente y peores puntuaciones de calidad de vida.",
         "enfasis_docente": "La exclusión de otras causas es parte de la definición, no un paso opcional. La historia de exposiciones inhaladas es parte esencial del diagnóstico.",
-        "trampa": "Aplicar el criterio de 3 meses por 2 años sin excluir causas cardíacas o respiratorias de tos productiva."
+        "trampa": "Aplicar el criterio de 3 meses por 2 años sin excluir causas cardíacas o respiratorias de tos productiva.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "bronquiec::bronquitis-cronica-tratamiento",
@@ -1718,7 +2177,13 @@
           "tratamiento no farmacológico": "NO se sugiere el uso rutinario de tratamientos como la presión positiva espiratoria para aliviar la tos, hasta que se demuestren seguros y eficaces"
         },
         "enfasis_docente": "Siempre se debe alentar el abandono del tabaco. La tos y la producción de esputo pueden reducirse o desaparecer al dejar de fumar.",
-        "trampa": "Recomendar mucolíticos o antibióticos de rutina para la tos de la bronquitis crónica estable."
+        "trampa": "Recomendar mucolíticos o antibióticos de rutina para la tos de la bronquitis crónica estable.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "bronquiec::bronquiectasias-definicion",
@@ -1732,14 +2197,25 @@
           "costo_anual": "aproximadamente 80 000 dólares por individuo",
           "poblacion": "mayor incidencia en mayores de 65 años y más común en mujeres"
         },
-        "enfasis_docente": "La palabra clave es permanente: eso la separa de la broncoconstricción reversible del asma y de la bronquitis."
+        "enfasis_docente": "La palabra clave es permanente: eso la separa de la broncoconstricción reversible del asma y de la bronquitis.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "bronquiec::circulo-vicioso",
         "nombre": "El círculo vicioso fisiopatológico",
         "alto_rendimiento": true,
         "contenido": "Cuatro componentes que se perpetúan entre sí: inflamación con actividad neutrofílica aumentada y liberación de proteasas y citocinas proinflamatorias; deterioro del aclaramiento mucociliar con acumulación de secreciones que favorece la infección; infección con colonización bacteriana crónica que perpetúa el daño tisular; y daño estructural con dilatación bronquial y destrucción de la pared.",
-        "enfasis_docente": "Cada componente alimenta a los demás. Es el concepto que explica por qué el tratamiento ataca varios frentes a la vez."
+        "enfasis_docente": "Cada componente alimenta a los demás. Es el concepto que explica por qué el tratamiento ataca varios frentes a la vez.",
+        "formatos": [
+          "banco",
+          "caso",
+          "sustentacion"
+        ]
       },
       {
         "id": "bronquiec::radiologia",
@@ -1758,7 +2234,14 @@
         },
         "signo_del_anillo_de_sello": "Bronquios dilatados con paredes engrosadas, cuando el diámetro bronquial supera al del vaso pulmonar adyacente.",
         "enfasis_docente": "La espirometría puede mostrar patrón obstructivo pero NO confirma bronquiectasias: no es sensible ni específica.",
-        "trampa": "Elegir espirometría como prueba confirmatoria. Es el distractor B del caso del PPT."
+        "trampa": "Elegir espirometría como prueba confirmatoria. Es el distractor B del caso del PPT.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "bronquiec::condiciones-asociadas",
@@ -1773,7 +2256,12 @@
           "trastornos inflamatorios idiopáticos": "sarcoidosis, artritis reumatoide, espondilitis anquilosante",
           "obstrucción": "asma, EPOC o enfisema, compresión extrínseca de las vías respiratorias"
         },
-        "enfasis_docente": "Las infecciones respiratorias repetidas en la infancia son la pista epidemiológica que el curso usa en su caso."
+        "enfasis_docente": "Las infecciones respiratorias repetidas en la infancia son la pista epidemiológica que el curso usa en su caso.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "bronquiec::tratamiento",
@@ -1807,7 +2295,13 @@
           "las técnicas deben individualizarse, porque existen muchas diferentes"
         ],
         "enfasis_docente": "El tratamiento es principalmente médico. La cirugía queda solo para casos localizados y refractarios.",
-        "trampa": "Proponer cirugía extensa como tratamiento curativo. Es el distractor D del caso del PPT."
+        "trampa": "Proponer cirugía extensa como tratamiento curativo. Es el distractor D del caso del PPT.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       }
     ],
     "casos_del_ppt": [
@@ -1861,7 +2355,12 @@
           "oblicuas": "para visualizar fracturas costales",
           "decúbito lateral con rayo horizontal": "para derrames pleurales"
         },
-        "enfasis_docente": "La espiración forzada acentúa el neumotórax; el decúbito lateral moviliza el derrame. Pedir la proyección correcta según la sospecha es el tipo de pregunta que el curso hace."
+        "enfasis_docente": "La espiración forzada acentúa el neumotórax; el decúbito lateral moviliza el derrame. Pedir la proyección correcta según la sospecha es el tipo de pregunta que el curso hace.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "ayudadx::calidad-tecnica",
@@ -1892,7 +2391,12 @@
           "inspiracion_adecuada": "diafragma en el 5º a 6º arco costal",
           "densidades_radiologicas": "cuatro: aire, agua, grasa y calcio"
         },
-        "enfasis_docente": "La lectura sistemática tiene SIETE pasos en este orden. Es una lista cerrada, muy preguntable por conteo y por orden."
+        "enfasis_docente": "La lectura sistemática tiene SIETE pasos en este orden. Es una lista cerrada, muy preguntable por conteo y por orden.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "ayudadx::patrones-radiologicos",
@@ -1936,28 +2440,49 @@
           "aneurisma_aortico": "calibre mayor de 4 cm"
         },
         "enfasis_docente": "El signo de la silueta borra el contorno cardíaco y localiza la lesión. En la atelectasia el mediastino se desplaza HACIA el lado enfermo, al revés que en el derrame masivo.",
-        "trampa": "Confundir el desplazamiento mediastínico de la atelectasia con el del derrame o el neumotórax a tensión: van en direcciones opuestas."
+        "trampa": "Confundir el desplazamiento mediastínico de la atelectasia con el del derrame o el neumotórax a tensión: van en direcciones opuestas.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ayudadx::indicaciones-radiografia",
         "nombre": "Indicaciones urgentes de radiografía de tórax",
         "alto_rendimiento": false,
         "contenido": "Politraumatismo o trauma torácico, sospecha de enfermedad parenquimatosa pulmonar, EPOC o asma bronquial agudizadas, insuficiencia cardíaca aguda, disnea aguda o hemoptisis, y dolor torácico en punta de costado.",
-        "enfasis_docente": "La radiografía se valora SIEMPRE en relación con la historia clínica: sin ella no se interpretan bien los hallazgos."
+        "enfasis_docente": "La radiografía se valora SIEMPRE en relación con la historia clínica: sin ella no se interpretan bien los hallazgos.",
+        "formatos": [
+          "banco",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ayudadx::problemas-de-la-placa",
         "nombre": "Problemas comunes que arruinan una radiografía",
         "alto_rendimiento": false,
         "contenido": "Superposición de escápula y pulmón por postura no estandarizada; artefactos por sustancias metálicas, frecuentes por componentes metálicos de la ropa interior; pérdida de campo pulmonar cuando parte del pulmón queda muy cerca del borde de la imagen; e inclinación de clavícula por falta de postura erguida con hombros planos.",
-        "enfasis_docente": "Una radiografía frontal debe contener todo el pulmón y la pleura circundante."
+        "enfasis_docente": "Una radiografía frontal debe contener todo el pulmón y la pleura circundante.",
+        "formatos": [
+          "banco",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ayudadx::patrones-tomograficos",
         "nombre": "Patrones tomográficos",
         "alto_rendimiento": false,
         "contenido": "El curso organiza la tomografía en cuatro patrones: lineal, micronodular, de opacidad y quístico.",
-        "enfasis_docente": "Los patrones son la puerta de entrada a la enfermedad intersticial difusa, que se ve en semana 3."
+        "enfasis_docente": "Los patrones son la puerta de entrada a la enfermedad intersticial difusa, que se ve en semana 3.",
+        "formatos": [
+          "banco",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ayudadx::espirometria-principios",
@@ -1973,7 +2498,14 @@
           "duracion": "10 a 15 minutos",
           "riesgo": "mínimo, síncope en raras ocasiones"
         },
-        "enfasis_docente": "Es la prueba diagnóstica clave para asma y EPOC."
+        "enfasis_docente": "Es la prueba diagnóstica clave para asma y EPOC.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "ayudadx::volumenes-pulmonares",
@@ -1987,7 +2519,12 @@
           "capacidad pulmonar total": "volumen de aire en los pulmones al final de la inspiración máxima"
         },
         "relaciones": "La capacidad pulmonar total es la capacidad residual funcional más la capacidad inspiratoria, o bien la suma del volumen residual, el volumen de reserva espiratorio, el volumen corriente y el volumen de reserva inspiratorio.",
-        "enfasis_docente": "La distinción entre volumen y capacidad es de definición y se presta a pregunta directa."
+        "enfasis_docente": "La distinción entre volumen y capacidad es de definición y se presta a pregunta directa.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "ayudadx::prueba-broncodilatador",
@@ -1999,7 +2536,12 @@
           "respuesta_significativa": "aumento de 10 % o más del FEV1 o de la FVC respecto a sus valores previstos, según ERS/ATS"
         },
         "enfasis_docente": "El umbral que da este curso es 10 % respecto al valor PREVISTO, según ERS/ATS. Es una cifra concreta y por eso muy preguntable.",
-        "trampa": "La ausencia de reversibilidad significativa es lo que descarta asma y orienta a EPOC. Es el eje del caso del PPT."
+        "trampa": "La ausencia de reversibilidad significativa es lo que descarta asma y orienta a EPOC. Es el eje del caso del PPT.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "ayudadx::bucles-flujo-volumen",
@@ -2018,7 +2560,13 @@
           "obstrucción fija de vías superiores": "aplanamiento en AMBAS ramas, inspiratoria y espiratoria",
           "obstrucción de vías periféricas o inferiores": "rama espiratoria cóncava hacia arriba, patrón ahuecado"
         },
-        "enfasis_docente": "Extratorácica aplana la inspiración, intratorácica aplana la espiración, y la fija aplana las dos. Esa regla de tres es exactamente el tipo de distinción que el curso evalúa."
+        "enfasis_docente": "Extratorácica aplana la inspiración, intratorácica aplana la espiración, y la fija aplana las dos. Esa regla de tres es exactamente el tipo de distinción que el curso evalúa.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ayudadx::toracocentesis",
@@ -2061,7 +2609,13 @@
           "neumotorax_como_complicacion": "12 a 30 %",
           "derrame_paraneumonico": "presente en aproximadamente 40 % de los pacientes hospitalizados con neumonía bacteriana"
         },
-        "enfasis_docente": "La distinción entre contraindicación absoluta y relativa es lista cerrada: dos y dos. Muy preguntable."
+        "enfasis_docente": "La distinción entre contraindicación absoluta y relativa es lista cerrada: dos y dos. Muy preguntable.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "ayudadx::fibrobroncoscopia",
@@ -2074,7 +2628,13 @@
           "muestreo microbiológico en infecciones no resueltas o sospecha de tuberculosis",
           "evaluación citológica de lavado broncoalveolar para malignidad y enfermedades parenquimatosas"
         ],
-        "enfasis_docente": "También sirve para procesos inflamatorios difusos mediante lavado broncoalveolar y biopsia transbronquial. El límite anatómico, hasta subsegmentario, es un dato concreto."
+        "enfasis_docente": "También sirve para procesos inflamatorios difusos mediante lavado broncoalveolar y biopsia transbronquial. El límite anatómico, hasta subsegmentario, es un dato concreto.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       }
     ],
     "casos_del_ppt": [
@@ -2122,7 +2682,15 @@
         "cifras": {
           "ventilacion_alveolar": "aproximadamente 5 L/min, similar al flujo sanguíneo pulmonar, lo que da un V/Q global cercano a 1"
         },
-        "enfasis_docente": "Los dos extremos de la misma escala tienen nombre propio: cero es shunt, infinito es espacio muerto. Esa simetría es lo evaluable."
+        "enfasis_docente": "Los dos extremos de la misma escala tienen nombre propio: cero es shunt, infinito es espacio muerto. Esa simetría es lo evaluable.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "anatomia::causas-de-hipoxemia-y-respuesta-al-oxigeno",
@@ -2138,6 +2706,11 @@
         "enfasis_docente": "La respuesta al oxígeno es la variable que separa el shunt de todo lo demás, y la alteración V/Q es la causa más frecuente. Esto conecta directo con la tabla diferencial del PPT de gasometría.",
         "relacionado": [
           "aga::causas-de-hipoxemia"
+        ],
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
         ]
       },
       {
@@ -2153,7 +2726,13 @@
           "espacio_muerto_anatomico": "100 a 150 mL",
           "VD/VC_patologico": "puede aumentar hasta 0.8 a 0.9 en embolia pulmonar y EPOC"
         },
-        "enfasis_docente": "Cuando el cociente espacio muerto sobre volumen corriente sube a 0.8 o 0.9, hace falta un gran aumento compensador de la ventilación por minuto. Eso explica la taquipnea del tromboembolismo."
+        "enfasis_docente": "Cuando el cociente espacio muerto sobre volumen corriente sube a 0.8 o 0.9, hace falta un gran aumento compensador de la ventilación por minuto. Eso explica la taquipnea del tromboembolismo.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "anatomia::control-de-la-respiracion",
@@ -2170,6 +2749,11 @@
         "relacionado": [
           "epoc::oxigenoterapia",
           "epoc::retenedor crónico de CO₂"
+        ],
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
         ]
       },
       {
@@ -2180,7 +2764,12 @@
         "cifras": {
           "velocidad_relativa": "el CO2 difunde aproximadamente 20 veces más rápido que el O2, por su mayor solubilidad, pese a su mayor peso molecular"
         },
-        "enfasis_docente": "Que el CO2 difunda 20 veces más rápido explica por qué en la alteración de difusión pura hay hipoxemia sin hipercapnia. La DLCO evalúa la integridad de la membrana alveolocapilar."
+        "enfasis_docente": "Que el CO2 difunda 20 veces más rápido explica por qué en la alteración de difusión pura hay hipoxemia sin hipercapnia. La DLCO evalúa la integridad de la membrana alveolocapilar.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "anatomia::transporte-de-gases",
@@ -2200,7 +2789,12 @@
           "CO2_arterial": "aproximadamente 21.5 mmol por litro",
           "CO2_venoso_mixto": "aproximadamente 23.3 mmol por litro"
         },
-        "enfasis_docente": "La unión del oxígeno a la hemoglobina es alostérica y se altera en la intoxicación por monóxido de carbono y en la metahemoglobinemia, donde la saturación medida engaña."
+        "enfasis_docente": "La unión del oxígeno a la hemoglobina es alostérica y se altera en la intoxicación por monóxido de carbono y en la metahemoglobinemia, donde la saturación medida engaña.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "anatomia::volumenes-pulmonares",
@@ -2216,6 +2810,11 @@
         "enfasis_docente": "Se alteran de forma característica en enfermedades restrictivas y obstructivas.",
         "relacionado": [
           "ayudadx::volumenes-pulmonares"
+        ],
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
         ]
       },
       {
@@ -2229,14 +2828,22 @@
           "Zona III": "arterial mayor que venosa, y venosa mayor que alveolar: perfusión continua",
           "Zona IV": "reducción de perfusión basal por compresión vascular"
         },
-        "enfasis_docente": "La gravedad influye, pero también factores no gravitacionales como la estructura vascular."
+        "enfasis_docente": "La gravedad influye, pero también factores no gravitacionales como la estructura vascular.",
+        "formatos": [
+          "banco",
+          "sustentacion"
+        ]
       },
       {
         "id": "anatomia::cierre-de-via-aerea",
         "nombre": "Cierre de la vía aérea y edad",
         "alto_rendimiento": false,
         "contenido": "Ocurre cuando la presión pleural supera la presión en la vía aérea. El volumen de cierre es el volumen por encima del residual donde empieza el cierre; la capacidad de cierre es ese volumen más el residual.",
-        "enfasis_docente": "Cuando la capacidad de cierre supera la capacidad residual funcional hay cierre durante la respiración normal. Eso explica la disminución de la oxigenación con la edad, y aumenta además en supino y en enfermedad pulmonar."
+        "enfasis_docente": "Cuando la capacidad de cierre supera la capacidad residual funcional hay cierre durante la respiración normal. Eso explica la disminución de la oxigenación con la edad, y aumenta además en supino y en enfermedad pulmonar.",
+        "formatos": [
+          "banco",
+          "sustentacion"
+        ]
       },
       {
         "id": "anatomia::via-aerea-y-alveolos",
@@ -2246,7 +2853,10 @@
         "alveolos": "300 millones por pulmón, con superficie total de 40 a 80 m2. Neumocitos tipo I con citoplasma muy delgado que facilita el intercambio, y neumocitos tipo II que producen surfactante.",
         "pulmones": "El derecho tiene tres lóbulos, el izquierdo dos separados por la cisura oblicua.",
         "diafragma": "Inervado por los nervios frénicos; el 50 % de sus fibras son de contracción lenta y resistentes a la fatiga.",
-        "vascularizacion": "Suministro dual por arteria pulmonar y arterias bronquiales; drenaje a cuatro venas pulmonares principales."
+        "vascularizacion": "Suministro dual por arteria pulmonar y arterias bronquiales; drenaje a cuatro venas pulmonares principales.",
+        "formatos": [
+          "banco"
+        ]
       },
       {
         "id": "anatomia::tono-bronquial",
@@ -2257,6 +2867,10 @@
         "enfasis_docente": "El máximo de tono bronquial a las 4 de la mañana explica los síntomas nocturnos del asma.",
         "relacionado": [
           "asma::diagnostico"
+        ],
+        "formatos": [
+          "banco",
+          "sustentacion"
         ]
       },
       {
@@ -2267,6 +2881,10 @@
         "enfasis_docente": "Estos son los mecanismos que el patógeno debe superar antes de llegar al alvéolo, concepto que el PPT de NAC retoma en su fisiopatología.",
         "relacionado": [
           "nac::etiologia"
+        ],
+        "formatos": [
+          "banco",
+          "sustentacion"
         ]
       }
     ],
@@ -2319,7 +2937,14 @@
           "acidosis respiratoria": "pH menor de 7.35"
         },
         "enfasis_docente": "Los dos números que definen la insuficiencia respiratoria son 60 y 50. La coletilla previamente normocápnico importa: en el retenedor crónico el criterio no aplica igual.",
-        "trampa": "Usar el umbral de PaCO2 de 45 de la gasometría general. Aquí el corte es 50."
+        "trampa": "Usar el umbral de PaCO2 de 45 de la gasometría general. Aquí el corte es 50.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "irasdra::clasificacion",
@@ -2331,7 +2956,12 @@
           "Tipo II, hipercápnica": "con retención de CO2. Común en EPOC agudizado, enfermedades neuromusculares y fármacos depresores.",
           "Tipo III o IV, mixta": "frecuente en postoperatorios, trauma, sepsis o estados de bajo gasto."
         },
-        "enfasis_docente": "El tipo se decide leyendo la PaCO2, no la PaO2: las tres formas tienen hipoxemia."
+        "enfasis_docente": "El tipo se decide leyendo la PaCO2, no la PaO2: las tres formas tienen hipoxemia.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "irasdra::epidemiologia-y-causas",
@@ -2342,7 +2972,12 @@
           "ingresos_a_UCI": "20 a 30 % de los ingresos",
           "mortalidad_en_forma_grave": "30 a 45 %"
         },
-        "enfasis_docente": "La pandemia por SARS-CoV-2 incrementó la incidencia de SDRA secundario a neumonía viral y redefinió estrategias de ventilación."
+        "enfasis_docente": "La pandemia por SARS-CoV-2 incrementó la incidencia de SDRA secundario a neumonía viral y redefinió estrategias de ventilación.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "irasdra::mecanismos-de-hipoxemia",
@@ -2355,6 +2990,11 @@
         "relacionado": [
           "aga::causas-de-hipoxemia",
           "anatomia::causas-de-hipoxemia-y-respuesta-al-oxigeno"
+        ],
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
         ]
       },
       {
@@ -2372,7 +3012,15 @@
           "ventana_temporal": "7 días"
         },
         "enfasis_docente": "El tercer criterio es el que obliga a descartar causa cardíaca. El cociente PaO2/FiO2 clasifica la gravedad una vez cumplidos los otros tres.",
-        "trampa": "Diagnosticar SDRA solo por hipoxemia grave y opacidades bilaterales, sin descartar edema cardiogénico ni verificar la ventana de 7 días."
+        "trampa": "Diagnosticar SDRA solo por hipoxemia grave y opacidades bilaterales, sin descartar edema cardiogénico ni verificar la ventana de 7 días.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "irasdra::diagnostico",
@@ -2393,7 +3041,14 @@
           "pulmón deslizante presente": "descarta neumotórax",
           "protocolo BLUE": "permite un diagnóstico sindrómico en menos de 5 minutos"
         },
-        "enfasis_docente": "En pacientes crónicos la presentación puede ser insidiosa. La ecografía pulmonar da diagnóstico sindrómico en menos de 5 minutos, dato concreto y preguntable."
+        "enfasis_docente": "En pacientes crónicos la presentación puede ser insidiosa. La ecografía pulmonar da diagnóstico sindrómico en menos de 5 minutos, dato concreto y preguntable.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "irasdra::oxigenoterapia",
@@ -2412,6 +3067,12 @@
         "relacionado": [
           "epoc::oxigenoterapia",
           "anatomia::control-de-la-respiracion"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
         ]
       },
       {
@@ -2427,7 +3088,13 @@
         "cifras": {
           "umbral_para_ECMO": "PaO2/FiO2 menor de 80 pese a tratamiento óptimo"
         },
-        "enfasis_docente": "Corregir el factor desencadenante es parte del manejo, no un paso posterior. Los corticoides en SDRA son controversiales: afirmarlos como indicados de rutina es error."
+        "enfasis_docente": "Corregir el factor desencadenante es parte del manejo, no un paso posterior. Los corticoides en SDRA son controversiales: afirmarlos como indicados de rutina es error.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "irasdra::pronostico",
@@ -2437,7 +3104,11 @@
         "cifras": {
           "mortalidad_SDRA_severo": "35 a 45 %, disminuida gracias a estrategias de protección pulmonar y posición prona"
         },
-        "seguimiento": "Evaluación de función pulmonar, rehabilitación respiratoria y monitoreo de complicaciones como fibrosis o disfunción muscular."
+        "seguimiento": "Evaluación de función pulmonar, rehabilitación respiratoria y monitoreo de complicaciones como fibrosis o disfunción muscular.",
+        "formatos": [
+          "banco",
+          "flashcard"
+        ]
       }
     ],
     "casos_del_ppt": [
@@ -2488,7 +3159,12 @@
           "normal": "espacio virtual entre la membrana basal del epitelio alveolar y el epitelio capilar",
           "patológico": "células inflamatorias, células epiteliales hiperplásicas, depósito de colágeno, proliferación de músculo liso, células malignas, granulomas y fibras de amiloide"
         },
-        "enfasis_docente": "Son entidades heterogéneas con características clínicas, funcionales y radiológicas MUY SEMEJANTES entre sí. Por eso el diagnóstico exige combinar clínica, función, inmunología e imagen."
+        "enfasis_docente": "Son entidades heterogéneas con características clínicas, funcionales y radiológicas MUY SEMEJANTES entre sí. Por eso el diagnóstico exige combinar clínica, función, inmunología e imagen.",
+        "formatos": [
+          "banco",
+          "caso",
+          "sustentacion"
+        ]
       },
       {
         "id": "epid::clasificacion",
@@ -2504,7 +3180,12 @@
         "cifras": {
           "mas_frecuentes": "fibrosis pulmonar idiopática y sarcoidosis representan el 50 % de las EPID"
         },
-        "enfasis_docente": "La fibrosis pulmonar idiopática es el prototipo de EPID progresiva. Hay diferencias entre países en la frecuencia relativa."
+        "enfasis_docente": "La fibrosis pulmonar idiopática es el prototipo de EPID progresiva. Hay diferencias entre países en la frecuencia relativa.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "epid::fenotipo-progresivo",
@@ -2519,7 +3200,14 @@
         "cifras": {
           "caida_de_CVF": "10 % o más"
         },
-        "enfasis_docente": "El reconocimiento del fenotipo progresivo cambió el enfoque terapéutico en las que no son fibrosis pulmonar idiopática: habilita el uso de nintedanib. Los tres criterios son clínico, funcional y radiológico, uno de cada tipo."
+        "enfasis_docente": "El reconocimiento del fenotipo progresivo cambió el enfoque terapéutico en las que no son fibrosis pulmonar idiopática: habilita el uso de nintedanib. Los tres criterios son clínico, funcional y radiológico, uno de cada tipo.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "epid::anamnesis",
@@ -2542,7 +3230,13 @@
         },
         "historia_laboral": "debe consignarse en orden cronológico, con exposiciones, fechas y duración. Los agentes orgánicos causan alveolitis alérgica extrínseca; los polvos inorgánicos causan neumoconiosis.",
         "enfasis_docente": "El tabaquismo PROTEGE en sarcoidosis y alveolitis alérgica extrínseca. Esa inversión es contraintuitiva y por eso muy preguntable.",
-        "trampa": "Asumir que el tabaco es factor de riesgo para todas las EPID."
+        "trampa": "Asumir que el tabaco es factor de riesgo para todas las EPID.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "epid::clinica-y-examen",
@@ -2558,7 +3252,12 @@
           "velcro_en_FPI": "más del 90 %",
           "velcro_en_EPID_por_tejido_conectivo": "60 %"
         },
-        "enfasis_docente": "El grado de disnea se relaciona con la gravedad y el pronóstico. Los rales velcro más acropaquia en un mayor de 50 años son la combinación que orienta a fibrosis pulmonar idiopática."
+        "enfasis_docente": "El grado de disnea se relaciona con la gravedad y el pronóstico. Los rales velcro más acropaquia en un mayor de 50 años son la combinación que orienta a fibrosis pulmonar idiopática.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "epid::funcion-respiratoria",
@@ -2576,6 +3275,12 @@
         "relacionado": [
           "ayudadx::espirometria-principios",
           "aga::ecuacion-gas-alveolar"
+        ],
+        "formatos": [
+          "banco",
+          "flashcard",
+          "imagen",
+          "sustentacion"
         ]
       },
       {
@@ -2599,7 +3304,14 @@
           "neumonía intersticial no específica": "vidrio deslustrado difuso"
         },
         "patron_alveolar": "Algunas EPID pueden cursar con patrón alveolar: neumonía intersticial aguda, neumonía intersticial no específica, neumonía intersticial linfocítica, proteinosis alveolar, alveolitis alérgica extrínseca y eosinofilias pulmonares.",
-        "enfasis_docente": "La disminución del tamaño de los campos pulmonares es el signo que delata la restricción en la placa. La tomografía es la piedra angular, pero el contexto clínico y la evaluación funcional son esenciales."
+        "enfasis_docente": "La disminución del tamaño de los campos pulmonares es el signo que delata la restricción en la placa. La tomografía es la piedra angular, pero el contexto clínico y la evaluación funcional son esenciales.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "epid::laboratorio",
@@ -2619,7 +3331,11 @@
           "precipitinas séricas": "alveolitis alérgica extrínseca",
           "ANCA": "vasculitis"
         },
-        "enfasis_docente": "Cada anticuerpo apunta a una entidad concreta. Es una tabla de correspondencias, muy preguntable por emparejamiento."
+        "enfasis_docente": "Cada anticuerpo apunta a una entidad concreta. Es una tabla de correspondencias, muy preguntable por emparejamiento.",
+        "formatos": [
+          "banco",
+          "sustentacion"
+        ]
       },
       {
         "id": "epid::diagnostico-multidisciplinario",
@@ -2635,7 +3351,14 @@
           "biopsia pulmonar si la tomografía no es concluyente: transbronquial, criobiopsia o quirúrgica",
           "evaluación multidisciplinaria con neumólogo, radiólogo y patólogo"
         ],
-        "enfasis_docente": "La biopsia se indica SOLO si la tomografía no es concluyente. La evaluación multidisciplinaria es parte del estándar, no un lujo."
+        "enfasis_docente": "La biopsia se indica SOLO si la tomografía no es concluyente. La evaluación multidisciplinaria es parte del estándar, no un lujo.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "epid::tratamiento",
@@ -2649,7 +3372,13 @@
         },
         "manejo_integral": "rehabilitación pulmonar, vacunas contra neumococo e influenza, y cuidados paliativos en fases avanzadas",
         "enfasis_docente": "Antifibrótico en la idiopática, inmunosupresor en la autoinmune. Invertir esos dos es el error conceptual que el curso quiere evitar.",
-        "trampa": "Dar corticoides e inmunosupresores en fibrosis pulmonar idiopática."
+        "trampa": "Dar corticoides e inmunosupresores en fibrosis pulmonar idiopática.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "epid::pronostico",
@@ -2664,6 +3393,11 @@
           "fenotipo progresivo",
           "hipoxemia persistente",
           "afectación extensa en la tomografía de alta resolución"
+        ],
+        "formatos": [
+          "banco",
+          "flashcard",
+          "imagen"
         ]
       }
     ],
@@ -2717,7 +3451,12 @@
           "cáncer pulmonar ocupacional",
           "lesiones agudas: edema pulmonar tóxico y bronquiolitis obliterante"
         ],
-        "enfasis_docente": "La definición incluye agravadas, no solo causadas: un asma preexistente que empeora en el trabajo también entra."
+        "enfasis_docente": "La definición incluye agravadas, no solo causadas: un asma preexistente que empeora en el trabajo también entra.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "ocupacional::silicosis",
@@ -2728,7 +3467,13 @@
         "relacionado": [
           "tb::clinica-y-localizacion"
         ],
-        "trampa": "Olvidar el cribado de tuberculosis en un paciente con silicosis."
+        "trampa": "Olvidar el cribado de tuberculosis en un paciente con silicosis.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ocupacional::asbestosis",
@@ -2739,6 +3484,11 @@
         "relacionado": [
           "epid::anamnesis",
           "pleura::etiologia-del-derrame"
+        ],
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
         ]
       },
       {
@@ -2746,7 +3496,12 @@
         "nombre": "Antracosis o pulmón del minero",
         "alto_rendimiento": true,
         "contenido": "Ocurre por depósito de polvo de carbón. Puede ser simple o complicada, esta última con fibrosis masiva. El pigmento antracótico se encuentra en macrófagos ubicados en linfonódulos.",
-        "enfasis_docente": "La distinción entre simple y complicada por fibrosis masiva es lo evaluable."
+        "enfasis_docente": "La distinción entre simple y complicada por fibrosis masiva es lo evaluable.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "ocupacional::asma-ocupacional",
@@ -2756,6 +3511,13 @@
         "enfasis_docente": "El patrón temporal es el diagnóstico: síntomas durante la jornada que disminuyen o desaparecen en días libres, licencias y vacaciones. Sin ese patrón no se sostiene el origen ocupacional.",
         "relacionado": [
           "asma::contextos-especiales"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
         ]
       },
       {
@@ -2768,7 +3530,13 @@
           "epid::clasificacion",
           "epid::anamnesis"
         ],
-        "trampa": "Descartar el diagnóstico porque los demás trabajadores expuestos están sanos. Es exactamente el señuelo del caso del PPT."
+        "trampa": "Descartar el diagnóstico porque los demás trabajadores expuestos están sanos. Es exactamente el señuelo del caso del PPT.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "ocupacional::bronquitis-y-cancer",
@@ -2776,7 +3544,11 @@
         "alto_rendimiento": false,
         "contenido": "La bronquitis crónica ocupacional se presenta en trabajadores expuestos a irritantes químicos como gases industriales, con tos crónica y expectoración.",
         "cancer": "Relacionado con exposición prolongada a asbesto, arsénico, cromo, níquel y humo de diesel. Generalmente aparece tras DÉCADAS de exposición.",
-        "enfasis_docente": "La latencia de décadas explica por qué se pregunta por trabajos antiguos, no solo por el actual."
+        "enfasis_docente": "La latencia de décadas explica por qué se pregunta por trabajos antiguos, no solo por el actual.",
+        "formatos": [
+          "banco",
+          "sustentacion"
+        ]
       },
       {
         "id": "ocupacional::factores-de-riesgo",
@@ -2784,7 +3556,12 @@
         "alto_rendimiento": true,
         "contenido": "Polvo mineral (sílice, carbón, asbesto); sustancias químicas irritantes (amoníaco, cloro, vapores ácidos); humos metálicos (plomo, cromo, estaño); y agentes biológicos (hongos, bacterias, endotoxinas).",
         "fisiopatologia": "Los agentes inhalados inducen inflamación crónica, fibrosis, hiperreactividad bronquial o mutaciones celulares. La respuesta depende del tipo de partícula, su tamaño, la duración de la exposición y la susceptibilidad individual.",
-        "enfasis_docente": "La susceptibilidad individual explica por qué solo un trabajador se enferma entre varios expuestos."
+        "enfasis_docente": "La susceptibilidad individual explica por qué solo un trabajador se enferma entre varios expuestos.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "ocupacional::diagnostico",
@@ -2809,7 +3586,14 @@
           "fibrosis pulmonar idiopática",
           "asma no ocupacional"
         ],
-        "enfasis_docente": "Preguntar si usa protección respiratoria es parte del interrogatorio. En los dos casos del PPT la respuesta es que no la usa."
+        "enfasis_docente": "Preguntar si usa protección respiratoria es parte del interrogatorio. En los dos casos del PPT la respuesta es que no la usa.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
       },
       {
         "id": "ocupacional::tratamiento-y-prevencion",
@@ -2830,7 +3614,13 @@
           "en_Peru": "las neumoconiosis son una de las principales causas de incapacidad en mineros y trabajadores de construcción"
         },
         "enfasis_docente": "Retirar la exposición va PRIMERO, antes que cualquier fármaco. Un tratamiento que no incluye apartar al paciente del agente está incompleto.",
-        "trampa": "Proponer solo tratamiento farmacológico sin retirar la exposición."
+        "trampa": "Proponer solo tratamiento farmacológico sin retirar la exposición.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       }
     ],
     "casos_del_ppt": [
@@ -2890,6 +3680,11 @@
         "enfasis_docente": "La obstrucción es de la vía aérea SUPERIOR. Eso lo separa de la apnea central y explica la gasometría de hipoventilación con espirometría normal.",
         "relacionado": [
           "anatomia::caso-sahos"
+        ],
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
         ]
       },
       {
@@ -2911,7 +3706,14 @@
           "desaturacion_en_hipopnea": "3 a 4 %"
         },
         "enfasis_docente": "El RDI es MÁS SENSIBLE que el IAH porque suma los RERAs, y se usa sobre todo con polisomnografía completa, que es la que detecta esos eventos sutiles.",
-        "trampa": "Confundir IAH con RDI. La diferencia es exactamente los RERAs."
+        "trampa": "Confundir IAH con RDI. La diferencia es exactamente los RERAs.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "sahos::criterios-diagnosticos",
@@ -2923,7 +3725,13 @@
           "sin_sintomas": "IAH o RDI de 15 o más"
         },
         "enfasis_docente": "El umbral cambia según haya o no síntomas: 5 con síntomas, 15 sin ellos. Es la cifra más preguntable del tema.",
-        "trampa": "Aplicar el umbral de 5 a un paciente asintomático."
+        "trampa": "Aplicar el umbral de 5 a un paciente asintomático.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "sahos::cribado",
@@ -2936,7 +3744,13 @@
           "5 a 8": "alto riesgo para SAHOS moderado o severo"
         },
         "enfasis_docente": "El STOP-Bang es el más recomendado por su facilidad, buena sensibilidad y correlación con la severidad. Pero NINGUNO de estos instrumentos es diagnóstico sin confirmación objetiva: solo identifican riesgo.",
-        "trampa": "Dar el diagnóstico con un cuestionario. Es cribado, no confirmación."
+        "trampa": "Dar el diagnóstico con un cuestionario. Es cribado, no confirmación.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "sahos::estudios-de-sueno",
@@ -2947,7 +3761,12 @@
         "cifras": {
           "sensibilidad_domiciliaria": "mayor de 80 %"
         },
-        "enfasis_docente": "El PPT tiene una pregunta directa sobre cuál es el estándar de oro, y la respuesta es la polisomnografía nocturna, no la oximetría ni la poligrafía ni los cuestionarios."
+        "enfasis_docente": "El PPT tiene una pregunta directa sobre cuál es el estándar de oro, y la respuesta es la polisomnografía nocturna, no la oximetría ni la poligrafía ni los cuestionarios.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "sahos::factores-de-riesgo",
@@ -2963,7 +3782,12 @@
           "aumento_de_peso": "10 % de aumento multiplica por 6 el riesgo",
           "relacion_hombre_mujer": "4.9 a 1"
         },
-        "enfasis_docente": "La menopausia iguala el riesgo entre sexos. Y la hipertensión resistente es una comorbilidad que debe hacer sospechar SAHOS."
+        "enfasis_docente": "La menopausia iguala el riesgo entre sexos. Y la hipertensión resistente es una comorbilidad que debe hacer sospechar SAHOS.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "sahos::clinica",
@@ -2985,7 +3809,13 @@
           "aumento del riesgo de accidentes vehiculares"
         ],
         "riesgos_asociados": "hipertensión, infarto, accidente cerebrovascular, diabetes, fibrilación auricular, y aumento de la mortalidad cardiovascular y global",
-        "enfasis_docente": "Muchos casos quedan sin diagnosticar por ausencia de somnolencia o acceso limitado a estudios del sueño. La ausencia de somnolencia no descarta el diagnóstico."
+        "enfasis_docente": "Muchos casos quedan sin diagnosticar por ausencia de somnolencia o acceso limitado a estudios del sueño. La ausencia de somnolencia no descarta el diagnóstico.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "sahos::tratamiento-no-invasivo",
@@ -3002,7 +3832,13 @@
           "perdida_de_peso": "10 % o más reduce el IAH entre 26 y 56 %",
           "CPAP_en_sindrome_coronario": "4 horas o más al día redujo eventos adversos, HR 0.17"
         },
-        "enfasis_docente": "La cifra de adherencia, 4 horas en el 70 % de las noches, es de las más preguntables. Y el CPAP es de elección en moderado a severo, no en todos."
+        "enfasis_docente": "La cifra de adherencia, 4 horas en el 70 % de las noches, es de las más preguntables. Y el CPAP es de elección en moderado a severo, no en todos.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
       },
       {
         "id": "sahos::tratamiento-invasivo",
@@ -3015,7 +3851,11 @@
           "avance maxilomandibular": "reducción promedio del IAH de 85 % y curación en 50 %; indicado en SAHOS severo con anomalías craneofaciales o fracaso de CPAP y avance mandibular",
           "traqueostomía": "elimina el SAHOS pero se reserva exclusivamente para casos refractarios o situaciones especiales, por su alta morbilidad"
         },
-        "enfasis_docente": "Se recomienda hacer endoscopía del sueño inducido por medicamentos ANTES de indicar cirugía, para personalizar según el sitio de colapso."
+        "enfasis_docente": "Se recomienda hacer endoscopía del sueño inducido por medicamentos ANTES de indicar cirugía, para personalizar según el sitio de colapso.",
+        "formatos": [
+          "banco",
+          "sustentacion"
+        ]
       },
       {
         "id": "sahos::epidemiologia-y-pronostico",
@@ -3029,7 +3869,12 @@
           "mayores de 65 años": "hasta 84 %, con 90 % en hombres y 78 % en mujeres"
         },
         "pronostico": "Sin tratamiento hay alto riesgo de hipertensión, arritmias, enfermedad cardiovascular, accidente cerebrovascular, resistencia a la insulina y deterioro cognitivo. Con tratamiento adecuado mejora la calidad de vida, se reduce el riesgo cardiovascular y aumenta la expectativa de vida.",
-        "enfasis_docente": "Los niveles moderados a severos, con IAH de 15 o más, se asocian con mayor riesgo cardiovascular y mortalidad INCLUSO en ausencia de somnolencia clínica."
+        "enfasis_docente": "Los niveles moderados a severos, con IAH de 15 o más, se asocian con mayor riesgo cardiovascular y mortalidad INCLUSO en ausencia de somnolencia clínica.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
       }
     ],
     "casos_del_ppt": [
@@ -3089,7 +3934,14 @@
             }
           },
           "enfasis": "Las tres diferencias más limpias para responder son: la vía (intradérmica frente a sangre), la influencia de la vacuna BCG (sí frente a no) y la objetividad del resultado (subjetivo frente a objetivo). El rendimiento diagnóstico es una cuarta.",
-          "trampa": "Afirmar que alguna de las dos confirma tuberculosis activa. Ninguna distingue latente de activa."
+          "trampa": "Afirmar que alguna de las dos confirma tuberculosis activa. Ninguna distingue latente de activa.",
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-tb::puntos-de-corte-ppd",
@@ -3102,7 +3954,14 @@
             "5 mm o más": "positivo en riesgo aumentado: inmunocomprometidos, infección por VIH, trasplantados, contacto cercano con alguien con TB, evidencia clínica o radiográfica de infección actual o previa"
           },
           "enfasis": "Tres cortes, tres poblaciones. A mayor riesgo, menor induración exigida. Es el tipo de dato que el control de lectura convierte en viñeta.",
-          "trampa": "Medir el eritema en lugar de la induración."
+          "trampa": "Medir el eritema en lugar de la induración.",
+          "formatos": [
+            "banco",
+            "flashcard",
+            "imagen",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-tb::latente-vs-activa",
@@ -3130,7 +3989,15 @@
             "ventana_de_positivizacion": "tanto el PPD como el IGRA pueden tardar de dos a ocho semanas en reaccionar tras la exposición"
           },
           "factores_de_progresion": "inmunosupresión, diabetes mellitus, uso de drogas intravenosas, bajo peso corporal y edad menor de cinco años",
-          "enfasis": "La ventana de dos a ocho semanas explica por qué una prueba negativa temprana no descarta infección reciente."
+          "enfasis": "La ventana de dos a ocho semanas explica por qué una prueba negativa temprana no descarta infección reciente.",
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "imagen",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-tb::tratamiento-latente",
@@ -3147,7 +4014,14 @@
             "tasa_de_finalizacion_isoniacida_9_meses": "menor de 60 %"
           },
           "enfasis": "El argumento de la lectura es la adherencia: los esquemas cortos con rifamicina se completan mucho más que los nueve meses de isoniacida. Antes de tratar una infección latente hay que EXCLUIR enfermedad activa.",
-          "trampa": "Iniciar tratamiento de infección latente sin haber descartado enfermedad activa."
+          "trampa": "Iniciar tratamiento de infección latente sin haber descartado enfermedad activa.",
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-tb::tratamiento-enfermedad",
@@ -3156,7 +4030,15 @@
           "contenido": "Fase intensiva de ocho semanas con cuatro fármacos (isoniacida, rifampicina, pirazinamida y etambutol), seguida de una fase de continuación de 18 semanas o más con dos fármacos según las pruebas de susceptibilidad.",
           "detalle": "Si la susceptibilidad confirma sensibilidad a isoniacida y rifampicina, se puede suspender el etambutol y completar la fase intensiva con tres fármacos. La fase de continuación es con isoniacida más rifampicina.",
           "seguimiento": "Evaluaciones basal y mensual. Se obtienen baciloscopías y cultivos mensuales hasta tener dos muestras consecutivas negativas; esos resultados determinan la duración de la fase de continuación.",
-          "enfasis": "Con cavitación en la radiografía inicial y cultivo positivo al terminar los dos meses de fase intensiva, se recomienda extender la continuación a siete meses."
+          "enfasis": "Con cavitación en la radiografía inicial y cultivo positivo al terminar los dos meses de fase intensiva, se recomienda extender la continuación a siete meses.",
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "imagen",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-tb::piridoxina",
@@ -3170,6 +4052,12 @@
           "enfasis": "Este es exactamente el detalle que apareció en el control de lectura del curso, aplicado a una gestante. La lista de poblaciones de riesgo es lo que hay que saber, no solo la dosis.",
           "relacionado": [
             "tb::piridoxina"
+          ],
+          "formatos": [
+            "banco",
+            "flashcard",
+            "lectura",
+            "sustentacion"
           ]
         },
         {
@@ -3185,7 +4073,13 @@
             "rifapentina": "secreciones rojas y tinción de lentes de contacto, con efectos similares a los de la rifampicina."
           },
           "enfasis": "Snellen e Ishihara con etambutol es el detalle que el curso ya usó en un control de lectura. La elevación de transaminasas hasta cinco veces ocurre en 10 a 20 % de los pacientes y suele normalizarse sin suspender, fenómeno llamado adaptación hepática.",
-          "trampa": "Suspender isoniacida ante cualquier elevación de transaminasas."
+          "trampa": "Suspender isoniacida ante cualquier elevación de transaminasas.",
+          "formatos": [
+            "banco",
+            "flashcard",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-tb::a-quien-testear",
@@ -3205,7 +4099,13 @@
           "relacionado": [
             "ocupacional::silicosis"
           ],
-          "trampa": "Retestear rutinariamente al personal de salud sin exposición conocida."
+          "trampa": "Retestear rutinariamente al personal de salud sin exposición conocida.",
+          "formatos": [
+            "banco",
+            "flashcard",
+            "lectura",
+            "sustentacion"
+          ]
         }
       ],
       "discrepancias_con_los_ppt": [
@@ -3250,7 +4150,14 @@
           "relacionado": [
             "nac::curb65-y-lugar-de-atencion"
           ],
-          "trampa": "Confundir los rangos: 1 o 2 puntos ya indica hospitalizar en la mayoría de casos, no solo observar."
+          "trampa": "Confundir los rangos: 1 o 2 puntos ya indica hospitalizar en la mayoría de casos, no solo observar.",
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-nac::criterios-de-nac-grave",
@@ -3275,7 +4182,14 @@
           "detalle": "La necesidad de ventilación no invasiva puede sustituir al criterio de frecuencia respiratoria mayor de 30 o al de PaO2/FiO2 menor de 250.",
           "otros_a_considerar": "hipoglucemia en no diabéticos, alcoholismo agudo o abstinencia, hiponatremia, acidosis metabólica inexplicada o lactato elevado, cirrosis y asplenia",
           "enfasis": "La regla de uno mayor o tres menores es la fórmula exacta. Contar mal los menores es el error típico.",
-          "trampa": "Declarar NAC grave con dos criterios menores."
+          "trampa": "Declarar NAC grave con dos criterios menores.",
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-nac::signos-diagnosticos",
@@ -3293,7 +4207,14 @@
           "en_contra": "En adultos con infección respiratoria aguda, signos vitales normales Y examen pulmonar normal hacen improbable la NAC, con razón de verosimilitud negativa de 0.1.",
           "advertencia": "La fiebre no siempre está presente, incluso en pacientes con bacteriemia.",
           "enfasis": "La impresión clínica global del médico tiene la razón de momios más alta de todo el listado, por encima de cualquier signo aislado. Ese dato suele sorprender y por eso se pregunta.",
-          "trampa": "Descartar neumonía solo porque no hay fiebre."
+          "trampa": "Descartar neumonía solo porque no hay fiebre.",
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-nac::imagenes",
@@ -3305,7 +4226,14 @@
             "valor_predictivo_negativo": "96.5 %"
           },
           "alternativas": "La tomografía reduce falsos positivos y negativos, pero el costo y la disponibilidad la hacen poco útil en ambulatorio. La ecografía pulmonar, con entrenamiento y equipo adecuados, resultó MÁS EXACTA que la radiografía para diagnosticar NAC en un metaanálisis con tomografía como estándar.",
-          "enfasis": "Que el valor predictivo negativo sea 96.5 % y el positivo solo 26.9 % significa que la placa sirve mucho más para descartar que para confirmar. Y que la ecografía supere a la radiografía es el dato contraintuitivo de esta lectura."
+          "enfasis": "Que el valor predictivo negativo sea 96.5 % y el positivo solo 26.9 % significa que la placa sirve mucho más para descartar que para confirmar. Y que la ecografía supere a la radiografía es el dato contraintuitivo de esta lectura.",
+          "formatos": [
+            "banco",
+            "flashcard",
+            "imagen",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-nac::procalcitonina",
@@ -3319,7 +4247,14 @@
             "nac::procalcitonina",
             "nac::pruebas-microbiologicas"
           ],
-          "trampa": "Pedir cultivos y antígenos a todo paciente con neumonía."
+          "trampa": "Pedir cultivos y antígenos a todo paciente con neumonía.",
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-nac::microbiologia",
@@ -3332,7 +4267,14 @@
             "Legionella": "presente en 3 % de los hospitalizados por NAC"
           },
           "enfasis": "La cifra que más sorprende es que en la mayoría de casos no se identifica germen. Eso justifica el tratamiento empírico.",
-          "trampa": "Los porcentajes cambian mucho según el método: con cultivo se identifica poco, con pruebas moleculares se identifica en el 87 %."
+          "trampa": "Los porcentajes cambian mucho según el método: con cultivo se identifica poco, con pruebas moleculares se identifica en el 87 %.",
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-nac::epidemiologia",
@@ -3347,7 +4289,13 @@
             "mortalidad_si_no_mejora_inicialmente": "34 % a 30 días",
             "hospitalizacion_con_EPOC": "nueve veces mayor"
           },
-          "enfasis": "El salto de incidencia con la edad es enorme: de 248 en la población general a 16 430 por encima de 80 años. Y la mortalidad se multiplica de 6 % a 34 % si el paciente no mejora inicialmente."
+          "enfasis": "El salto de incidencia con la edad es enorme: de 248 en la población general a 16 430 por encima de 80 años. Y la mortalidad se multiplica de 6 % a 34 % si el paciente no mejora inicialmente.",
+          "formatos": [
+            "banco",
+            "flashcard",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-nac::corticoides",
@@ -3358,6 +4306,13 @@
           "enfasis": "La distinción es entre usar corticoide PARA la neumonía, que no se recomienda, y usarlo por otra indicación coexistente, que sí es válido.",
           "relacionado": [
             "nac::duracion-y-corticoides"
+          ],
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "lectura",
+            "sustentacion"
           ]
         },
         {
@@ -3374,7 +4329,14 @@
           "cifras": {
             "reduccion_de_riesgo_con_PPSV23": "13 % en general, y 28 % en mayores de 65 años o en adultos jóvenes con comorbilidades o inmunocompromiso"
           },
-          "enfasis": "El detalle preguntable es que la PCV13 salió de la recomendación rutinaria, y el intervalo de un año entre PCV15 y PPSV23."
+          "enfasis": "El detalle preguntable es que la PCV13 salió de la recomendación rutinaria, y el intervalo de un año entre PCV15 y PPSV23.",
+          "formatos": [
+            "banco",
+            "flashcard",
+            "imagen",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-nac::tratamiento-ambulatorio",
@@ -3396,6 +4358,13 @@
           "enfasis": "Las dosis exactas son el detalle fino que un control de lectura puede pedir y que el PPT no trae.",
           "relacionado": [
             "nac::tratamiento-ambulatorio"
+          ],
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "lectura",
+            "sustentacion"
           ]
         }
       ],
@@ -3470,6 +4439,13 @@
           "enfasis": "La regla de asignar la categoría más severa donde aparezca CUALQUIER característica es lo que decide los casos ambiguos. Un solo criterio en la fila de arriba manda sobre los demás.",
           "relacionado": [
             "asma::gravedad-gina"
+          ],
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "lectura",
+            "sustentacion"
           ]
         },
         {
@@ -3488,7 +4464,14 @@
             "FEV1_menor_de_60": "duplica la probabilidad de exacerbación frente a un FEV1 mayor de 80 %"
           },
           "no_recomendado": "La terapia guiada por óxido nítrico exhalado redujo exacerbaciones pero no se correlacionó con mejoras en control de síntomas ni calidad de vida, así que no se recomienda sin otros complementos. La guiada por eosinófilos en esputo tiene el mismo problema.",
-          "enfasis": "Que el 62 % de los adultos con asma no esté bien controlado es la cifra de apertura de la lectura."
+          "enfasis": "Que el 62 % de los adultos con asma no esté bien controlado es la cifra de apertura de la lectura.",
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-asma::smart",
@@ -3501,6 +4484,13 @@
           "enfasis": "El mecanismo propuesto de su beneficio es la exposición temprana al corticoide y la reducción más precoz de la inflamación, comparado con usar solo un beta2 de acción corta a demanda.",
           "relacionado": [
             "asma::vias-y-pasos"
+          ],
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "lectura",
+            "sustentacion"
           ]
         },
         {
@@ -3522,7 +4512,14 @@
           "relacionado": [
             "asma::antes-de-subir-escalon"
           ],
-          "trampa": "Escalar el tratamiento sin haber revisado técnica, adherencia y diagnóstico."
+          "trampa": "Escalar el tratamiento sin haber revisado técnica, adherencia y diagnóstico.",
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-asma::clases-de-farmacos",
@@ -3548,7 +4545,14 @@
           },
           "antileucotrienos": "Reducen exacerbaciones en monoterapia pero son solo la mitad de efectivos que un corticoide inhalado. Sirven como alternativa en asma persistente leve o como complemento, y son efectivos para broncoespasmo inducido por ejercicio.",
           "enfasis": "No hay evidencia de que la combinación de corticoide inhalado con beta2 de acción prolongada aumente el riesgo de eventos graves comparada con el corticoide solo. El problema es el beta2 EN MONOTERAPIA.",
-          "trampa": "Atribuir la advertencia de la FDA a la combinación, cuando es a la monoterapia."
+          "trampa": "Atribuir la advertencia de la FDA a la combinación, cuando es a la monoterapia.",
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-asma::inmunoterapia",
@@ -3562,7 +4566,14 @@
           ],
           "definicion_de_asma_alergica": "Síntomas que ocurren con la exposición a alérgenos, más evidencia de sensibilización por pruebas cutáneas o IgE sérica in vitro.",
           "enfasis": "Subcutánea en leve a moderada, evitar en severa, sublingual no aprobada ni recomendada. Ese contraste de tres partes es lo evaluable.",
-          "trampa": "Indicar inmunoterapia en asma severa, o proponer la vía sublingual."
+          "trampa": "Indicar inmunoterapia en asma severa, o proponer la vía sublingual.",
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "lectura",
+            "sustentacion"
+          ]
         },
         {
           "id": "lectura-asma::asma-severa-y-biologicos",
@@ -3583,6 +4594,13 @@
           "enfasis": "El umbral de 300 eosinófilos por microlitro es la cifra que decide el biológico. Conecta con el umbral de eosinófilos de EPOC, que es distinto y no hay que confundir.",
           "relacionado": [
             "epoc::eosinofilos"
+          ],
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "lectura",
+            "sustentacion"
           ]
         }
       ],

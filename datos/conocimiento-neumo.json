@@ -37,7 +37,7 @@
     ],
     "lecturas_pendientes": [],
     "estado": "Módulo de Neumología completo: 14 PPTs y 3 lecturas.",
-    "politica_de_discrepancias": "El PPT del curso es la RESPUESTA CORRECTA en toda evaluación. Cuando el material del curso difiere de la convención habitual, la pregunta se genera igual y se califica según el PPT. La observación se muestra DESPUÉS, como nota al pie del feedback, nunca como parte de la calificación ni como corrección de la respuesta."
+    "politica_de_discrepancias": "JERARQUÍA DE RESPUESTAS, en este orden:\n1. Si la estudiante ya resolvió el punto, MANDA SU RESPUESTA. Queda marcada con estado 'resuelto por la estudiante' y no se vuelve a cuestionar ni a reabrir en sesiones futuras.\n2. En todo lo demás, MANDA EL PPT del curso, aunque difiera de la convención habitual. La pregunta se genera igual y se califica según el PPT: ella puede respaldarse mostrando la diapositiva.\n3. La observación sobre la convención se muestra DESPUÉS, como nota al pie del feedback, nunca como parte de la calificación ni como corrección de su respuesta.\nNunca preguntarle de nuevo algo que ya decidió."
   },
   "aga": {
     "nombre": "Análisis de gases arteriales",
@@ -274,9 +274,10 @@
         "punto": "Rango normal de SaO2",
         "material_del_curso": "80 a 100 %",
         "observacion": "La estudiante confirmó que el rango normal es 95 a 100 %. El PPT dice 80 a 100 %, que es un error de tipeo del material y no una postura del curso, así que aquí NO aplica la regla de responder con el PPT.",
-        "estado": "corregido por indicación de la estudiante",
+        "estado": "resuelto por la estudiante",
         "valor_correcto": "95 a 100 %",
-        "respuesta_en_examen": "95 a 100 %"
+        "respuesta_en_examen": "95 a 100 %",
+        "prioridad": "Manda su respuesta, no el PPT."
       },
       {
         "punto": "Orden de la guía de interpretación",

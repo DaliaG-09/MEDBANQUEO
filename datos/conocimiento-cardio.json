@@ -1,0 +1,263 @@
+{
+  "_meta": {
+    "descripcion": "Contenido extraído de los PPTs y lecturas reales del módulo de Cardiología. Fuente de verdad número uno para la generación de preguntas.",
+    "regla": "Si el material del curso difiere de la guía internacional, se conservan ambas versiones marcadas. Nunca se fusionan en silencio.",
+    "curso": "Medicina Interna I · MH-701 · UCSUR · 2026-2",
+    "modulo": "Cardiología",
+    "temas_ingeridos": [
+      "ekg1"
+    ],
+    "temas_pendientes": [
+      "anatomia-cardiaca",
+      "ayudadx-cardio",
+      "ekg2",
+      "coronaria",
+      "hta",
+      "pericardio",
+      "arritmias",
+      "ekg-conduccion",
+      "endocarditis",
+      "tep"
+    ],
+    "nota": "El EKG es a Cardiología lo que el AGA fue a Neumología: cuatro sesiones y tres talleres aplicativos. Es el eje de mayor rendimiento del módulo."
+  },
+  "ekg1": {
+    "nombre": "Electrocardiograma normal I",
+    "fuente": {
+      "archivo": "SEMANA 04-PDF-EKG normal I.pdf",
+      "semana": 4,
+      "sesion": 11,
+      "tipo": "ppt"
+    },
+    "referencias": "Dubin, interpretación de ECG. López Ramírez y cols., La alegría de leer el electrocardiograma.",
+    "contenidos_declarados": [
+      "Generalidades",
+      "Toma de electrocardiograma",
+      "Orden de lectura de EKG",
+      "Componentes del EKG"
+    ],
+    "conceptos": [
+      {
+        "id": "ekg1::mnemotecnia-freh",
+        "nombre": "FREH II: el orden de lectura del curso",
+        "alto_rendimiento": true,
+        "contenido": "La lectura del EKG debe ser ordenada y el curso da su propia mnemotecnia.",
+        "pasos": {
+          "F": "Frecuencia",
+          "R": "Ritmo",
+          "E": "Eje",
+          "H": "Hipertrofias",
+          "I": "Isquemia",
+          "I2": "Infartos e Intervalos"
+        },
+        "enfasis_docente": "FREH II es la secuencia que van a esperar en la sustentación. Responder en ese orden es parte de la respuesta.",
+        "trampa": "Saltar directo a buscar isquemia sin haber establecido frecuencia, ritmo y eje."
+      },
+      {
+        "id": "ekg1::papel-milimetrado",
+        "nombre": "Papel milimetrado: las dos equivalencias base",
+        "alto_rendimiento": true,
+        "contenido": "El EKG es la representación en papel milimetrado de la actividad eléctrica del corazón durante el ciclo cardíaco.",
+        "cifras": {
+          "1 mm horizontal": "0.04 segundos",
+          "1 mm de alto": "0.1 milivoltio",
+          "cuadrado grande": "5 cuadrados pequeños",
+          "derivaciones": "12 en total: 6 frontales (DI, DII, DIII, aVR, aVL, aVF) y 6 horizontales (V1 a V6)"
+        },
+        "enfasis_docente": "Todo cálculo de intervalos sale de que 1 mm equivale a 0.04 segundos. Sin esa equivalencia no se puede medir nada."
+      },
+      {
+        "id": "ekg1::colocacion-de-electrodos",
+        "nombre": "Colocación exacta de los electrodos",
+        "alto_rendimiento": true,
+        "contenido": "Ubicación anatómica precisa de cada derivación.",
+        "extremidades": {
+          "aVL": "brazo izquierdo",
+          "aVR": "brazo derecho",
+          "aVF": "pie izquierdo"
+        },
+        "precordiales": {
+          "V1": "cuarto espacio intercostal, línea paraesternal derecha",
+          "V2": "cuarto espacio intercostal, línea paraesternal izquierda",
+          "V3": "entre V2 y V4",
+          "V4": "quinto espacio intercostal, línea medioclavicular",
+          "V5": "quinto espacio intercostal, línea axilar anterior",
+          "V6": "quinto espacio intercostal, línea axilar media"
+        },
+        "enfasis_docente": "V3 se coloca DESPUÉS de V4, porque se define como el punto intermedio entre ambas. Es el detalle de técnica que más se falla."
+      },
+      {
+        "id": "ekg1::derivaciones-y-einthoven",
+        "nombre": "Triángulo de Einthoven y tipos de derivación",
+        "alto_rendimiento": true,
+        "contenido": "Las derivaciones del plano frontal son bipolares y monopolares. Las bipolares registran la diferencia de potencial entre dos puntos.",
+        "bipolares": {
+          "DI": "diferencia entre brazo izquierdo, polo positivo, y brazo derecho, polo negativo",
+          "DII": "entre pierna izquierda, positivo, y brazo derecho, negativo",
+          "DIII": "entre pierna izquierda, positivo, y brazo izquierdo, negativo"
+        },
+        "monopolares_aumentadas": {
+          "concepto": "Registran el potencial total en un punto. Ideadas por Frank Wilson, que unió las tres derivaciones del triángulo de Einthoven a través de una central terminal donde el potencial es cercano a cero.",
+          "aVR": "brazo derecho positivo contra brazo izquierdo más pierna izquierda negativos",
+          "aVL": "brazo izquierdo positivo contra brazo derecho más pierna izquierda negativos",
+          "aVF": "pierna izquierda positiva contra brazo derecho más brazo izquierdo negativos"
+        },
+        "horizontales": "Verdaderamente unipolares: comparan la actividad del electrodo explorador precordial contra la suma de los tres miembros activos, que da cero.",
+        "enfasis_docente": "La distinción bipolar contra monopolar y el concepto de central terminal de Wilson son de definición, muy preguntables."
+      },
+      {
+        "id": "ekg1::calculo-de-frecuencia",
+        "nombre": "Los tres métodos para calcular la frecuencia",
+        "alto_rendimiento": true,
+        "contenido": "El método cambia según el ritmo sea regular o irregular, y según la frecuencia.",
+        "metodos": {
+          "regla de los cuadrados grandes": "Buscar una onda R que coincida con una línea vertical gruesa y ver dónde cae la siguiente. La secuencia es 300, 150, 100, 75, 60, 50. ADVERTENCIA del curso: solo sirve SI EL RITMO ES REGULAR.",
+          "regla de 1500": "Cuando la frecuencia es mayor de 150: se divide 1500 entre el número de milímetros entre R y R. Ejemplo del curso: 1500 dividido entre 6 da 250 latidos por minuto.",
+          "método de los 6 segundos": "Para ritmo irregular o trazo muy irregular. Se cuentan los complejos QRS en 6 segundos, que son 30 cuadrados grandes, y se multiplica por 10. También se puede contar en 5 segundos y multiplicar por 12. Se puede tomar un DII largo."
+        },
+        "cifras": {
+          "frecuencia normal": "60 a 99 latidos por minuto",
+          "bradicardia": "menos de 59",
+          "taquicardia": "más de 100"
+        },
+        "enfasis_docente": "La advertencia está escrita en mayúsculas en la diapositiva: la regla de los cuadrados SOLO sirve si el ritmo es regular. Usarla en una fibrilación auricular es el error clásico.",
+        "trampa": "Aplicar 300-150-100-75-60-50 a un trazado irregular."
+      },
+      {
+        "id": "ekg1::ritmo-sinusal",
+        "nombre": "Los cinco criterios de ritmo sinusal",
+        "alto_rendimiento": true,
+        "contenido": "Para afirmar que un ritmo es sinusal deben cumplirse cinco condiciones.",
+        "criterios": [
+          "frecuencia cardíaca entre 60 y 100 latidos por minuto, con R-R entre 3 y 5 cuadros grandes",
+          "intervalo R-R constante, es decir intervalos R-R iguales",
+          "onda P positiva en DII y negativa en aVR",
+          "cada onda P debe ir seguida de un QRS",
+          "intervalo PR igual o mayor de 0.12 segundos"
+        ],
+        "por_que": "El vector de despolarización auricular va hacia abajo y a la izquierda, desde el nodo sinusal hacia el nodo AV. Por eso se acerca a DII y aVF, dando deflexión positiva, y se aleja de aVR, dando deflexión negativa.",
+        "regla_simplificada": "La onda P de origen sinusal es POSITIVA en cara inferior (DII, DIII, aVF) y NEGATIVA en aVR.",
+        "enfasis_docente": "Son cinco criterios, lista cerrada y contable. Y el porqué del vector es la pregunta de sustentación típica: no basta decir que la P es positiva en DII, hay que explicar la dirección del vector.",
+        "trampa": "Llamar sinusal a un ritmo con P positiva en DII pero con R-R variable."
+      },
+      {
+        "id": "ekg1::ritmo-no-sinusal",
+        "nombre": "Qué hacer si no hay onda P",
+        "alto_rendimiento": true,
+        "contenido": "Secuencia de decisión del curso: primero saber si el ritmo es sinusal buscando la onda P que antecede al QRS. Si no hay onda P, revisar si los complejos QRS tienen intervalo regular. Si no hay onda P y el R-R es variable, se trata de fibrilación auricular, asociada a ondas f minúsculas.",
+        "automatismo": "El corazón tiene automatismo. Si el nodo sinusal deja de predominar, el ritmo lo lleva la estructura que le sigue en orden de frecuencia.",
+        "enfasis_docente": "Ausencia de onda P más R-R variable igual fibrilación auricular. Esa combinación de dos hallazgos es la respuesta, no cada uno por separado."
+      },
+      {
+        "id": "ekg1::eje-cardiaco",
+        "nombre": "Cálculo del eje cardíaco",
+        "alto_rendimiento": true,
+        "contenido": "El eje se calcula con las derivaciones del plano frontal. El método del curso: ubicar el QRS más isobifásico posible y buscar su perpendicular.",
+        "cifras": {
+          "eje normal": "0° a 90° según el curso",
+          "rango alternativo": "alguna bibliografía considera de −30° hasta 110°"
+        },
+        "enfasis_docente": "El curso da 0° a 90° como normal y menciona explícitamente que otra bibliografía usa −30° a 110°. Conviene responder con el rango del curso y mencionar el otro.",
+        "trampa": "Usar derivaciones precordiales para calcular el eje. Solo sirven las del plano frontal."
+      },
+      {
+        "id": "ekg1::onda-p",
+        "nombre": "Onda P: valores normales",
+        "alto_rendimiento": true,
+        "contenido": "Corresponde a la despolarización auricular. La primera mitad refleja el atrio derecho y la segunda mitad el atrio izquierdo.",
+        "cifras": {
+          "duración": "menor de 0.10 a 0.12 segundos",
+          "altura": "menor de 2.5 mm"
+        },
+        "morfologia": "Positiva en todas las derivaciones excepto aVR, y bifásica en V1.",
+        "enfasis_docente": "Que la primera mitad sea auricular derecha y la segunda izquierda es lo que permite reconocer crecimientos auriculares."
+      },
+      {
+        "id": "ekg1::complejo-qrs",
+        "nombre": "Complejo QRS: componentes y valores normales",
+        "alto_rendimiento": true,
+        "contenido": "Corresponde a la despolarización de los ventrículos, con tres componentes de origen distinto.",
+        "componentes": {
+          "Q": "despolarización del septum interventricular",
+          "R": "deflexión positiva, despolarización de las paredes libres",
+          "S": "despolarización de las bases ventriculares"
+        },
+        "cifras": {
+          "duración normal": "0.06 a 0.12 segundos",
+          "QRS ancho": "si supera 0.12 segundos",
+          "onda R máxima en V5 y V6": "no debe ser mayor de 25 mm",
+          "onda R en DI": "menor de 20 mm",
+          "onda R en aVL": "menor de 15 mm",
+          "onda Q duración": "menor de 0.04 segundos",
+          "onda Q amplitud": "no debe superar el 25 % de la onda R que la sigue"
+        },
+        "enfasis_docente": "La onda Q normal NO se observa en V1 ni V2. Los límites de amplitud de R en V5 y V6 son la puerta a los criterios de hipertrofia.",
+        "trampa": "Considerar patológica una onda Q sin medir si supera el 25 % de la R siguiente."
+      },
+      {
+        "id": "ekg1::intervalo-pr",
+        "nombre": "Intervalo PR y sus alteraciones",
+        "alto_rendimiento": true,
+        "contenido": "Distancia entre el comienzo de la onda P y el principio del QRS.",
+        "cifras": {
+          "normal": "0.12 a 0.20 segundos, equivalente a 3 a 5 cuadritos"
+        },
+        "alteraciones": {
+          "alargado": "corresponde a bloqueo auriculoventricular de primer grado",
+          "acortado": "taquicardias, síndromes de preexcitación como Wolff-Parkinson-White, ritmos nodales o auriculares bajos"
+        },
+        "enfasis_docente": "PR largo igual bloqueo AV de primer grado, PR corto igual preexcitación. Es una correspondencia directa y muy preguntable."
+      },
+      {
+        "id": "ekg1::intervalo-qt",
+        "nombre": "Intervalo QT",
+        "alto_rendimiento": true,
+        "contenido": "Va desde el comienzo de la onda Q hasta el final de la onda T y se ajusta a la frecuencia: a mayor frecuencia cardíaca, QT más corto.",
+        "cifras": {
+          "valor aproximado": "0.30 a 0.40 segundos"
+        },
+        "donde_medirlo": "En las derivaciones precordiales donde exista onda Q, por ejemplo V5 y V6.",
+        "enfasis_docente": "La dependencia de la frecuencia es lo que obliga a corregirlo. Existen reglas específicas para medirlo."
+      },
+      {
+        "id": "ekg1::ondas-del-ekg",
+        "nombre": "Qué representa cada onda",
+        "alto_rendimiento": true,
+        "contenido": "Sistema que registra la actividad eléctrica del corazón en 12 derivaciones.",
+        "correspondencias": {
+          "onda P": "despolarización auricular",
+          "complejo QRS": "despolarización ventricular",
+          "onda T": "repolarización ventricular",
+          "onda U": "repolarización de los músculos papilares"
+        },
+        "enfasis_docente": "La onda U y su correspondencia con los músculos papilares es el dato que suele olvidarse y por eso se pregunta."
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "ekg1::pregunta-de-apertura-y-aplicacion",
+        "uso": "aparece DOS veces, al abrir y en la fase de aplicación; es la pregunta que estructura toda la clase",
+        "enunciado": "Se muestra un trazado electrocardiográfico con ondas e intervalos señalados.",
+        "preguntas": [
+          "¿Cuál es el nombre de cada una de las ondas e intervalos señalados en este EKG?",
+          "¿Cuál es el valor normal de cada uno de ellos?"
+        ],
+        "estructura_a_replicar": "identificar y dar el valor normal, en ese orden; no pide interpretar patología sino nombrar y cuantificar. Es el formato base del taller aplicativo de EKG normal."
+      }
+    ],
+    "discrepancias_detectadas": [
+      {
+        "punto": "Rango normal del eje cardíaco",
+        "material_del_curso": "0° a 90°",
+        "observacion": "El propio PPT reconoce que otra bibliografía usa de −30° a 110°, que es el rango más difundido. No es un error, es una elección del curso, pero conviene responder con 0° a 90° y mencionar el otro rango.",
+        "estado": "elección del curso, se respeta"
+      },
+      {
+        "punto": "Límite inferior de frecuencia normal",
+        "material_del_curso": "normal 60 a 99, bradicardia menos de 59",
+        "observacion": "Queda un hueco entre 59 y 60. Es un detalle de redacción del PPT sin consecuencia clínica, pero si en un examen aparece una frecuencia de 59 o 60 justo, conviene justificar la respuesta en vez de solo dar la etiqueta.",
+        "estado": "detalle de redacción"
+      }
+    ]
+  }
+}

@@ -178,3 +178,43 @@ function candidatosDebiles(){
     .sort((a,b)=>a.p-b.p)
     .map(x=>x.c.id);
 }
+
+
+/* ── Enrutado por formato ────────────────────────────────────
+   Cada concepto declara a qué formatos sirve en su campo "formatos"
+   de la base de conocimiento: flashcard, calculo, imagen, caso,
+   sustentacion, lectura, banco. Así flashcards no recibe un caso
+   clínico entero y casos no recibe un valor suelto.
+   Ver _meta.formatos para la definición de cada uno. */
+function conceptosPara(formato){
+  const bases=[typeof CURSO!=="undefined"?CURSO:null, typeof CARDIO!=="undefined"?CARDIO:null].filter(Boolean);
+  const salida=[];
+  for(const base of bases){
+    for(const [tema,v] of Object.entries(base)){
+      if(tema==="_meta"||!v||typeof v!=="object") continue;
+      const bloques = tema==="_lecturas" ? Object.values(v) : [v];
+      for(const b of bloques){
+        for(const c of (b.conceptos||[])){
+          if(!formato || (c.formatos||[]).includes(formato))
+            salida.push({id:c.id, nombre:c.nombre, tema:b.nombre||tema, alto:!!c.alto_rendimiento});
+        }
+      }
+    }
+  }
+  return salida;
+}
+/* Elige concepto respetando el formato: primero lo vencido, luego lo
+   fallado, luego lo no tocado. Si el formato no tiene candidatos, cae a todos. */
+function elegirConceptoPorFormato(formato){
+  let pool=conceptosPara(formato);
+  if(!pool.length) pool=conceptosPara(null);
+  if(!pool.length) return null;
+  const ids=new Set(pool.map(c=>c.id));
+  const due=vencidos().filter(id=>ids.has(id));
+  if(due.length) return due[Math.floor(Math.random()*due.length)];
+  const err=S.errores.map(e=>e.concepto).filter(id=>ids.has(id));
+  if(err.length && Math.random()<0.45) return err[Math.floor(Math.random()*Math.min(6,err.length))];
+  const nuevos=pool.filter(c=>!S.dominio[c.id]);
+  const p=nuevos.length?nuevos:pool;
+  return p[Math.floor(Math.random()*p.length)].id;
+}

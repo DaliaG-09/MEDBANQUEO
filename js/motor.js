@@ -75,9 +75,12 @@ function materialDelCurso(conceptoId){
   const casos = t.casos_del_ppt||[];
   if(casos.length) partes.push("\nESTRUCTURA de los casos que usa esta clase (imítala, no la copies): "
     + casos.map(x=>x.estructura_a_replicar).join(" || "));
-  const disc = (t.discrepancias_detectadas||[]).filter(d=>d.estado==="sin confirmar");
-  if(disc.length) partes.push("\nNO preguntes sobre estos puntos, están sin confirmar con la docente: "
-    + disc.map(d=>d.punto).join("; "));
+  const disc = t.discrepancias_detectadas||[];
+  if(disc.length){
+    partes.push("\nPUNTOS DONDE EL CURSO DIFIERE DE LA CONVENCIÓN. "+(CURSO._meta&&CURSO._meta.politica_de_discrepancias||""));
+    disc.forEach(x=>partes.push(`- ${x.punto}. Respuesta correcta en examen: ${x.respuesta_en_examen||x.material_del_curso}. `
+      +`Nota al pie para el feedback, nunca para calificar: ${x.observacion||""}`));
+  }
   return partes.join("\n");
 }
 

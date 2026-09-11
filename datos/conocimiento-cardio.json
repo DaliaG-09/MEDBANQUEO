@@ -7,11 +7,11 @@
     "temas_ingeridos": [
       "ekg1",
       "ekg2",
-      "anatomia-cardiaca"
+      "anatomia-cardiaca",
+      "coronaria"
     ],
     "temas_pendientes": [
       "ayudadx-cardio",
-      "coronaria",
       "hta",
       "pericardio",
       "arritmias",
@@ -466,10 +466,10 @@
       {
         "punto": "Rótulos de la agrupación anatómica de derivaciones",
         "material_del_curso": "El PPT rotula DII, DIII y aVF como 'derecha-inferior' y las lista como 'derivaciones derechas (miran ventrículo derecho)'. También rotula 'DIII, V1, V2' como derecha.",
-        "observacion": "La convención habitual es que DII, DIII y aVF son las derivaciones de la cara INFERIOR o diafragmática, no del ventrículo derecho. El ventrículo derecho se explora con derivaciones derechas específicas, V3R y V4R, y en parte con V1. Además V1 y V2 se consideran septales y V3 y V4 anteriores, mientras el PPT agrupa V1, V2 y V3 como septo. Esto importa porque de la agrupación depende dónde se localiza un infarto, que es contenido del parcial.",
+        "observacion": "La convención habitual es que DII, DIII y aVF son las derivaciones de la cara INFERIOR o diafragmática, no del ventrículo derecho. El ventrículo derecho se explora con derivaciones derechas específicas, V3R y V4R, y en parte con V1. Además V1 y V2 se consideran septales y V3 y V4 anteriores, mientras el PPT agrupa V1, V2 y V3 como septo. Esto importa porque de la agrupación depende dónde se localiza un infarto, que es contenido del parcial. RESUELTO POR EL PROPIO CURSO: el PPT de Cardiopatía Coronaria Isquémica, de la misma semana, responde su caso diciendo que la elevación del ST en DII, DIII y aVF corresponde a un infarto de la PARED INFERIOR, con cambios recíprocos en V1-V2 y en DI-aVL. Es decir, cuando el curso localiza un infarto trata esas tres derivaciones como cara inferior, no como ventrículo derecho. Al responder se usa 'cara inferior'.",
         "recomendacion": "Preguntar a la profesora antes del taller de EKG patológico. Mientras tanto, al responder conviene decir 'cara inferior (DII, DIII, aVF)', que es correcto en ambos esquemas, y evitar afirmar que miran el ventrículo derecho.",
-        "estado": "se responde con el PPT; nota informativa al pie",
-        "respuesta_en_examen": "El PPT rotula DII, DIII y aVF como 'derecha-inferior' y las lista como 'derivaciones derechas (miran ventrículo derecho)'. También rotula 'DIII, V1, V2' como derecha."
+        "estado": "resuelto por el propio material del curso",
+        "respuesta_en_examen": "cara inferior (DII, DIII, aVF), según el PPT de cardiopatía coronaria"
       }
     ]
   },
@@ -694,5 +694,264 @@
         "estado": "se responde con el PPT; nota informativa al pie"
       }
     ]
+  },
+  "coronaria": {
+    "nombre": "Cardiopatía coronaria isquémica",
+    "fuente": {
+      "archivo": "SEMANA 04-PDF-Cardiopatía Coronaria Isquémica.pdf",
+      "semana": 4,
+      "sesion": 11,
+      "tipo": "ppt"
+    },
+    "referencias": "ESC 2023 sobre síndromes coronarios crónicos. ACC/AHA 2021 para evaluación del dolor torácico. Sociedad Española de Cardiología 2022.",
+    "contenidos_declarados": [
+      "Definición",
+      "Epidemiología",
+      "Fisiopatología",
+      "Cuadro clínico",
+      "Diagnóstico",
+      "Tratamiento"
+    ],
+    "conceptos": [
+      {
+        "id": "coronaria::definicion",
+        "nombre": "Definición y sustrato fisiopatológico",
+        "alto_rendimiento": true,
+        "contenido": "Síndrome caracterizado por disminución del aporte de sangre oxigenada al miocardio, que afecta el libre flujo en una o más arterias coronarias epicárdicas o en la microcirculación coronaria.",
+        "sustrato": "Su principal sustrato fisiopatológico es la aterosclerosis coronaria, un proceso inflamatorio y progresivo que involucra disfunción endotelial, peroxidación lipídica y sobreexpresión de moléculas de adhesión celular.",
+        "enfasis_docente": "La definición incluye la microcirculación, no solo las epicárdicas. Eso deja espacio a la angina microvascular con coronarias sin obstrucción.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "coronaria::ondas-isquemia-lesion-necrosis",
+        "nombre": "Las tres ondas del EKG isquémico: isquemia, lesión y necrosis",
+        "alto_rendimiento": true,
+        "contenido": "El curso organiza los signos electrocardiográficos en tres estadios progresivos, cada uno con su localización y su traducción en el trazado. Es el concepto más evaluable del tema.",
+        "isquemia": {
+          "subendocárdica": "El subendocardio es la región MÁS SENSIBLE a la isquemia y la primera en sufrir el déficit de oxígeno. El retraso en la repolarización produce ondas T PICUDAS, más altas de lo normal, con aumento del QTc.",
+          "subepicárdica o transmural": "Retraso en la repolarización de todo el miocardio de la región afectada, generando onda T APLANADA O NEGATIVA."
+        },
+        "lesion": {
+          "concepto": "Evento isquémico más severo pero todavía potencialmente reversible. Se traduce en alteraciones del segmento ST y la onda T.",
+          "subendocárdica": "DESCENSO del segmento ST, con implicaciones menos graves.",
+          "subepicárdica o transmural": "ELEVACIÓN del segmento ST; si no se trata precozmente evolucionará a infarto con onda Q."
+        },
+        "necrosis": "Si se mantiene el compromiso de la perfusión, ocurre la muerte del tejido. Se traduce en pérdida de voltajes positivos, con disminución de la amplitud de la onda R, sustituidos por ondas Q de necrosis.",
+        "regla_mnemotecnica_del_curso": "Las arterias coronarias principales discurren por el EPICARDIO. Si se ocluye una arteria principal, la falta de irrigación afecta TODO el espesor de la pared, y eso es lo subepicárdico o transmural. En la lesión subendocárdica la obstrucción es incompleta o se produce en un punto más distal.",
+        "enfasis_docente": "Subendocárdico desciende el ST, subepicárdico lo eleva. Y la regla de por qué es así, que las coronarias van por el epicardio, es justo lo que van a pedir sustentar.",
+        "trampa": "Invertir el sentido del ST: descenso es subendocárdico, elevación es transmural.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "coronaria::localizacion-del-infarto",
+        "nombre": "Localización del infarto por derivaciones",
+        "alto_rendimiento": true,
+        "contenido": "La combinación de derivaciones alteradas localiza la pared afectada. El curso lo aplica en su caso resuelto.",
+        "ejemplo_resuelto": "Elevación del ST en DII, DIII y aVF, con cambios recíprocos leves en V1 y V2 y en DI y aVL, corresponde a infarto de la PARED INFERIOR con elevación del ST, es decir un STEMI de cara inferior.",
+        "enfasis_docente": "Los cambios recíprocos en las derivaciones opuestas refuerzan el diagnóstico. Que el curso use 'pared inferior' para DII, DIII y aVF aclara la nomenclatura del PPT de EKG normal II.",
+        "relacionado": [
+          "ekg2::agrupacion-por-anatomia"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "coronaria::clinica",
+        "nombre": "Cuadro clínico y equivalentes anginosos",
+        "alto_rendimiento": true,
+        "contenido": "Síntomas característicos de la cardiopatía isquémica.",
+        "sintomas": {
+          "angina de pecho": "opresiva, retroesternal, irradiada a brazo izquierdo, cuello o mandíbula",
+          "disnea": "de esfuerzo o de reposo",
+          "otros": "fatiga, náuseas y diaforesis, más comunes en el infarto",
+          "equivalentes anginosos": "epigastralgia, mareos y síncope"
+        },
+        "enfasis_docente": "Los equivalentes anginosos son la puerta al infarto que se presenta sin dolor torácico típico. Es lo que hace que un caso de epigastralgia pueda ser cardiológico.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "coronaria::examen-fisico",
+        "nombre": "Examen físico: puede ser normal",
+        "alto_rendimiento": true,
+        "contenido": "Durante el examen físico pueden no hallarse alteraciones si el paciente está estable. Se debe evaluar presión arterial, frecuencia cardíaca y ritmo; presencia de soplos, en especial mitral funcional, o signos de insuficiencia cardíaca como estertores, ingurgitación yugular y edemas; palidez, sudoración y ansiedad; y pulsos periféricos con signos de aterosclerosis sistémica.",
+        "enfasis_docente": "Que el examen pueda ser normal es el punto: no descarta nada. Es el mismo principio que en asma.",
+        "trampa": "Descartar cardiopatía isquémica por un examen físico sin hallazgos.",
+        "formatos": [
+          "banco",
+          "caso",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "coronaria::pruebas-iniciales",
+        "nombre": "Las cuatro pruebas iniciales",
+        "alto_rendimiento": true,
+        "contenido": "Toda evaluación debe comenzar con cuatro estudios, en este orden.",
+        "pruebas": [
+          "electrocardiograma: buscar elevaciones del ST, ondas Q y ondas T negativas",
+          "marcadores de necrosis miocárdica: troponina ultrasensible y CPK-MB",
+          "radiografía de tórax: para descartar otras causas o evaluar cardiomegalia y edema pulmonar",
+          "laboratorio: glucosa, perfil lipídico, hemograma y creatinina"
+        ],
+        "enfasis_docente": "Lista cerrada de cuatro, en orden. El EKG va primero.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "imagen",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "coronaria::pruebas-avanzadas",
+        "nombre": "Pruebas avanzadas y estándar de oro",
+        "alto_rendimiento": true,
+        "contenido": "Se escalona según la sospecha y el riesgo.",
+        "avanzadas": {
+          "ecocardiograma transtorácico": "evalúa función ventricular y zonas de hipocinesia",
+          "prueba de esfuerzo o ergometría": "para angina estable",
+          "tomografía coronaria o angioTC": "en pacientes con riesgo intermedio",
+          "SPECT de perfusión miocárdica": "prueba de perfusión",
+          "resonancia magnética cardíaca": "evaluación estructural y funcional"
+        },
+        "estandar_de_oro": "El cateterismo cardíaco o coronariografía es el ESTÁNDAR DE ORO en casos de angina refractaria o síndrome coronario agudo.",
+        "indicaciones_angiografia": [
+          "sospecha de enfermedad coronaria",
+          "trastornos valvulares cardíacos",
+          "enfermedad congénita del corazón",
+          "miocardiopatías",
+          "planificación preoperatoria"
+        ],
+        "enfasis_docente": "Ergometría para angina estable, angioTC para riesgo intermedio, coronariografía para lo refractario o agudo. Cada prueba tiene su escenario y eso se presta a emparejamiento.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "coronaria::tratamiento",
+        "nombre": "Tratamiento farmacológico y revascularización",
+        "alto_rendimiento": true,
+        "contenido": "Se divide en manejo farmacológico y revascularización.",
+        "farmacologico": {
+          "antianginosos": "betabloqueadores, calcioantagonistas y nitratos",
+          "antiagregantes": "ácido acetilsalicílico y clopidogrel",
+          "estatinas": "para control de la dislipidemia",
+          "IECA o ARA II": "en disfunción ventricular, hipertensión o diabetes"
+        },
+        "revascularizacion": {
+          "angioplastia coronaria con stent": "intervención percutánea",
+          "cirugía de bypass coronario": "en enfermedad multivaso o disfunción severa del ventrículo izquierdo"
+        },
+        "enfasis_docente": "Bypass en multivaso o disfunción severa del ventrículo izquierdo: ese es el criterio que separa cirugía de angioplastia.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "coronaria::factores-de-riesgo",
+        "nombre": "Factores de riesgo modificables y no modificables",
+        "alto_rendimiento": true,
+        "contenido": "El curso los separa en dos grupos, con umbrales de edad concretos.",
+        "no_modificables": {
+          "edad": "el riesgo aumenta progresivamente; en hombres mayores de 40 años y mujeres mayores de 50 años se incrementa significativamente",
+          "sexo": "los hombres tienen mayor riesgo que las mujeres, sobre todo antes de la menopausia; después de la menopausia el riesgo en mujeres se aproxima al de los hombres",
+          "historia familiar": "la enfermedad cardiovascular prematura en la familia aumenta el riesgo, indicando predisposición genética",
+          "genética": "alteraciones del metabolismo de las lipoproteínas"
+        },
+        "modificables": [
+          "hipertensión arterial, factor clave en la incidencia",
+          "LDL y triglicéridos elevados con HDL bajo",
+          "diabetes tipo 2, que incrementa el riesgo especialmente en mujeres",
+          "tabaquismo, que daña el endotelio y promueve la placa",
+          "exceso de peso y falta de actividad física",
+          "dieta rica en grasas saturadas, sodio y azúcares y baja en frutas, verduras y fibra",
+          "estrés crónico"
+        ],
+        "enfasis_docente": "La hipertensión arterial SISTÓLICA es el principal factor de riesgo modificable para muerte cardiovascular prematura, seguida del LDL elevado y los riesgos dietéticos. Los umbrales de 40 en hombres y 50 en mujeres son cifras exactas.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "coronaria::fases-de-la-isquemia",
+        "nombre": "Las cuatro fases del mecanismo isquémico",
+        "alto_rendimiento": true,
+        "contenido": "Secuencia fisiopatológica que da el curso.",
+        "fases": [
+          "obstrucción del flujo sanguíneo coronario por placa aterosclerótica, con hipoxia miocárdica",
+          "desajuste entre oferta y demanda de oxígeno, que puede desencadenarse con ejercicio o estrés",
+          "desarrollo de disfunción endotelial, que favorece inflamación, agregación plaquetaria y formación de coágulos",
+          "acidosis y alteración del metabolismo: el miocardio recurre al metabolismo anaeróbico, produciendo ácido láctico, lo que causa la angina y la disfunción miocárdica"
+        ],
+        "remodelado": "Efecto Glagov o remodelado positivo: conforme aumenta la carga de placa, la masa aterosclerótica tiende a permanecer externa a la luz, permitiendo mantener el diámetro del vaso. Solo cuando la placa invade la luz disminuye el diámetro arterial. El riesgo de rotura depende de la composición de la placa, su vulnerabilidad y el grado de estenosis.",
+        "enfasis_docente": "El efecto Glagov explica por qué una placa puede ser grande sin dar síntomas, y por qué la rotura no depende solo del tamaño.",
+        "trampa": "Suponer que el riesgo de un evento agudo depende solo del grado de estenosis.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "coronaria::epidemiologia",
+        "nombre": "Epidemiología y datos del Perú",
+        "alto_rendimiento": false,
+        "contenido": "Las enfermedades cardiovasculares son la principal causa de muerte en el mundo, excepto en África.",
+        "cifras": {
+          "muertes_cardiovasculares": "17.9 millones al año, 32 % de todas las defunciones",
+          "cardiopatía isquémica 2021": "9.44 millones de muertes y 185 millones de años de vida ajustados por discapacidad",
+          "tasa estandarizada": "73.5 muertes por 100 000 habitantes",
+          "Perú": "más de 17 millones de hipertensos, 14 millones de dislipidémicos, 6 millones de diabéticos y 35 millones con sobrepeso u obesidad"
+        },
+        "formatos": [
+          "banco",
+          "flashcard"
+        ]
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "coronaria::caso-stemi-inferior",
+        "uso": "aparece DOS veces, al abrir y al aplicar; es el único caso del curso con EKG y respuesta explicada",
+        "enunciado": "Varón de 52 años con dolor torácico subesternal persistente y opresivo, acompañado de disnea y diaforesis. Durante las últimas dos semanas ha tenido un dolor similar de menor intensidad al subir siete escalones. Los episodios previos se resolvieron en cinco minutos con reposo. Se muestra su electrocardiograma.",
+        "pregunta": "¿Cuál sería tu planteamiento diagnóstico?",
+        "respuesta": "Infarto de miocardio de la pared inferior con elevación del segmento ST, es decir STEMI de cara inferior.",
+        "razonamiento_del_ppt": "El trazado muestra elevaciones del segmento ST en DII, DIII y aVF, con cambios recíprocos leves en V1 y V2 y en DI y aVL. Los antecedentes de dolor anginoso elevan la probabilidad de que se trate de un infarto agudo de miocardio.",
+        "claves": "El detalle de los siete escalones y la resolución en cinco minutos con reposo describen angina de esfuerzo previa, que es lo que eleva la probabilidad pretest. El dolor actual es PERSISTENTE, lo que lo separa de la angina estable.",
+        "estructura_a_replicar": "historia de angina de esfuerzo cuantificada en escalones y minutos, seguida de un episodio persistente; se pide el planteamiento diagnóstico leyendo el trazado, y la respuesta correcta nombra la pared afectada, no solo 'infarto'"
+      }
+    ],
+    "discrepancias_detectadas": []
   }
 }

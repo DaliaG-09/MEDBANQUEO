@@ -676,22 +676,26 @@
         "punto": "Factores de los que dependen la precarga y la postcarga",
         "material_del_curso": "Precarga: geometría ventricular, impedancia aórtica y resistencia periférica. Postcarga: retorno venoso, distensibilidad ventricular y sístole auricular.",
         "observacion": "Las listas parecen intercambiadas respecto de la fisiología habitual: el retorno venoso, la distensibilidad ventricular y la sístole auricular son determinantes de la PRECARGA, mientras que la impedancia aórtica, la resistencia periférica y la geometría ventricular lo son de la POSTCARGA. Las DEFINICIONES que da el PPT sí son correctas; lo que queda dudoso son las dos listas de factores.",
-        "respuesta_en_examen": "lo que dice el PPT",
-        "estado": "se responde con el PPT; nota informativa al pie"
+        "respuesta_en_examen": "Precarga: geometría ventricular, impedancia aórtica y resistencia periférica. Postcarga: retorno venoso, distensibilidad ventricular y sístole auricular.",
+        "estado": "se responde con el PPT; la versión correcta se MUESTRA en el feedback",
+        "correccion_en_feedback": "PRECARGA: depende del retorno venoso, la distensibilidad ventricular y la sístole auricular. Es el volumen o tensión que llega al ventrículo antes de contraerse, por eso manda lo que entra. POSTCARGA: depende de la impedancia aórtica, la resistencia periférica y la geometría ventricular. Es la resistencia contra la que el ventrículo expulsa, por eso manda lo que hay del otro lado de la válvula. El PPT tiene las dos listas intercambiadas; las definiciones sí son correctas."
       },
       {
         "punto": "Descripción del primer y segundo ruido",
         "material_del_curso": "Primer ruido: pase de la sangre de la aurícula a los ventrículos. Segundo ruido: expulsión de la sangre del corazón.",
         "observacion": "La misma diapositiva empieza diciendo que los ruidos se producen por el CIERRE de las valvas, y luego los describe por el paso de sangre. Habitualmente el primer ruido corresponde al cierre de mitral y tricúspide al inicio de la sístole, y el segundo al cierre de aórtica y pulmonar al inicio de la diástole. Al responder conviene mencionar el cierre valvular, que es lo que la propia diapositiva enuncia como principio.",
-        "respuesta_en_examen": "lo que dice el PPT",
-        "estado": "se responde con el PPT; nota informativa al pie"
+        "respuesta_en_examen": "Primer ruido: pase de la sangre de la aurícula a los ventrículos. Segundo ruido: expulsión de la sangre del corazón.",
+        "estado": "se responde con el PPT; la versión correcta se MUESTRA en el feedback",
+        "correccion_en_feedback": "PRIMER RUIDO (R1): cierre de las válvulas mitral y tricúspide al inicio de la SÍSTOLE. SEGUNDO RUIDO (R2): cierre de las válvulas aórtica y pulmonar al inicio de la DIÁSTOLE. Los ruidos se producen por el cierre valvular, no por el paso de sangre, tal como enuncia la primera línea de la propia diapositiva."
       },
       {
         "punto": "Foco de auscultación tricuspídeo",
         "material_del_curso": "cuarto o quinto espacio intercostal derecho, junto al borde esternal",
         "observacion": "La ubicación más difundida es el borde esternal IZQUIERDO bajo, cuarto o quinto espacio. El curso lo indica a la derecha.",
-        "respuesta_en_examen": "lo que dice el PPT",
-        "estado": "se responde con el PPT; nota informativa al pie"
+        "respuesta_en_examen": "cuarto o quinto espacio intercostal derecho, junto al borde esternal",
+        "estado": "se responde con el PPT; la versión correcta se MUESTRA en el feedback",
+        "correccion_en_feedback": "El foco tricuspídeo se ausculta en el borde esternal IZQUIERDO BAJO, cuarto o quinto espacio intercostal. Confirmado por la estudiante. El PPT lo ubica a la derecha.",
+        "confirmado_por": "la estudiante"
       }
     ]
   },

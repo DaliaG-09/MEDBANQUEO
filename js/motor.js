@@ -78,8 +78,10 @@ function materialDelCurso(conceptoId){
   const disc = t.discrepancias_detectadas||[];
   if(disc.length){
     partes.push("\nPUNTOS DONDE EL CURSO DIFIERE DE LA CONVENCIÓN. "+(CURSO._meta&&CURSO._meta.politica_de_discrepancias||""));
-    disc.forEach(x=>partes.push(`- ${x.punto}. Respuesta correcta en examen: ${x.respuesta_en_examen||x.material_del_curso}. `
-      +`Nota al pie para el feedback, nunca para calificar: ${x.observacion||""}`));
+    disc.forEach(x=>partes.push(`- ${x.punto}. CALIFICA COMO CORRECTA la versión del curso: ${x.respuesta_en_examen||x.material_del_curso}. `
+      +(x.correccion_en_feedback
+        ? `Y AL FINAL del campo "porque", agrega SIEMPRE un párrafo que empiece con "Para tu práctica, no para el examen:" y diga: ${x.correccion_en_feedback}`
+        : `Nota al pie, nunca para calificar: ${x.observacion||""}`)));
   }
   return partes.join("\n");
 }

@@ -8,10 +8,10 @@
       "ekg1",
       "ekg2",
       "anatomia-cardiaca",
-      "coronaria"
+      "coronaria",
+      "ayudadx-cardio"
     ],
     "temas_pendientes": [
-      "ayudadx-cardio",
       "hta",
       "pericardio",
       "arritmias",
@@ -957,5 +957,383 @@
       }
     ],
     "discrepancias_detectadas": []
+  },
+  "ayudadx-cardio": {
+    "nombre": "Exámenes de ayuda diagnóstica y procedimientos invasivos en Cardiología",
+    "fuente": {
+      "archivo": "SEMANA 04-PDF-Exámenes de ayuda diagnóstica en Cardiología.pdf",
+      "semana": 4,
+      "sesion": 10,
+      "tema_en_la_sesion": 2,
+      "tipo": "ppt"
+    },
+    "referencias": "SEC 2023 y ESC 2021 para Holter, ecocardiografía y tilt test. SEC/ESC 2023 y SMC 2022 para cardioimagen avanzada. ESC 2023, IMSS 2022 y SBC 2024 para cateterismo. SEC 2023 y ACC/AHA 2025 para intervención coronaria percutánea. ESC 2021 y SEC 2022 para evaluación hemodinámica. SEC 2023, IMSS 2021 y AHA 2023 para electrofisiología.",
+    "resultado_aprendizaje": "Justificar un plan de trabajo diagnóstico en patología cardiovascular mediante la interpretación de exámenes de ayuda diagnóstica cardíaca.",
+    "contenidos_declarados": [
+      "Procedimientos de ayuda diagnóstica",
+      "Prueba de esfuerzo",
+      "Monitoreo ambulatorio de presión arterial (MAPA)",
+      "Holter",
+      "Ecocardiografía",
+      "Tilt Test",
+      "Procedimientos invasivos"
+    ],
+    "_nota_de_alcance": "Buena parte de la segunda mitad del PPT son diapositivas de imagen sin texto: cateterismo cardíaco, diagnóstico de hipertensión pulmonar por cateterismo, implante de marcapasos, implante de DAI, angiografía, ventriculografía, implante de stent y TAVI. Se conserva solo lo que el PPT escribe. La nomenclatura de esos procedimientos queda disponible como reconocimiento, no como contenido desarrollado.",
+    "conceptos": [
+      {
+        "id": "ayudadx-cardio::fines-diagnosticos",
+        "nombre": "Fines diagnósticos: a quién se le pide el estudio",
+        "alto_rendimiento": true,
+        "contenido": "El PPT abre separando a los candidatos en sintomáticos y asintomáticos, y esa división organiza toda la indicación.",
+        "sintomaticos": [
+          "dolor torácico, típico o atípico",
+          "clínica de equivalentes isquémicos"
+        ],
+        "asintomaticos": [
+          "alteraciones en el ECG sugestivas de isquemia",
+          "alta probabilidad de padecer cardiopatía isquémica, es decir paciente con múltiples factores de riesgo",
+          "cuando convenga descartar con cierta seguridad cardiopatía isquémica",
+          "sospecha de cardiopatía isquémica silente",
+          "sedentarios que inician un programa de actividad física",
+          "estudio funcional de ciertas arritmias"
+        ],
+        "enfasis_docente": "Que un asintomático entre a estudio por ser sedentario que va a empezar a entrenar es la indicación que menos se espera y la más fácil de preguntar.",
+        "relacionado": [
+          "coronaria::clinica"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "ayudadx-cardio::fines-valorativos-pronosticos",
+        "nombre": "Fines valorativos y pronósticos",
+        "alto_rendimiento": true,
+        "contenido": "Segundo bloque de indicaciones, ya no para diagnosticar sino para seguir y decidir.",
+        "indicaciones": [
+          "seguimiento de paciente con cardiopatía isquémica conocida",
+          "posterior a infarto agudo de miocardio",
+          "exámenes prelaborales o laborales",
+          "valorar la eficacia del tratamiento médico, del cateterismo y angioplastia, o del quirúrgico",
+          "respuesta de la presión arterial",
+          "valvulopatías o miocardiopatías",
+          "estudio de arritmias y trastornos de la conducción aurículo-ventricular",
+          "cardiopatías congénitas"
+        ],
+        "enfasis_docente": "Ocho puntos, lista cerrada. La distinción entre pedir el estudio para diagnosticar y pedirlo para valorar o pronosticar es lo que se presta a sustentar.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "ayudadx-cardio::tipos-prueba-esfuerzo",
+        "nombre": "Los tres tipos de prueba de esfuerzo",
+        "alto_rendimiento": true,
+        "contenido": "El curso nombra tres modalidades.",
+        "tipos": [
+          "prueba de esfuerzo tradicional, también llamada EKG de esfuerzo o ergometría",
+          "ecocardiografía de esfuerzo",
+          "prueba de esfuerzo con radioisótopos"
+        ],
+        "enfasis_docente": "Que ergometría, EKG de esfuerzo y prueba de esfuerzo tradicional sean el mismo examen con tres nombres es justo lo que permite armar una pregunta de emparejamiento.",
+        "relacionado": [
+          "coronaria::pruebas-avanzadas"
+        ],
+        "formatos": [
+          "banco",
+          "flashcard"
+        ]
+      },
+      {
+        "id": "ayudadx-cardio::contraindicaciones-absolutas",
+        "nombre": "Contraindicaciones absolutas de la prueba de esfuerzo",
+        "alto_rendimiento": true,
+        "contenido": "Nueve situaciones en las que no se hace, con una cifra exacta en la primera.",
+        "contraindicaciones": [
+          "infarto agudo de miocardio en la fase aguda, menos de 3 días",
+          "angina inestable",
+          "estenosis aórtica severa, sintomática",
+          "arritmia con repercusión hemodinámica, sin control",
+          "pericarditis aguda",
+          "miocarditis aguda",
+          "insuficiencia cardíaca descompensada",
+          "incapacidad física o psíquica",
+          "disección aórtica o patología del tronco aórtico"
+        ],
+        "enfasis_docente": "El corte de 3 días para el infarto agudo es la única cifra del listado y por eso es la que se pregunta. La estenosis aórtica contraindica solo si es severa Y sintomática: las dos condiciones juntas.",
+        "trampa": "Contraindicar la ergometría por estenosis aórtica sin verificar que sea severa y sintomática.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "ayudadx-cardio::mapa-definicion-indicaciones",
+        "nombre": "MAPA: equipo e indicaciones",
+        "alto_rendimiento": true,
+        "contenido": "El monitoreo ambulatorio de la presión arterial usa un mango inflable similar al convencional, con uno o dos micrófonos si el método es auscultatorio o un sensor oscilométrico si el registro es oscilométrico, más una caja de comando que infla el mango, registra las mediciones y funciona con batería. El equipo debe estar adecuadamente validado.",
+        "indicaciones": [
+          "descartar la hipertensión de bata blanca, es decir sujetos normotensos que solo elevan la presión arterial durante la medición en un ambiente médico",
+          "pacientes con hipertensión limítrofe o lábil",
+          "pacientes con pobre control de la presión arterial pese a terapia antihipertensiva adecuada",
+          "pacientes con empeoramiento del daño de órgano blanco pese a control apropiado de la presión en consultorio",
+          "evaluar la suficiencia del control de la presión por 24 horas en pacientes con riesgo cardiovascular particularmente elevado, como diabetes o ACV previo",
+          "decidir tratamiento en caso de presión alta en ancianos o embarazadas",
+          "pacientes con síntomas o evidencia de hipertensión episódica",
+          "pacientes con sospecha de síncope o hipotensión ortostática"
+        ],
+        "enfasis_docente": "La bata blanca abre la lista y es el escenario clásico. Los dos que se olvidan son el daño de órgano blanco que progresa a pesar de cifras de consultorio buenas, y el síncope.",
+        "trampa": "Pensar que el MAPA solo sirve para confirmar hipertensión, cuando la mitad de sus indicaciones son para descartarla o para evaluar control.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "ayudadx-cardio::mapa-valores-normales",
+        "nombre": "Valores normales del MAPA",
+        "alto_rendimiento": true,
+        "contenido": "Cifras para adultos no embarazadas. Es el concepto más operable del tema.",
+        "cifras": {
+          "durante el día": "menor de 135/85 mm Hg",
+          "durante la noche": "menor de 120/75 mm Hg",
+          "en las 24 horas": "menor de 130/80 mm Hg",
+          "carga de la PA diurna y nocturna": "debe ser menor del 20 % por encima de los valores normales",
+          "diferencia día-noche": "las mediciones promedio de la PA diurna y nocturna, es decir de sueño, deben diferir en más del 10 %"
+        },
+        "enfasis_docente": "Tres cortes distintos según la ventana horaria, y el más bajo es el nocturno. La diferencia de más del 10 % entre día y noche es la que permite decir si el paciente desciende o no desciende de noche.",
+        "trampa": "Usar el corte de consultorio, 140/90, para leer un MAPA. Los tres valores del MAPA son más bajos.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "ayudadx-cardio::holter",
+        "nombre": "Holter: qué registra y para qué se pide",
+        "alto_rendimiento": true,
+        "contenido": "Dispositivo electrónico de pequeño tamaño que registra y almacena el electrocardiograma del paciente durante al menos 24 horas de forma ambulatoria, en el domicilio, sin necesidad de llevarlo a cabo en el hospital.",
+        "indicaciones": [
+          "sospecha de arritmia cardíaca o diagnóstico de isquemia",
+          "estudio de síncopes de causa indeterminada",
+          "control de los marcapasos implantados",
+          "evaluación de fármacos antiarrítmicos y antianginosos"
+        ],
+        "enfasis_docente": "Al menos 24 horas y ambulatorio: esas dos características son las que lo separan del EKG de reposo y de la telemetría hospitalaria.",
+        "trampa": "Confundir las indicaciones del Holter con las del MAPA. El síncope aparece en ambos, pero el Holter registra ritmo y el MAPA registra presión.",
+        "relacionado": [
+          "ayudadx-cardio::mapa-definicion-indicaciones",
+          "ayudadx-cardio::tilt-test"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "ayudadx-cardio::ecocardiografia",
+        "nombre": "Ecocardiografía transtorácica y transesofágica",
+        "alto_rendimiento": true,
+        "contenido": "El curso las contrasta por resolución y por indicación.",
+        "transtoracica": {
+          "uso": "estudio basal en cualquier paciente con síntomas cardiovasculares",
+          "evalúa": "función sistólica, válvulas, cavidades y derrames"
+        },
+        "transesofagica": {
+          "ventaja": "mayor resolución para evaluar válvulas, aorta y trombos en la orejuela izquierda",
+          "indicaciones": [
+            "endocarditis infecciosa",
+            "evaluación de válvula protésica",
+            "planeamiento de cierre de CIA o de foramen oval permeable"
+          ]
+        },
+        "enfasis_docente": "La transtorácica es el estudio de entrada para todo el que tenga síntomas cardiovasculares. La transesofágica se gana su indicación cuando hace falta ver orejuela, prótesis o vegetaciones.",
+        "trampa": "Pedir transesofágica de primera línea en un paciente con síntomas cardiovasculares inespecíficos.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "ayudadx-cardio::tilt-test",
+        "nombre": "Tilt test o prueba de la mesa basculante",
+        "alto_rendimiento": true,
+        "contenido": "Se utiliza una camilla basculante para inclinar al paciente a 60 u 80 grados con la cabeza hacia arriba y se monitorea de forma continua la frecuencia cardíaca y la presión arterial durante 30 minutos, tiempo en el que la persona puede presentar fatiga, mareos, falta de aire, palidez, sudoración e incluso síncope.",
+        "segunda_etapa": "Si la primera etapa del estudio es normal, es probable que se decida administrar una mínima dosis de un medicamento vasodilatador para sensibilizar la prueba: adenosina, ATP, dinitrato de isosorbide sublingual o en spray, o isoproterenol.",
+        "indicacion": "Estudio de episodios de pérdida súbita de la conciencia, es decir síncope, o de casi pérdida, es decir presíncope.",
+        "enfasis_docente": "Los números son concretos y por eso son preguntables: 60 a 80 grados, 30 minutos. Y que una primera etapa normal no cierre el estudio, sino que lleve a sensibilizarlo con vasodilatador, es el detalle fino.",
+        "trampa": "Dar por negativo el tilt test cuando la primera etapa es normal, sin la fase farmacológica.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "ayudadx-cardio::tomografia-cardiaca",
+        "nombre": "Tomografía cardíaca y sus técnicas nuevas",
+        "alto_rendimiento": true,
+        "contenido": "Permite valorar las arterias coronarias con alta sensibilidad. Es útil en pacientes con probabilidad pretest de enfermedad coronaria baja a intermedia.",
+        "tecnicas_nuevas": [
+          "tomografía coronaria con FFR, es decir FFR-CT",
+          "scoring de calcio o CAC como predictor de riesgo cardiovascular"
+        ],
+        "enfasis_docente": "Alta sensibilidad y probabilidad pretest baja a intermedia: esa combinación es la que la vuelve una prueba para descartar, no para confirmar.",
+        "relacionado": [
+          "coronaria::pruebas-avanzadas"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "ayudadx-cardio::resonancia-cardiaca",
+        "nombre": "Resonancia cardíaca",
+        "alto_rendimiento": true,
+        "contenido": "Evalúa viabilidad miocárdica, función sistólica, fibrosis y perfusión. No usa radiación ionizante.",
+        "indicaciones": [
+          "evaluación de miocardiopatías",
+          "diagnóstico de miocarditis",
+          "valoración de viabilidad tras infarto agudo de miocardio"
+        ],
+        "avances": "Perfusión miocárdica cuantitativa y mapas paramétricos T1, T2 y ECV.",
+        "enfasis_docente": "Viabilidad y fibrosis son las dos palabras que solo aparecen en resonancia. Y la ausencia de radiación ionizante es el contraste directo con la tomografía.",
+        "trampa": "Atribuir a la resonancia la valoración anatómica de las coronarias, que en el PPT corresponde a la tomografía.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "ayudadx-cardio::cateterismo-diagnostico",
+        "nombre": "Cateterismo cardíaco diagnóstico",
+        "alto_rendimiento": true,
+        "contenido": "Procedimiento invasivo que permite la evaluación anatómica de las arterias coronarias, las presiones intracardíacas y las válvulas.",
+        "indicaciones": [
+          "síndrome coronario agudo con o sin elevación del ST",
+          "angina estable con isquemia documentada",
+          "evaluación hemodinámica en insuficiencia cardíaca",
+          "enfermedades valvulares antes de cirugía"
+        ],
+        "tecnica": "Se accede por vía radial o femoral. Se introducen catéteres hasta las cavidades cardíacas y el ostium de las coronarias para inyectar contraste. Se mide la presión y se realiza ventriculografía y cinecoronariografía.",
+        "complicaciones": [
+          "hematomas",
+          "pseudoaneurisma",
+          "infarto",
+          "arritmias",
+          "reacciones alérgicas",
+          "nefropatía por contraste"
+        ],
+        "enfasis_docente": "Angina estable no basta: el PPT exige isquemia documentada. Las complicaciones son seis y la nefropatía por contraste es la que se olvida.",
+        "relacionado": [
+          "coronaria::pruebas-avanzadas"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "ayudadx-cardio::icp",
+        "nombre": "Intervención coronaria percutánea",
+        "alto_rendimiento": true,
+        "contenido": "Técnica terapéutica para abrir arterias coronarias obstruidas mediante balones y stents.",
+        "indicaciones": [
+          "infarto agudo con elevación del ST, como ICP primaria",
+          "síndrome coronario sin elevación del ST de riesgo alto",
+          "angina refractaria con lesiones coronarias significativas"
+        ],
+        "tecnica": "Angioplastía con balón seguida de implantación de stent, farmacológico o convencional. El procedimiento se guía cada vez más con imagen intracoronaria, IVUS u OCT.",
+        "acceso_recomendado": "Vía radial, por menor riesgo de sangrado.",
+        "avances": "Stents de tercera generación e ICP compleja en tronco coronario, bifurcaciones y multivaso.",
+        "enfasis_docente": "Radial por menor sangrado es el dato que se pide sustentar. Y que el cateterismo diagnóstico admita radial o femoral mientras la ICP recomienda radial es la diferencia entre los dos.",
+        "relacionado": [
+          "coronaria::tratamiento"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "ayudadx-cardio::hemodinamica-insuficiencia-cardiaca",
+        "nombre": "Evaluación hemodinámica en insuficiencia cardíaca",
+        "alto_rendimiento": true,
+        "contenido": "El cateterismo derecho permite medir presiones de cavidades derechas, presión capilar pulmonar (PCWP) y gasto cardíaco.",
+        "indicaciones": [
+          "insuficiencia cardíaca refractaria",
+          "valoración para trasplante cardíaco",
+          "confirmación de insuficiencia cardíaca con fracción de eyección conservada"
+        ],
+        "prueba_de_ejercicio_invasiva": "Permite desvelar la insuficiencia cardíaca con fracción de eyección conservada cuando el estudio en reposo es normal.",
+        "enfasis_docente": "Cateterismo DERECHO, no izquierdo: aquí se miden presiones de llenado, no coronarias. Y que el reposo normal no descarte la ICFEc es la razón de ser de la prueba de ejercicio invasiva.",
+        "trampa": "Descartar insuficiencia cardíaca con fracción de eyección conservada con un cateterismo derecho en reposo normal.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "ayudadx-cardio::estudios-electrofisiologicos",
+        "nombre": "Estudios electrofisiológicos",
+        "alto_rendimiento": false,
+        "contenido": "Evaluación invasiva del sistema de conducción, útil para el diagnóstico y el tratamiento de arritmias.",
+        "tecnicas": [
+          "estudio diagnóstico",
+          "ablación con radiofrecuencia",
+          "implantación de dispositivos: marcapasos, desfibrilador automático implantable y resincronizador"
+        ],
+        "enfasis_docente": "Es el único procedimiento del PPT que es diagnóstico y terapéutico a la vez. Prepara el terreno para el tema de arritmias.",
+        "formatos": [
+          "banco",
+          "flashcard"
+        ]
+      }
+    ],
+    "casos_del_ppt": [],
+    "pregunta_de_integracion": [
+      "¿Cuál es la importancia de los procedimientos invasivos en Cardiología?",
+      "¿Qué procedimientos invasivos conoces?",
+      "¿Qué es la angioplastía con stent?"
+    ],
+    "cierre_del_ppt": "En Cardiología existen pruebas diagnósticas que forman parte de los protocolos de estudio de las enfermedades del corazón. Estas pruebas pueden ser invasivas y no invasivas, y cada una tiene una indicación específica que se irá aprendiendo a lo largo del módulo.",
+    "discrepancias_detectadas": [
+      {
+        "punto": "Ventana del infarto agudo como contraindicación absoluta de la prueba de esfuerzo",
+        "material_del_curso": "menos de 3 días",
+        "observacion": "Las guías ACC/AHA fijan la ventana en los 2 días posteriores al infarto. La diferencia es de un día y no cambia la conducta clínica, pero el número es preguntable.",
+        "estado": "elección del curso, se respeta",
+        "respuesta_en_examen": "menos de 3 días",
+        "nota_de_feedback": "Para tu práctica, no para el examen: la mayoría de guías internacionales, incluidas las de ACC/AHA, usan 2 días como ventana de infarto agudo para contraindicar la ergometría. En el examen responde 3 días, que es lo que dice la diapositiva y lo puedes respaldar."
+      }
+    ]
   }
 }

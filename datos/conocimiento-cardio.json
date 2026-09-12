@@ -10,10 +10,10 @@
       "anatomia-cardiaca",
       "coronaria",
       "ayudadx-cardio",
-      "hta"
+      "hta",
+      "pericardio"
     ],
     "temas_pendientes": [
-      "pericardio",
       "arritmias",
       "ekg-conduccion",
       "endocarditis",
@@ -1815,6 +1815,335 @@
         "punto": "Segunda pregunta del caso del varón de 55 años con gota",
         "detalle": "El PPT pregunta qué fármacos NO usaría, pero en ninguna diapositiva menciona la relación entre diuréticos tiazídicos y gota o hiperuricemia, ni ningún otro fármaco contraindicado por gota. El dato que resuelve la pregunta no está en el material.",
         "efecto_en_la_ingesta": "No se genera respuesta para esa pregunta desde el PPT. Conviene confirmarlo en clase o con la docente antes de darlo por evaluable."
+      }
+    ]
+  },
+  "pericardio": {
+    "nombre": "Enfermedades del pericardio: pericarditis, taponamiento cardíaco y pericarditis constrictiva crónica",
+    "fuente": {
+      "archivo": "SEMANA 05-PDF-Enfermedades del Pericardio.pdf",
+      "semana": 5,
+      "sesion": 13,
+      "tema_en_la_sesion": 2,
+      "tipo": "ppt"
+    },
+    "referencias": "Khandaker MH et al. Pericardial disease: diagnosis and management. Mayo Clin Proc. 2010;85(6):572-93. Guía ESC 2015 sobre el diagnóstico y tratamiento de las enfermedades del pericardio (Adler Y, Charron P, Imazio M et al., Rev Esp Cardiol 2015;68(12)). ClinicalKey.",
+    "resultado_aprendizaje": "Justificar un plan de trabajo diagnóstico para el abordaje integral de las enfermedades del pericardio.",
+    "contenidos_declarados": [
+      "Anatomía del pericardio",
+      "Pericarditis aguda",
+      "Taponamiento cardíaco",
+      "Pericarditis constrictiva"
+    ],
+    "_nota_de_alcance": "Varias diapositivas de este PPT son tablas o esquemas de imagen sin texto extraíble: la etiología de la pericarditis, el manejo y el tratamiento de la pericarditis aguda, la etiología del taponamiento, la fisiopatología de la constrictiva y el diagnóstico diferencial final. El vacío más importante es el TRATAMIENTO de la pericarditis aguda: el esquema con AINEs, colchicina y dosis no aparece en ningún texto del archivo. Conviene fotografiar esas láminas y volver a ingerirlas antes del parcial. No se completó nada por conocimiento general.",
+    "conceptos": [
+      {
+        "id": "pericardio::anatomia",
+        "nombre": "Anatomía y función del pericardio",
+        "alto_rendimiento": true,
+        "contenido": "Saco fibroso que envuelve al corazón y lo separa de las estructuras mediastínicas.",
+        "capas": {
+          "pericardio fibroso": "capa externa",
+          "pericardio seroso": "se divide en parietal y visceral; la visceral es el epicardio"
+        },
+        "cavidad_pericardica": "15 a 30 mL",
+        "funcion": "Lubricación y protección mecánica.",
+        "enfasis_docente": "Que la hoja visceral del pericardio seroso SEA el epicardio es el emparejamiento que se pregunta. Y el volumen normal, 15 a 30 mL, es la referencia contra la que después se miden los 200 mL de la radiografía.",
+        "relacionado": [
+          "anatomia-cardiaca::capas"
+        ],
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "pericardio::pericarditis-generalidades",
+        "nombre": "Pericarditis aguda: generalidades",
+        "alto_rendimiento": true,
+        "contenido": "Síndrome inflamatorio con o sin derrame pericárdico. Puede presentarse como entidad aislada o como manifestación de una enfermedad.",
+        "frecuencia": "0.1 % de los pacientes hospitalizados.",
+        "etiologia_destacada": "En países endémicos de tuberculosis, la TBC es la principal causa.",
+        "enfasis_docente": "La frase sobre países endémicos de TBC está puesta a propósito: en el Perú cambia la etiología más probable respecto de lo que dicen las series europeas. Es de lo más sustentable del tema.",
+        "trampa": "Responder etiología viral o idiopática de forma automática sin considerar el contexto epidemiológico que el PPT subraya.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "pericardio::pericarditis-clinica",
+        "nombre": "Manifestaciones clínicas de la pericarditis",
+        "alto_rendimiento": true,
+        "contenido": "Cuatro hallazgos, con una cifra en el primero.",
+        "hallazgos": [
+          "dolor torácico retroesternal, tipo pleurítico, que empeora en decúbito, presente en el 90 %",
+          "febrícula",
+          "taquicardia sinusal",
+          "frote pericárdico"
+        ],
+        "enfasis_docente": "El 90 % va pegado al dolor. Febrícula, no fiebre alta. Y el carácter posicional del dolor, que empeora acostado, es lo que lo separa del dolor coronario.",
+        "trampa": "Confundir el dolor de la pericarditis con el de la cardiopatía isquémica. Aquí es pleurítico y posicional, no opresivo ni desencadenado por esfuerzo.",
+        "relacionado": [
+          "coronaria::clinica"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "pericardio::pericarditis-ekg",
+        "nombre": "Electrocardiograma de la pericarditis y sus cuatro etapas",
+        "alto_rendimiento": true,
+        "contenido": "El signo clásico es la elevación difusa del segmento ST. La depresión del PR puede ocurrir sin elevación del ST y ser la manifestación inicial o única en el ECG.",
+        "cuatro_etapas": [
+          "1) depresión del PR y/o elevación difusa del segmento ST",
+          "2) normalización del segmento ST",
+          "3) inversión de la onda T, con o sin depresión del segmento ST",
+          "4) normalización"
+        ],
+        "enfasis_docente": "La palabra clave es DIFUSA: el ST sube en casi todas las derivaciones, no en un territorio. La depresión del PR sola, sin ST elevado, es el detalle fino que se pregunta, y el propio caso del PPT dice que es relativamente específica de pericarditis porque representa afectación auricular.",
+        "trampa": "Esperar siempre elevación del ST. La depresión del PR puede ser la única alteración.",
+        "relacionado": [
+          "ekg1::segmentos",
+          "coronaria::ekg"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "pericardio::pericarditis-imagenes",
+        "nombre": "Imágenes en pericarditis",
+        "alto_rendimiento": true,
+        "contenido": "Radiografía y ecocardiograma, cada uno con su cifra.",
+        "radiografia_de_torax": "La cardiomegalia con campos pulmonares limpios sugiere derrame pericárdico significativo e indica al menos 200 mL de líquido pericárdico. Se describe pinzamiento del seno cardiofrénico y silueta cardíaca globular en forma de cantimplora o botella de agua.",
+        "ecocardiograma": "40 % de los casos es normal y 60 % presenta derrame pericárdico.",
+        "enfasis_docente": "200 mL es el umbral radiológico y es la cifra del tema. Que el ecocardiograma sea normal en 40 % obliga a no descartar pericarditis por un eco limpio.",
+        "trampa": "Descartar pericarditis porque el ecocardiograma salió normal.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "pericardio::taponamiento-definicion",
+        "nombre": "Taponamiento cardíaco: definición y mecanismo",
+        "alto_rendimiento": true,
+        "contenido": "Compresión del corazón por acumulación de líquido, pus, coágulo o gas en el espacio pericárdico. Ocurre cuando todas las cámaras cardíacas se comprimen como resultado del aumento de la presión intrapericárdica hasta el punto de comprometer el retorno venoso sistémico a la aurícula derecha.",
+        "enfasis_docente": "El contenido no es solo líquido: el PPT enumera líquido, pus, coágulo y gas. Y el mecanismo termina en una frase concreta, el compromiso del retorno venoso a la aurícula derecha, que es la que hay que decir al sustentar.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "pericardio::taponamiento-clinica",
+        "nombre": "Clínica del taponamiento y tríada de Beck",
+        "alto_rendimiento": true,
+        "contenido": "La presentación es variable, desde pacientes asintomáticos.",
+        "triada_de_beck": [
+          "hipotensión",
+          "sonidos cardíacos amortiguados",
+          "presión venosa yugular elevada"
+        ],
+        "significado_de_la_triada": "Indica un taponamiento grave.",
+        "signos_de_gasto_cardiaco_reducido": [
+          "shock",
+          "taquipnea",
+          "diaforesis",
+          "extremidades frías",
+          "cianosis periférica",
+          "depresión mental"
+        ],
+        "enfasis_docente": "La tríada de Beck es de las pocas cosas del módulo con nombre propio y tres componentes exactos: se pregunta tal cual. Ojo con que el PPT diga que indica taponamiento GRAVE, no que sea el criterio diagnóstico.",
+        "trampa": "Exigir la tríada completa para plantear taponamiento. El PPT dice que la presentación va desde asintomática.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "pericardio::taponamiento-examenes",
+        "nombre": "Exámenes auxiliares en taponamiento y clasificación del derrame",
+        "alto_rendimiento": true,
+        "contenido": "Tres estudios, y la clasificación ecocardiográfica del derrame en milímetros es lo más operable.",
+        "electrocardiograma": "Voltaje reducido, con QRS de bajo voltaje.",
+        "radiografia_de_torax": "Silueta cardíaca normal hasta que el derrame es al menos de tamaño moderado. Con derrames más grandes, la silueta anteroposterior adopta una apariencia redondeada similar a un matraz.",
+        "ecocardiograma": "Aparece separación entre el pericardio parietal y el visceral durante todo el ciclo cardíaco. Los derrames pequeños suelen ser evidentes primero sobre la zona posterobasal del ventrículo izquierdo.",
+        "clasificacion_del_derrame": {
+          "banal": "solo apreciado en sístole",
+          "pequeño": "espacio libre de eco en diástole menor de 10 mm",
+          "moderado": "de 10 a 20 mm",
+          "grande": "mayor de 20 mm",
+          "muy grande": "mayor de 25 mm"
+        },
+        "enfasis_docente": "Cinco categorías con cortes en 10, 20 y 25 mm, y la medición es en DIÁSTOLE. El banal es el único que no se define por milímetros sino por el momento del ciclo.",
+        "trampa": "Olvidar que la radiografía es normal mientras el derrame no sea al menos moderado, y descartar taponamiento por una silueta cardíaca normal.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "pericardio::taponamiento-tratamiento",
+        "nombre": "Tratamiento del taponamiento",
+        "alto_rendimiento": true,
+        "contenido": "Se recomienda pericardiocentesis de urgencia o cirugía cardíaca para el tratamiento del taponamiento cardíaco.",
+        "enfasis_docente": "Es la única frase de tratamiento que el PPT escribe en todo el tema, y por eso pesa. La palabra es URGENCIA.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "pericardio::constrictiva-generalidades",
+        "nombre": "Pericarditis constrictiva crónica: riesgo de progresión por etiología",
+        "alto_rendimiento": true,
+        "contenido": "La pericarditis constrictiva puede ocurrir después de prácticamente cualquier enfermedad pericárdica y raramente tiene lugar después de una pericarditis recurrente. El riesgo de progresión está especialmente relacionado con la etiología.",
+        "riesgo_por_etiologia": {
+          "bajo, menor de 1 %": "pericarditis viral e idiopática",
+          "intermedio, 2 a 5 %": "pericarditis inmunomediada y pericardiopatías neoplásicas",
+          "alto, 20 a 30 %": "pericarditis bacteriana, sobre todo la purulenta"
+        },
+        "enfasis_docente": "Tres estratos con tres rangos numéricos, y el salto de la bacteriana es enorme: de menos de 1 % a 20-30 %. Este es el concepto del tema con más probabilidad de aparecer como pregunta de cifra.",
+        "trampa": "Asumir que la pericarditis recurrente es la que más progresa a constrictiva. El PPT dice explícitamente que raramente ocurre tras una recurrente.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "pericardio::constrictiva-exploracion-fisica",
+        "nombre": "Exploración física en la constrictiva",
+        "alto_rendimiento": true,
+        "contenido": "Cinco hallazgos, dos de ellos con nombre propio.",
+        "hallazgos": [
+          "presión venosa yugular elevada",
+          "signo de Kussmaul",
+          "pulso paradójico",
+          "golpe pericárdico: sonido diastólico que se escucha en el borde esternal izquierdo y/o en la punta cardíaca",
+          "desdoblamiento del segundo ruido"
+        ],
+        "enfasis_docente": "El golpe pericárdico viene con su definición completa en la diapositiva, momento del ciclo y localización incluidos: es lo que hay que repetir. La presión venosa yugular elevada es el único hallazgo que comparte con el taponamiento.",
+        "relacionado": [
+          "pericardio::taponamiento-clinica"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "pericardio::constrictiva-examenes",
+        "nombre": "Exámenes auxiliares en la constrictiva",
+        "alto_rendimiento": true,
+        "contenido": "Tres estudios, y la calcificación es el hallazgo firma.",
+        "electrocardiograma": "Cambios inespecíficos del segmento ST y de la onda T, bajo voltaje del complejo QRS y anomalías aisladas de la repolarización.",
+        "radiografia_de_torax": "Calcificación del pericardio, que se ve en la proyección lateral. La calcificación pericárdica anular se denomina concretio cordis.",
+        "ecocardiograma": "Engrosamiento pericárdico y calcificación. Desplazamiento brusco del tabique interventricular durante la diástole temprana, llamado rebote septal. Congestión venosa sistémica, con dilatación de las venas hepáticas y distensión de la vena cava inferior con disminución de la variación respiratoria.",
+        "enfasis_docente": "La proyección LATERAL es la que muestra la calcificación, y ese detalle se pregunta. Rebote septal y concretio cordis son los dos términos con nombre del concepto.",
+        "trampa": "Buscar la calcificación pericárdica solo en la proyección frontal.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "pericardio::constrictiva-tratamiento",
+        "nombre": "Tratamiento de la pericarditis constrictiva",
+        "alto_rendimiento": true,
+        "contenido": "El PPT ordena el tratamiento médico en tres papeles y cierra con una advertencia sobre el momento quirúrgico.",
+        "papeles_del_tratamiento_medico": [
+          "primero, tratamiento médico de las etiologías específicas: los antibióticos antituberculosos pueden reducir el riesgo de constricción de más del 80 % a menos del 10 %",
+          "segundo, puede resolver la constricción transitoria, que ocurre en un 10 a 20 % de los casos, en pocos meses",
+          "tercero, sirve de apoyo para controlar los síntomas de congestión en casos avanzados o cuando la cirugía está contraindicada o tiene riesgo elevado"
+        ],
+        "advertencia": "El tratamiento médico nunca debe retrasar la cirugía si esta opción es factible, porque en los casos avanzados la mortalidad es mayor y el pronóstico empeora si se retrasa la cirugía.",
+        "enfasis_docente": "Dos cifras que se piden: los antituberculosos bajan el riesgo de más de 80 % a menos de 10 %, y la constricción transitoria es del 10 al 20 %. La advertencia final sobre no retrasar la cirugía es material de sustentación.",
+        "trampa": "Prolongar el tratamiento médico esperando resolución en un caso avanzado con indicación quirúrgica.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "pericardio::caso-mujer-30-dolor-posicional",
+        "uso": "aparece dos veces, como 'Reflexión desde la experiencia' al abrir y como 'Apliquemos lo aprendido' al cerrar; el PPT SÍ da la respuesta",
+        "enunciado": "Usted evalúa a una paciente mujer de 30 años, quien refiere presentar un dolor torácico agudo que se irradia a los hombros. El dolor tiene una semana de evolución, empeora en decúbito y mejora cuando se sienta. También empeora al respirar. Tiene antecedentes de infección de vías respiratorias altas. Se acompaña de un EKG.",
+        "pregunta": "¿Cuál sería tu planteamiento diagnóstico?",
+        "respuesta_del_ppt": "Diagnóstico: pericarditis. El examen tiene elevaciones difusas del segmento ST que no muestran concavidad hacia arriba, además de depresión del segmento PR, que se observa mejor en DII. El antecedente planteado eleva la probabilidad de que la causa de la pericarditis sea infecciosa: viral, bacteriana o micobacteriana. La depresión del segmento PR es relativamente específica para pericarditis y representa una afectación auricular.",
+        "conceptos_que_lo_resuelven": [
+          "pericardio::pericarditis-clinica",
+          "pericardio::pericarditis-ekg",
+          "pericardio::pericarditis-generalidades"
+        ],
+        "claves": "El dolor posicional, que mejora sentada, y el carácter pleurítico son los dos datos clínicos que orientan. El antecedente de infección respiratoria alta no se usa para el diagnóstico sino para la ETIOLOGÍA. En el EKG se piden dos hallazgos, no uno: ST difuso y depresión del PR, con la localización en DII incluida.",
+        "estructura_a_replicar": "mujer joven, dolor torácico con modificadores posicionales y respiratorios explícitos, tiempo de evolución en días o semanas, un antecedente infeccioso reciente y un trazado adjunto; se pide planteamiento diagnóstico abierto, y la respuesta esperada combina diagnóstico, sustento electrocardiográfico con derivación nombrada y orientación etiológica",
+        "formatos": [
+          "caso",
+          "sustentacion"
+        ]
+      }
+    ],
+    "discrepancias_detectadas": [
+      {
+        "punto": "Pulso paradójico: en qué entidad lo ubica el PPT",
+        "material_del_curso": "El PPT lista el pulso paradójico dentro de la exploración física de la pericarditis constrictiva crónica, y no lo menciona en la sección de taponamiento cardíaco.",
+        "observacion": "En la mayoría de textos y en la propia guía ESC 2015 que el PPT cita, el pulso paradójico es un signo característico del TAPONAMIENTO, mientras que el signo de Kussmaul es el típico de la constrictiva. En la constrictiva el pulso paradójico puede aparecer, sobre todo en formas efusivo-constrictivas, pero no es su signo distintivo.",
+        "estado": "elección del curso, se respeta",
+        "respuesta_en_examen": "si la pregunta enumera los hallazgos de la exploración física en pericarditis constrictiva, incluir el pulso paradójico tal como aparece en la diapositiva",
+        "nota_de_feedback": "Para tu práctica, no para el examen: el pulso paradójico es el signo clásico del taponamiento cardíaco, donde traduce la caída inspiratoria exagerada de la presión arterial sistólica por interdependencia ventricular. En la constrictiva el signo característico es el de Kussmaul. El PPT solo lo menciona en constrictiva, así que responde según la diapositiva, pero en la práctica y en ENAM el emparejamiento habitual es pulso paradójico con taponamiento."
+      }
+    ],
+    "puntos_por_aclarar": [
+      {
+        "punto": "Tratamiento de la pericarditis aguda",
+        "detalle": "Las diapositivas tituladas MANEJO y TRATAMIENTO de pericarditis son imágenes sin texto extraíble. No hay en todo el archivo ninguna mención a AINEs, colchicina, corticoides, dosis ni duración.",
+        "efecto_en_la_ingesta": "No se generan preguntas de tratamiento de pericarditis aguda. Es el vacío más grande del tema y conviene cubrirlo con fotos de esas láminas antes del parcial."
+      },
+      {
+        "punto": "Etiología de la pericarditis y del taponamiento",
+        "detalle": "Ambas diapositivas de etiología son tablas de imagen. Solo se conserva la frase del texto sobre la TBC como principal causa en países endémicos.",
+        "efecto_en_la_ingesta": "La clasificación etiológica completa no está disponible para generar preguntas."
+      },
+      {
+        "punto": "Fisiopatología de la constrictiva y diagnóstico diferencial",
+        "detalle": "La diapositiva de fisiopatología de la constrictiva y la de diagnóstico diferencial, que muy probablemente contrasta constrictiva con miocardiopatía restrictiva, son esquemas sin texto.",
+        "efecto_en_la_ingesta": "Falta el diferencial, que suele ser material de pregunta. Pendiente de foto."
       }
     ]
   }

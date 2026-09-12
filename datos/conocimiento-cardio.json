@@ -11,10 +11,10 @@
       "coronaria",
       "ayudadx-cardio",
       "hta",
-      "pericardio"
+      "pericardio",
+      "arritmias"
     ],
     "temas_pendientes": [
-      "arritmias",
       "ekg-conduccion",
       "endocarditis",
       "tep"
@@ -2144,6 +2144,477 @@
         "punto": "Fisiopatología de la constrictiva y diagnóstico diferencial",
         "detalle": "La diapositiva de fisiopatología de la constrictiva y la de diagnóstico diferencial, que muy probablemente contrasta constrictiva con miocardiopatía restrictiva, son esquemas sin texto.",
         "efecto_en_la_ingesta": "Falta el diferencial, que suele ser material de pregunta. Pendiente de foto."
+      }
+    ]
+  },
+  "arritmias": {
+    "nombre": "Taquiarritmias y bradiarritmias",
+    "fuente": {
+      "archivo": "SEMANA 05-PDF-Taquiarritmias y Bradiarritmias.pdf",
+      "semana": 5,
+      "sesion": 14,
+      "tema_en_la_sesion": 1,
+      "tipo": "ppt"
+    },
+    "referencias": "Al-Khatib SM et al. 2017 AHA/ACC/HRS Guidelines for management of patients with ventricular arrhythmias and the prevention of sudden cardiac death. Circulation 2018;138:e272-e391. Alzand BSN, Crijns HJGM. Europace 2011;13:465-72. Coll-Vinent B et al. Eur J Emerg Med 2013;20:151-9. Heidbuchel H et al. Europace 2015;17(10):1467-507. Katritsis DG et al. EHRA consensus document, Europace 2017;19:465-511. Kirchhof P et al. 2016 ESC Guidelines for the management of atrial fibrillation, Eur Heart J 2016;37:2893-962. El PPT cita además la Guía ESC 2020 de fibrilación auricular.",
+    "resultado_aprendizaje": "Justificar un plan de trabajo diagnóstico para el abordaje integral de las arritmias.",
+    "contenidos_declarados": [
+      "Concepto",
+      "Taquicardia de complejo QRS estrecho",
+      "Taquicardia de complejo QRS ancho",
+      "Bradiarritmias: definición, disfunción del nodo sinusal, bradicardia sinusal, pausa sinusal y tratamiento"
+    ],
+    "_nota_de_alcance": "Es el PPT con más láminas de imagen del módulo hasta ahora. Quedan sin texto extraíble: los esquemas de clasificación de las taquicardias supraventriculares, la tabla de manejo de la fibrilación auricular (anticoagulación y control de frecuencia, con sus fármacos y escalas), la figura 2.7-5 de los cuatro niveles de decisión del control del ritmo, el tratamiento de las taquicardias regulares de QRS ancho, el tratamiento de la taquicardia ventricular irregular, el algoritmo simplificado de QRS ancho, los criterios de Brugada modificados, y las dos láminas de manejo de bradiarritmias con su algoritmo diagnóstico. El vacío más grave para el parcial es el TRATAMIENTO: ni la anticoagulación de la FA ni el manejo de la TV ni el de las bradiarritmias tienen texto recuperable. Nada se completó por conocimiento general.",
+    "conceptos": [
+      {
+        "id": "arritmias::sistema-de-conduccion",
+        "nombre": "Componentes del sistema de conducción",
+        "alto_rendimiento": false,
+        "contenido": "El sistema de conducción hace que las cavidades cardíacas se contraigan de forma coordinada.",
+        "componentes": [
+          "nodo sinoauricular (SA) o marcapaso",
+          "nodo auriculoventricular (AV)",
+          "haz de His",
+          "ramas derecha e izquierda del haz de His",
+          "miofibrillas de conducción o fibras de Purkinje"
+        ],
+        "relacionado": [
+          "anatomia-cardiaca::sistema-de-conduccion"
+        ],
+        "formatos": [
+          "banco",
+          "flashcard"
+        ]
+      },
+      {
+        "id": "arritmias::clasificacion",
+        "nombre": "Clasificación de las arritmias",
+        "alto_rendimiento": true,
+        "contenido": "El PPT usa dos ejes de clasificación en paralelo.",
+        "por_su_origen": [
+          "arritmias supraventriculares",
+          "arritmias ventriculares"
+        ],
+        "por_su_mecanismo": [
+          "arritmias por trastornos en la formación del impulso",
+          "arritmias por trastornos en la conducción del impulso",
+          "arritmias por trastornos combinados en la formación y conducción del impulso"
+        ],
+        "enfasis_docente": "Dos ejes, dos categorías en uno y tres en el otro. El tercer mecanismo, el combinado, es el que se olvida al enumerar.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "arritmias::reentrada-intranodal",
+        "nombre": "Taquicardia por reentrada intranodal",
+        "alto_rendimiento": true,
+        "contenido": "Se debe a la presencia de una doble vía en la zona del nodo auriculoventricular. Se desencadena por extrasístoles que, al bloquearse en una vía, permiten que ocasionalmente el impulso recircule en sentido retrógrado a través de la otra.",
+        "epidemiologia": "Representa el 60 % de las taquicardias regulares de complejo QRS estrecho, en su mayoría sin cardiopatía estructural. En el 30 % de los casos se asocia a clínica atípica: pánico, angustia, miedo a la muerte.",
+        "diagnostico_ekg": "Se basa en la ausencia de ondas P sinusales, la aparición de actividad auricular retrógrada, llamada seudo-p o seudo-s, y la respuesta al bloqueo del nodo AV con desaparición de la reentrada.",
+        "tratamiento": "Consiste en el propio bloqueo del nodo AV que se usó para el diagnóstico. La efectividad de las maniobras vagales es del 20 %, y la de la adenosina y los antagonistas del calcio es mayor del 80 %.",
+        "enfasis_docente": "Aquí el diagnóstico y el tratamiento son la misma maniobra, y eso es lo bonito de sustentar. Las tres cifras son 60 %, 30 % y el contraste 20 % contra más de 80 %.",
+        "trampa": "Quedarse en maniobras vagales cuando su efectividad es solo del 20 %.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "arritmias::vias-accesorias-y-wpw",
+        "nombre": "Vías accesorias y síndrome de Wolff-Parkinson-White",
+        "alto_rendimiento": true,
+        "contenido": "Causadas por la existencia de un cortocircuito anormal entre las aurículas y los ventrículos. Las vías accesorias tienen localizaciones anatómicas y propiedades electrofisiológicas muy distintas: algunas solo conducen de modo retrógrado, y son las vías accesorias ocultas; otras también conducen durante el ritmo sinusal, y constituyen el síndrome de preexcitación.",
+        "wpw": "La forma más frecuente de preexcitación es el síndrome de Wolff-Parkinson-White, que asocia taquicardias supraventriculares con alteraciones en el ECG basal.",
+        "ecg_basal_del_wpw": [
+          "PR corto, menor de 120 ms",
+          "QRS de 100 a 200 ms por un empastamiento inicial denominado onda delta",
+          "alteraciones de la repolarización ventricular"
+        ],
+        "cifras": {
+          "prevalencia": "afecta al 1-3 por mil de la población",
+          "aparición de arritmias": "entre el 12 y el 80 % de los pacientes",
+          "riesgo global de muerte súbita": "0,15 % por paciente y por año"
+        },
+        "enfasis_docente": "Las tres alteraciones del ECG basal van juntas y el PR corto lleva su cifra pegada, menor de 120 ms. Ojo con la prevalencia: es por MIL, no por ciento.",
+        "trampa": "Leer el 1-3 ‰ como porcentaje.",
+        "relacionado": [
+          "ekg1::intervalos"
+        ],
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "arritmias::wpw-formas-de-taquicardia",
+        "nombre": "Las tres formas de taquicardia en el WPW",
+        "alto_rendimiento": true,
+        "contenido": "Tres presentaciones con morfología de QRS y pronóstico distintos.",
+        "ortodromica": "El ventrículo se activa a través del nodo AV y la vía accesoria se usa como brazo retrógrado de la reentrada. Es la forma más frecuente de presentación y en el ECG se muestra como una taquicardia regular de QRS estrecho.",
+        "antidromica": "Se despolariza el ventrículo a través de la vía accesoria, lo que origina una taquicardia regular de QRS ancho muy anormal. Es poco frecuente.",
+        "fibrilacion_auricular_en_wpw": "Se produce una taquicardia irregular de complejo QRS ancho, habitualmente mal tolerada y con elevado riesgo de degeneración a fibrilación ventricular. Su tratamiento es la cardioversión eléctrica sincronizada con alta energía sin demora.",
+        "enfasis_docente": "La regla mnemotécnica es que la ortodrómica baja por lo normal y por eso el QRS es estrecho, y la antidrómica baja por la vía accesoria y por eso es ancho. La FA en WPW es la urgencia del tema y tiene tratamiento explícito en la diapositiva: cardioversión eléctrica sincronizada con alta energía, sin demora.",
+        "trampa": "Invertir ortodrómica y antidrómica. La más frecuente es la ortodrómica y es la de QRS estrecho.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "arritmias::flutter-auricular",
+        "nombre": "Flutter auricular",
+        "alto_rendimiento": true,
+        "contenido": "Causado por una macrorreentrada en la aurícula derecha.",
+        "ekg": "Taquicardia generalmente regular y de QRS estrecho, en la que tras el bloqueo del nodo AV se objetivan ondas F.",
+        "morfologia_de_las_ondas_f": {
+          "flutter común": "ondas F negativas en II, III y aVF",
+          "flutter inverso": "ondas F positivas"
+        },
+        "flutter_atipico": "Otras morfologías más complejas, por reentrada en diferentes localizaciones de ambas aurículas.",
+        "enfasis_docente": "El emparejamiento que se pregunta es negativas en cara inferior igual a flutter común. El bloqueo del nodo AV no lo trata: lo desenmascara, dejando ver las ondas F.",
+        "relacionado": [
+          "arritmias::caso-flutter-2-1"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "arritmias::taquicardias-auriculares",
+        "nombre": "Taquicardias auriculares",
+        "alto_rendimiento": false,
+        "contenido": "Pueden ser automáticas o reentrantes, por microrreentrada o macrorreentrada.",
+        "tratamiento": "Incluye el tratamiento de los desencadenantes y el control de la respuesta ventricular con bloqueantes beta o antagonistas del calcio.",
+        "formatos": [
+          "banco",
+          "flashcard"
+        ]
+      },
+      {
+        "id": "arritmias::irregulares-qrs-estrecho",
+        "nombre": "Las tres taquicardias irregulares de QRS estrecho",
+        "alto_rendimiento": true,
+        "contenido": "El PPT las agrupa como tres arritmias de origen y relevancia muy distintas.",
+        "los_tres_tipos": [
+          "flutter auricular y algunas taquicardias auriculares con respuesta ventricular variable",
+          "taquicardia auricular multifocal",
+          "fibrilación auricular"
+        ],
+        "taquicardia_auricular_multifocal": "Desencadenada generalmente por enfermedades infecciosas, broncopatía obstructiva o insuficiencia cardíaca. Habitualmente no precisa otro tratamiento que el de la enfermedad causal y el control de la frecuencia cardíaca con bloqueantes del nodo AV, en particular calcioantagonistas, que además pueden reducir el número y la frecuencia de descarga de los focos. No se considera que se asocie a riesgo de tromboembolia arterial.",
+        "enfasis_docente": "El dato que separa a la multifocal de la fibrilación auricular es que la multifocal NO se asocia a riesgo de tromboembolia arterial, y por eso no se anticoagula. Sus tres desencadenantes, infección, broncopatía obstructiva e insuficiencia cardíaca, son los que arman el caso clínico.",
+        "trampa": "Anticoagular una taquicardia auricular multifocal por analogía con la fibrilación auricular.",
+        "relacionado": [
+          "epoc::exacerbacion"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "arritmias::fibrilacion-auricular-epidemiologia",
+        "nombre": "Fibrilación auricular: epidemiología y relevancia clínica",
+        "alto_rendimiento": true,
+        "contenido": "Constituye la arritmia sostenida más frecuente en la práctica clínica. Afecta fundamentalmente a ancianos.",
+        "factores_asociados": {
+          "hipertensión arterial": "65 a 70 %",
+          "cardiopatía estructural": "aproximadamente 50 %"
+        },
+        "gravedad": "El PPT afirma que la FA es una enfermedad grave. Asocia un riesgo de ictus 5 veces superior al de la población control, con mayor mortalidad, discapacidad residual y recurrencias que los accidentes isquémicos de otras etiologías.",
+        "nota_terapeutica": "La probabilidad de restaurar el ritmo sinusal es mayor cuanto más precoz es la actuación terapéutica.",
+        "enfasis_docente": "Arritmia SOSTENIDA más frecuente: el adjetivo importa. El riesgo de ictus por 5 y la asociación con HTA en 65-70 % son las dos cifras del concepto.",
+        "relacionado": [
+          "hta::dano-organo-blanco"
+        ],
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "arritmias::fa-manejo",
+        "nombre": "Manejo de la fibrilación auricular: la estructura de la decisión",
+        "alto_rendimiento": true,
+        "contenido": "El PPT ordena el manejo en pilares y jerarquiza qué se hace en todos los pacientes y qué es electivo.",
+        "pilares": [
+          "1. profilaxis de la tromboembolia arterial: anticoagulación",
+          "2. control de la frecuencia cardíaca",
+          "3. control del ritmo"
+        ],
+        "jerarquia": "En todos los pacientes se realiza la profilaxis de la tromboembolia, y si hay respuesta ventricular rápida, el control de frecuencia. La restauración del ritmo sinusal y su mantenimiento posterior constituyen una técnica electiva a realizar en un número seleccionado de pacientes, y se plantea según 4 niveles de decisión.",
+        "mantenimiento_del_ritmo_sinusal": "Tras la restauración del ritmo sinusal, en más del 70 % de los pacientes la arritmia recaerá en 1 año si no se prescribe tratamiento.",
+        "_nota_de_extraccion": "Los fármacos concretos de anticoagulación y de control de frecuencia, así como el contenido de los 4 niveles de decisión (figura 2.7-5), están en diapositivas de imagen sin texto extraíble. Solo se conserva la estructura.",
+        "enfasis_docente": "Lo que sí se puede preguntar con el texto disponible es la jerarquía: anticoagular a todos, controlar frecuencia si hay respuesta rápida, y controlar el ritmo solo en seleccionados. Y el más de 70 % de recaída en 1 año sin tratamiento.",
+        "trampa": "Poner el control del ritmo como objetivo universal. Según el PPT es electivo y para un número seleccionado de pacientes.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "arritmias::tv-clasificacion",
+        "nombre": "Clasificación de las taquicardias de QRS ancho",
+        "alto_rendimiento": true,
+        "contenido": "Tres ejes de clasificación que el PPT aplica simultáneamente.",
+        "por_regularidad": "Se dividen en regulares e irregulares.",
+        "por_duracion": {
+          "sostenidas": "más de 30 segundos, o si precisan cardioversión eléctrica antes por la repercusión hemodinámica que producen",
+          "no sostenidas": "menos de 30 segundos"
+        },
+        "por_morfologia_del_qrs": {
+          "monomórficas": "morfología idéntica en todos los latidos de una misma derivación",
+          "polimórficas": "variaciones en la morfología latido a latido en una misma derivación"
+        },
+        "enfasis_docente": "El corte de 30 segundos tiene una excepción que casi nadie menciona: también es sostenida si hubo que cardiovertir antes por repercusión hemodinámica. Esa coletilla es lo preguntable.",
+        "trampa": "Clasificar como no sostenida una taquicardia de 15 segundos que obligó a cardiovertir.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "arritmias::criterios-ekg-de-tv",
+        "nombre": "Criterios electrocardiográficos de taquicardia ventricular",
+        "alto_rendimiento": true,
+        "contenido": "Lista completa de criterios que el PPT escribe en texto. Es el concepto más denso y más evaluable del tema.",
+        "disociacion_av": {
+          "valor": "es diagnóstico de TV",
+          "se_basa_en": [
+            "ondas P disociadas de los complejos QRS",
+            "capturas: complejos QRS estrechos, similares al ritmo sinusal, que se intercalan dentro de los latidos de QRS ancho de la TV",
+            "complejos de fusión: complejos QRS de morfología intermedia entre el ritmo sinusal y el complejo ancho de la taquicardia"
+          ]
+        },
+        "otros_criterios": [
+          "concordancia de complejos QRS o patrón concordante: todos los complejos son deflexiones positivas o negativas en las derivaciones precordiales",
+          "ausencia de complejos RS en todas las precordiales",
+          "duración del QRS mayor de 160 ms con morfología de bloqueo de rama izquierda, y mayor de 140 ms con morfología de bloqueo de rama derecha",
+          "eje eléctrico: la desviación del eje del QRS entre -90° y 180° sugiere TV, al igual que un eje derecho en presencia de complejos QRS con morfología de bloqueo de rama izquierda",
+          "intervalo desde la onda R al nadir de la S mayor de 100 ms en derivaciones precordiales"
+        ],
+        "peligrosidad": "La taquicardia ventricular es una arritmia peligrosa por su propensión a degenerar en fibrilación ventricular.",
+        "enfasis_docente": "La disociación AV es DIAGNÓSTICA, los demás solo sugieren: esa jerarquía es la pregunta más probable. Y los cortes de QRS van cruzados, 160 ms para bloqueo de rama IZQUIERDA y 140 ms para rama DERECHA, que es justo donde se equivoca todo el mundo.",
+        "trampa": "Invertir los cortes de 160 y 140 ms entre morfología de bloqueo de rama izquierda y derecha.",
+        "relacionado": [
+          "ekg2::bloqueos-de-rama"
+        ],
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "arritmias::fibrilacion-ventricular",
+        "nombre": "Fibrilación ventricular",
+        "alto_rendimiento": true,
+        "contenido": "Actividad eléctrica desorganizada de los ventrículos. Clínicamente equivale a un paro cardiocirculatorio: el corazón se contrae desorganizadamente y no es capaz de bombear la sangre.",
+        "ekg": "Caracterizada por ondas irregulares de alta frecuencia, 150 a 500 latidos por minuto, con morfología y voltaje variables. Los complejos QRS son reemplazados por deflexiones irregulares, rápidas y caóticas.",
+        "enfasis_docente": "El rango 150 a 500 es la cifra. Y la equivalencia clínica con paro cardiocirculatorio es lo que hay que decir al sustentar: no es una taquicardia que se tolere, es una parada.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "arritmias::bradiarritmias-generalidades",
+        "nombre": "Bradiarritmias: definición",
+        "alto_rendimiento": true,
+        "contenido": "Son frecuentes de observar y pueden corresponder a un fenómeno fisiológico o a un trastorno patológico. Se definen por la presencia de frecuencia cardíaca menor de 60 latidos por minuto.",
+        "enfasis_docente": "El PPT insiste en que puede ser fisiológica, y eso es lo que después justifica el caso del deportista.",
+        "formatos": [
+          "banco",
+          "flashcard"
+        ]
+      },
+      {
+        "id": "arritmias::disfuncion-del-nodo-sinusal",
+        "nombre": "Disfunción del nodo sinusal",
+        "alto_rendimiento": true,
+        "contenido": "Reúne diferentes trastornos que alteran la generación del impulso del nodo sinusal. Es crónica y progresiva, y afecta a ancianos.",
+        "espectro": [
+          "bradicardia sinusal persistente",
+          "pausas o paradas sinusales",
+          "bloqueo de salida senoauricular",
+          "incompetencia cronotrópica",
+          "síndrome bradicardia-taquicardia"
+        ],
+        "relevancia": "Es una de las principales causas de implantación de marcapasos.",
+        "enfasis_docente": "Cinco entidades bajo un mismo paraguas, y el síndrome bradicardia-taquicardia es el que se olvida. Que sea una de las principales causas de marcapasos es la frase de cierre que se pide.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "arritmias::bradicardia-sinusal",
+        "nombre": "Bradicardia sinusal",
+        "alto_rendimiento": true,
+        "contenido": "Frecuencia cardíaca menor de 60 lpm en la que el nodo sinusal actúa como marcapaso. Usualmente es una reacción fisiológica a un estado patológico.",
+        "contexto_fisiologico": "Se observa en deportistas y en adultos jóvenes sanos en reposo y por la noche; la frecuencia cardíaca puede reducirse a menos de 30 lpm durante la noche.",
+        "ekg": "Ondas P normales, PR de 120 ms.",
+        "enfasis_docente": "El dato llamativo es que en un joven sano la frecuencia nocturna puede bajar de 30 lpm sin ser patológica. Es el tipo de cifra que se usa para armar una pregunta con distractor alarmista.",
+        "trampa": "Tratar una bradicardia nocturna de menos de 40 lpm en un deportista asintomático.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "arritmias::pausas-sinusales",
+        "nombre": "Pausas sinusales",
+        "alto_rendimiento": true,
+        "contenido": "Pausa delimitada por el intervalo P-P.",
+        "etiologia": [
+          "problema en la generación del impulso en el nodo sinusal",
+          "fallo de conducción del impulso a la aurícula"
+        ],
+        "umbral": "No hay valores de corte establecidos. Las pausas de 3 segundos o más son infrecuentes y justifican la implantación de un marcapasos en los pacientes sintomáticos.",
+        "enfasis_docente": "La frase completa importa: no hay corte establecido, pero 3 segundos en paciente SINTOMÁTICO justifica marcapasos. La condición de síntomas es la mitad de la respuesta.",
+        "trampa": "Indicar marcapasos por una pausa de 3 segundos en un paciente asintomático.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "arritmias::incompetencia-cronotropica",
+        "nombre": "Incompetencia cronotrópica",
+        "alto_rendimiento": true,
+        "contenido": "Incapacidad del corazón de ajustar adecuadamente su frecuencia en respuesta al aumento de la actividad física o al cambio de las demandas metabólicas.",
+        "criterio": "El criterio utilizado por la mayoría de los médicos y de los estudios es no alcanzar el 80 % de la frecuencia cardíaca máxima esperada, calculada como 220 menos la edad, en el ejercicio máximo de una prueba de esfuerzo.",
+        "enfasis_docente": "Es el único concepto del tema con fórmula, así que se presta a pregunta de cálculo: 220 menos la edad, y luego el 80 % de ese resultado. Conecta directo con la ergometría del tema de ayuda diagnóstica.",
+        "relacionado": [
+          "ayudadx-cardio::tipos-prueba-esfuerzo"
+        ],
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "arritmias::caso-fa-respuesta-controlada",
+        "uso": "'Apliquemos lo aprendido', lectura sistemática de EKG; el PPT SÍ da la respuesta completa",
+        "enunciado": "Se presenta un trazado electrocardiográfico. Describe este EKG. ¿Qué te llama la atención? ¿Cuál es el diagnóstico probable? Se pide completar una plantilla con ritmo, frecuencia cardíaca, intervalo PR, duración del QRS, intervalo QT, eje, anomalías y diagnóstico.",
+        "respuesta_del_ppt": {
+          "ritmo": "fibrilación auricular",
+          "frecuencia cardiaca": "ventricular 81",
+          "intervalo PR": "no",
+          "duración QRS": "0.08 seg",
+          "intervalo QT": "0.36 seg",
+          "eje": "30 grados",
+          "anomalías": "ondas P reemplazadas por ondas fibrilatorias",
+          "diagnóstico": "fibrilación auricular con respuesta ventricular controlada"
+        },
+        "conceptos_que_lo_resuelven": [
+          "arritmias::fibrilacion-auricular-epidemiologia",
+          "arritmias::irregulares-qrs-estrecho"
+        ],
+        "claves": "El intervalo PR se informa como 'no', no como ausente ni como cero: sin onda P no hay PR que medir. Y el diagnóstico lleva apellido: respuesta ventricular CONTROLADA, porque la frecuencia es 81.",
+        "estructura_a_replicar": "trazado más plantilla fija de ocho campos en este orden: ritmo, frecuencia cardíaca, intervalo PR, duración del QRS, intervalo QT, eje, anomalías y diagnóstico; el diagnóstico final incluye el calificativo de la respuesta ventricular",
+        "formatos": [
+          "caso",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "arritmias::caso-flutter-2-1",
+        "uso": "'Apliquemos lo aprendido', lectura sistemática de EKG; el PPT SÍ da la respuesta completa",
+        "enunciado": "Se presenta un trazado electrocardiográfico. Describe este EKG. ¿Qué te llama la atención? ¿Cuál es el diagnóstico probable? Se pide completar la misma plantilla de ocho campos.",
+        "respuesta_del_ppt": {
+          "ritmo": "flutter auricular",
+          "frecuencia cardiaca": "264",
+          "intervalo PR": "no",
+          "duración QRS": "0.08 seg",
+          "intervalo QT": "0.32 seg",
+          "eje": "+15°",
+          "anomalías": "ondas P reemplazadas por ondas de flutter",
+          "diagnóstico": "flutter auricular con conducción AV 2:1"
+        },
+        "conceptos_que_lo_resuelven": [
+          "arritmias::flutter-auricular"
+        ],
+        "claves": "La frecuencia de 264 es la AURICULAR. El diagnóstico exige nombrar la relación de conducción, 2:1, que es lo que explica que el ventrículo vaya alrededor de 130. Es el par del caso anterior: los dos tienen QRS de 0.08 seg y PR informado como 'no', y se diferencian por el ritmo y por el tipo de onda que reemplaza a la P.",
+        "estructura_a_replicar": "misma plantilla de ocho campos; el diagnóstico final incluye la relación de conducción auriculoventricular",
+        "formatos": [
+          "caso",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "arritmias::caso-apertura-sin-respuesta",
+        "uso": "'Reflexión desde la experiencia' al abrir la sesión; el PPT NO da la respuesta",
+        "enunciado": "Se presenta un trazado electrocardiográfico. Describe este EKG. ¿Qué te llama la atención? ¿Cuál es el diagnóstico probable?",
+        "respuesta_del_ppt": null,
+        "_nota": "El trazado es una imagen y la diapositiva no trae solución. No se puede reconstruir el diagnóstico desde el texto del archivo."
+      }
+    ],
+    "discrepancias_detectadas": [
+      {
+        "punto": "Descripción de la taquicardia ortodrómica en el WPW",
+        "material_del_curso": "La diapositiva dice que en la taquicardia ortodrómica «la repolarización del ventrículo se realiza a través del nodo AV».",
+        "observacion": "Por el mecanismo descrito en la misma frase, donde la vía accesoria funciona como brazo retrógrado de la reentrada, lo que baja por el nodo AV es la DESPOLARIZACIÓN, no la repolarización. La repolarización no se conduce por el sistema específico. Parece una errata de la diapositiva, no una postura del curso.",
+        "estado": "probable errata; el concepto se ingirió con la palabra corregida a despolarización y se deja constancia aquí",
+        "respuesta_en_examen": "describir el mecanismo, no repetir la palabra: en la ortodrómica el impulso baja al ventrículo por el nodo AV y sube a la aurícula por la vía accesoria, de ahí el QRS estrecho",
+        "nota_de_feedback": "Para tu práctica, no para el examen: la diapositiva dice repolarización donde corresponde despolarización. Si te piden explicar el mecanismo, describe el recorrido del impulso en lugar de citar la palabra; así queda correcto sin contradecir el material."
+      }
+    ],
+    "puntos_por_aclarar": [
+      {
+        "punto": "Tratamiento de la fibrilación auricular",
+        "detalle": "Las láminas de anticoagulación, control de frecuencia y los 4 niveles de decisión del control del ritmo (figura 2.7-5) son imágenes. No hay texto sobre escalas de riesgo, anticoagulantes concretos ni fármacos frenadores.",
+        "efecto_en_la_ingesta": "No se generan preguntas de tratamiento farmacológico de la FA. Es el vacío más importante del tema."
+      },
+      {
+        "punto": "Tratamiento de las taquicardias ventriculares",
+        "detalle": "Las diapositivas de tratamiento de la TV regular y de la TV irregular son imágenes sin texto. Lo único recuperable en todo el bloque de QRS ancho es el tratamiento de la FA en el WPW.",
+        "efecto_en_la_ingesta": "Sin preguntas de manejo de TV."
+      },
+      {
+        "punto": "Manejo de bradiarritmias y criterios de Brugada",
+        "detalle": "Las dos láminas de manejo de bradiarritmias, el algoritmo de diagnóstico de bradiarritmias y los criterios de Brugada modificados para taquicardia ventricular son imágenes. Los criterios de TV que sí se ingirieron vienen de la diapositiva de texto, no de Brugada.",
+        "efecto_en_la_ingesta": "Falta todo el manejo de bradiarritmias y la versión de Brugada del diferencial de QRS ancho."
       }
     ]
   }

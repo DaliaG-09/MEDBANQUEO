@@ -9,10 +9,10 @@
       "ekg2",
       "anatomia-cardiaca",
       "coronaria",
-      "ayudadx-cardio"
+      "ayudadx-cardio",
+      "hta"
     ],
     "temas_pendientes": [
-      "hta",
       "pericardio",
       "arritmias",
       "ekg-conduccion",
@@ -1333,6 +1333,488 @@
         "estado": "elección del curso, se respeta",
         "respuesta_en_examen": "menos de 3 días",
         "nota_de_feedback": "Para tu práctica, no para el examen: la mayoría de guías internacionales, incluidas las de ACC/AHA, usan 2 días como ventana de infarto agudo para contraindicar la ergometría. En el examen responde 3 días, que es lo que dice la diapositiva y lo puedes respaldar."
+      }
+    ]
+  },
+  "hta": {
+    "nombre": "Hipertensión arterial",
+    "fuente": {
+      "archivo": "SEMANA 04-PDF-Hipertensión Arterial.pdf",
+      "semana": 4,
+      "sesion": 12,
+      "tema_en_la_sesion": 2,
+      "tipo": "ppt"
+    },
+    "referencias": "ACC/AHA 2017 (Whelton et al., 2018). ESC/ESH 2018 (Williams et al., 2018). Guía Latinoamericana de Hipertensión Arterial, SIAC 2020 (Arango et al.). Ettehad et al., 2016. OMS 2021. MINSA/INEI ENDES 2022. La tabla de algoritmo cita además ESC/ESH 2023 y MINSA 2021.",
+    "resultado_aprendizaje": "Justificar un plan de trabajo diagnóstico para el abordaje integral de la hipertensión arterial.",
+    "contenidos_declarados": [
+      "Definición",
+      "Fisiopatología",
+      "Factores de riesgo",
+      "Clínica",
+      "Diagnóstico",
+      "Tratamiento"
+    ],
+    "conceptos": [
+      {
+        "id": "hta::definicion-y-clasificacion",
+        "nombre": "Definición y las dos clasificaciones",
+        "alto_rendimiento": true,
+        "contenido": "El PPT da la definición por partida doble y conserva ambas clasificaciones sin elegir una. Es el concepto más denso en cifras del tema.",
+        "definicion_acc_aha_2017": "Elevación sostenida de la presión arterial sistólica ≥ 130 mmHg y/o diastólica ≥ 80 mmHg.",
+        "definicion_esc_esh_2018": "Presión arterial sistólica ≥ 140 mmHg y/o diastólica ≥ 90 mmHg.",
+        "clasificacion_acc_aha_2017": {
+          "normal": "menor de 120/80 mmHg",
+          "elevada": "120-129 / menor de 80 mmHg",
+          "HTA estadio 1": "130-139 / 80-89 mmHg",
+          "HTA estadio 2": "≥ 140 / ≥ 90 mmHg"
+        },
+        "clasificacion_esc_esh_2018": {
+          "óptima": "menor de 120/80 mmHg",
+          "normal": "120-129 / 80-84 mmHg",
+          "normal alta": "130-139 / 85-89 mmHg",
+          "HTA grado 1": "140-159 / 90-99 mmHg",
+          "HTA grado 2": "160-179 / 100-109 mmHg",
+          "HTA grado 3": "≥ 180 / ≥ 110 mmHg"
+        },
+        "enfasis_docente": "ACC/AHA usa estadios y ESC/ESH usa grados: la palabra ya delata de qué clasificación viene la pregunta. Un mismo paciente con 135/85 es estadio 1 para ACC/AHA y normal alta para ESC/ESH, y eso es exactamente lo que se presta a pregunta.",
+        "trampa": "Mezclar los cortes de las dos clasificaciones. El 130/80 es umbral de HTA solo en ACC/AHA; en ESC/ESH todavía es normal alta.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "hta::fisiopatologia",
+        "nombre": "Fisiopatología: presores contra depresores",
+        "alto_rendimiento": true,
+        "contenido": "La HTA resulta del desequilibrio entre mecanismos presores (SRAA, sistema nervioso simpático, endotelina) y depresores (óxido nítrico, prostaciclinas), con aumento de la resistencia vascular periférica. Intervienen factores genéticos, neurohormonales, humorales, vasculares y renales de forma interrelacionada.",
+        "mecanismos": {
+          "activación del sistema nervioso simpático": "incrementa el gasto cardíaco y la resistencia vascular",
+          "disfunción endotelial": "reducción del óxido nítrico, que es vasodilatador, y aumento de vasoconstrictores como la endotelina",
+          "hiperactividad del SRAA": "genera vasoconstricción, retención de sodio y remodelado vascular",
+          "alteraciones renales": "disminución de la capacidad natriurética y aumento del volumen intravascular",
+          "inflamación crónica y estrés oxidativo": "contribuyen al daño endotelial"
+        },
+        "enfasis_docente": "El armazón es presor contra depresor. Óxido nítrico y prostaciclinas de un lado, SRAA, simpático y endotelina del otro: clasificar un mediador en el bando correcto es pregunta directa.",
+        "formatos": [
+          "banco",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "hta::epidemiologia",
+        "nombre": "Epidemiología y cifras del Perú",
+        "alto_rendimiento": true,
+        "contenido": "Cifras con fuente y año, que es como suelen preguntarse.",
+        "cifras": {
+          "mundo": "más de 1 280 millones de personas entre 30 y 79 años, según la OMS 2021",
+          "Latinoamérica": "prevalencia cercana al 40 %",
+          "Perú": "22.8 % en mayores de 15 años, según ENDES 2022"
+        },
+        "contribuyentes": "Urbanización, envejecimiento y estilo de vida explican el incremento sostenido.",
+        "enfasis_docente": "El dato peruano viene con su rango etario pegado: 22.8 % en mayores de 15 años, no en población general. El 40 % de Latinoamérica contrasta fuerte con el 22.8 % nacional.",
+        "formatos": [
+          "banco",
+          "flashcard"
+        ]
+      },
+      {
+        "id": "hta::factores-de-riesgo",
+        "nombre": "Factores de riesgo",
+        "alto_rendimiento": true,
+        "contenido": "Lista de la guía latinoamericana, con umbrales de edad distintos por sexo.",
+        "factores": [
+          "edad avanzada: mayor de 55 años en varones y mayor de 65 años en mujeres",
+          "obesidad, especialmente visceral",
+          "historia familiar de hipertensión",
+          "ingesta elevada de sal y alcohol",
+          "sedentarismo y dieta pobre en frutas y verduras",
+          "estrés crónico y factores psicosociales",
+          "raza negra y bajo nivel socioeconómico"
+        ],
+        "enfasis_docente": "Los cortes de edad son 55 en varones y 65 en mujeres, diez años de diferencia. Ojo que en cardiopatía coronaria el PPT usa 40 y 50: son temas distintos con cifras distintas.",
+        "trampa": "Trasladar los umbrales de edad de cardiopatía isquémica (40 y 50) a los factores de riesgo de HTA (55 y 65).",
+        "relacionado": [
+          "coronaria::factores-de-riesgo"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "hta::etiologia-primaria-secundaria",
+        "nombre": "HTA primaria y secundaria",
+        "alto_rendimiento": true,
+        "contenido": "La hipertensión primaria representa cerca del 90 a 95 % de los casos y es de origen multifactorial, sin una causa identificable única. La secundaria, 5 a 10 %, se asocia a causas reversibles como enfermedad renal, endocrinopatías o fármacos.",
+        "causas_de_secundaria": [
+          "enfermedad renal crónica",
+          "estenosis de la arteria renal",
+          "hiperaldosteronismo primario",
+          "feocromocitoma",
+          "síndrome de Cushing",
+          "apnea obstructiva del sueño",
+          "fármacos: AINEs, corticosteroides, anticonceptivos, entre otros"
+        ],
+        "enfasis_docente": "Que las causas secundarias sean REVERSIBLES es el porqué de buscarlas, y las conclusiones del PPT lo repiten: identificarlas evita complicaciones iatrogénicas y retraso terapéutico. La apnea del sueño en la lista conecta directo con el tema de SAHOS de Neumología.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "hta::clinica-y-examen-fisico",
+        "nombre": "Clínica y examen físico",
+        "alto_rendimiento": true,
+        "contenido": "La HTA suele ser asintomática. Algunas personas presentan cefalea, palpitaciones o epistaxis. La HTA secundaria puede tener síntomas sugestivos según su etiología.",
+        "examen_fisico": [
+          "medir en ambos brazos",
+          "buscar signos de daño a órganos blanco",
+          "pulsos, ruidos cardíacos, soplos y fondo de ojo"
+        ],
+        "enfasis_docente": "Medir en AMBOS brazos encabeza el examen físico y es lo que más se olvida. Que sea asintomática es el motivo por el que el diagnóstico depende de la medición y no del interrogatorio.",
+        "trampa": "Buscar síntomas para sospechar HTA. La regla es que no los hay.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "hta::dano-organo-blanco",
+        "nombre": "Daño a órgano blanco",
+        "alto_rendimiento": true,
+        "contenido": "Cuatro órganos, cada uno con su desenlace.",
+        "organos": {
+          "cerebro": "ACV y demencia vascular",
+          "corazón": "hipertrofia ventricular izquierda e insuficiencia cardíaca",
+          "riñones": "enfermedad renal crónica",
+          "retina": "retinopatía hipertensiva"
+        },
+        "enfasis_docente": "Lista cerrada de cuatro, emparejable uno a uno. La retina es la única que se explora directamente en el consultorio, por eso el fondo de ojo está en el examen físico.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "hta::tecnica-de-medicion",
+        "nombre": "Técnica de medición de la presión arterial",
+        "alto_rendimiento": true,
+        "contenido": "Condiciones ideales que el PPT enumera como requisito del diagnóstico.",
+        "condiciones": [
+          "paciente sentado, con la espalda apoyada y el brazo a nivel del corazón",
+          "sin hablar, con reposo previo de 5 minutos",
+          "manguito adecuado, que cubra el 80 % del brazo",
+          "al menos dos mediciones por consulta",
+          "sin haber fumado ni ingerido cafeína por lo menos 30 minutos antes",
+          "tensiómetro validado"
+        ],
+        "enfasis_docente": "Tres números que se piden tal cual: 5 minutos de reposo, 80 % del brazo, 30 minutos sin fumar ni cafeína. Y las conclusiones dicen que la técnica correcta es lo que evita sobrediagnóstico e infradiagnóstico, así que se presta a sustentar.",
+        "trampa": "Confundir los 5 minutos de reposo con los 30 minutos sin cafeína ni tabaco.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "hta::evaluacion-diagnostica",
+        "nombre": "Evaluación diagnóstica y estudios iniciales",
+        "alto_rendimiento": true,
+        "contenido": "El diagnóstico se basa en la medición precisa y repetida con tensiómetro validado, siguiendo protocolos estandarizados.",
+        "criterio_clinico": "Al menos 2 mediciones elevadas en 2 o más consultas distintas.",
+        "papel_de_mapa_ampa": "El monitoreo ambulatorio (MAPA) o el domiciliario (AMPA) son útiles para confirmar HTA enmascarada o de bata blanca.",
+        "estudios_complementarios_iniciales": [
+          "hemograma, creatinina, glucosa, perfil lipídico, electrolitos, examen general de orina y ECG",
+          "ecocardiograma, microalbuminuria y fondo de ojo según el caso clínico"
+        ],
+        "enfasis_docente": "Dos mediciones elevadas en dos o más consultas: el número aparece dos veces, por consulta y por número de consultas. La segunda tanda de estudios es condicional, no de rutina.",
+        "trampa": "Diagnosticar HTA con una sola consulta con dos tomas elevadas. El PPT exige dos o más consultas distintas.",
+        "relacionado": [
+          "ayudadx-cardio::mapa-valores-normales",
+          "ayudadx-cardio::mapa-definicion-indicaciones"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "hta::bata-blanca-y-enmascarada",
+        "nombre": "Bata blanca contra enmascarada",
+        "alto_rendimiento": true,
+        "contenido": "El MAPA permite detectar ambos fenómenos y hacer la evaluación circadiana de la presión.",
+        "bata_blanca": "Presión arterial elevada en consultorio y normal fuera de él.",
+        "enmascarada": "Presión arterial normal en consultorio y elevada fuera de él.",
+        "enfasis_docente": "Son imágenes en espejo y por eso se prestan a invertirse. La enmascarada es la peligrosa: el paciente pasa por normotenso y no se trata.",
+        "trampa": "Invertir las dos definiciones.",
+        "relacionado": [
+          "ayudadx-cardio::mapa-definicion-indicaciones"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "hta::tratamiento-no-farmacologico",
+        "nombre": "Tratamiento no farmacológico",
+        "alto_rendimiento": true,
+        "contenido": "Cambios en el estilo de vida, indicados en TODOS los pacientes, con metas numéricas.",
+        "medidas": {
+          "reducción de sodio": "menos de 2 g al día de sodio o menos de 5 g de sal",
+          "dieta DASH": "rica en frutas, vegetales y granos integrales",
+          "pérdida de peso": "objetivo de IMC menor de 25 kg/m²",
+          "ejercicio aeróbico regular": "30 minutos al día, 5 días por semana",
+          "otros": "reducción del consumo de alcohol y abandono del tabaquismo"
+        },
+        "enfasis_docente": "Sodio y sal no son el mismo número: 2 g de sodio equivalen a 5 g de sal, y el PPT da los dos. El ejercicio viene con las dos cifras juntas, 30 minutos y 5 días.",
+        "trampa": "Decir 2 g de sal en lugar de 2 g de sodio.",
+        "formatos": [
+          "banco",
+          "calculo",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "hta::tratamiento-farmacologico",
+        "nombre": "Tratamiento farmacológico: umbral y primera línea",
+        "alto_rendimiento": true,
+        "contenido": "Indicado si la presión arterial es ≥ 140/90 mmHg, o ≥ 130/80 mmHg en pacientes con comorbilidades. Se individualiza según edad, daño orgánico y comorbilidades.",
+        "primera_linea": [
+          "IECA o ARA II",
+          "calcioantagonistas",
+          "diuréticos tiazídicos"
+        ],
+        "principios": [
+          "es preferible iniciar con combinación a dosis bajas en un solo comprimido",
+          "en HTA resistente se añade un antagonista de aldosterona, por ejemplo espironolactona",
+          "en pacientes con comorbilidades se individualiza según evidencia, por ejemplo betabloqueadores en cardiopatía isquémica"
+        ],
+        "enfasis_docente": "El umbral de inicio es doble y depende de si hay comorbilidad: 140/90 sin ella, 130/80 con ella. Los betabloqueadores NO están en primera línea; entran por comorbilidad.",
+        "trampa": "Poner betabloqueadores entre los fármacos de primera línea.",
+        "relacionado": [
+          "coronaria::tratamiento"
+        ],
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "hta::algoritmo-por-tipo-de-paciente",
+        "nombre": "Algoritmo terapéutico por tipo de paciente",
+        "alto_rendimiento": true,
+        "contenido": "Tabla del PPT que cruza tipo de paciente, meta de presión y tratamiento inicial. Es el contenido más aplicable a casos de todo el tema.",
+        "tabla": {
+          "general, menor de 65 años": {
+            "meta": "menor de 130/80",
+            "inicio": "monoterapia o combinación inicial; combinación de 2 fármacos, IECA o ARA II más calcioantagonista o tiazida",
+            "observacion": "ESC/ESH 2023 recomienda evitar la monoterapia inicial; evaluación periódica cada 1 a 2 meses"
+          },
+          "65 a 79 años": {
+            "meta": "PAS 130-139 si se tolera",
+            "inicio": "monoterapia o combinación a dosis bajas",
+            "observacion": "vigilar hipotensión ortostática y ajustar progresivamente según respuesta"
+          },
+          "80 años o más, o frágiles": {
+            "meta": "PAS 130-139 si se tolera",
+            "inicio": "monoterapia preferente",
+            "observacion": "individualizar según guías actualizadas 2023"
+          },
+          "diabético": {
+            "meta": "menor de 130/80 si se tolera",
+            "inicio": "IECA o ARA II más tiazida o calcioantagonista",
+            "observacion": "MINSA 2021: controlar los otros factores de riesgo cardiovascular"
+          },
+          "enfermedad renal crónica": {
+            "meta": "menor de 130/80",
+            "inicio": "IECA o ARA II, por nefroprotección",
+            "observacion": "evitar IECA y ARA II simultáneos"
+          },
+          "cardiopatía isquémica": {
+            "meta": "menor de 130/80",
+            "inicio": "betabloqueador más IECA o ARA II",
+            "observacion": "añadir calcioantagonista si hay angina"
+          },
+          "post-ACV": {
+            "meta": "menor de 140/90",
+            "inicio": "IECA más tiazida",
+            "observacion": "iniciar tras la fase aguda, 72 horas o más"
+          },
+          "embarazo": {
+            "meta": "menor de 140/90",
+            "inicio": "metildopa, labetalol o nifedipino",
+            "observacion": "evitar IECA y ARA II por teratogenicidad"
+          },
+          "HTA resistente": {
+            "meta": "menor de 130/80",
+            "inicio": "añadir antagonista de aldosterona, espironolactona",
+            "observacion": "confirmar adherencia y descartar HTA secundaria"
+          }
+        },
+        "enfasis_docente": "Casi todas las metas son menores de 130/80. Las dos excepciones son post-ACV y embarazo, ambas 140/90, y los ancianos, que van por PAS 130-139. Esas excepciones son la pregunta.",
+        "trampa": "Aplicar la meta general de 130/80 al post-ACV o a la gestante.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "hta::monoterapia-como-excepcion",
+        "nombre": "La monoterapia es la excepción",
+        "alto_rendimiento": true,
+        "contenido": "El PPT es explícito: el tratamiento con monoterapia debe ser la excepción.",
+        "cuando_si_monoterapia": [
+          "HTA leve, 140-149 / 90-99 mmHg, sin otros factores de riesgo cardiovascular",
+          "paciente frágil",
+          "embarazo"
+        ],
+        "por_que_combinacion_en_una_tableta": "Mejora el control, reduce eventos cardiovasculares, mejora la adherencia al tratamiento y la relación costo-efectividad.",
+        "sobre_el_diuretico": "Incluir un diurético en las combinaciones produce mayor reducción de la presión arterial que las monoterapias.",
+        "sobre_la_combinacion_con_calcioantagonista": "La combinación de antagonista del calcio con inhibidor del sistema renina-angiotensina, sea IECA o ARA II, ha demostrado ser efectiva y segura.",
+        "enfasis_docente": "Tres escenarios de monoterapia y ninguno más: leve sin factores de riesgo, frágil y embarazo. Son exactamente los tres que se piden mencionar.",
+        "trampa": "Iniciar monoterapia en un paciente de estadio 1 que sí tiene factores de riesgo.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      },
+      {
+        "id": "hta::terapia-dual-y-triple-por-pasos",
+        "nombre": "Esquema de terapia dual y triple por pasos",
+        "alto_rendimiento": false,
+        "contenido": "Diagrama de flujo para el paciente en estadio 1 de alto riesgo, o en estadios 2 y 3. Los pasos 1 y 2 se prefieren con combinaciones fijas en una sola píldora.",
+        "paso_1_terapia_dual": [
+          "IECA más indapamida",
+          "IECA más calcioantagonista",
+          "ARA II más hidroclorotiazida",
+          "ARA II más calcioantagonista"
+        ],
+        "ramificacion": "El diagrama bifurca según si hay obesidad, diabetes o síndrome metabólico, y contempla intercambiar el fármaco por efecto adverso.",
+        "paso_2_terapia_triple": [
+          "ARA II más hidroclorotiazida más calcioantagonista",
+          "IECA más indapamida más calcioantagonista"
+        ],
+        "paso_3": "Si no responde, se evalúa falla renal y se añade espironolactona; el diagrama menciona también prazosina y betabloqueador. Si aun así no responde, pasa a especialista como HTA resistente.",
+        "_nota_de_extraccion": "Esta diapositiva es un diagrama de flujo y su texto se extrae de forma fragmentada. Se conserva lo legible con seguridad. Las ramas condicionales exactas del paso 3 conviene verificarlas contra la lámina original antes de generar preguntas de detalle fino.",
+        "enfasis_docente": "Lo estable del diagrama es la secuencia: dual, triple, y recién después espironolactona y derivación. Las combinaciones siempre emparejan un bloqueador del SRAA con un diurético o un calcioantagonista.",
+        "formatos": [
+          "banco",
+          "flashcard"
+        ]
+      },
+      {
+        "id": "hta::seguimiento-y-metas",
+        "nombre": "Seguimiento y metas terapéuticas",
+        "alto_rendimiento": true,
+        "contenido": "El seguimiento debe ser continuo, evaluando adherencia al tratamiento, efectos adversos, metas de presión arterial y daño a órganos blanco.",
+        "metas": {
+          "general": "PAS menor de 130 mmHg y PAD menor de 80 mmHg en la mayoría de pacientes, según ACC/AHA",
+          "mayores de 65 años": "PAS entre 130 y 139 mmHg, según ESC/ESH",
+          "ancianos frágiles": "individualizar según tolerancia y estado funcional"
+        },
+        "papel_del_monitoreo": "El AMPA o el MAPA son útiles para el seguimiento en casos de HTA enmascarada, de bata blanca o no controlada.",
+        "enfasis_docente": "Cada meta viene con la guía que la respalda pegada: la general es ACC/AHA y la del mayor de 65 es ESC/ESH. Citar la guía correcta es parte de sustentar bien.",
+        "formatos": [
+          "banco",
+          "caso",
+          "flashcard",
+          "sustentacion"
+        ]
+      }
+    ],
+    "casos_del_ppt": [
+      {
+        "id": "hta::caso-varon-58-cefalea",
+        "uso": "primera actividad de 'Apliquemos lo aprendido'; el PPT NO da la respuesta",
+        "enunciado": "Evalúas a un paciente varón de 58 años, fumador pesado y con sobrepeso, con cefalea persistente y presión arterial de 160/95 mmHg.",
+        "preguntas": [
+          "¿Qué estudios solicitarías?",
+          "¿Qué opciones terapéuticas propones?"
+        ],
+        "respuesta_del_ppt": null,
+        "conceptos_que_lo_resuelven": [
+          "hta::evaluacion-diagnostica",
+          "hta::definicion-y-clasificacion",
+          "hta::algoritmo-por-tipo-de-paciente",
+          "hta::tratamiento-no-farmacologico"
+        ],
+        "claves": "La cifra 160/95 lo ubica en estadio 2 de ACC/AHA y grado 2 de ESC/ESH. Tiene menos de 65 años y factores de riesgo, así que cae en la fila general de la tabla. El tabaquismo y el sobrepeso son los factores que bloquean la monoterapia.",
+        "estructura_a_replicar": "edad y sexo, dos factores de riesgo nombrados, un síntoma inespecífico y una cifra de presión única; se piden estudios primero y conducta terapéutica después, en ese orden"
+      },
+      {
+        "id": "hta::caso-varon-55-gota-erc",
+        "uso": "segunda actividad de 'Apliquemos lo aprendido'; el PPT NO da la respuesta",
+        "enunciado": "Paciente varón de 55 años con antecedente de hipertensión arterial, acude por control. Tiene antecedente de gota y enfermedad renal crónica. Refiere estar tomando losartán 100 mg al día y amlodipino 10 mg al día. No cumple con la terapia no farmacológica. La presión arterial es de 150/95 mmHg.",
+        "preguntas": [
+          "¿Qué consejos le daría para optimizar el manejo de la presión arterial?",
+          "¿Qué fármacos no usaría en su terapia, si fuera necesaria esta decisión?"
+        ],
+        "respuesta_del_ppt": null,
+        "conceptos_que_lo_resuelven": [
+          "hta::tratamiento-no-farmacologico",
+          "hta::algoritmo-por-tipo-de-paciente",
+          "hta::terapia-dual-y-triple-por-pasos"
+        ],
+        "claves": "Ya está en terapia dual con ARA II más calcioantagonista y sigue fuera de meta, así que corresponde escalar. Tiene enfermedad renal crónica, lo que en la tabla del PPT prohíbe asociar IECA al ARA II que ya toma. El antecedente de gota es el dato que sobra respecto de lo que el PPT desarrolla y está puesto a propósito.",
+        "estructura_a_replicar": "paciente ya tratado que acude por control con esquema explícito en dosis, comorbilidades que restringen opciones y una cifra fuera de meta; se pregunta primero por lo no farmacológico y después por lo que hay que EVITAR, no por lo que hay que añadir"
+      }
+    ],
+    "pregunta_de_integracion": [
+      "¿Qué es la hipertensión arterial?",
+      "¿Cómo se diagnostica?",
+      "¿Cuál es el tratamiento indicado?"
+    ],
+    "conclusiones_del_ppt": [
+      "La HTA es el principal factor de riesgo modificable de morbimortalidad cardiovascular global, con carga creciente en países de ingresos medios como el Perú.",
+      "El diagnóstico temprano, la clasificación precisa y el abordaje integral son pilares para mitigar complicaciones.",
+      "La fisiopatología es multifactorial y la distinción entre primaria y secundaria es esencial: identificar causas secundarias reversibles permite tratamiento dirigido y evita complicaciones iatrogénicas o retraso terapéutico.",
+      "La meta terapéutica debe individualizarse según edad, comorbilidades, estado funcional y tolerancia, especialmente en adultos mayores y frágiles.",
+      "La evidencia respalda un enfoque escalonado e intensivo que inicia con combinaciones a dosis bajas junto con intervenciones en estilo de vida.",
+      "La correcta técnica de medición y el uso racional de MAPA y AMPA evitan sobrediagnóstico e infradiagnóstico.",
+      "La HTA sigue infradiagnosticada y pobremente controlada en la mayoría de contextos latinoamericanos."
+    ],
+    "discrepancias_detectadas": [
+      {
+        "punto": "Umbral diagnóstico de hipertensión arterial",
+        "material_del_curso": "el PPT presenta las dos definiciones sin elegir: ACC/AHA 2017 con ≥130/80 y ESC/ESH 2018 con ≥140/90",
+        "observacion": "No es un error del material sino una decisión de mostrar ambas. La diapositiva de tratamiento farmacológico se inclina de hecho por el corte de 140/90, reservando 130/80 para pacientes con comorbilidades. En un examen conviene declarar qué guía se está usando antes de dar la cifra.",
+        "estado": "ambas versiones se conservan marcadas, según la regla del módulo",
+        "respuesta_en_examen": "dar la cifra nombrando la guía: ≥130/80 según ACC/AHA 2017, ≥140/90 según ESC/ESH 2018"
+      }
+    ],
+    "puntos_por_aclarar": [
+      {
+        "punto": "Segunda pregunta del caso del varón de 55 años con gota",
+        "detalle": "El PPT pregunta qué fármacos NO usaría, pero en ninguna diapositiva menciona la relación entre diuréticos tiazídicos y gota o hiperuricemia, ni ningún otro fármaco contraindicado por gota. El dato que resuelve la pregunta no está en el material.",
+        "efecto_en_la_ingesta": "No se genera respuesta para esa pregunta desde el PPT. Conviene confirmarlo en clase o con la docente antes de darlo por evaluable."
       }
     ]
   }

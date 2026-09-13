@@ -29,7 +29,10 @@
       "sustentacion": "Tiene un porqué que defender o una trampa que argumentar.",
       "lectura": "Proviene de una lectura asignada; alimenta el género de control de lectura.",
       "banco": "Sirve para pregunta suelta de banco, en cualquier tipo."
-    }
+    },
+    "lecturas_ingeridas": [
+      "arritmias-supraventriculares"
+    ]
   },
   "ekg1": {
     "nombre": "Electrocardiograma normal I",
@@ -2617,5 +2620,266 @@
         "efecto_en_la_ingesta": "Falta todo el manejo de bradiarritmias y la versión de Brugada del diferencial de QRS ancho."
       }
     ]
+  },
+  "_lecturas": {
+    "arritmias-supraventriculares": {
+      "titulo": "Management of Common Arrhythmias: Part I. Supraventricular Arrhythmias",
+      "autores": "Hebbar AK, Hueston WJ (Medical University of South Carolina)",
+      "publicacion": "Am Fam Physician. 2002;65(12):2479-86. Serie Practical Therapeutics. Tiene una Parte II sobre arritmias ventriculares y poblaciones especiales, que no está en este archivo.",
+      "fuente": {
+        "archivo": "SEMANA 06-PDF-LECTURA ARRITMIAS SUPRAVENTRICULARES.pdf",
+        "semana": 6,
+        "tipo": "lectura"
+      },
+      "_nota_de_uso": "Esta lectura cubre en texto buena parte de lo que en el PPT de arritmias quedó como diapositiva de imagen: el manejo de la fibrilación auricular con fármacos y dosis, el manejo de la PSVT y el bloque de arritmias del nodo sinusal. Se ingiere por eso. ADVERTENCIA DE VIGENCIA: es de 2002 y su esquema de anticoagulación es solo con warfarina, anterior a los anticoagulantes directos. El propio PPT cita la guía ESC 2020, que es muy posterior. Por eso los conceptos de anticoagulación de esta lectura se marcan como históricos y NO deben usarse para responder preguntas de tratamiento actual sin contrastar con el material del PPT. Ver discrepancias_con_los_ppt.",
+      "conceptos": [
+        {
+          "id": "lectura-arritmias-sv::fa-epidemiologia",
+          "nombre": "Fibrilación auricular: cifras de la lectura",
+          "alto_rendimiento": true,
+          "contenido": "Es la arritmia cardíaca más común que encuentra el médico de familia. Afecta al 3 a 5 % de los pacientes mayores de 60 años y se vuelve más frecuente al avanzar la edad.",
+          "cifras": {
+            "edad mediana de los pacientes": "75 años",
+            "prevalencia": "se duplica cada 10 años después de los 55",
+            "mayores de 75 años en Estados Unidos": "casi el 9 %",
+            "riesgo anual de ictus con función valvular normal": "4,5 % por año",
+            "reducción del riesgo con warfarina": "cerca de dos tercios",
+            "mortalidad del ictus en pacientes con FA": "aproximadamente el doble que en pacientes sin esta arritmia"
+          },
+          "factores_de_riesgo": "Hipertensión, hipertrofia ventricular izquierda, miocardiopatías dilatada y restrictiva, enfermedad arterial coronaria, enfermedad pulmonar obstructiva crónica y diabetes en mujeres.",
+          "comparacion": "El PPT da el riesgo de ictus como 5 veces el de la población control; la lectura lo da como 4,5 % anual en términos absolutos. No se contradicen, son dos formas distintas de expresarlo, pero conviene no mezclarlas en una misma respuesta.",
+          "enfasis": "La duplicación de prevalencia cada 10 años después de los 55 es la cifra más citable, y complementa el 'afecta fundamentalmente a ancianos' del PPT, que no da número.",
+          "formatos": [
+            "banco",
+            "calculo",
+            "flashcard",
+            "sustentacion"
+          ]
+        },
+        {
+          "id": "lectura-arritmias-sv::fa-decision-inicial",
+          "nombre": "La primera decisión en fibrilación auricular",
+          "alto_rendimiento": true,
+          "contenido": "El primer paso es decidir si hay alta probabilidad de conversión segura a ritmo sinusal o si conviene dejar al paciente en fibrilación auricular.",
+          "predictores_de_exito": "Un paciente con FA de inicio reciente, dentro de los 12 meses previos, y sin evidencia de crecimiento de la aurícula izquierda tiene mayor probabilidad de alcanzar y mantener el ritmo sinusal.",
+          "si_no_es_candidato": "Si la arritmia es de larga data y el paciente no es buen candidato a cardioversión, el tratamiento inicial se enfoca en el control de la frecuencia ventricular, con consideración de profilaxis de ictus a largo plazo.",
+          "comparacion": "Encaja con la jerarquía del PPT: anticoagular a todos, frenar si hay respuesta rápida, y restaurar el ritmo solo en seleccionados. La lectura aporta los criterios concretos de selección que el PPT dejó en la figura de los 4 niveles de decisión.",
+          "enfasis": "Los dos predictores son tiempo de evolución menor de 12 meses y aurícula izquierda no dilatada.",
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "sustentacion"
+          ]
+        },
+        {
+          "id": "lectura-arritmias-sv::fa-regla-de-las-48-horas",
+          "nombre": "La regla de las 48 horas y el papel del ecocardiograma transesofágico",
+          "alto_rendimiento": true,
+          "contenido": "Es el algoritmo más operable de toda la lectura y el que mejor tapa el vacío del PPT.",
+          "dentro_de_48_horas": "Los pacientes que se presentan dentro de las 48 horas del inicio de una FA nueva son candidatos a cardioversión con bajo riesgo de embolismo. La conversión puede intentarse con choque eléctrico o con antiarrítmicos.",
+          "mas_de_48_horas_o_tiempo_indeterminado": "Tienen mayor probabilidad de trombos auriculares y pueden desarrollar émbolos con la cardioversión inmediata, eléctrica o farmacológica.",
+          "papel_del_eco": "Los trombos auriculares no se ven en el ecocardiograma transtorácico, pero sí en el transesofágico.",
+          "si_hay_trombos": "Se recomienda anticoagulación antes de intentar la cardioversión, con warfarina ajustada a un INR entre 2,0 y 3,0 durante un mínimo de 21 días.",
+          "si_no_hay_trombos": "Si el transesofágico no muestra trombos en vistas multiplanares, puede intentarse la cardioversión. Se inicia anticoagulación de corto plazo con heparina antes del procedimiento y se comienza warfarina después de la cardioversión.",
+          "comparacion": "El PPT indica ecocardiograma transesofágico para endocarditis, prótesis y cierre de CIA o foramen oval, pero no menciona la búsqueda de trombos en orejuela como paso previo a la cardioversión. La lectura completa esa indicación.",
+          "enfasis": "Tres números que van juntos: 48 horas para el corte, INR 2,0 a 3,0, y mínimo 21 días. La frase clave que se pregunta es que el transtorácico NO ve los trombos auriculares.",
+          "trampa": "Cardiovertir sin evaluación cuando el tiempo de evolución es desconocido. Por definición entra en el grupo de más de 48 horas.",
+          "relacionado": [
+            "ayudadx-cardio::ecocardiografia",
+            "arritmias::fa-manejo"
+          ],
+          "formatos": [
+            "banco",
+            "calculo",
+            "caso",
+            "flashcard",
+            "sustentacion"
+          ]
+        },
+        {
+          "id": "lectura-arritmias-sv::fa-cardioversion",
+          "nombre": "Cardioversión eléctrica y farmacológica de la FA",
+          "alto_rendimiento": true,
+          "contenido": "La cardioversión sincronizada se considera actualmente el tratamiento de elección para restaurar el ritmo sinusal y, en pacientes adecuadamente seleccionados, tiene una tasa de éxito de al menos el 80 %.",
+          "indicacion_urgente": "La cardioversión también está indicada en pacientes con hipotensión, angina, insuficiencia cardíaca u otra evidencia de compromiso grave causado por la fibrilación auricular.",
+          "cardioversion_medica": "Puede lograrse con fármacos de clase IA (quinidina, disopiramida, procainamida) o con amiodarona.",
+          "sobre_los_clase_ia": "Por su acción proarrítmica y sus efectos perjudiciales sobre la función ventricular izquierda, los clase IA se usan hoy menos que la amiodarona como terapia primaria.",
+          "amiodarona": "Es exitosa en el 86 % de los pacientes con FA de menos de dos años de evolución, y efectiva en el 40 a 60 % de los pacientes con FA de larga data resistente a otros agentes y a la cardioversión eléctrica. Puede darse en dosis de 200 mg al día, menor que las dosis asociadas a alteraciones tiroideas y fibrosis pulmonar; aun así conviene monitorizar efectos tiroideos, pulmonares, hepáticos y cardíacos.",
+          "no_sirven_para_convertir": "La digital y el sotalol se usan a veces para control de frecuencia, pero NO son efectivos para convertir la fibrilación auricular a ritmo sinusal.",
+          "medidas_de_rescate": "Si fallan la cardioversión eléctrica externa y los antiarrítmicos, se reservan para pacientes que no toleran la FA o con disfunción sistólica asociada: cardioversión eléctrica interna por catéter aplicando corriente a las venas pulmonares, ablación por radiofrecuencia del nodo AV con implante de marcapasos ventricular, y desfibrilador auricular implantable.",
+          "comparacion": "El PPT solo menciona cardioversión eléctrica sincronizada de alta energía y sin demora para el caso particular de la FA en el síndrome de Wolff-Parkinson-White. Toda la cardioversión de la FA común viene de esta lectura.",
+          "enfasis": "El distractor clásico es digoxina o sotalol para convertir: la lectura dice expresamente que no funcionan para eso, solo frenan. El 86 % de la amiodarona va atado a menos de dos años de evolución.",
+          "trampa": "Usar digoxina con intención de restaurar el ritmo sinusal.",
+          "formatos": [
+            "banco",
+            "calculo",
+            "caso",
+            "flashcard",
+            "sustentacion"
+          ]
+        },
+        {
+          "id": "lectura-arritmias-sv::fa-control-de-frecuencia",
+          "nombre": "Control de la frecuencia ventricular en la FA: fármacos y dosis",
+          "alto_rendimiento": true,
+          "contenido": "Es la tabla que en el PPT quedó como imagen. Por qué importa: las frecuencias ventriculares excesivas reducen el gasto cardíaco por mal tiempo de llenado y producen isquemia por aumento de la demanda miocárdica de oxígeno.",
+          "manejo_agudo": "Habitualmente se logra con diltiazem intravenoso, en bolo inicial de 15 a 20 mg (0,25 mg/kg) en dos minutos, o con un betabloqueador intravenoso como propranolol, 0,5 a 1 mg, hasta 3 a 5 mg si es necesario.",
+          "fármacos_de_mantenimiento": {
+            "diltiazem": "IV agudo 0,25 mg/kg en 2 minutos, luego 0,35 mg/kg a los 15 minutos si se necesita, luego 10 mg/hora en infusión. Mantenimiento oral 180 a 240 mg al día. Efectos agudos: bloqueo cardíaco, insuficiencia cardíaca, hipotensión en alrededor del 3 %. A largo plazo: estreñimiento.",
+            "verapamilo": "IV agudo en bolo de 5 a 10 mg en 2 minutos, se puede repetir 10 mg en 15 a 30 minutos. Mantenimiento oral 240 a 320 mg al día. Efectos agudos: bloqueo cardíaco, insuficiencia cardíaca, hipotensión en 5 a 10 %. A largo plazo: estreñimiento.",
+            "propranolol": "IV agudo 1 a 3 mg a razón de 1 mg por minuto, repetir en 2 minutos si se necesita. Mantenimiento oral 10 a 30 mg cada 6 a 8 horas. Efectos agudos: bloqueo cardíaco, broncoespasmo, insuficiencia cardíaca. A largo plazo: fatiga y depresión.",
+            "esmolol": "IV agudo 0,5 mg/kg en 1 minuto, luego 0,05 mg/kg/min en infusión por 4 minutos. Efectos: hipotensión en 20 a 50 %, bloqueo cardíaco, insuficiencia cardíaca.",
+            "digoxina": "IV agudo 0,25 a 0,50 mg, luego 0,25 mg cada 4 a 6 horas hasta un total de 1,0 mg. Mantenimiento oral 0,125 a 0,25 mg al día. Efectos: bloqueo, alteraciones visuales, delirio, alucinaciones."
+          },
+          "eleccion_entre_familias": "Los calcioantagonistas, betabloqueadores y digoxina son efectivos para mantener la frecuencia ventricular en rangos aceptables. Como los calcioantagonistas se asocian a mejor tolerancia al ejercicio, pueden preferirse a los betabloqueadores. La digoxina se asocia a alto grado de intolerancia al ejercicio, por lo que debe reservarse para pacientes relativamente inmóviles, que no toleran otras opciones o que tienen disfunción ventricular significativa.",
+          "enfasis": "La jerarquía por tolerancia al ejercicio es lo más sustentable: calcioantagonistas mejor que betabloqueadores, y digoxina al final, reservada para el paciente poco móvil o con disfunción ventricular. El broncoespasmo del propranolol es el efecto que conecta con los pacientes de Neumología.",
+          "trampa": "Elegir digoxina como primera opción en un paciente activo.",
+          "relacionado": [
+            "arritmias::fa-manejo",
+            "epoc::tratamiento"
+          ],
+          "formatos": [
+            "banco",
+            "calculo",
+            "caso",
+            "flashcard",
+            "sustentacion"
+          ]
+        },
+        {
+          "id": "lectura-arritmias-sv::psvt-mecanismos",
+          "nombre": "PSVT: los tres mecanismos y sus frecuencias",
+          "alto_rendimiento": true,
+          "contenido": "La taquicardia supraventricular paroxística es la más común de las supraventriculares y la que más se ve en atención primaria. A diferencia de las ventriculares y de la fibrilación auricular, la PSVT suele ser una taquicardia de complejo estrecho con frecuencia regular.",
+          "reentrada_nodal_av": "Es el mecanismo más común. Ocurre cuando existen dos vías con distinta velocidad de conducción. Un complejo auricular prematuro bloqueado en la vía rápida y redirigido por la lenta suele desencadenar la taquicardia. Produce taquicardia de complejo estrecho sin onda P discernible, con frecuencia habitual entre 160 y 190 por minuto. En la forma menos común el frente circula anterógrado por la vía rápida y retrógrado por la lenta, y ahí sí se ven ondas P invertidas en DII. Puede dar complejo ancho si el paciente tiene bloqueo de rama previo.",
+          "vias_accesorias": "El mecanismo habitual de PSVT en el WPW es conducción anterógrada por las vías normales a través del nodo AV y retrógrada por la vía accesoria. El ECG muestra taquicardia de complejo estrecho a 160 a 240 por minuto. Las ondas delta están AUSENTES durante la taquicardia porque la activación ventricular usa las vías normales. Pueden verse ondas P invertidas en las derivaciones inferiores. El ECG en reposo puede ser normal en algunos pacientes con WPW, si la vía accesoria no conduce en sentido anterógrado.",
+          "automatismo_aumentado": "Suele ocurrir con la aurícula dilatada, como en enfermedad pulmonar crónica, insuficiencia cardíaca o trastornos electrolíticos y ácido-base. Las aurículas distendidas disparan irregularmente desde múltiples focos, de ahí el nombre de taquicardia auricular multifocal. El diagnóstico depende de identificar un ritmo irregular con tres o más morfologías distintas de onda P, con frecuencia habitual de 130 a 180 por minuto. El tratamiento se dirige a corregir la causa subyacente y los antiarrítmicos habitualmente no ayudan.",
+          "comparacion": "El PPT describe el mismo mecanismo de reentrada intranodal pero no da rangos de frecuencia. La lectura agrega los tres rangos, que son distintos entre sí y por eso emparejables. Además la lectura aporta el criterio diagnóstico numérico de la multifocal, tres o más morfologías de P, que el PPT no da.",
+          "enfasis": "Tres rangos de frecuencia para memorizar juntos: reentrada nodal 160-190, vía accesoria 160-240, multifocal 130-180. Y la ausencia de onda delta DURANTE la taquicardia ortodrómica, que es contraintuitivo.",
+          "trampa": "Buscar onda delta en el trazado de la taquicardia para diagnosticar WPW. La delta se ve en el ECG basal, no durante la taquicardia ortodrómica.",
+          "relacionado": [
+            "arritmias::reentrada-intranodal",
+            "arritmias::vias-accesorias-y-wpw",
+            "arritmias::irregulares-qrs-estrecho"
+          ],
+          "formatos": [
+            "banco",
+            "calculo",
+            "caso",
+            "flashcard",
+            "sustentacion"
+          ]
+        },
+        {
+          "id": "lectura-arritmias-sv::psvt-manejo",
+          "nombre": "Manejo de la PSVT: estabilidad primero, luego bloqueo del nodo AV",
+          "alto_rendimiento": true,
+          "contenido": "En la mayoría de pacientes la PSVT es benigna y autolimitada, aunque algunos pueden tener angina, hipotensión y ansiedad intensa.",
+          "primer_paso": "Determinar si el paciente está hemodinámicamente estable. Si la PSVT es sostenida y hay cualquier indicio de inestabilidad (angina, disnea, disminución del nivel de conciencia, hipotensión o insuficiencia cardíaca), debe realizarse cardioversión eléctrica de urgencia.",
+          "medidas_conservadoras": "Si los síntomas se limitan a molestia, como palpitaciones y ansiedad, se aplican medidas conservadoras. Las maniobras vagales para aumentar el tono parasimpático y enlentecer la conducción por el nodo AV deben ser el primer abordaje, y conviene enseñárselas al paciente para episodios futuros. El masaje del seno carotídeo puede intentarse, pero su papel se ha limitado por la efectividad de los fármacos y por el riesgo de embolismo por la presión carotídea.",
+          "factores_a_evitar": "Cafeína, tabaco, alcohol, pseudoefedrina y estrés.",
+          "objetivo_farmacologico": "Enlentecer o bloquear la conducción del nodo AV.",
+          "adenosina": "Agente de acción ultracorta que se aclara rápido, con vida media de 1 a 6 segundos. Se da por vía intravenosa en dosis inicial de 6 mg, seguida de uno o dos bolos de 12 mg. Actúa reduciendo la conducción por la vía lenta anterógrada. Efectos adversos: rubor, disnea y dolor torácico, habitualmente muy breves por su vida media corta. Ventaja: carece del efecto inotrópico negativo de los calcioantagonistas. Puede bajar transitoriamente la frecuencia sinusal y producir taquicardia sinusal de rebote. No debe usarse en pacientes con trasplante cardíaco, por posible sensibilidad excesiva.",
+          "verapamilo": "Bolo de 5 a 10 mg en 2 minutos, seguido de 10 mg a los 15 a 30 minutos si la dosis inicial no convierte la arritmia.",
+          "advertencia_critica": "El verapamilo y otros calcioantagonistas NO deben usarse en una taquicardia de complejo ancho no diagnosticada, por el riesgo de hipotensión fatal o fibrilación ventricular si la arritmia resulta ser taquicardia ventricular y no PSVT.",
+          "diltiazem": "Bolo de 0,25 mg/kg en dos minutos, con bolo repetido de 0,35 mg/kg en dos minutos a los 15 minutos.",
+          "esmolol": "Bolo IV de 0,5 mg/kg en 1 minuto, o infusión a 0,5 mg/kg/min tras dosis de carga de 0,5 mg/kg. Su ventaja es la vida media corta, de cuatro a cinco minutos, frente a tres horas o más de la mayoría de betabloqueadores. Por su efecto depresor sobre la contractilidad ventricular izquierda, similar al de los calcioantagonistas, debe usarse con precaución si el tratamiento inicial con un calcioantagonista no fue exitoso.",
+          "enfasis": "La advertencia del verapamilo en taquicardia de complejo ancho no diagnosticada es el punto de seguridad más importante de toda la lectura y es material de examen y de práctica por igual. La secuencia de adenosina, 6 mg y luego 12 mg, es la dosis que se pide.",
+          "trampa": "Dar verapamilo a una taquicardia de QRS ancho asumiendo que es supraventricular con aberrancia.",
+          "relacionado": [
+            "arritmias::reentrada-intranodal",
+            "arritmias::criterios-ekg-de-tv"
+          ],
+          "formatos": [
+            "banco",
+            "calculo",
+            "caso",
+            "flashcard",
+            "sustentacion"
+          ]
+        },
+        {
+          "id": "lectura-arritmias-sv::ablacion-por-radiofrecuencia",
+          "nombre": "Ablación por radiofrecuencia: tasas de éxito",
+          "alto_rendimiento": true,
+          "contenido": "La ablación selectiva por radiofrecuencia se está convirtiendo rápidamente en el tratamiento de elección cuando fallan los fármacos iniciales, y se usa de forma temprana en la PSVT por vía accesoria, por reentrada nodal AV o por taquicardia auricular.",
+          "tasas_de_exito": {
+            "vía accesoria o reentrada nodal AV": "95 %",
+            "taquicardia auricular": "aproximadamente 80 %"
+          },
+          "control_a_largo_plazo": "El control a largo plazo de la PSVT recurrente por reentrada nodal AV puede lograrse con fármacos o con ablación. Los pacientes con recurrencias infrecuentes y bien toleradas pueden manejarlas con maniobras fisiológicas autoadministradas.",
+          "comparacion": "El PPT menciona la ablación con radiofrecuencia dentro de los estudios electrofisiológicos, pero sin tasas de éxito ni indicaciones. La lectura las aporta.",
+          "enfasis": "Dos cifras contrastantes, 95 % contra 80 %, y la que baja es la taquicardia auricular.",
+          "relacionado": [
+            "ayudadx-cardio::estudios-electrofisiologicos"
+          ],
+          "formatos": [
+            "banco",
+            "calculo",
+            "flashcard",
+            "sustentacion"
+          ]
+        },
+        {
+          "id": "lectura-arritmias-sv::otras-arritmias-auriculares",
+          "nombre": "Marcapasos auricular migratorio, complejos auriculares prematuros y arritmia sinusal",
+          "alto_rendimiento": false,
+          "contenido": "Tres entidades benignas que la lectura desarrolla y el PPT no menciona.",
+          "marcapasos_auricular_migratorio": "Los pacientes suelen estar asintomáticos y es un hallazgo aislado en el ECG que no requiere tratamiento. A veces se nota en el examen físico como ritmo irregularmente irregular. El ECG muestra morfología de onda P e intervalos PR variables; los impulsos auriculares conducen 1:1 y controlan el ritmo por varios latidos antes de cambiar de foco. LO QUE LO DIFERENCIA de la taquicardia auricular multifocal es la frecuencia cardíaca normal.",
+          "complejos_auriculares_prematuros": "Se generan desde un foco ectópico auricular, por lo que la onda P difiere en morfología de la P sinusal. El impulso conduce por las vías normales y genera un QRS estrecho seguido de pausa. A veces el complejo prematuro no se conduce y puede simular un bloqueo cardíaco. Aparecen con consumo excesivo de cafeína o alcohol y con simpaticomiméticos, y también en cardiopatía estructural. Los pacientes suelen estar asintomáticos y no requieren tratamiento; puede probarse un betabloqueador en dosis baja si hay síntomas molestos, aunque no hay estudios de eficacia. Pueden precipitar taquicardia supraventricular, flutter o fibrilación auricular.",
+          "arritmia_sinusal": "Suele ser un evento normal en jóvenes y atletas, tan frecuente que se considera variante normal más que arritmia verdadera. Tiene dos formas: la respiratoria, en la que el intervalo RR se acorta en inspiración y se alarga en espiración y desaparece al contener la respiración; y la no respiratoria, con la misma variación fásica pero sin relación con la respiración, que ocurre en ancianos, en sobredosis de digoxina y en hipertensión intracraneal.",
+          "enfasis": "El dato diferencial entre marcapasos migratorio y taquicardia auricular multifocal es solo la frecuencia: normal en uno, 130-180 en el otro. La forma no respiratoria de la arritmia sinusal trae tres contextos que valen como pregunta: anciano, digoxina e hipertensión intracraneal.",
+          "trampa": "Diagnosticar taquicardia auricular multifocal en un paciente con P polimórficas pero frecuencia normal.",
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard"
+          ]
+        },
+        {
+          "id": "lectura-arritmias-sv::nodo-sinusal",
+          "nombre": "Pausa sinusal, bloqueo de salida sinoauricular y enfermedad del nodo sinusal",
+          "alto_rendimiento": true,
+          "contenido": "Este bloque completa lo que el PPT dejó en las láminas de imagen sobre bradiarritmias.",
+          "pausa_o_paro_sinusal": "Ocurre cuando el nodo sinoauricular no descarga. El ECG muestra una pausa en el ritmo sinusal sin onda P precedente. Los pacientes suelen estar asintomáticos, pero si la pausa es prolongada pueden tener mareo, palpitaciones, síncope y caídas. En el paro sinusal la longitud de la pausa NO guarda relación con el intervalo PP.",
+          "bloqueo_de_salida_sinoauricular": "Se reconoce porque las pausas son múltiplos de los intervalos PP.",
+          "utilidad_de_la_distincion": "Desde el punto de vista terapéutico probablemente no sea importante distinguir entre paro sinusal y bloqueo de salida sinoauricular. Ambos pueden ocurrir en atletas bien entrenados y ser un factor en la enfermedad del nodo sinusal.",
+          "causas_de_disfuncion_del_nodo_sinusal": "Habitualmente fármacos como digoxina, quinidina o procainamida. También isquemia, miocarditis o fibrosis.",
+          "enfermedad_del_nodo_sinusal": "El término abarca varias alteraciones: bradicardia sinusal, paro sinusal o bloqueo de salida, combinaciones de trastornos de conducción sinoauricular y del nodo AV, y taquiarritmias auriculares. Puede registrarse más de una en el mismo paciente, lo que constituye el síndrome bradicardia-taquicardia. Las alteraciones se deben a isquemia, fibrosis, efecto de fármacos o disfunción autonómica. Los signos y síntomas se relacionan con hipoperfusión cerebral y gasto cardíaco reducido.",
+          "tratamiento": "La bradicardia sintomática recurrente o las pausas prolongadas requieren implantación de marcapasos permanente.",
+          "comparacion": "El PPT enumera el mismo espectro de disfunción del nodo sinusal y dice que es una de las principales causas de implantación de marcapasos, pero no explica el criterio de distinción entre paro y bloqueo de salida ni nombra las causas farmacológicas. La lectura completa ambos.",
+          "enfasis": "El criterio que separa paro sinusal de bloqueo de salida es aritmético: en el bloqueo de salida la pausa es MÚLTIPLO del intervalo PP, en el paro no guarda relación. Es de lo más preguntable del bloque de bradiarritmias.",
+          "trampa": "Atribuir la disfunción del nodo sinusal siempre a degeneración por edad, pasando por alto la causa farmacológica, que la lectura pone primero.",
+          "relacionado": [
+            "arritmias::disfuncion-del-nodo-sinusal",
+            "arritmias::pausas-sinusales"
+          ],
+          "formatos": [
+            "banco",
+            "caso",
+            "flashcard",
+            "sustentacion"
+          ]
+        }
+      ],
+      "discrepancias_con_los_ppt": [
+        {
+          "punto": "Vigencia del esquema de anticoagulación",
+          "material_de_la_lectura": "Toda la anticoagulación se plantea con warfarina y objetivo de INR 2,0 a 3,0. No se mencionan anticoagulantes orales directos ni escalas de riesgo tromboembólico, porque el artículo es de 2002.",
+          "material_del_ppt": "El PPT cita la Guía ESC 2020 de fibrilación auricular, muy posterior, y presenta la anticoagulación en una lámina de imagen cuyo contenido no se pudo extraer.",
+          "estado": "la lectura se conserva como referencia de mecanismo y de estructura de decisión, NO como referencia de tratamiento anticoagulante actual",
+          "respuesta_en_examen": "si la pregunta es de anticoagulación en FA, la fuente que manda es la lámina del PPT basada en ESC 2020, no esta lectura",
+          "nota_de_feedback": "Para tu práctica, no para el examen: desde esta lectura hasta hoy cambió el estándar. Los anticoagulantes orales directos desplazaron a la warfarina como primera opción en la FA no valvular, y la decisión de anticoagular se toma con una escala de riesgo, no caso por caso como sugiere el texto de 2002. Lo que sigue plenamente vigente de esta lectura es el algoritmo de las 48 horas, el papel del transesofágico para ver trombos, y la advertencia sobre verapamilo en taquicardia de complejo ancho."
+        },
+        {
+          "punto": "Mecanismo de la PSVT por vía accesoria y ausencia de onda delta",
+          "material_de_la_lectura": "Durante la taquicardia por vía accesoria con conducción anterógrada por el nodo AV, las ondas delta están ausentes porque la activación ventricular usa las vías normales.",
+          "material_del_ppt": "El PPT describe la onda delta como hallazgo del ECG basal del WPW, pero no aclara que desaparece durante la taquicardia ortodrómica.",
+          "estado": "la lectura complementa al PPT, no lo contradice",
+          "respuesta_en_examen": "la onda delta se busca en el ECG basal; durante la taquicardia ortodrómica el QRS es estrecho y sin delta"
+        }
+      ]
+    }
   }
 }
